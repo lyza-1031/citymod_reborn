@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "citymod",
-  "version": "${version}",
+  "version": "0.2.16.2",
   "name": "citymod:reborn",
   "description": "",
   "authors": [""],

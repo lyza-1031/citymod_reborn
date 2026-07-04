@@ -37,6 +37,10 @@ public class ModBlocks {
     public static final RegistrySupplier<Block> EXPR_SIGN_LARGE = registerSign("expr_sign_large", BlockShapes.EXPR_SIGN_LARGE);
     public static final RegistrySupplier<Block> EXPRESSWAY_EXIT_SIGN =registerSign("expressway_exit_sign",BlockShapes.EXPRESSWAY_EXIT_SIGN);
     public static final RegistrySupplier<Block> EXPR_T_IPS =registerSign("expr_t_ips",BlockShapes.EXPR_T_IPS);
+    public static final RegistrySupplier<Block> TRAFFIC_SIGN = registerSign("traffic_sign", BlockShapes.TRAFFIC_SIGN);
+    public static final RegistrySupplier<Block> TRAFFIC_SIGN_L = registerSign("traffic_sign_l", BlockShapes.TRAFFIC_SIGN_L);
+    public static final RegistrySupplier<Block> TRAFFIC_SIGN_R = registerSign("traffic_sign_r", BlockShapes.TRAFFIC_SIGN_R);
+    public static final RegistrySupplier<Block> TRAFFIC_SIGN_T = registerSign("traffic_sign_t", BlockShapes.TRAFFIC_SIGN_T);
 
     // 路牌注册快捷方法
     private static RegistrySupplier<Block> registerSign(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {

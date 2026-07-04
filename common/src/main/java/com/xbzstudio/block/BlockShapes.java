@@ -178,4 +178,28 @@ public class BlockShapes {
             box(0, -16, -12, 1, 16, 28),
             box(15, -16, -12, 16, 16, 28)
     );
+    public static final Map<Direction, VoxelShape> TRAFFIC_SIGN = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> TRAFFIC_SIGN_L = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> TRAFFIC_SIGN_R = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> TRAFFIC_SIGN_T = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
 }

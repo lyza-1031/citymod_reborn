@@ -40,6 +40,10 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.EXPR_SIGN_LARGE.get());
                         output.accept(ModBlocks.EXPRESSWAY_EXIT_SIGN.get());
                         output.accept(ModBlocks.EXPR_T_IPS.get());
+                        output.accept(ModBlocks.TRAFFIC_SIGN.get());
+                        output.accept(ModBlocks.TRAFFIC_SIGN_L.get());
+                        output.accept(ModBlocks.TRAFFIC_SIGN_R.get());
+                        output.accept(ModBlocks.TRAFFIC_SIGN_T.get());
                     })
             .build()
     );

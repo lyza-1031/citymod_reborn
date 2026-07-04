@@ -46,6 +46,10 @@ public class ModRegistry {
     public static final RegistryObject<Block> EXPR_SIGN_LARGE = registerSign("expr_sign_large", BlockShapes.EXPR_SIGN_LARGE);
     public static final RegistryObject<Block> EXPRESSWAY_EXIT_SIGN =registerSign("expressway_exit_sign",BlockShapes.EXPRESSWAY_EXIT_SIGN);
     public static final RegistryObject<Block> EXPR_T_IPS =registerSign("expr_t_ips",BlockShapes.EXPR_T_IPS);
+    public static final RegistryObject<Block> TRAFFIC_SIGN = registerSign("traffic_sign", BlockShapes.TRAFFIC_SIGN);
+    public static final RegistryObject<Block> TRAFFIC_SIGN_L = registerSign("traffic_sign_l", BlockShapes.TRAFFIC_SIGN_L);
+    public static final RegistryObject<Block> TRAFFIC_SIGN_R = registerSign("traffic_sign_r", BlockShapes.TRAFFIC_SIGN_R);
+    public static final RegistryObject<Block> TRAFFIC_SIGN_T = registerSign("traffic_sign_t", BlockShapes.TRAFFIC_SIGN_T);
 
     // ==================== BlockItems ====================
     public static final RegistryObject<Item> EXPR_1_ITEM = registerItem("expr_1", EXPR_1);
@@ -69,6 +73,10 @@ public class ModRegistry {
     public static final RegistryObject<Item> EXPR_SIGN_LARGE_ITEM = registerItem("expr_sign_large", EXPR_SIGN_LARGE);
     public static final RegistryObject<Item> EXPRESSWAY_EXIT_SIGN_ITEM =registerItem("expressway_exit_sign",EXPRESSWAY_EXIT_SIGN);
     public static final RegistryObject<Item> EXPR_T_IPS_ITEM =registerItem("expr_t_ips",EXPR_T_IPS);
+    public static final RegistryObject<Item> TRAFFIC_SIGN_ITEM = registerItem("traffic_sign", TRAFFIC_SIGN);
+    public static final RegistryObject<Item> TRAFFIC_SIGN_L_ITEM = registerItem("traffic_sign_l", TRAFFIC_SIGN_L);
+    public static final RegistryObject<Item> TRAFFIC_SIGN_R_ITEM = registerItem("traffic_sign_r", TRAFFIC_SIGN_R);
+    public static final RegistryObject<Item> TRAFFIC_SIGN_T_ITEM = registerItem("traffic_sign_t", TRAFFIC_SIGN_T);
 
     // ==================== 创造标签页 ====================
     public static final RegistryObject<CreativeModeTab> TRAFFIC = TABS.register("traffic",
@@ -97,6 +105,10 @@ public class ModRegistry {
                         output.accept(EXPR_SIGN_LARGE.get());
                         output.accept(EXPRESSWAY_EXIT_SIGN.get());
                         output.accept(EXPR_T_IPS.get());
+                        output.accept(TRAFFIC_SIGN.get());
+                        output.accept(TRAFFIC_SIGN_L.get());
+                        output.accept(TRAFFIC_SIGN_R.get());
+                        output.accept(TRAFFIC_SIGN_T.get());
                     })
                     .build()
     );
