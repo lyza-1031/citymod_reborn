@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/government_sign",
+  "textures": {
+    "all": "citymod:block/governmentsign",
+    "particle": "citymod:block/governmentsign",
+    "0": "citymod:block/governmentsign"
+  },
+  "render_type": "solid"
+}

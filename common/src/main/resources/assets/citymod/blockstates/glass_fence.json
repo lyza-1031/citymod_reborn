@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/glass_fence"
+    },
+    "facing=east": {
+      "model": "citymod:block/glass_fence",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/glass_fence",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/glass_fence",
+      "y": 270
+    }
+  }
+}

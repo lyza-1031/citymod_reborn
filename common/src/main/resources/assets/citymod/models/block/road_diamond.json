@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/large",
+  "textures": {
+    "all": "citymod:block/diamond",
+    "particle": "citymod:block/diamond",
+    "2": "citymod:block/diamond"
+  },
+  "render_type": "cutout"
+}

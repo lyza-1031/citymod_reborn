@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/ac_out_fake"
+    },
+    "facing=east": {
+      "model": "citymod:block/ac_out_fake",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/ac_out_fake",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/ac_out_fake",
+      "y": 270
+    }
+  }
+}

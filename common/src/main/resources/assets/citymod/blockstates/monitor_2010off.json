@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/monitor_2010off"
+    },
+    "facing=east": {
+      "model": "citymod:block/monitor_2010off",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/monitor_2010off",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/monitor_2010off",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/signboard",
+  "textures": {
+    "all": "citymod:block/signboard",
+    "particle": "citymod:block/signboard",
+    "0": "citymod:block/signboard"
+  },
+  "render_type": "solid"
+}

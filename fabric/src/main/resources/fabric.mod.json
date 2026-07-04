@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "citymod",
+  "version": "${version}",
+  "name": "citymod:reborn",
+  "description": "",
+  "authors": [""],
+  "contact": {
+    "homepage": ""  },
+  "license": "GPL-3.0",
+  "icon": "assets/citymod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.xbzstudio.fabric.citymodFabric"
+    ],
+    "client": [
+      "com.xbzstudio.fabric.client.citymodFabricClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+    ,"architectury": ">=9.1.10"
+    ,"fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

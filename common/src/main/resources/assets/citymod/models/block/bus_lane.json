@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/direction_sign",
+  "textures": {
+    "all": "citymod:block/buslanes",
+    "particle": "citymod:block/buslanes",
+    "0": "citymod:block/buslanes"
+  },
+  "render_type": "solid"
+}

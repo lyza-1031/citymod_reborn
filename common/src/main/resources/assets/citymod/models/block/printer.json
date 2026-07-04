@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/printer",
+  "textures": {
+    "all": "citymod:block/printer",
+    "particle": "citymod:block/printer",
+    "0": "citymod:block/printer"
+  },
+  "render_type": "solid"
+}

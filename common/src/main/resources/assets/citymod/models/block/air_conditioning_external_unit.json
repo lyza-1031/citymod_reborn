@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/aircondition",
+  "textures": {
+    "all": "citymod:block/texture",
+    "particle": "citymod:block/texture",
+    "1": "citymod:block/texture"
+  },
+  "render_type": "solid"
+}

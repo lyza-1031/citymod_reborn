@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "citymod:blocks/vehicle_dstance_confirmation_sign",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "citymod:vehicle_dstance_confirmation_sign"
+        }
+      ]
+    }
+  ]
+}

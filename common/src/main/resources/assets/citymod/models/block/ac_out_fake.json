@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/ac_out_fake",
+  "textures": {
+    "all": "citymod:block/ac_out_fake",
+    "particle": "citymod:block/ac_out_fake",
+    "0": "citymod:block/ac_out_fake"
+  },
+  "render_type": "cutout_mipped"
+}

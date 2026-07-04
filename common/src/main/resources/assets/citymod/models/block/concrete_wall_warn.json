@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/concrete_wall",
+  "textures": {
+    "all": "citymod:block/concrete_wall_warn",
+    "particle": "citymod:block/concrete_wall_warn",
+    "0": "citymod:block/concrete_wall_warn"
+  },
+  "render_type": "solid"
+}

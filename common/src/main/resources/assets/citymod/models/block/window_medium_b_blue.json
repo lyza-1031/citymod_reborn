@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/windowmediumb",
+  "textures": {
+    "all": "citymod:block/windowblue",
+    "particle": "citymod:block/windowblue",
+    "0": "citymod:block/windowblue"
+  },
+  "render_type": "translucent"
+}

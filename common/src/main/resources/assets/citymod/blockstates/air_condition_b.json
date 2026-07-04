@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/air_condition_b"
+    },
+    "facing=east": {
+      "model": "citymod:block/air_condition_b",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/air_condition_b",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/air_condition_b",
+      "y": 270
+    }
+  }
+}

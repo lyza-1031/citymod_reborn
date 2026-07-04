@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/roadsign_a"
+    },
+    "facing=east": {
+      "model": "citymod:block/roadsign_a",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/roadsign_a",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/roadsign_a",
+      "y": 270
+    }
+  }
+}

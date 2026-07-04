@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/crt_tv",
+  "textures": {
+    "all": "citymod:block/crt_tv_off",
+    "particle": "citymod:block/crt_tv_off",
+    "0": "citymod:block/crt_tv_off"
+  },
+  "render_type": "solid"
+}

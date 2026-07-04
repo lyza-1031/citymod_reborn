@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/safetywallalert",
+  "textures": {
+    "all": "citymod:block/alert",
+    "particle": "citymod:block/alert",
+    "0": "citymod:block/alert"
+  },
+  "render_type": "solid"
+}

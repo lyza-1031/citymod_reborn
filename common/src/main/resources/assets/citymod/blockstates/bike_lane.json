@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/bike_lane"
+    },
+    "facing=east": {
+      "model": "citymod:block/bike_lane",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/bike_lane",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/bike_lane",
+      "y": 270
+    }
+  }
+}

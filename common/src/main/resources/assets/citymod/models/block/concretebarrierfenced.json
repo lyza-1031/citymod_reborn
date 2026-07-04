@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/concrete_barrier_fence",
+  "textures": {
+    "all": "citymod:block/concrete_barrier_fence",
+    "particle": "citymod:block/concrete_barrier_fence",
+    "0": "citymod:block/concrete_barrier_fence"
+  },
+  "render_type": "solid"
+}

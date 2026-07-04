@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/acin-b",
+  "textures": {
+    "all": "citymod:block/acin-b",
+    "particle": "citymod:block/acin-b",
+    "1": "citymod:block/acin-b"
+  },
+  "render_type": "solid"
+}

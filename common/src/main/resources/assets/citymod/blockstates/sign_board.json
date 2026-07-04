@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/sign_board"
+    },
+    "facing=east": {
+      "model": "citymod:block/sign_board",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/sign_board",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/sign_board",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/old_wardrobe_up",
+  "textures": {
+    "all": "citymod:block/old_wardrobe_up",
+    "particle": "citymod:block/old_wardrobe_up",
+    "0": "citymod:block/old_wardrobe_up"
+  },
+  "render_type": "solid"
+}

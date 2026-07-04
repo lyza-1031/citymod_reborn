@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/ac_out_04json",
+  "textures": {
+    "all": "citymod:block/ac_out_03",
+    "particle": "citymod:block/ac_out_03",
+    "1": "citymod:block/ac_out_03"
+  },
+  "render_type": "cutout_mipped"
+}

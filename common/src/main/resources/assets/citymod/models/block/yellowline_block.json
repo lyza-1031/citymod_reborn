@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "citymod:block/gray_concrete_powder",
+    "top": "citymod:block/yellowline",
+    "side": "citymod:block/gray_concrete_powder",
+    "overlay": "citymod:block/gray_concrete_powder",
+    "particle": "citymod:block/gray_concrete_powder"
+  },
+  "render_type": "cutout_mipped"
+}

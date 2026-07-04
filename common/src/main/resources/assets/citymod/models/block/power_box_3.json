@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/powerbox3",
+  "textures": {
+    "all": "citymod:block/powerbox3",
+    "particle": "citymod:block/powerbox3",
+    "0": "citymod:block/powerbox3"
+  },
+  "render_type": "solid"
+}

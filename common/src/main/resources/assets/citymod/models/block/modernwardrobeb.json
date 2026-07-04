@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/modern_wardrobe_1",
+  "textures": {
+    "all": "citymod:block/modern_wardrobe_1",
+    "particle": "citymod:block/modern_wardrobe_1",
+    "0": "citymod:block/modern_wardrobe_1"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/direction_straight_turnoff"
+    },
+    "facing=east": {
+      "model": "citymod:block/direction_straight_turnoff",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/direction_straight_turnoff",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/direction_straight_turnoff",
+      "y": 270
+    }
+  }
+}

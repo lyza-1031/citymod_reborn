@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/windowsmall",
+  "textures": {
+    "all": "citymod:block/windowwhite",
+    "particle": "citymod:block/windowwhite",
+    "0": "citymod:block/windowwhite"
+  },
+  "render_type": "translucent"
+}

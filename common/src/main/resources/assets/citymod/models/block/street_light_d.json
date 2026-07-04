@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/street_lightsd",
+  "textures": {
+    "all": "citymod:block/streetlight2",
+    "particle": "citymod:block/streetlight2",
+    "0": "citymod:block/streetlight"
+  },
+  "render_type": "solid"
+}

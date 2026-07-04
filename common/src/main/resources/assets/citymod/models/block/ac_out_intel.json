@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/ac_out_intel",
+  "textures": {
+    "all": "citymod:block/ac_out_intel",
+    "particle": "citymod:block/ac_out_intel",
+    "0": "citymod:block/ac_out_intel"
+  },
+  "render_type": "cutout_mipped"
+}

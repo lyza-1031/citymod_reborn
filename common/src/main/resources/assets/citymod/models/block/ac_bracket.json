@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/acbracket",
+  "textures": {
+    "all": "citymod:block/acbracket",
+    "particle": "citymod:block/acbracket",
+    "missing": "citymod:block/acbracket"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        maven { url "https://maven.fabricmc.net/" }
+        maven { url "https://maven.architectury.dev/" }
+        maven { url "https://files.minecraftforge.net/maven/" }
+        gradlePluginPortal()
+    }
+
+    // 强制指定版本
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "dev.architectury.loom") {
+                useVersion "1.9.+"
+                // 或者尝试具体版本：useVersion "1.9.415"
+            }
+        }
+    }
+}
+
+rootProject.name = 'citymod'
+
+include 'common'
+include 'fabric'
+include 'forge'

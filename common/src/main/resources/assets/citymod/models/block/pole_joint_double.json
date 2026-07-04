@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/pole_joint_d",
+  "textures": {
+    "all": "citymod:block/pole_joint_d",
+    "particle": "citymod:block/pole_joint_d",
+    "0": "citymod:block/pole_joint_d"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/crt_tv"
+    },
+    "facing=east": {
+      "model": "citymod:block/crt_tv",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/crt_tv",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/crt_tv",
+      "y": 270
+    }
+  }
+}

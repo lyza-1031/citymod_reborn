@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/speed_bump",
+  "textures": {
+    "all": "citymod:block/speed_bump",
+    "particle": "citymod:block/speed_bump",
+    "0": "citymod:block/speed_bump"
+  },
+  "render_type": "solid"
+}

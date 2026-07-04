@@ -1,0 +1,18 @@
+{
+  "parent": "forge:item/default",
+  "loader": "forge:composite",
+  "children": {
+    "part1": {
+      "loader": "forge:obj",
+      "model": "citymod:models/item/stoneball.obj",
+      "emissive_ambient": true,
+      "textures": {
+        "#m_1cab890b-6ffa-775c-24a6-570d5aec3036": "citymod:block/stb1"
+      }
+    }
+  },
+  "textures": {
+    "particle": "citymod:block/stb1"
+  },
+  "render_type": "solid"
+}

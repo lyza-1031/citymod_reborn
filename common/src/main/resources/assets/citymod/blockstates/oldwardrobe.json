@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/oldwardrobe"
+    },
+    "facing=east": {
+      "model": "citymod:block/oldwardrobe",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/oldwardrobe",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/oldwardrobe",
+      "y": 270
+    }
+  }
+}

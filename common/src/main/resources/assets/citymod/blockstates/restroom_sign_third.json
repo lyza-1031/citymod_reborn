@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/restroom_sign_third"
+    },
+    "facing=east": {
+      "model": "citymod:block/restroom_sign_third",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/restroom_sign_third",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/restroom_sign_third",
+      "y": 270
+    }
+  }
+}

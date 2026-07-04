@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "citymod:blocks/manhole_cover_a",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "citymod:manhole_cover_a"
+        }
+      ]
+    }
+  ]
+}

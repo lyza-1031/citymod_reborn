@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/construction_warning"
+    },
+    "facing=east": {
+      "model": "citymod:block/construction_warning",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/construction_warning",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/construction_warning",
+      "y": 270
+    }
+  }
+}

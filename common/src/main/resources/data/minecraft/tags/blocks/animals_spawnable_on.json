@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "citymod:road_block",
+    "citymod:road_yellow",
+    "citymod:road_yellow_double",
+    "citymod:road_yellow_connect",
+    "citymod:road_white_connect",
+    "citymod:manhole_cover_a",
+    "citymod:manhole_cover_b",
+    "citymod:road_zebra_crossing",
+    "citymod:roadblock_oblique",
+    "citymod:roadblock_yellow_oblique",
+    "citymod:roadblock_double_oblique",
+    "citymod:zebracrossing_oblique",
+    "citymod:whiteline_block",
+    "citymod:yellowline_block",
+    "citymod:double_yellowline_block"
+  ]
+}

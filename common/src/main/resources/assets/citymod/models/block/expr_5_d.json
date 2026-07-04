@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/trafficsignsmall",
+  "textures": {
+    "all": "citymod:block/expr5d",
+    "particle": "citymod:block/expr5d",
+    "0": "citymod:block/expr5d"
+  },
+  "render_type": "solid"
+}

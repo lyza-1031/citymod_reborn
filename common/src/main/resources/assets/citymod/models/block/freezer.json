@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/freezer",
+  "textures": {
+    "all": "citymod:block/freezer",
+    "particle": "citymod:block/freezer",
+    "1": "citymod:block/freezer"
+  },
+  "render_type": "translucent"
+}

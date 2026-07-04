@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/trafficsign",
+  "textures": {
+    "all": "citymod:block/expressway-sign2",
+    "particle": "citymod:block/expressway-sign2",
+    "1": "citymod:block/expressway-sign2"
+  },
+  "render_type": "solid"
+}

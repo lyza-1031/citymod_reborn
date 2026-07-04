@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/central_airconditioning_a",
+  "textures": {
+    "all": "citymod:block/central__airconditioning_a",
+    "particle": "citymod:block/central__airconditioning_a",
+    "1": "citymod:block/central__airconditioning_a"
+  },
+  "render_type": "solid"
+}

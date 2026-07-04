@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/post_43",
+  "textures": {
+    "all": "citymod:block/post43_1",
+    "particle": "citymod:block/post43_1",
+    "0": "citymod:block/post43_2"
+  },
+  "render_type": "solid"
+}

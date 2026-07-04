@@ -1,0 +1,123 @@
+{
+  "texture_size": [
+    64,
+    64
+  ],
+  "elements": [
+    {
+      "from": [
+        -4,
+        15,
+        -4
+      ],
+      "to": [
+        20,
+        16,
+        20
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            12,
+            0.25
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            6,
+            0.25,
+            12,
+            0.5
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            0.5,
+            12,
+            0.75
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            6,
+            0.75,
+            12,
+            1
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            6,
+            6,
+            0,
+            0
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            6,
+            0,
+            12
+          ],
+          "texture": "#1"
+        }
+      }
+    }
+  ],
+  "display": {
+    "firstperson_righthand": {
+      "scale": [
+        0.42,
+        0.45,
+        0.39
+      ]
+    },
+    "firstperson_lefthand": {
+      "scale": [
+        0.44,
+        0.42,
+        0.39
+      ]
+    },
+    "gui": {
+      "rotation": [
+        -35.75,
+        43.25,
+        0
+      ],
+      "translation": [
+        0,
+        -1.75,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "group",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "color": 0,
+      "children": [
+        0
+      ]
+    }
+  ]
+}

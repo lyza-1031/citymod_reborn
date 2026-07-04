@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/vehicle_distance_confirmation_sign_c"
+    },
+    "facing=east": {
+      "model": "citymod:block/vehicle_distance_confirmation_sign_c",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/vehicle_distance_confirmation_sign_c",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/vehicle_distance_confirmation_sign_c",
+      "y": 270
+    }
+  }
+}

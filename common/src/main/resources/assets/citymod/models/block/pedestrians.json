@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/sign",
+  "textures": {
+    "all": "citymod:block/pedestrians",
+    "particle": "citymod:block/pedestrians",
+    "0": "citymod:block/pedestrians"
+  },
+  "render_type": "cutout"
+}

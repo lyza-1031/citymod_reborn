@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/noparking_sign"
+    },
+    "facing=east": {
+      "model": "citymod:block/noparking_sign",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/noparking_sign",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/noparking_sign",
+      "y": 270
+    }
+  }
+}

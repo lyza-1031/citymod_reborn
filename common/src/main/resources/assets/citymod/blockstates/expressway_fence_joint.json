@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/expressway_fence_joint"
+    },
+    "facing=east": {
+      "model": "citymod:block/expressway_fence_joint",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/expressway_fence_joint",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/expressway_fence_joint",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/nozzle",
+  "textures": {
+    "all": "citymod:block/nozzle",
+    "particle": "citymod:block/nozzle",
+    "0": "citymod:block/nozzle"
+  },
+  "render_type": "solid"
+}

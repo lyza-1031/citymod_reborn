@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/glassfence",
+  "textures": {
+    "all": "citymod:block/glassfence",
+    "particle": "citymod:block/glassfence",
+    "0": "citymod:block/glassfence"
+  },
+  "render_type": "cutout"
+}

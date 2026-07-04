@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "citymod:blocks/glass_fence",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "citymod:glass_fence"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/light_pole_with_flag"
+    },
+    "facing=east": {
+      "model": "citymod:block/light_pole_with_flag",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/light_pole_with_flag",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/light_pole_with_flag",
+      "y": 270
+    }
+  }
+}

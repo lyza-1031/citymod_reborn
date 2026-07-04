@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/trafficsignsmall",
+  "textures": {
+    "all": "citymod:block/road8",
+    "particle": "citymod:block/road8",
+    "0": "citymod:block/road8"
+  },
+  "render_type": "solid"
+}

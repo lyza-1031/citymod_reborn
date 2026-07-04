@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/rest_room_sign_female"
+    },
+    "facing=east": {
+      "model": "citymod:block/rest_room_sign_female",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/rest_room_sign_female",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/rest_room_sign_female",
+      "y": 270
+    }
+  }
+}

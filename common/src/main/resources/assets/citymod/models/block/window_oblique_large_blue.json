@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/windowobliqueb",
+  "textures": {
+    "all": "citymod:block/windowblue",
+    "particle": "citymod:block/windowblue",
+    "1": "citymod:block/windowblue"
+  },
+  "render_type": "translucent"
+}

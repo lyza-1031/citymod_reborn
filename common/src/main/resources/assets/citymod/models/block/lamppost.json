@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/street_lights_on",
+  "textures": {
+    "all": "citymod:block/street_lights_on",
+    "particle": "citymod:block/street_lights_on",
+    "0": "citymod:block/street_lights_on"
+  },
+  "render_type": "solid"
+}

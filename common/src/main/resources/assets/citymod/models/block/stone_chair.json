@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/stone_chair",
+  "textures": {
+    "all": "citymod:block/stone",
+    "particle": "citymod:block/stone",
+    "1": "citymod:block/stone"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/modernwardrobeup"
+    },
+    "facing=east": {
+      "model": "citymod:block/modernwardrobeup",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/modernwardrobeup",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/modernwardrobeup",
+      "y": 270
+    }
+  }
+}

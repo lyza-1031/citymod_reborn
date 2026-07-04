@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/window_mediub_b_green"
+    },
+    "facing=east": {
+      "model": "citymod:block/window_mediub_b_green",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/window_mediub_b_green",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/window_mediub_b_green",
+      "y": 270
+    }
+  }
+}
