@@ -1,17 +1,12 @@
 package com.xbzstudio.forge;
 
-import com.xbzstudio.ApplianceBlocks;
-import com.xbzstudio.ModBlocks;
 import com.xbzstudio.block.*;
-import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -68,6 +63,21 @@ public class ModRegistry {
     public static final RegistryObject<Block> AC_OUT_02 = registerAppliance("ac_out_hd_2", ApplianceShapes.AC_OUT_02);
     public static final RegistryObject<Block> AC_OUT_03 = registerAppliance("ac_out_hd_3", ApplianceShapes.AC_OUT_03);
     public static final RegistryObject<Block> AC_OUT_04 = registerAppliance("ac_out_hd_4", ApplianceShapes.AC_OUT_04);
+    public static final RegistryObject<Block> AC_OUT_05 = registerAppliance("ac_out_hd_5", ApplianceShapes.AC_OUT_05);
+    public static final RegistryObject<Block> AC_OUT_06 = registerAppliance("ac_out_hd_6", ApplianceShapes.AC_OUT_06);
+    public static final RegistryObject<Block> BIG_AC_OUT_HD = registerAppliance("big_ac_out_hd", ApplianceShapes.BIG_AC_OUT_HD);
+    public static final RegistryObject<Block> CentreAirConditionOutside = registerAppliance("centre_air_condition_outside", ApplianceShapes.CentreAirConditionOutside);
+    public static final RegistryObject<Block> POST_1691 = registerSign("post_1691", PostShapes.Post1691);
+    public static final RegistryObject<Block> POST_1692 = registerSign("post_1692", PostShapes.Post1692);
+    public static final RegistryObject<Block> POST_1693 = registerSign("post_1693", PostShapes.Post1693);
+    public static final RegistryObject<Block> POST_1694 = registerSign("post_1694", PostShapes.Post1694);
+    public static final RegistryObject<Block> POST_1695 = registerSign("post_1695", PostShapes.Post1695);
+    public static final RegistryObject<Block> POST_1696 = registerSign("post_1696", PostShapes.Post1696);
+    public static final RegistryObject<Block> POST_1697 = registerSign("post_1697", PostShapes.Post1697);
+    public static final RegistryObject<Block> POST_1698 = registerSign("post_1698", PostShapes.Post1698);
+    public static final RegistryObject<Block> POST_431 = registerSign("post_431", PostShapes.Post431);
+    public static final RegistryObject<Block> POST_432 = registerSign("post_432", PostShapes.Post432);
+    public static final RegistryObject<Block> POST_433 = registerSign("post_433", PostShapes.Post433);
     // ==================== BlockItems ====================
     public static final RegistryObject<Item> EXPR_1_ITEM = registerItem("expr_1", EXPR_1);
     public static final RegistryObject<Item> EXPR_2_ITEM = registerItem("expr_2", EXPR_2);
@@ -109,6 +119,21 @@ public class ModRegistry {
     public static final RegistryObject<Item> AC_OUT_02_ITEM = registerItem("ac_out_hd_2", AC_OUT_02);
     public static final RegistryObject<Item> AC_OUT_03_ITEM = registerItem("ac_out_hd_3", AC_OUT_03);
     public static final RegistryObject<Item> AC_OUT_04_ITEM = registerItem("ac_out_hd_4", AC_OUT_04);
+    public static final RegistryObject<Item> AC_OUT_05_ITEM = registerItem("ac_out_hd_5", AC_OUT_05);
+    public static final RegistryObject<Item> AC_OUT_06_ITEM = registerItem("ac_out_hd_6", AC_OUT_06);
+    public static final RegistryObject<Item> BIG_AC_OUT_HD_ITEM = registerItem("big_ac_out_hd", BIG_AC_OUT_HD);
+    public static final RegistryObject<Item> CentreAirConditionOutside_ITEM = registerItem("centre_air_condition_outside",CentreAirConditionOutside);
+    public static final RegistryObject<Item> POST_1691_ITEM = registerItem("post_1691", POST_1691);
+    public static final RegistryObject<Item> POST_1692_ITEM = registerItem("post_1692", POST_1692);
+    public static final RegistryObject<Item> POST_1693_ITEM = registerItem("post_1693", POST_1693);
+    public static final RegistryObject<Item> POST_1694_ITEM = registerItem("post_1694", POST_1694);
+    public static final RegistryObject<Item> POST_1695_ITEM = registerItem("post_1695", POST_1695);
+    public static final RegistryObject<Item> POST_1696_ITEM = registerItem("post_1696", POST_1696);
+    public static final RegistryObject<Item> POST_1697_ITEM = registerItem("post_1697", POST_1697);
+    public static final RegistryObject<Item> POST_1698_ITEM = registerItem("post_1698", POST_1698);
+    public static final RegistryObject<Item> POST_431_ITEM = registerItem("post_431", POST_431);
+    public static final RegistryObject<Item> POST_432_ITEM = registerItem("post_432", POST_432);
+    public static final RegistryObject<Item> POST_433_ITEM = registerItem("post_433", POST_433);
     // ==================== 创造标签页 ====================
     public static final RegistryObject<CreativeModeTab> TRAFFIC = TABS.register("traffic",
             () -> CreativeModeTab.builder()
@@ -174,6 +199,10 @@ public class ModRegistry {
                         output.accept(AC_OUT_02_ITEM.get());
                         output.accept(AC_OUT_03_ITEM.get());
                         output.accept(AC_OUT_04_ITEM.get());
+                        output.accept(AC_OUT_05_ITEM.get());
+                        output.accept(AC_OUT_06_ITEM.get());
+                        output.accept(BIG_AC_OUT_HD_ITEM.get());
+                        output.accept(CentreAirConditionOutside_ITEM.get());
                     })
                     .build()
     );
@@ -187,13 +216,23 @@ public class ModRegistry {
                     })
                     .build()
     );
-    public static final RegistryObject<CreativeModeTab> POST = TABS.register(
+    public static final RegistryObject<CreativeModeTab> posts = TABS.register(
             "posts",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 4)
                     .title(Component.translatable("item_group.citymod.posts"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(POST_1691_ITEM.get()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        output.accept(POST_1691_ITEM.get());
+                        output.accept(POST_1692_ITEM.get());
+                        output.accept(POST_1693_ITEM.get());
+                        output.accept(POST_1694_ITEM.get());
+                        output.accept(POST_1695_ITEM.get());
+                        output.accept(POST_1696_ITEM.get());
+                        output.accept(POST_1697_ITEM.get());
+                        output.accept(POST_1698_ITEM.get());
+                        output.accept(POST_431_ITEM.get());
+                        output.accept(POST_432_ITEM.get());
+                        output.accept(POST_433_ITEM.get());
                     })
                     .build()
     );

@@ -50,5 +50,28 @@ public class ApplianceShapes {
             box(3, 0, -5, 13, 32, 21),
             box(3, 0, -5, 13, 32, 21)
     );
+    public static final Map<Direction, VoxelShape> AC_OUT_05 = createShape(
+            box(-5, 0, 3, 21, 20, 13),
+            box(-5, 0, 3, 21, 20, 13),
+            box(3, 0, -5, 13, 20, 21),
+            box(3, 0, -5, 13, 20, 21)
+    );
+    public static final Map<Direction, VoxelShape> AC_OUT_06 = createShape(
+            box(-5, 0, 3, 21, 18, 13),
+            box(-5, 0, 3, 21, 18, 13),
+            box(3, 0, -5, 13, 18, 21),
+            box(3, 0, -5, 13, 18, 21)
+    );
+    public static final Map<Direction, VoxelShape> BIG_AC_OUT_HD = createShape(
+            box(-8, -16, 2, 23, 31, 16),
+            box(-7, -16, 0, 24, 31, 14),
+            box(2, -16, -7, 16, 31, 24),
+            box(0, -16, -8, 14, 31, 23)
+    );
+    public static final Map<Direction, VoxelShape> CentreAirConditionOutside = createShape(
+            box(-8, -16, -8, 24, 32, 24),
+            box(-8, -16, -8, 24, 32, 24),
+            box(-8, -16, -8, 24, 32, 24),
+            box(-8, -16, -8, 24, 32, 24)
+    );
 }
-;

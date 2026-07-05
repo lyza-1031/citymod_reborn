@@ -1,8 +1,5 @@
-package com.xbzstudio;
+package com.xbzstudio.block;
 
-import com.xbzstudio.block.BlockShapes;
-import com.xbzstudio.block.ApplianceShapes;
-import com.xbzstudio.block.GenericSignBlock;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;

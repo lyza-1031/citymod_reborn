@@ -31,7 +31,7 @@ public class GenericSignBlock extends Block implements SimpleWaterloggedBlock {
         super(BlockBehaviour.Properties.of()
                 .mapColor(MapColor.STONE)
                 .sound(SoundType.STONE)
-                .strength(1f, 10f)
+                .strength(1f, 1f)
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)

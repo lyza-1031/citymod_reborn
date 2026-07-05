@@ -1,13 +1,14 @@
 package com.xbzstudio;
 
+import com.xbzstudio.block.ApplianceBlocks;
+import com.xbzstudio.block.ModBlocks;
+import com.xbzstudio.block.PostBlocks;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 
 public class ModCreativeTabs {
@@ -81,6 +82,10 @@ public class ModCreativeTabs {
                         output.accept(ApplianceBlocks.AC_OUT_02_ITEM.get());
                         output.accept(ApplianceBlocks.AC_OUT_03_ITEM.get());
                         output.accept(ApplianceBlocks.AC_OUT_04_ITEM.get());
+                        output.accept(ApplianceBlocks.AC_OUT_05_ITEM.get());
+                        output.accept(ApplianceBlocks.AC_OUT_06_ITEM.get());
+                        output.accept(ApplianceBlocks.BIG_AC_OUT_HD_ITEM.get());
+                        output.accept(ApplianceBlocks.CentreAirConditionOutside_ITEM.get());
                     })
                     .build()
     );
@@ -98,9 +103,19 @@ public class ModCreativeTabs {
             "posts",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 4)
                     .title(Component.translatable("item_group.citymod.posts"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(PostBlocks.Post1691_ITEM.get()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        output.accept(PostBlocks.Post1691_ITEM.get());
+                        output.accept(PostBlocks.Post1692_ITEM.get());
+                        output.accept(PostBlocks.Post1693_ITEM.get());
+                        output.accept(PostBlocks.Post1694_ITEM.get());
+                        output.accept(PostBlocks.Post1695_ITEM.get());
+                        output.accept(PostBlocks.Post1696_ITEM.get());
+                        output.accept(PostBlocks.Post1697_ITEM.get());
+                        output.accept(PostBlocks.Post1698_ITEM.get());
+                        output.accept(PostBlocks.Post431_ITEM.get());
+                        output.accept(PostBlocks.Post432_ITEM.get());
+                        output.accept(PostBlocks.Post433_ITEM.get());
                     })
                     .build()
     );

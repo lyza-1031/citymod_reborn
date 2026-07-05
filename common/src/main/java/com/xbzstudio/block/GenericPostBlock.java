@@ -20,16 +20,16 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.Map;
 
-public class GenericMetalBlock extends Block implements SimpleWaterloggedBlock {
+public class GenericPostBlock extends Block implements SimpleWaterloggedBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     private final Map<Direction, VoxelShape> shapes;
 
-    public GenericMetalBlock(Map<Direction, VoxelShape> shapes) {
+    public GenericPostBlock(Map<Direction, VoxelShape> shapes) {
         super(Properties.of()
                 .mapColor(MapColor.STONE)
-                .sound(SoundType.METAL)
+                .sound(SoundType.WOOL)
                 .strength(1f, 1f)
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
