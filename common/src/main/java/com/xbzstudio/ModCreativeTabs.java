@@ -7,6 +7,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 
 public class ModCreativeTabs {
@@ -17,35 +18,47 @@ public class ModCreativeTabs {
             "traffic",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
                     .title(Component.translatable("item_group.citymod.traffic"))
-                    .icon(() -> new ItemStack(Items.WATER_BUCKET))
+                    .icon(() -> new ItemStack(ModBlocks.TRAFFIC_SIGN.get().asItem()))
                     .displayItems((params, output) -> {
-                        output.accept(ModBlocks.EXPR_1.get());
-                        output.accept(ModBlocks.EXPR_2.get());
-                        output.accept(ModBlocks.EXPR_3.get());
-                        output.accept(ModBlocks.EXPR_4.get());
-                        output.accept(ModBlocks.EXPR_5.get());
-                        output.accept(ModBlocks.EXPR_5a.get());
-                        output.accept(ModBlocks.EXPR_5b.get());
-                        output.accept(ModBlocks.EXPR_5c.get());
-                        output.accept(ModBlocks.EXPR_5_d.get());
-                        output.accept(ModBlocks.EXPR_5_e.get());
-                        output.accept(ModBlocks.EXPR_5_f.get());
-                        output.accept(ModBlocks.SERVICE_AREA_SIGN.get());
-                        output.accept(ModBlocks.OVERPASS_SIGN.get());
-                        output.accept(ModBlocks.OVERPASS_SIGN_2.get());
-                        output.accept(ModBlocks.OVERPASS_SIGN_3.get());
-                        output.accept(ModBlocks.OVER_PASS_SIGN_4.get());
-                        output.accept(ModBlocks.ROAD_6.get());
-                        output.accept(ModBlocks.ROAD_11.get());
-                        output.accept(ModBlocks.EXPR_SIGN_LARGE.get());
-                        output.accept(ModBlocks.EXPRESSWAY_EXIT_SIGN.get());
-                        output.accept(ModBlocks.EXPR_T_IPS.get());
-                        output.accept(ModBlocks.TRAFFIC_SIGN.get());
-                        output.accept(ModBlocks.TRAFFIC_SIGN_L.get());
-                        output.accept(ModBlocks.TRAFFIC_SIGN_R.get());
-                        output.accept(ModBlocks.TRAFFIC_SIGN_T.get());
+                        // 所有 Block.get() 后面加 .asItem()
+                        output.accept(ModBlocks.EXPR_1.get().asItem());
+                        output.accept(ModBlocks.EXPR_2.get().asItem());
+                        output.accept(ModBlocks.EXPR_3.get().asItem());
+                        output.accept(ModBlocks.EXPR_4.get().asItem());
+                        output.accept(ModBlocks.EXPR_5.get().asItem());
+                        output.accept(ModBlocks.EXPR_5a.get().asItem());
+                        output.accept(ModBlocks.EXPR_5b.get().asItem());
+                        output.accept(ModBlocks.EXPR_5c.get().asItem());
+                        output.accept(ModBlocks.EXPR_5_d.get().asItem());
+                        output.accept(ModBlocks.EXPR_5_e.get().asItem());
+                        output.accept(ModBlocks.EXPR_5_f.get().asItem());
+                        output.accept(ModBlocks.SERVICE_AREA_SIGN.get().asItem());
+                        output.accept(ModBlocks.OVERPASS_SIGN.get().asItem());
+                        output.accept(ModBlocks.OVERPASS_SIGN_2.get().asItem());
+                        output.accept(ModBlocks.OVERPASS_SIGN_3.get().asItem());
+                        output.accept(ModBlocks.OVER_PASS_SIGN_4.get().asItem());
+                        output.accept(ModBlocks.ROAD_6.get().asItem());
+                        output.accept(ModBlocks.ROAD_11.get().asItem());
+                        output.accept(ModBlocks.EXPR_SIGN_LARGE.get().asItem());
+                        output.accept(ModBlocks.EXPRESSWAY_EXIT_SIGN.get().asItem());
+                        output.accept(ModBlocks.EXPR_T_IPS.get().asItem());
+                        output.accept(ModBlocks.TRAFFIC_SIGN.get().asItem());
+                        output.accept(ModBlocks.TRAFFIC_SIGN_L.get().asItem());
+                        output.accept(ModBlocks.TRAFFIC_SIGN_R.get().asItem());
+                        output.accept(ModBlocks.TRAFFIC_SIGN_T.get().asItem());
+                        output.accept(ModBlocks.TRAFFIC_SIGN_1.get().asItem());
+                        output.accept(ModBlocks.TRAFFIC_SIGN_2.get().asItem());
+                        output.accept(ModBlocks.ROAD_1.get().asItem());
+                        output.accept(ModBlocks.ROAD_2.get().asItem());
+                        output.accept(ModBlocks.ROAD_3.get().asItem());
+                        output.accept(ModBlocks.ROAD_4.get().asItem());
+                        output.accept(ModBlocks.ROAD_5.get().asItem());
+                        output.accept(ModBlocks.OVER_PASS_5.get().asItem());
+                        output.accept(ModBlocks.ROAD_12.get().asItem());
+                        output.accept(ModBlocks.YELLOW_SIGN_2.get().asItem());
+                        output.accept(ModBlocks.ROADSCREEN.get().asItem());
                     })
-            .build()
+                    .build()
     );
     public static final RegistrySupplier<CreativeModeTab> CITY = TABS.register(
             "city",
@@ -61,9 +74,13 @@ public class ModCreativeTabs {
             "household_appliances",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 2)
                     .title(Component.translatable("item_group.citymod.household_appliances"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(ApplianceBlocks.AC_OUT_03_ITEM.get()))
+
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        output.accept(ApplianceBlocks.AC_OUT_01_ITEM.get());
+                        output.accept(ApplianceBlocks.AC_OUT_02_ITEM.get());
+                        output.accept(ApplianceBlocks.AC_OUT_03_ITEM.get());
+                        output.accept(ApplianceBlocks.AC_OUT_04_ITEM.get());
                     })
                     .build()
     );

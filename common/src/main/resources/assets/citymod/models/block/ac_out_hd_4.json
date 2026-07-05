@@ -1,5 +1,5 @@
 {
-  "parent": "citymod:custom/ac_out_04json",
+  "parent": "citymod:custom/ac_out_04",
   "textures": {
     "all": "citymod:block/ac_out_03",
     "particle": "citymod:block/ac_out_03",

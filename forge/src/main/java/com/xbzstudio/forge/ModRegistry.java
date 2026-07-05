@@ -1,5 +1,7 @@
 package com.xbzstudio.forge;
 
+import com.xbzstudio.ApplianceBlocks;
+import com.xbzstudio.ModBlocks;
 import com.xbzstudio.block.*;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
@@ -9,6 +11,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -50,7 +53,21 @@ public class ModRegistry {
     public static final RegistryObject<Block> TRAFFIC_SIGN_L = registerSign("traffic_sign_l", BlockShapes.TRAFFIC_SIGN_L);
     public static final RegistryObject<Block> TRAFFIC_SIGN_R = registerSign("traffic_sign_r", BlockShapes.TRAFFIC_SIGN_R);
     public static final RegistryObject<Block> TRAFFIC_SIGN_T = registerSign("traffic_sign_t", BlockShapes.TRAFFIC_SIGN_T);
-
+    public static final RegistryObject<Block> TRAFFIC_SIGN_1 = registerSign("traffic_sign_1", BlockShapes.TRAFFIC_SIGN_1);
+    public static final RegistryObject<Block> TRAFFIC_SIGN_2 = registerSign("traffic_sign_2", BlockShapes.TRAFFIC_SIGN_2);
+    public static final RegistryObject<Block> ROAD_1 = registerSign("road_1", BlockShapes.ROAD_1);
+    public static final RegistryObject<Block> ROAD_2 = registerSign("road_2", BlockShapes.ROAD_2);
+    public static final RegistryObject<Block> ROAD_3 = registerSign("road_3", BlockShapes.ROAD_3);
+    public static final RegistryObject<Block> ROAD_4 = registerSign("road_4", BlockShapes.ROAD_4);
+    public static final RegistryObject<Block> ROAD_5 = registerSign("road_5", BlockShapes.ROAD_5);
+    public static final RegistryObject<Block> ROAD_12 = registerSign("road_12", BlockShapes.ROAD_12);
+    public static final RegistryObject<Block> OVER_PASS_5 = registerSign("over_pass_5", BlockShapes.OVER_PASS_5);
+    public static final RegistryObject<Block> YELLOW_SIGN_2 = registerSign("yellow_sign_2", BlockShapes.YELLOW_SIGN_2);
+    public static final RegistryObject<Block> ROADSCREEN = registerSign("road_screen", BlockShapes.ROADSCREEN);
+    public static final RegistryObject<Block> AC_OUT_01 = registerAppliance("ac_out_hd_1", ApplianceShapes.AC_OUT_01);
+    public static final RegistryObject<Block> AC_OUT_02 = registerAppliance("ac_out_hd_2", ApplianceShapes.AC_OUT_02);
+    public static final RegistryObject<Block> AC_OUT_03 = registerAppliance("ac_out_hd_3", ApplianceShapes.AC_OUT_03);
+    public static final RegistryObject<Block> AC_OUT_04 = registerAppliance("ac_out_hd_4", ApplianceShapes.AC_OUT_04);
     // ==================== BlockItems ====================
     public static final RegistryObject<Item> EXPR_1_ITEM = registerItem("expr_1", EXPR_1);
     public static final RegistryObject<Item> EXPR_2_ITEM = registerItem("expr_2", EXPR_2);
@@ -77,38 +94,63 @@ public class ModRegistry {
     public static final RegistryObject<Item> TRAFFIC_SIGN_L_ITEM = registerItem("traffic_sign_l", TRAFFIC_SIGN_L);
     public static final RegistryObject<Item> TRAFFIC_SIGN_R_ITEM = registerItem("traffic_sign_r", TRAFFIC_SIGN_R);
     public static final RegistryObject<Item> TRAFFIC_SIGN_T_ITEM = registerItem("traffic_sign_t", TRAFFIC_SIGN_T);
-
+    public static final RegistryObject<Item> TRAFFIC_SIGN_1_ITEM = registerItem("traffic_sign_1", TRAFFIC_SIGN_1);
+    public static final RegistryObject<Item> TRAFFIC_SIGN_2_ITEM = registerItem("traffic_sign_2", TRAFFIC_SIGN_2);
+    public static final RegistryObject<Item> ROAD_1_ITEM = registerItem("road_1", ROAD_1);
+    public static final RegistryObject<Item> ROAD_2_ITEM = registerItem("road_2", ROAD_2);
+    public static final RegistryObject<Item> ROAD_3_ITEM = registerItem("road_3", ROAD_3);
+    public static final RegistryObject<Item> ROAD_4_ITEM = registerItem("road_4", ROAD_4);
+    public static final RegistryObject<Item> ROAD_5_ITEM = registerItem("road_5", ROAD_5);
+    public static final RegistryObject<Item> ROAD_12_ITEM = registerItem("road_12", ROAD_12);
+    public static final RegistryObject<Item> OVER_PASS_5_ITEM = registerItem("over_pass_5", OVER_PASS_5);
+    public static final RegistryObject<Item> YELLOW_SIGN_2_ITEM = registerItem("yellow_sign_2", YELLOW_SIGN_2);
+    public static final RegistryObject<Item> ROADSCREEN_ITEM = registerItem("road_screen", ROADSCREEN);
+    public static final RegistryObject<Item> AC_OUT_01_ITEM = registerItem("ac_out_hd_1", AC_OUT_01);
+    public static final RegistryObject<Item> AC_OUT_02_ITEM = registerItem("ac_out_hd_2", AC_OUT_02);
+    public static final RegistryObject<Item> AC_OUT_03_ITEM = registerItem("ac_out_hd_3", AC_OUT_03);
+    public static final RegistryObject<Item> AC_OUT_04_ITEM = registerItem("ac_out_hd_4", AC_OUT_04);
     // ==================== 创造标签页 ====================
     public static final RegistryObject<CreativeModeTab> TRAFFIC = TABS.register("traffic",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("item_group.citymod.traffic"))
-                    .icon(() -> new ItemStack(Items.WATER_BUCKET))
+                    .icon(() -> new ItemStack(TRAFFIC_SIGN_ITEM.get()))
                     .displayItems((params, output) -> {
-                        output.accept(EXPR_1.get());
-                        output.accept(EXPR_2.get());
-                        output.accept(EXPR_3.get());
-                        output.accept(EXPR_4.get());
-                        output.accept(EXPR_5.get());
-                        output.accept(EXPR_5a.get());
-                        output.accept(EXPR_5b.get());
-                        output.accept(EXPR_5c.get());
-                        output.accept(EXPR_5_d.get());
-                        output.accept(EXPR_5_e.get());
-                        output.accept(EXPR_5_f.get());
-                        output.accept(SERVICE_AREA_SIGN.get());
-                        output.accept(OVERPASS_SIGN.get());
-                        output.accept(OVERPASS_SIGN_2.get());
-                        output.accept(OVERPASS_SIGN_3.get());
-                        output.accept(OVER_PASS_SIGN_4.get());
-                        output.accept(ROAD_6.get());
-                        output.accept(ROAD_11.get());
-                        output.accept(EXPR_SIGN_LARGE.get());
-                        output.accept(EXPRESSWAY_EXIT_SIGN.get());
-                        output.accept(EXPR_T_IPS.get());
-                        output.accept(TRAFFIC_SIGN.get());
-                        output.accept(TRAFFIC_SIGN_L.get());
-                        output.accept(TRAFFIC_SIGN_R.get());
-                        output.accept(TRAFFIC_SIGN_T.get());
+                        output.accept(EXPR_1.get().asItem());
+                        output.accept(EXPR_2.get().asItem());
+                        output.accept(EXPR_3.get().asItem());
+                        output.accept(EXPR_4.get().asItem());
+                        output.accept(EXPR_5.get().asItem());
+                        output.accept(EXPR_5a.get().asItem());
+                        output.accept(EXPR_5b.get().asItem());
+                        output.accept(EXPR_5c.get().asItem());
+                        output.accept(EXPR_5_d.get().asItem());
+                        output.accept(EXPR_5_e.get().asItem());
+                        output.accept(EXPR_5_f.get().asItem());
+                        output.accept(SERVICE_AREA_SIGN.get().asItem());
+                        output.accept(OVERPASS_SIGN.get().asItem());
+                        output.accept(OVERPASS_SIGN_2.get().asItem());
+                        output.accept(OVERPASS_SIGN_3.get().asItem());
+                        output.accept(OVER_PASS_SIGN_4.get().asItem());
+                        output.accept(ROAD_6.get().asItem());
+                        output.accept(ROAD_11.get().asItem());
+                        output.accept(EXPR_SIGN_LARGE.get().asItem());
+                        output.accept(EXPRESSWAY_EXIT_SIGN.get().asItem());
+                        output.accept(EXPR_T_IPS.get().asItem());
+                        output.accept(TRAFFIC_SIGN.get().asItem());
+                        output.accept(TRAFFIC_SIGN_L.get().asItem());
+                        output.accept(TRAFFIC_SIGN_R.get().asItem());
+                        output.accept(TRAFFIC_SIGN_T.get().asItem());
+                        output.accept(TRAFFIC_SIGN_1.get().asItem());
+                        output.accept(TRAFFIC_SIGN_2.get().asItem());
+                        output.accept(ROAD_1.get().asItem());
+                        output.accept(ROAD_2.get().asItem());
+                        output.accept(ROAD_3.get().asItem());
+                        output.accept(ROAD_4.get().asItem());
+                        output.accept(ROAD_5.get().asItem());
+                        output.accept(ROAD_12.get().asItem());
+                        output.accept(OVER_PASS_5.get().asItem());
+                        output.accept(YELLOW_SIGN_2.get().asItem());
+                        output.accept(ROADSCREEN.get().asItem());
                     })
                     .build()
     );
@@ -126,9 +168,12 @@ public class ModRegistry {
             "household_appliances",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 2)
                     .title(Component.translatable("item_group.citymod.household_appliances"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(AC_OUT_03_ITEM.get()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        output.accept(AC_OUT_01_ITEM.get());
+                        output.accept(AC_OUT_02_ITEM.get());
+                        output.accept(AC_OUT_03_ITEM.get());
+                        output.accept(AC_OUT_04_ITEM.get());
                     })
                     .build()
     );
@@ -185,6 +230,10 @@ public class ModRegistry {
     // ==================== 快捷方法 ====================
     private static RegistryObject<Block> registerSign(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericSignBlock(shape));
+    }
+
+    private static RegistryObject<Block> registerAppliance(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
+        return BLOCKS.register(id, () -> new GenericMetalBlock(shape));
     }
 
     private static RegistryObject<Item> registerItem(String id, RegistryObject<Block> block) {

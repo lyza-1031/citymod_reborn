@@ -9,5 +9,7 @@ public class CityMod {
         ModBlocks.BLOCKS.register();
         ModBlocks.ITEMS.register();
         ModCreativeTabs.TABS.register();
+        ApplianceBlocks.BLOCKS.register();
+        ApplianceBlocks.ITEMS.register();
     }
 }

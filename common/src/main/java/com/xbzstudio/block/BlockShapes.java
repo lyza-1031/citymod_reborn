@@ -124,6 +124,42 @@ public class BlockShapes {
             box(0, 0, -16, 1, 32, 32),
             box(15, 0, -16, 16, 32, 32)
     );
+    public static final Map<Direction, VoxelShape> OVER_PASS_5 = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> ROAD_1 = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> ROAD_2 = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> ROAD_3 = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> ROAD_4 = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> ROAD_5 = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
     public static final Map<Direction, VoxelShape> ROAD_6 = createShape(
             box(-16, 0, 0, 32, 32, 1),
             box(-16, 0, 15, 32, 32, 16),
@@ -131,6 +167,12 @@ public class BlockShapes {
             box(15, 0, -16, 16, 32, 32)
     );
     public static final Map<Direction, VoxelShape> ROAD_11 = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> ROAD_12 = createShape(
             box(-16, 0, 0, 32, 32, 1),
             box(-16, 0, 15, 32, 32, 16),
             box(0, 0, -16, 1, 32, 32),
@@ -202,4 +244,29 @@ public class BlockShapes {
             box(0, 0, -16, 1, 32, 32),
             box(15, 0, -16, 16, 32, 32)
     );
+    public static final Map<Direction, VoxelShape> TRAFFIC_SIGN_1 = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> TRAFFIC_SIGN_2 = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> YELLOW_SIGN_2 = createShape(
+            box(-16, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 32, 32, 16),
+            box(0, 0, -16, 1, 32, 32),
+            box(15, 0, -16, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> ROADSCREEN = createShape(
+            box(-16, 0, 0, 32, 32, 6),
+            box(-16, 0, 10, 32, 32, 16),
+            box(0, 0, -16, 6, 32, 32),
+            box(10, 0, -16, 16, 32, 32)
+    );
 }
+;

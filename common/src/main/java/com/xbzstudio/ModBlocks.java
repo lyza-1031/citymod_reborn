@@ -1,6 +1,7 @@
 package com.xbzstudio;
 
 import com.xbzstudio.block.BlockShapes;
+import com.xbzstudio.block.ApplianceShapes;
 import com.xbzstudio.block.GenericSignBlock;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
@@ -32,6 +33,7 @@ public class ModBlocks {
     public static final RegistrySupplier<Block> OVERPASS_SIGN_2 = registerSign("overpass_sign_2", BlockShapes.OVERPASS_SIGN_2);
     public static final RegistrySupplier<Block> OVERPASS_SIGN_3 = registerSign("overpass_sign_3", BlockShapes.OVERPASS_SIGN_3);
     public static final RegistrySupplier<Block> OVER_PASS_SIGN_4 = registerSign("over_pass_sign_4", BlockShapes.OVER_PASS_SIGN_4);
+    public static final RegistrySupplier<Block> OVER_PASS_5 = registerSign("over_pass_5", BlockShapes.OVER_PASS_5);
     public static final RegistrySupplier<Block> ROAD_6 = registerSign("road_6", BlockShapes.ROAD_6);
     public static final RegistrySupplier<Block> ROAD_11 = registerSign("road_11", BlockShapes.ROAD_11);
     public static final RegistrySupplier<Block> EXPR_SIGN_LARGE = registerSign("expr_sign_large", BlockShapes.EXPR_SIGN_LARGE);
@@ -41,7 +43,16 @@ public class ModBlocks {
     public static final RegistrySupplier<Block> TRAFFIC_SIGN_L = registerSign("traffic_sign_l", BlockShapes.TRAFFIC_SIGN_L);
     public static final RegistrySupplier<Block> TRAFFIC_SIGN_R = registerSign("traffic_sign_r", BlockShapes.TRAFFIC_SIGN_R);
     public static final RegistrySupplier<Block> TRAFFIC_SIGN_T = registerSign("traffic_sign_t", BlockShapes.TRAFFIC_SIGN_T);
-
+    public static final RegistrySupplier<Block> TRAFFIC_SIGN_1 = registerSign("traffic_sign_1", BlockShapes.TRAFFIC_SIGN_1);
+    public static final RegistrySupplier<Block> TRAFFIC_SIGN_2 = registerSign("traffic_sign_2", BlockShapes.TRAFFIC_SIGN_2);
+    public static final RegistrySupplier<Block> ROAD_1 = registerSign("road_1", BlockShapes.ROAD_1);
+    public static final RegistrySupplier<Block> ROAD_2 = registerSign("road_2", BlockShapes.ROAD_2);
+    public static final RegistrySupplier<Block> ROAD_3 = registerSign("road_3", BlockShapes.ROAD_3);
+    public static final RegistrySupplier<Block> ROAD_4 = registerSign("road_4", BlockShapes.ROAD_4);
+    public static final RegistrySupplier<Block> ROAD_5 = registerSign("road_5", BlockShapes.ROAD_5);
+    public static final RegistrySupplier<Block> ROAD_12 = registerSign("road_12", BlockShapes.ROAD_12);
+    public static final RegistrySupplier<Block> YELLOW_SIGN_2 = registerSign("yellow_sign_2", BlockShapes.YELLOW_SIGN_2);
+    public static final RegistrySupplier<Block> ROADSCREEN = registerSign("road_screen", BlockShapes.ROADSCREEN);
     // 路牌注册快捷方法
     private static RegistrySupplier<Block> registerSign(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericSignBlock(shape));
