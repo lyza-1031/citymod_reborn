@@ -14,26 +14,26 @@ public class ApplianceBlocks {
             DeferredRegister.create("citymod", Registries.ITEM);
 
     // ==================== 方块 ====================
-    public static final RegistrySupplier<Block> AC_OUT_01 = BLOCKS.register("ac_out_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
-    public static final RegistrySupplier<Block> AC_OUT_02 = BLOCKS.register("ac_out_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
-    public static final RegistrySupplier<Block> AC_OUT_03 = BLOCKS.register("ac_out_hd_3", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_03));
-    public static final RegistrySupplier<Block> AC_OUT_04 = BLOCKS.register("ac_out_hd_4", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_04));
-    public static final RegistrySupplier<Block> AC_OUT_05 = BLOCKS.register("ac_out_hd_5", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_05));
-    public static final RegistrySupplier<Block> AC_OUT_06 = BLOCKS.register("ac_out_hd_6", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_06));
-    public static final RegistrySupplier<Block> BIG_AC_OUT_HD = BLOCKS.register("big_ac_out_hd",  () -> new GenericMetalBlock(ApplianceShapes.BIG_AC_OUT_HD));
-    public static final RegistrySupplier<Block> CentreAirConditionOutside = BLOCKS.register("centre_air_condition_outside", () -> new GenericMetalBlock(ApplianceShapes.CentreAirConditionOutside));
-    // ==================== BlockItem ====================
-    public static final RegistrySupplier<Item> AC_OUT_01_ITEM = ITEMS.register("ac_out_hd_1", () -> new BlockItem(AC_OUT_01.get(), new Item.Properties()));
-    public static final RegistrySupplier<Item> AC_OUT_02_ITEM = ITEMS.register("ac_out_hd_2", () -> new BlockItem(AC_OUT_02.get(), new Item.Properties()));
-    public static final RegistrySupplier<Item> AC_OUT_03_ITEM = ITEMS.register("ac_out_hd_3", () -> new BlockItem(AC_OUT_03.get(), new Item.Properties()));
-    public static final RegistrySupplier<Item> AC_OUT_04_ITEM = ITEMS.register("ac_out_hd_4", () -> new BlockItem(AC_OUT_04.get(), new Item.Properties()));
-    public static final RegistrySupplier<Item> AC_OUT_05_ITEM = ITEMS.register("ac_out_hd_5", () -> new BlockItem(AC_OUT_05.get(), new Item.Properties()));
-    public static final RegistrySupplier<Item> AC_OUT_06_ITEM = ITEMS.register("ac_out_hd_6", () -> new BlockItem(AC_OUT_06.get(), new Item.Properties()));
-    public static final RegistrySupplier<Item> BIG_AC_OUT_HD_ITEM = ITEMS.register("big_ac_out_hd", () -> new BlockItem(BIG_AC_OUT_HD.get(), new Item.Properties()));
-    public static final RegistrySupplier<Item> CentreAirConditionOutside_ITEM = ITEMS.register("centre_air_condition_outside", () -> new BlockItem(CentreAirConditionOutside.get(), new Item.Properties()));
+    public static final RegistrySupplier<Block> AC_OUT_01 = registerAppliances("ac_out_hd_1", ApplianceShapes.AC_OUT_01);
+    public static final RegistrySupplier<Block> AC_OUT_02 = registerAppliances("ac_out_hd_2", ApplianceShapes.AC_OUT_02);
+    public static final RegistrySupplier<Block> AC_OUT_03 = registerAppliances("ac_out_hd_3", ApplianceShapes.AC_OUT_03);
+    public static final RegistrySupplier<Block> AC_OUT_04 = registerAppliances("ac_out_hd_4", ApplianceShapes.AC_OUT_04);
+    public static final RegistrySupplier<Block> AC_OUT_05 = registerAppliances("ac_out_hd_5", ApplianceShapes.AC_OUT_05);
+    public static final RegistrySupplier<Block> AC_OUT_06 = registerAppliances("ac_out_hd_6", ApplianceShapes.AC_OUT_06);
+    public static final RegistrySupplier<Block> BIG_AC_OUT_HD = registerAppliances("big_ac_out_hd",  ApplianceShapes.BIG_AC_OUT_HD);
+    public static final RegistrySupplier<Block> CentreAirConditionOutside = registerAppliances("centre_air_condition_outside", ApplianceShapes.CentreAirConditionOutside);
+    public static final RegistrySupplier<Block> AC_01 = registerAppliances("air_condition_hd_1",ApplianceShapes.AC_01);
+    public static final RegistrySupplier<Block> AC_02 = registerAppliances("air_condition_hd_2",ApplianceShapes.AC_02);
+    public static final RegistrySupplier<Block> AC_03 = registerAppliances("airconditionhd_3",ApplianceShapes.AC_03);
+    public static final RegistrySupplier<Block> AC_04 = registerAppliances("airconditionhd_4",ApplianceShapes.AC_04);
 
-
+    private static RegistrySupplier<Block> registerAppliances(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
+        return BLOCKS.register(id, () -> new GenericMetalBlock(shape));
+    }
     public static void init() {
-        // BlockItem 已注册，这里空着
+        for (RegistrySupplier<Block> block : BLOCKS) {
+            ITEMS.register(block.getId().getPath(),
+                    () -> new BlockItem(block.get(), new Item.Properties()));
+        }
     }
 }

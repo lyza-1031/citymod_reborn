@@ -21,7 +21,6 @@ public class ModCreativeTabs {
                     .title(Component.translatable("item_group.citymod.traffic"))
                     .icon(() -> new ItemStack(ModBlocks.TRAFFIC_SIGN.get().asItem()))
                     .displayItems((params, output) -> {
-                        // 所有 Block.get() 后面加 .asItem()
                         output.accept(ModBlocks.EXPR_1.get().asItem());
                         output.accept(ModBlocks.EXPR_2.get().asItem());
                         output.accept(ModBlocks.EXPR_3.get().asItem());
@@ -75,17 +74,21 @@ public class ModCreativeTabs {
             "household_appliances",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 2)
                     .title(Component.translatable("item_group.citymod.household_appliances"))
-                    .icon(() -> new ItemStack(ApplianceBlocks.AC_OUT_03_ITEM.get()))
+                    .icon(() -> new ItemStack(ApplianceBlocks.AC_OUT_03.get().asItem()))
 
                     .displayItems((params, output) -> {
-                        output.accept(ApplianceBlocks.AC_OUT_01_ITEM.get());
-                        output.accept(ApplianceBlocks.AC_OUT_02_ITEM.get());
-                        output.accept(ApplianceBlocks.AC_OUT_03_ITEM.get());
-                        output.accept(ApplianceBlocks.AC_OUT_04_ITEM.get());
-                        output.accept(ApplianceBlocks.AC_OUT_05_ITEM.get());
-                        output.accept(ApplianceBlocks.AC_OUT_06_ITEM.get());
-                        output.accept(ApplianceBlocks.BIG_AC_OUT_HD_ITEM.get());
-                        output.accept(ApplianceBlocks.CentreAirConditionOutside_ITEM.get());
+                        output.accept(ApplianceBlocks.AC_OUT_01.get().asItem());
+                        output.accept(ApplianceBlocks.AC_OUT_02.get().asItem());
+                        output.accept(ApplianceBlocks.AC_OUT_03.get().asItem());
+                        output.accept(ApplianceBlocks.AC_OUT_04.get().asItem());
+                        output.accept(ApplianceBlocks.AC_OUT_05.get().asItem());
+                        output.accept(ApplianceBlocks.AC_OUT_06.get().asItem());
+                        output.accept(ApplianceBlocks.BIG_AC_OUT_HD.get().asItem());
+                        output.accept(ApplianceBlocks.CentreAirConditionOutside.get().asItem());
+                        output.accept(ApplianceBlocks.AC_01.get().asItem());
+                        output.accept(ApplianceBlocks.AC_02.get().asItem());
+                        output.accept(ApplianceBlocks.AC_03.get().asItem());
+                        output.accept(ApplianceBlocks.AC_04.get().asItem());
                     })
                     .build()
     );
@@ -103,19 +106,19 @@ public class ModCreativeTabs {
             "posts",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 4)
                     .title(Component.translatable("item_group.citymod.posts"))
-                    .icon(() -> new ItemStack(PostBlocks.Post1691_ITEM.get()))
+                    .icon(() -> new ItemStack(PostBlocks.Post1691.get().asItem()))
                     .displayItems((params, output) -> {
-                        output.accept(PostBlocks.Post1691_ITEM.get());
-                        output.accept(PostBlocks.Post1692_ITEM.get());
-                        output.accept(PostBlocks.Post1693_ITEM.get());
-                        output.accept(PostBlocks.Post1694_ITEM.get());
-                        output.accept(PostBlocks.Post1695_ITEM.get());
-                        output.accept(PostBlocks.Post1696_ITEM.get());
-                        output.accept(PostBlocks.Post1697_ITEM.get());
-                        output.accept(PostBlocks.Post1698_ITEM.get());
-                        output.accept(PostBlocks.Post431_ITEM.get());
-                        output.accept(PostBlocks.Post432_ITEM.get());
-                        output.accept(PostBlocks.Post433_ITEM.get());
+                        output.accept(PostBlocks.Post1691.get().asItem());
+                        output.accept(PostBlocks.Post1692.get().asItem());
+                        output.accept(PostBlocks.Post1693.get().asItem());
+                        output.accept(PostBlocks.Post1694.get().asItem());
+                        output.accept(PostBlocks.Post1695.get().asItem());
+                        output.accept(PostBlocks.Post1696.get().asItem());
+                        output.accept(PostBlocks.Post1697.get().asItem());
+                        output.accept(PostBlocks.Post1698.get().asItem());
+                        output.accept(PostBlocks.Post431.get().asItem());
+                        output.accept(PostBlocks.Post432.get().asItem());
+                        output.accept(PostBlocks.Post433.get().asItem());
                     })
                     .build()
     );

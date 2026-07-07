@@ -74,4 +74,28 @@ public class ApplianceShapes {
             box(-8, -16, -8, 24, 32, 24),
             box(-8, -16, -8, 24, 32, 24)
     );
+    public static final Map<Direction, VoxelShape> AC_01 = createShape(
+            box(0, -16, 0, 16, 24, 8),
+            box(0, -16, 8, 16, 24, 16),
+            box(0, -16, 0, 8, 24, 16),
+            box(8, -16, 0, 16, 24, 16)
+    );
+    public static final Map<Direction, VoxelShape> AC_02 = createShape(
+            box(-6, 2, 0, 22, 15, 8),
+            box(-6, 2, 8, 22, 15, 16),
+            box(0, 2, -6, 8, 15, 22),
+            box(8, 2, -6, 16, 15, 22)
+    );
+    public static final Map<Direction, VoxelShape> AC_03 = createShape(
+            box(-6, 2, 0, 22, 15, 8),
+            box(-6, 2, 8, 22, 15, 16),
+            box(0, 2, -6, 8, 15, 22),
+            box(8, 2, -6, 16, 15, 22)
+    );
+    public static final Map<Direction, VoxelShape> AC_04 = createShape(
+            box(0, -16, 0, 16, 24, 8),
+            box(0, -16, 8, 16, 24, 16),
+            box(0, -16, 0, 8, 24, 16),
+            box(8, -16, 0, 16, 24, 16)
+    );
 }

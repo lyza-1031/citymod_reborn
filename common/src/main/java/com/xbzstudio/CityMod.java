@@ -10,6 +10,8 @@ public class CityMod {
     // Fabric 用这个方法
     public static void init() {
         ModBlocks.init();
+        ApplianceBlocks.init();
+        PostBlocks.init();
         ModBlocks.BLOCKS.register();
         ModBlocks.ITEMS.register();
         ModCreativeTabs.TABS.register();
