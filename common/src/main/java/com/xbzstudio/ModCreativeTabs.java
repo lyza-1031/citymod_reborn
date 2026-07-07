@@ -1,6 +1,7 @@
 package com.xbzstudio;
 
 import com.xbzstudio.block.ApplianceBlocks;
+import com.xbzstudio.block.CityBlocks;
 import com.xbzstudio.block.ModBlocks;
 import com.xbzstudio.block.PostBlocks;
 import dev.architectury.registry.registries.DeferredRegister;
@@ -64,9 +65,17 @@ public class ModCreativeTabs {
             "city",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1)
                     .title(Component.translatable("item_group.citymod.urban_facilities"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(CityBlocks.SpeedLimitSign.get().asItem()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        output.accept(CityBlocks.SpeedLimitSign4.get().asItem());
+                        output.accept(CityBlocks.SpeedLimitSign6.get().asItem());
+                        output.accept(CityBlocks.SpeedLimitSign5.get().asItem());
+                        output.accept(CityBlocks.SpeedLimitSign8.get().asItem());
+                        output.accept(CityBlocks.SpeedLimitSign7.get().asItem());
+                        output.accept(CityBlocks.SpeedLimitSign.get().asItem());
+                        output.accept(CityBlocks.SpeedLimitSign2.get().asItem());
+                        output.accept(CityBlocks.SpeedLimitSign3.get().asItem());
+
                     })
                     .build()
     );
@@ -89,6 +98,7 @@ public class ModCreativeTabs {
                         output.accept(ApplianceBlocks.AC_02.get().asItem());
                         output.accept(ApplianceBlocks.AC_03.get().asItem());
                         output.accept(ApplianceBlocks.AC_04.get().asItem());
+                        output.accept(ApplianceBlocks.OLD_AC_HD.get().asItem());
                     })
                     .build()
     );

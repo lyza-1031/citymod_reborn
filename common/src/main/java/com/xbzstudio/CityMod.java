@@ -1,6 +1,7 @@
 package com.xbzstudio;
 
 import com.xbzstudio.block.ApplianceBlocks;
+import com.xbzstudio.block.CityBlocks;
 import com.xbzstudio.block.ModBlocks;
 import com.xbzstudio.block.PostBlocks;
 
@@ -12,6 +13,7 @@ public class CityMod {
         ModBlocks.init();
         ApplianceBlocks.init();
         PostBlocks.init();
+        CityBlocks.init();
         ModBlocks.BLOCKS.register();
         ModBlocks.ITEMS.register();
         ModCreativeTabs.TABS.register();
@@ -19,5 +21,7 @@ public class CityMod {
         ApplianceBlocks.ITEMS.register();
         PostBlocks.BLOCKS.register();
         PostBlocks.ITEMS.register();
+        CityBlocks.BLOCKS.register();
+        CityBlocks.ITEMS.register();
     }
 }

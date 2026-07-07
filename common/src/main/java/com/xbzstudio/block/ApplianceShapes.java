@@ -98,4 +98,10 @@ public class ApplianceShapes {
             box(0, -16, 0, 8, 24, 16),
             box(8, -16, 0, 16, 24, 16)
     );
+    public static final Map<Direction, VoxelShape> OLD_AC_HD = createShape(
+            box(0, -16, 0, 16, 24, 8),
+            box(0, -16, 8, 16, 24, 16),
+            box(0, -16, 0, 8, 24, 16),
+            box(8, -16, 0, 16, 24, 16)
+    );
 }

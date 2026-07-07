@@ -64,7 +64,15 @@ public class ModRegistry {
     public static final RegistryObject<Block> OVER_PASS_5 = registerSign("over_pass_5", BlockShapes.OVER_PASS_5);
     public static final RegistryObject<Block> YELLOW_SIGN_2 = registerSign("yellow_sign_2", BlockShapes.YELLOW_SIGN_2);
     public static final RegistryObject<Block> ROADSCREEN = registerSign("road_screen", BlockShapes.ROADSCREEN);
-
+    // ==================== 城市 ====================
+    public static final RegistryObject<Block> SpeedLimitSign = registerAppliance("speed_limit_sign_1", CityShapes.SpeedLimitSign);
+    public static final RegistryObject<Block> SpeedLimitSign2 = registerAppliance("speed_limit_sign_2", CityShapes.SpeedLimitSign2);
+    public static final RegistryObject<Block> SpeedLimitSign3 = registerAppliance("speed_limit_sign_3", CityShapes.SpeedLimitSign3);
+    public static final RegistryObject<Block> SpeedLimitSign4 = registerAppliance("speed_limit_sign_4", CityShapes.SpeedLimitSign4);
+    public static final RegistryObject<Block> SpeedLimitSign5 = registerAppliance("speed_limit_sign_5", CityShapes.SpeedLimitSign5);
+    public static final RegistryObject<Block> SpeedLimitSign6 = registerAppliance("speed_limit_sign_6", CityShapes.SpeedLimitSign8);
+    public static final RegistryObject<Block> SpeedLimitSign7 = registerAppliance("speed_limit_sign_7", CityShapes.SpeedLimitSign7);
+    public static final RegistryObject<Block> SpeedLimitSign8 = registerAppliance("speed_limit_sign_8", CityShapes.SpeedLimitSign8);
     // ==================== 电器 ====================
     public static final RegistryObject<Block> AC_OUT_01 = registerAppliance("ac_out_hd_1", ApplianceShapes.AC_OUT_01);
     public static final RegistryObject<Block> AC_OUT_02 = registerAppliance("ac_out_hd_2", ApplianceShapes.AC_OUT_02);
@@ -123,9 +131,11 @@ public class ModRegistry {
     public static final RegistryObject<CreativeModeTab> CITY = TABS.register("city",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("item_group.citymod.urban_facilities"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(SpeedLimitSign.get().asItem()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        addAll(output,
+                               SpeedLimitSign4,SpeedLimitSign6,SpeedLimitSign5,SpeedLimitSign8,SpeedLimitSign7,SpeedLimitSign,SpeedLimitSign2,SpeedLimitSign3
+                        );
                     })
                     .build()
     );
