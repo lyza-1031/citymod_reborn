@@ -27,6 +27,7 @@ public class ApplianceBlocks {
     public static final RegistrySupplier<Block> AC_03 = registerAppliances("airconditionhd_3",ApplianceShapes.AC_03);
     public static final RegistrySupplier<Block> AC_04 = registerAppliances("airconditionhd_4",ApplianceShapes.AC_04);
     public static final RegistrySupplier<Block> OLD_AC_HD = registerAppliances("air_condition_old_hd",ApplianceShapes.OLD_AC_HD);
+    public static final RegistrySupplier<Block> CAC_HD = registerAppliances("central_ac_hd",ApplianceShapes.CAC_HD);
 
     private static RegistrySupplier<Block> registerAppliances(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));

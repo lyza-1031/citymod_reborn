@@ -4,7 +4,7 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="citymod"
-version="0.2.16.6"
+version="0.2.16.8"
 displayName="CityMod"
 mixinConfigs="citymod.mixins.json"
 displayURL="https://space.bilibili.com/493607297"
@@ -29,7 +29,12 @@ description="Use this mod to build  Better Chinese Style City"
     versionRange="[9.1.10,)"
     ordering="AFTER"
     side="BOTH"
-
+[[dependencies.citymod]]
+modId="embeddium"
+mandatory=false
+versionRange="[0.2.0,)"
+ordering="NONE"
+side="CLIENT"
 
 
 # Start of user code block dependencies configuration

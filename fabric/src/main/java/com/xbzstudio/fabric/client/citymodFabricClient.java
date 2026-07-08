@@ -9,6 +9,7 @@ import net.minecraft.client.renderer.RenderType;
 public final class citymodFabricClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        System.setProperty("fabric.texture.size.limit", "4096");
         for (var block : ApplianceBlocks.BLOCKS) {
             BlockRenderLayerMap.INSTANCE.putBlock(block.get(), RenderType.cutoutMipped());
         }

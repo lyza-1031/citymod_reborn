@@ -86,7 +86,7 @@ public class ModRegistry {
     public static final RegistryObject<Block> AC_02 = registerAppliance("air_condition_hd_2", ApplianceShapes.AC_02);
     public static final RegistryObject<Block> AC_03 = registerAppliance("airconditionhd_3", ApplianceShapes.AC_03);
     public static final RegistryObject<Block> AC_04 = registerAppliance("airconditionhd_4", ApplianceShapes.AC_04);
-
+    public static final RegistryObject<Block> CAC_HD = registerAppliance("central_ac_hd", ApplianceShapes.CAC_HD);
     // ==================== 海报 ====================
     public static final RegistryObject<Block> POST_1691 = registerSign("post_1691", PostShapes.Post1691);
     public static final RegistryObject<Block> POST_1692 = registerSign("post_1692", PostShapes.Post1692);
@@ -148,7 +148,7 @@ public class ModRegistry {
                         addAll(output,
                                 AC_OUT_01, AC_OUT_02, AC_OUT_03, AC_OUT_04,
                                 AC_OUT_05, AC_OUT_06, BIG_AC_OUT_HD, CentreAirConditionOutside,
-                                AC_01,AC_02,AC_03,AC_04
+                                AC_01,AC_02,AC_03,AC_04,CAC_HD
                         );
                     })
                     .build()

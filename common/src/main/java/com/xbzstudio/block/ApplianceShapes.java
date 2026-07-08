@@ -104,4 +104,10 @@ public class ApplianceShapes {
             box(0, -16, 0, 8, 24, 16),
             box(8, -16, 0, 16, 24, 16)
     );
+    public static final Map<Direction, VoxelShape> CAC_HD = createShape(
+            box(0, 14, 0, 16, 32, 16),
+            box(0, 14, 0, 16, 32, 16),
+            box(0, 14, 0, 16, 32, 16),
+            box(0, 14, 0, 16, 32, 16)
+    );
 }

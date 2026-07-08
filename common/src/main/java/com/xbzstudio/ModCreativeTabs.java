@@ -99,6 +99,7 @@ public class ModCreativeTabs {
                         output.accept(ApplianceBlocks.AC_03.get().asItem());
                         output.accept(ApplianceBlocks.AC_04.get().asItem());
                         output.accept(ApplianceBlocks.OLD_AC_HD.get().asItem());
+                        output.accept(ApplianceBlocks.CAC_HD.get().asItem());
                     })
                     .build()
     );

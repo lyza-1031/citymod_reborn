@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "id": "citymod",
-  "version": "0.2.16.6",
+  "version": "0.2.16.8",
   "name": "citymod:reborn",
   "description": "",
-  "authors": [""],
+  "authors": ["Lyza_1031"],
   "contact": {
-    "homepage": ""  },
+    "homepage": "https://github.com/lyza-1031/citymod_reborn"  },
   "license": "GPL-3.0",
-  "icon": "assets/citymod/icon.png",
+  "icon": "assets/citymod/textures/modlogo.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -25,7 +25,10 @@
     ,"architectury": ">=9.1.10"
     ,"fabric-api": "*"
   },
+  "recommends": {
+    "sodium": ">=0.5.0"
+  },
   "suggests": {
-    "another-mod": "*"
+    "sodium": "大幅度提升性能并能避免一些潜在的问题"
   }
 }
