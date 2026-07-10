@@ -75,6 +75,13 @@ public class ModCreativeTabs {
                         output.accept(CityBlocks.SpeedLimitSign.get().asItem());
                         output.accept(CityBlocks.SpeedLimitSign2.get().asItem());
                         output.accept(CityBlocks.SpeedLimitSign3.get().asItem());
+                        output.accept(CityBlocks.ModernFence.get().asItem());
+                        output.accept(CityBlocks.ModernFence2.get().asItem());
+                        output.accept(CityBlocks.ModernFence3.get().asItem());
+                        output.accept(CityBlocks.ModernIronFence.get().asItem());
+                        output.accept(CityBlocks.ModernIronFenceYellow.get().asItem());
+                        output.accept(CityBlocks.ModernIronFenceGreen.get().asItem());
+                        output.accept(CityBlocks.ModernIronFenceBlue.get().asItem());
 
                     })
                     .build()
@@ -100,6 +107,11 @@ public class ModCreativeTabs {
                         output.accept(ApplianceBlocks.AC_04.get().asItem());
                         output.accept(ApplianceBlocks.OLD_AC_HD.get().asItem());
                         output.accept(ApplianceBlocks.CAC_HD.get().asItem());
+                        output.accept(ApplianceBlocks.MicroWaveOven.get().asItem());
+                        output.accept(ApplianceBlocks.Fridge1.get().asItem());
+                        output.accept(ApplianceBlocks.Fridge2.get().asItem());
+                        output.accept(ApplianceBlocks.Old_Fridge.get().asItem());
+                        output.accept(ApplianceBlocks.Freezer.get().asItem());
                     })
                     .build()
     );

@@ -1,6 +1,7 @@
 package com.xbzstudio.forge;
 
 import com.xbzstudio.block.*;
+import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
@@ -73,6 +74,13 @@ public class ModRegistry {
     public static final RegistryObject<Block> SpeedLimitSign6 = registerAppliance("speed_limit_sign_6", CityShapes.SpeedLimitSign8);
     public static final RegistryObject<Block> SpeedLimitSign7 = registerAppliance("speed_limit_sign_7", CityShapes.SpeedLimitSign7);
     public static final RegistryObject<Block> SpeedLimitSign8 = registerAppliance("speed_limit_sign_8", CityShapes.SpeedLimitSign8);
+    public static final RegistryObject<Block> ModernFence = registerAppliance("modern_fence",  CityShapes.ModernFence);
+    public static final RegistryObject<Block> ModernFence2 = registerAppliance("modern_fence_2",  CityShapes.ModernFence2);
+    public static final RegistryObject<Block> ModernFence3 = registerAppliance("modern_fence_3",  CityShapes.ModernFence3);
+    public static final RegistryObject<Block> ModernIronFence = registerAppliance("modern_ironfence",  CityShapes.ModernIronFence);
+    public static final RegistryObject<Block> ModernIronFenceYellow = registerAppliance("moderniron_fence_yellow",  CityShapes.ModernIronFenceYellow);
+    public static final RegistryObject<Block> ModernIronFenceGreen = registerAppliance("moderniron_fence_green",  CityShapes.ModernIronFenceGreen);
+    public static final RegistryObject<Block> ModernIronFenceBlue = registerAppliance("moderniron_fence_blue",  CityShapes.ModernIronFenceBlue);
     // ==================== 电器 ====================
     public static final RegistryObject<Block> AC_OUT_01 = registerAppliance("ac_out_hd_1", ApplianceShapes.AC_OUT_01);
     public static final RegistryObject<Block> AC_OUT_02 = registerAppliance("ac_out_hd_2", ApplianceShapes.AC_OUT_02);
@@ -87,6 +95,11 @@ public class ModRegistry {
     public static final RegistryObject<Block> AC_03 = registerAppliance("airconditionhd_3", ApplianceShapes.AC_03);
     public static final RegistryObject<Block> AC_04 = registerAppliance("airconditionhd_4", ApplianceShapes.AC_04);
     public static final RegistryObject<Block> CAC_HD = registerAppliance("central_ac_hd", ApplianceShapes.CAC_HD);
+    public static final RegistryObject<Block> MicroWaveOven = registerAppliance("micro_wave_oven", ApplianceShapes.MicroWaveOven);
+    public static final RegistryObject<Block> Fridge1 = registerAppliance("fridge_1", ApplianceShapes.Fridge1);
+    public static final RegistryObject<Block> Fridge2 = registerAppliance("fridge_2", ApplianceShapes.Fridge2);
+    public static final RegistryObject<Block> Old_Fridge = registerAppliance("old_fridge", ApplianceShapes. Old_Fridge);
+    public static final RegistryObject<Block> Freezer = registerAppliance("freezer", ApplianceShapes. Freezer);
     // ==================== 海报 ====================
     public static final RegistryObject<Block> POST_1691 = registerSign("post_1691", PostShapes.Post1691);
     public static final RegistryObject<Block> POST_1692 = registerSign("post_1692", PostShapes.Post1692);
@@ -134,7 +147,8 @@ public class ModRegistry {
                     .icon(() -> new ItemStack(SpeedLimitSign.get().asItem()))
                     .displayItems((params, output) -> {
                         addAll(output,
-                               SpeedLimitSign4,SpeedLimitSign6,SpeedLimitSign5,SpeedLimitSign8,SpeedLimitSign7,SpeedLimitSign,SpeedLimitSign2,SpeedLimitSign3
+                               SpeedLimitSign4,SpeedLimitSign6,SpeedLimitSign5,SpeedLimitSign8,SpeedLimitSign7,SpeedLimitSign,SpeedLimitSign2,SpeedLimitSign3,
+                               ModernFence, ModernFence2, ModernFence3,ModernIronFence,ModernIronFenceYellow,ModernIronFenceGreen,ModernIronFenceBlue
                         );
                     })
                     .build()
@@ -148,7 +162,8 @@ public class ModRegistry {
                         addAll(output,
                                 AC_OUT_01, AC_OUT_02, AC_OUT_03, AC_OUT_04,
                                 AC_OUT_05, AC_OUT_06, BIG_AC_OUT_HD, CentreAirConditionOutside,
-                                AC_01,AC_02,AC_03,AC_04,CAC_HD
+                                AC_01,AC_02,AC_03,AC_04,CAC_HD,
+                                MicroWaveOven,Fridge1,Fridge2,Old_Fridge,Freezer
                         );
                     })
                     .build()

@@ -28,6 +28,11 @@ public class ApplianceBlocks {
     public static final RegistrySupplier<Block> AC_04 = registerAppliances("airconditionhd_4",ApplianceShapes.AC_04);
     public static final RegistrySupplier<Block> OLD_AC_HD = registerAppliances("air_condition_old_hd",ApplianceShapes.OLD_AC_HD);
     public static final RegistrySupplier<Block> CAC_HD = registerAppliances("central_ac_hd",ApplianceShapes.CAC_HD);
+    public static final RegistrySupplier<Block> MicroWaveOven = registerAppliances("micro_wave_oven",ApplianceShapes.MicroWaveOven);
+    public static final RegistrySupplier<Block> Fridge1 = registerAppliances("fridge_1",ApplianceShapes.Fridge1);
+    public static final RegistrySupplier<Block> Fridge2 = registerAppliances("fridge_2",ApplianceShapes.Fridge2);
+    public static final RegistrySupplier<Block> Old_Fridge = registerAppliances("old_fridge",ApplianceShapes.Old_Fridge);
+    public static final RegistrySupplier<Block> Freezer = registerAppliances("freezer",ApplianceShapes.Freezer);
 
     private static RegistrySupplier<Block> registerAppliances(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));

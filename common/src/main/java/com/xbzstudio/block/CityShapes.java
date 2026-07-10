@@ -73,4 +73,46 @@ public class CityShapes {
             box(0, 2, 1, 0.125, 16, 15),
             box(15.875, 2, 1, 16, 16, 15)
     );
+    public static final Map<Direction, VoxelShape> ModernFence = createShape(
+            box(0, 0, 7, 16, 16, 9),
+			box(0, 0, 7, 16, 16, 9),
+			box(7, 0, 0, 9, 16, 16),
+			box(7, 0, 0, 9, 16, 16)
+    );
+    public static final Map<Direction, VoxelShape> ModernFence2 = createShape(
+            box(-7.25, 0, 7, 23.25, 18, 8.75),
+            box(-7.25, 0, 7.25, 23.25, 18, 9),
+		    box(7, 0, -7.25, 8.75, 18, 23.25),
+			box(7.25, 0, -7.25, 9, 18, 23.25)
+    );
+    public static final Map<Direction, VoxelShape> ModernFence3 = createShape(
+            box(-7, 0, 7, 23, 18, 8.75),
+		    box(-7, 0, 7.25, 23, 18, 9),
+			box(7, 0, -7, 8.75, 18, 23),
+			box(7.25, 0, -7, 9, 18, 23)
+    );
+    public static final Map<Direction, VoxelShape> ModernIronFenceBlue = createShape(
+            box(-16, 0, 7, 31, 32, 9),
+			box(-15, 0, 7, 32, 32, 9),
+			box(7, 0, -15, 9, 32, 32),
+			box(7, 0, -16, 9, 32, 31)
+    );
+    public static final Map<Direction, VoxelShape> ModernIronFence = createShape(
+            box(-16, 0, 7, 31, 32, 9),
+            box(-15, 0, 7, 32, 32, 9),
+            box(7, 0, -15, 9, 32, 32),
+            box(7, 0, -16, 9, 32, 31)
+    );
+    public static final Map<Direction, VoxelShape> ModernIronFenceYellow = createShape(
+            box(-16, 0, 7, 31, 32, 9),
+            box(-15, 0, 7, 32, 32, 9),
+            box(7, 0, -15, 9, 32, 32),
+            box(7, 0, -16, 9, 32, 31)
+    );
+    public static final Map<Direction, VoxelShape> ModernIronFenceGreen = createShape(
+            box(-16, 0, 7, 31, 32, 9),
+            box(-15, 0, 7, 32, 32, 9),
+            box(7, 0, -15, 9, 32, 32),
+            box(7, 0, -16, 9, 32, 31)
+    );
 }

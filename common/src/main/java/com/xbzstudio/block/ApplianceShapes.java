@@ -110,4 +110,34 @@ public class ApplianceShapes {
             box(0, 14, 0, 16, 32, 16),
             box(0, 14, 0, 16, 32, 16)
     );
+    public static final Map<Direction, VoxelShape> MicroWaveOven = createShape(
+            box(-2, 0, 0, 19, 11, 8),
+            box(-3, 0, 8, 18, 11, 16),
+            box(0, 0, -3, 8, 11, 18),
+            box(8, 0, -2, 16, 11, 19)
+    );
+    public static final Map<Direction, VoxelShape> Fridge1 = createShape(
+            box(0, -16, 0, 32, 32, 16),
+            box(-16, -16, 0, 16, 32, 16),
+            box(0, -16, -16, 16, 32, 16),
+            box(0, -16, 0, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> Fridge2 = createShape(
+            box(0, -16, 0, 32, 32, 16),
+            box(-16, -16, 0, 16, 32, 16),
+            box(0, -16, -16, 16, 32, 16),
+            box(0, -16, 0, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> Old_Fridge = createShape(
+            box(0, -16, 0, 16, 32, 16),
+            box(0, -16, 0, 16, 32, 16),
+            box(0, -16, 0, 16, 32, 16),
+            box(0, -16, 0, 16, 32, 16)
+    );
+    public static final Map<Direction, VoxelShape> Freezer = createShape(
+            box(-16, -16, 0, 16, 16, 16),
+            box(0, -16, 0, 32, 16, 16),
+            box(0, -16, 0, 16, 16, 32),
+            box(0, -16, -16, 16, 16, 16)
+    );
 }

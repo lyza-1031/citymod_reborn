@@ -22,6 +22,13 @@ public class CityBlocks {
     public static final RegistrySupplier<Block> SpeedLimitSign6 = registerCities("speed_limit_sign_6",  CityShapes.SpeedLimitSign6);
     public static final RegistrySupplier<Block> SpeedLimitSign7 = registerCities("speed_limit_sign_7",  CityShapes.SpeedLimitSign7);
     public static final RegistrySupplier<Block> SpeedLimitSign8 = registerCities("speed_limit_sign_8",  CityShapes.SpeedLimitSign8);
+    public static final RegistrySupplier<Block> ModernFence = registerCities("modern_fence",  CityShapes.ModernFence);
+    public static final RegistrySupplier<Block> ModernFence2 = registerCities("modern_fence_2",  CityShapes.ModernFence2);
+    public static final RegistrySupplier<Block> ModernFence3 = registerCities("modern_fence_3",  CityShapes.ModernFence3);
+    public static final RegistrySupplier<Block> ModernIronFence = registerCities("modern_ironfence",  CityShapes.ModernIronFence);
+    public static final RegistrySupplier<Block> ModernIronFenceYellow = registerCities("moderniron_fence_yellow",  CityShapes.ModernIronFenceYellow);
+    public static final RegistrySupplier<Block> ModernIronFenceGreen = registerCities("moderniron_fence_green",  CityShapes.ModernIronFenceGreen);
+    public static final RegistrySupplier<Block> ModernIronFenceBlue = registerCities("moderniron_fence_blue",  CityShapes.ModernIronFenceBlue);
 
     private static RegistrySupplier<Block> registerCities(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));
