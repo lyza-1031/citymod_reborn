@@ -1,9 +1,6 @@
 package com.xbzstudio;
 
-import com.xbzstudio.block.ApplianceBlocks;
-import com.xbzstudio.block.CityBlocks;
-import com.xbzstudio.block.ModBlocks;
-import com.xbzstudio.block.PostBlocks;
+import com.xbzstudio.block.*;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
@@ -82,6 +79,9 @@ public class ModCreativeTabs {
                         output.accept(CityBlocks.ModernIronFenceYellow.get().asItem());
                         output.accept(CityBlocks.ModernIronFenceGreen.get().asItem());
                         output.accept(CityBlocks.ModernIronFenceBlue.get().asItem());
+                        output.accept(CityBlocks.RestRoomSignMale.get().asItem());
+                        output.accept(CityBlocks.RestRoomSignFeMale.get().asItem());
+                        output.accept(CityBlocks.RestRoomSignThird.get().asItem());
 
                     })
                     .build()
@@ -112,6 +112,9 @@ public class ModCreativeTabs {
                         output.accept(ApplianceBlocks.Fridge2.get().asItem());
                         output.accept(ApplianceBlocks.Old_Fridge.get().asItem());
                         output.accept(ApplianceBlocks.Freezer.get().asItem());
+                        output.accept(ApplianceBlocks.GASWATERHEATER.get().asItem());
+                        output.accept(ApplianceBlocks.ELECTRICWATERHEATER.get().asItem());
+                        output.accept(ApplianceBlocks.SOLARWATERHEATER.get().asItem());
                     })
                     .build()
     );
@@ -159,9 +162,14 @@ public class ModCreativeTabs {
             "vehicle",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 6)
                     .title(Component.translatable("item_group.citymod.vehicle"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(VehicleBlocks.BikeBlack.get().asItem()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        output.accept(VehicleBlocks.BikeWhite.get().asItem());
+                        output.accept(VehicleBlocks.BikeBlack.get().asItem());
+                        output.accept(VehicleBlocks.ElectricMotorBlack.get().asItem());
+                        output.accept(VehicleBlocks.ElectricMotorWhite.get().asItem());
+                        output.accept(VehicleBlocks.ScooterWhite.get().asItem());
+                        output.accept(VehicleBlocks.ScooterBlack.get().asItem());
                     })
                     .build()
     );

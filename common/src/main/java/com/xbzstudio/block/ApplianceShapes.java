@@ -140,4 +140,22 @@ public class ApplianceShapes {
             box(0, -16, 0, 16, 16, 32),
             box(0, -16, -16, 16, 16, 16)
     );
+    public static final Map<Direction, VoxelShape> GASWATERHEATER = createShape(
+            box(0, 0, 0, 16, 20, 7),
+			box(0, 0, 9, 16, 20, 16),
+			box(0, 0, 0, 7, 20, 16),
+			box(9, 0, 0, 16, 20, 16)
+    );
+    public static final Map<Direction, VoxelShape> ELECTRICWATERHEATER = createShape(
+            box(-8, -2, 0, 24, 16, 18),
+			box(-8, -2, -2, 24, 16, 16),
+			box(0, -2, -8, 18, 16, 24),
+			box(-2, -2, -8, 16, 16, 24)
+    );
+    public static final Map<Direction, VoxelShape> SOLARWATERHEATER = createShape(
+            box(-16, 0, -16, 16, 32, 16),
+			box(0, 0, 0, 32, 32, 32),
+			box(-16, 0, 0, 16, 32, 32),
+			box(0, 0, -16, 32, 32, 16)
+    );
 }

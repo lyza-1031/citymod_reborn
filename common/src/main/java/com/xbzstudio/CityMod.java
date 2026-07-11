@@ -1,9 +1,6 @@
 package com.xbzstudio;
 
-import com.xbzstudio.block.ApplianceBlocks;
-import com.xbzstudio.block.CityBlocks;
-import com.xbzstudio.block.ModBlocks;
-import com.xbzstudio.block.PostBlocks;
+import com.xbzstudio.block.*;
 
 public class CityMod {
     public static final String MODID = "citymod";
@@ -14,6 +11,7 @@ public class CityMod {
         ApplianceBlocks.init();
         PostBlocks.init();
         CityBlocks.init();
+        VehicleBlocks.init();
         ModBlocks.BLOCKS.register();
         ModBlocks.ITEMS.register();
         ModCreativeTabs.TABS.register();
@@ -23,5 +21,7 @@ public class CityMod {
         PostBlocks.ITEMS.register();
         CityBlocks.BLOCKS.register();
         CityBlocks.ITEMS.register();
+        VehicleBlocks.BLOCKS.register();
+        VehicleBlocks.ITEMS.register();
     }
 }

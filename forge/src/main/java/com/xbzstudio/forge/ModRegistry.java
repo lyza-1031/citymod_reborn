@@ -81,6 +81,10 @@ public class ModRegistry {
     public static final RegistryObject<Block> ModernIronFenceYellow = registerAppliance("moderniron_fence_yellow",  CityShapes.ModernIronFenceYellow);
     public static final RegistryObject<Block> ModernIronFenceGreen = registerAppliance("moderniron_fence_green",  CityShapes.ModernIronFenceGreen);
     public static final RegistryObject<Block> ModernIronFenceBlue = registerAppliance("moderniron_fence_blue",  CityShapes.ModernIronFenceBlue);
+    public static final RegistryObject<Block> RestRoomSignMale = registerAppliance("restroom_sign",  CityShapes.RestRoomSignMale);
+    public static final RegistryObject<Block> RestRoomSignFeMale = registerAppliance("rest_room_sign_female",  CityShapes.RestRoomSignFeMale);
+    public static final RegistryObject<Block> RestRoomSignThird = registerAppliance("restroom_sign_third",  CityShapes.RestRoomSignThird);
+
     // ==================== 电器 ====================
     public static final RegistryObject<Block> AC_OUT_01 = registerAppliance("ac_out_hd_1", ApplianceShapes.AC_OUT_01);
     public static final RegistryObject<Block> AC_OUT_02 = registerAppliance("ac_out_hd_2", ApplianceShapes.AC_OUT_02);
@@ -100,6 +104,16 @@ public class ModRegistry {
     public static final RegistryObject<Block> Fridge2 = registerAppliance("fridge_2", ApplianceShapes.Fridge2);
     public static final RegistryObject<Block> Old_Fridge = registerAppliance("old_fridge", ApplianceShapes. Old_Fridge);
     public static final RegistryObject<Block> Freezer = registerAppliance("freezer", ApplianceShapes. Freezer);
+    public static final RegistryObject<Block> GASWATERHEATER = registerAppliance("gas_water_heater", ApplianceShapes. GASWATERHEATER);
+    public static final RegistryObject<Block> ELECTRICWATERHEATER = registerAppliance("electric_water_heater", ApplianceShapes. ELECTRICWATERHEATER);
+    public static final RegistryObject<Block> SOLARWATERHEATER = registerAppliance("solarwaterheater", ApplianceShapes. SOLARWATERHEATER);
+    // ==================== 载具 ====================
+    public static final RegistryObject<Block> BikeBlack = registerAppliance("bikeblack", VehicleShapes.BikeBlack );
+    public static final RegistryObject<Block> BikeWhite = registerAppliance("bike", VehicleShapes.BikeWhite );
+    public static final RegistryObject<Block> ElectricMotorWhite = registerAppliance("electric_motorcycle", VehicleShapes.ElectricMotorWhite );
+    public static final RegistryObject<Block> ElectricMotorBlack = registerAppliance("electric_motorcycle_black", VehicleShapes.ElectricMotorBlack );
+    public static final RegistryObject<Block> ScooterWhite = registerAppliance("scooter_white", VehicleShapes.ScooterWhite );
+    public static final RegistryObject<Block> ScooterBlack = registerAppliance("scooter_black", VehicleShapes.ScooterBlack );
     // ==================== 海报 ====================
     public static final RegistryObject<Block> POST_1691 = registerSign("post_1691", PostShapes.Post1691);
     public static final RegistryObject<Block> POST_1692 = registerSign("post_1692", PostShapes.Post1692);
@@ -148,7 +162,8 @@ public class ModRegistry {
                     .displayItems((params, output) -> {
                         addAll(output,
                                SpeedLimitSign4,SpeedLimitSign6,SpeedLimitSign5,SpeedLimitSign8,SpeedLimitSign7,SpeedLimitSign,SpeedLimitSign2,SpeedLimitSign3,
-                               ModernFence, ModernFence2, ModernFence3,ModernIronFence,ModernIronFenceYellow,ModernIronFenceGreen,ModernIronFenceBlue
+                               ModernFence, ModernFence2, ModernFence3,ModernIronFence,ModernIronFenceYellow,ModernIronFenceGreen,ModernIronFenceBlue,
+                               RestRoomSignMale,RestRoomSignFeMale,RestRoomSignThird
                         );
                     })
                     .build()
@@ -163,7 +178,8 @@ public class ModRegistry {
                                 AC_OUT_01, AC_OUT_02, AC_OUT_03, AC_OUT_04,
                                 AC_OUT_05, AC_OUT_06, BIG_AC_OUT_HD, CentreAirConditionOutside,
                                 AC_01,AC_02,AC_03,AC_04,CAC_HD,
-                                MicroWaveOven,Fridge1,Fridge2,Old_Fridge,Freezer
+                                MicroWaveOven,Fridge1,Fridge2,Old_Fridge,Freezer,
+                                GASWATERHEATER,ELECTRICWATERHEATER,SOLARWATERHEATER
                         );
                     })
                     .build()
@@ -206,9 +222,11 @@ public class ModRegistry {
     public static final RegistryObject<CreativeModeTab> VEHICLE = TABS.register("vehicle",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("item_group.citymod.vehicle"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(BikeBlack.get().asItem()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        addAll(output,
+                                BikeBlack,BikeWhite,ElectricMotorBlack,ElectricMotorWhite,ScooterWhite,ScooterBlack
+                        );
                     })
                     .build()
     );

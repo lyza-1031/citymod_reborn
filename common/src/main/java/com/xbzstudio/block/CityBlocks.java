@@ -29,6 +29,9 @@ public class CityBlocks {
     public static final RegistrySupplier<Block> ModernIronFenceYellow = registerCities("moderniron_fence_yellow",  CityShapes.ModernIronFenceYellow);
     public static final RegistrySupplier<Block> ModernIronFenceGreen = registerCities("moderniron_fence_green",  CityShapes.ModernIronFenceGreen);
     public static final RegistrySupplier<Block> ModernIronFenceBlue = registerCities("moderniron_fence_blue",  CityShapes.ModernIronFenceBlue);
+    public static final RegistrySupplier<Block> RestRoomSignMale = registerCities("restroom_sign",  CityShapes.RestRoomSignMale);
+    public static final RegistrySupplier<Block> RestRoomSignFeMale = registerCities("rest_room_sign_female",  CityShapes.RestRoomSignFeMale);
+    public static final RegistrySupplier<Block> RestRoomSignThird = registerCities("restroom_sign_third",  CityShapes.RestRoomSignThird);
 
     private static RegistrySupplier<Block> registerCities(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));

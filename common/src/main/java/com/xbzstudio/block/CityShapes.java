@@ -115,4 +115,22 @@ public class CityShapes {
             box(7, 0, -15, 9, 32, 32),
             box(7, 0, -16, 9, 32, 31)
     );
+    public static final Map<Direction, VoxelShape> RestRoomSignMale = createShape(
+            box(2, 5, 0, 14, 11, 1),
+			box(2, 5, 15, 14, 11, 16),
+			box(0, 5, 2, 1, 11, 14),
+			box(15, 5, 2, 16, 11, 14)
+    );
+    public static final Map<Direction, VoxelShape> RestRoomSignFeMale = createShape(
+            box(2, 5, 0, 14, 11, 1),
+            box(2, 5, 15, 14, 11, 16),
+            box(0, 5, 2, 1, 11, 14),
+            box(15, 5, 2, 16, 11, 14)
+    );
+    public static final Map<Direction, VoxelShape> RestRoomSignThird = createShape(
+            box(2, 5, 0, 14, 11, 1),
+            box(2, 5, 15, 14, 11, 16),
+            box(0, 5, 2, 1, 11, 14),
+            box(15, 5, 2, 16, 11, 14)
+    );
 }
