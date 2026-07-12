@@ -36,9 +36,16 @@ public class ApplianceBlocks {
     public static final RegistrySupplier<Block> GASWATERHEATER = registerAppliances("gas_water_heater",ApplianceShapes.GASWATERHEATER);
     public static final RegistrySupplier<Block> ELECTRICWATERHEATER = registerAppliances("electric_water_heater",ApplianceShapes.ELECTRICWATERHEATER);
     public static final RegistrySupplier<Block> SOLARWATERHEATER = registerAppliances("solarwaterheater",ApplianceShapes.SOLARWATERHEATER);
+    public static final RegistrySupplier<Block> Old_Monitor = registerScreen("old_monitor_off",ApplianceShapes.Old_Monitor);
+    public static final RegistrySupplier<Block> OLD_MAINUNIT = registerAppliances("old_mainunit",ApplianceShapes.OLD_MAINUNIT);
+    public static final RegistrySupplier<Block> Monitor2010 = registerScreen("monitor_2010off",ApplianceShapes.Monitor2010);
+    public static final RegistrySupplier<Block> MAINUNIT2010 = registerAppliances("mainunit_2010",ApplianceShapes.MAINUNIT2010);
 
     private static RegistrySupplier<Block> registerAppliances(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));
+    }
+    private static RegistrySupplier<Block> registerScreen(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
+        return BLOCKS.register(id, () -> new Power(shape));
     }
     public static void init() {
         for (RegistrySupplier<Block> block : BLOCKS) {

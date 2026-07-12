@@ -268,5 +268,82 @@ public class BlockShapes {
             box(0, 0, -16, 6, 32, 32),
             box(10, 0, -16, 16, 32, 32)
     );
+    public static final Map<Direction, VoxelShape> POLE = createShape(
+            box(5, 0, 11, 11, 16, 17),
+			box(5, 0, -1, 11, 16, 5),
+			box(11, 0, 5, 17, 16, 11),
+			box(-1, 0, 5, 5, 16, 11)
+    );
+    public static final Map<Direction, VoxelShape> POLE_JOINT_D = createShape(
+            // SOUTH
+            Shapes.or(
+                    box(0, 5.5, 11.5, 16, 10.5, 16.5),
+                    box(5, 0, 11, 11, 16, 17)
+            ),
+            // NORTH
+            Shapes.or(
+                    box(0, 5.5, -0.5, 16, 10.5, 4.5),
+                    box(5, 0, -1, 11, 16, 5)
+            ),
+            // EAST
+            Shapes.or(
+                    box(11.5, 5.5, 0, 16.5, 10.5, 16),
+                    box(11, 0, 5, 17, 16, 11)
+            ),
+            // WEST
+            Shapes.or(
+                    box(-0.5, 5.5, 0, 4.5, 10.5, 16),
+                    box(-1, 0, 5, 5, 16, 11)
+            )
+    );
+    public static final Map<Direction, VoxelShape> POLE_JOINT_L = createShape(
+            // SOUTH
+            Shapes.or(
+                    box(0, 5.5, 11.5, 9, 10.5, 16.5),
+                    box(5, 0, 11, 11, 16, 17)
+            ),
+            // NORTH
+            Shapes.or(
+                    box(8, 5.5, -0.5, 16, 10.5, 4.5),
+                    box(5, 0, -1, 11, 16, 5)
+            ),
+            // EAST
+            Shapes.or(
+                    box(11.5, 5.5, 7, 16.5, 10.5, 16),
+                    box(11, 0, 5, 17, 16, 11)
+            ),
+            // WEST
+            Shapes.or(
+                    box(-0.5, 5.5, 0, 4.5, 10.5, 9),
+                    box(-1, 0, 5, 5, 16, 11)
+            )
+    );
+    public static final Map<Direction, VoxelShape> POLE_JOINT = createShape(
+            // SOUTH
+            Shapes.or(
+                    box(7, 5.5, 11.5, 16, 10.5, 16.5),
+                    box(5, 0, 11, 11, 16, 17)
+            ),
+            // NORTH
+            Shapes.or(
+                    box(0, 5.5, -0.5, 9, 10.5, 4.5),
+                    box(5, 0, -1, 11, 16, 5)
+            ),
+            // EAST
+            Shapes.or(
+                    box(11.5, 5.5, 0, 16.5, 10.5, 9),
+                    box(11, 0, 5, 17, 16, 11)
+            ),
+            // WEST
+            Shapes.or(
+                    box(-0.5, 5.5, 7, 4.5, 10.5, 16),
+                    box(-1, 0, 5, 5, 16, 11)
+            )
+    );
+    public static final Map<Direction, VoxelShape> POLE_H = createShape(
+            box(0, 5.5, 11.5, 16, 10.5, 16.5),
+            box(0, 5.5, -0.5, 16, 10.5, 4.5),
+            box(11.5, 5.5, 0, 16.5, 10.5, 16),
+            box(-1, 0, 5, 5, 16, 11)
+    );
 }
-;

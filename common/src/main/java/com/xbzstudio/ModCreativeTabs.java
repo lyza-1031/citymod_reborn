@@ -55,6 +55,11 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.ROAD_12.get().asItem());
                         output.accept(ModBlocks.YELLOW_SIGN_2.get().asItem());
                         output.accept(ModBlocks.ROADSCREEN.get().asItem());
+                        output.accept(ModBlocks.POLE.get().asItem());
+                        output.accept(ModBlocks.POLE_JOINT_D.get().asItem());
+                        output.accept(ModBlocks.POLE_JOINT.get().asItem());
+                        output.accept(ModBlocks.POLE_JOINT_L.get().asItem());
+                        output.accept(ModBlocks.POLE_H.get().asItem());
                     })
                     .build()
     );
@@ -82,7 +87,6 @@ public class ModCreativeTabs {
                         output.accept(CityBlocks.RestRoomSignMale.get().asItem());
                         output.accept(CityBlocks.RestRoomSignFeMale.get().asItem());
                         output.accept(CityBlocks.RestRoomSignThird.get().asItem());
-
                     })
                     .build()
     );
@@ -115,6 +119,10 @@ public class ModCreativeTabs {
                         output.accept(ApplianceBlocks.GASWATERHEATER.get().asItem());
                         output.accept(ApplianceBlocks.ELECTRICWATERHEATER.get().asItem());
                         output.accept(ApplianceBlocks.SOLARWATERHEATER.get().asItem());
+                        output.accept(ApplianceBlocks.Old_Monitor.get().asItem());
+                        output.accept(ApplianceBlocks.Monitor2010.get().asItem());
+                        output.accept(ApplianceBlocks.OLD_MAINUNIT.get().asItem());
+                        output.accept(ApplianceBlocks.MAINUNIT2010.get().asItem());
                     })
                     .build()
     );

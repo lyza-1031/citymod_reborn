@@ -50,6 +50,11 @@ public class ModBlocks {
     public static final RegistrySupplier<Block> ROAD_12 = registerSign("road_12", BlockShapes.ROAD_12);
     public static final RegistrySupplier<Block> YELLOW_SIGN_2 = registerSign("yellow_sign_2", BlockShapes.YELLOW_SIGN_2);
     public static final RegistrySupplier<Block> ROADSCREEN = registerSign("road_screen", BlockShapes.ROADSCREEN);
+    public static final RegistrySupplier<Block> POLE = registerSign("pole", BlockShapes.POLE);
+    public static final RegistrySupplier<Block> POLE_JOINT_D = registerSign("pole_joint_double", BlockShapes.POLE_JOINT_D);
+    public static final RegistrySupplier<Block> POLE_JOINT = registerSign("pole_joint", BlockShapes.POLE_JOINT);
+    public static final RegistrySupplier<Block> POLE_JOINT_L = registerSign("pole_joint_l", BlockShapes.POLE_JOINT_L);
+    public static final RegistrySupplier<Block> POLE_H = registerSign("pole_horizontal", BlockShapes.POLE_H);
     // 路牌注册快捷方法
     private static RegistrySupplier<Block> registerSign(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericSignBlock(shape));

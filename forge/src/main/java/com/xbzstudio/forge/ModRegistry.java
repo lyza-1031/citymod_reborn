@@ -1,7 +1,9 @@
 package com.xbzstudio.forge;
 
+import java.util.List;
 import com.xbzstudio.block.*;
 import dev.architectury.registry.registries.RegistrySupplier;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
@@ -10,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -65,6 +68,11 @@ public class ModRegistry {
     public static final RegistryObject<Block> OVER_PASS_5 = registerSign("over_pass_5", BlockShapes.OVER_PASS_5);
     public static final RegistryObject<Block> YELLOW_SIGN_2 = registerSign("yellow_sign_2", BlockShapes.YELLOW_SIGN_2);
     public static final RegistryObject<Block> ROADSCREEN = registerSign("road_screen", BlockShapes.ROADSCREEN);
+    public static final RegistryObject<Block> POLE = registerSign("pole", BlockShapes.POLE);
+    public static final RegistryObject<Block> POLE_JOINT_ = registerSign("pole_joint", BlockShapes.POLE_JOINT);
+    public static final RegistryObject<Block> POLE_JOINT_D = registerSign("pole_joint_double", BlockShapes.POLE_JOINT_D);
+    public static final RegistryObject<Block> POLE_JOINT_L = registerSign("pole_joint_l", BlockShapes.POLE_JOINT_L);
+    public static final RegistryObject<Block> POLE_H = registerSign("pole_horizontal", BlockShapes.POLE_H);
     // ==================== 城市 ====================
     public static final RegistryObject<Block> SpeedLimitSign = registerAppliance("speed_limit_sign_1", CityShapes.SpeedLimitSign);
     public static final RegistryObject<Block> SpeedLimitSign2 = registerAppliance("speed_limit_sign_2", CityShapes.SpeedLimitSign2);
@@ -107,6 +115,10 @@ public class ModRegistry {
     public static final RegistryObject<Block> GASWATERHEATER = registerAppliance("gas_water_heater", ApplianceShapes. GASWATERHEATER);
     public static final RegistryObject<Block> ELECTRICWATERHEATER = registerAppliance("electric_water_heater", ApplianceShapes. ELECTRICWATERHEATER);
     public static final RegistryObject<Block> SOLARWATERHEATER = registerAppliance("solarwaterheater", ApplianceShapes. SOLARWATERHEATER);
+    public static final RegistryObject<Block> Old_Mainunit = registerAppliance("old_mainunit", ApplianceShapes.OLD_MAINUNIT);
+    public static final RegistryObject<Block> Mainunit2010 = registerAppliance("mainunit_2010", ApplianceShapes.MAINUNIT2010);
+    public static final RegistryObject<Block> Old_Monitor = registerScreen("old_monitor_off", ApplianceShapes.Old_Monitor);
+    public static final RegistryObject<Block> Monitor2010 = registerScreen("monitor_2010off", ApplianceShapes.Monitor2010);
     // ==================== 载具 ====================
     public static final RegistryObject<Block> BikeBlack = registerAppliance("bikeblack", VehicleShapes.BikeBlack );
     public static final RegistryObject<Block> BikeWhite = registerAppliance("bike", VehicleShapes.BikeWhite );
@@ -149,7 +161,8 @@ public class ModRegistry {
                                 TRAFFIC_SIGN, TRAFFIC_SIGN_L, TRAFFIC_SIGN_R, TRAFFIC_SIGN_T,
                                 TRAFFIC_SIGN_1, TRAFFIC_SIGN_2,
                                 ROAD_1, ROAD_2, ROAD_3, ROAD_4, ROAD_5, ROAD_12,
-                                OVER_PASS_5, YELLOW_SIGN_2, ROADSCREEN
+                                OVER_PASS_5, YELLOW_SIGN_2, ROADSCREEN,
+                                POLE,POLE_JOINT_L,POLE_JOINT_,POLE_JOINT_D,POLE_H
                         );
                     })
                     .build()
@@ -179,7 +192,8 @@ public class ModRegistry {
                                 AC_OUT_05, AC_OUT_06, BIG_AC_OUT_HD, CentreAirConditionOutside,
                                 AC_01,AC_02,AC_03,AC_04,CAC_HD,
                                 MicroWaveOven,Fridge1,Fridge2,Old_Fridge,Freezer,
-                                GASWATERHEATER,ELECTRICWATERHEATER,SOLARWATERHEATER
+                                GASWATERHEATER,ELECTRICWATERHEATER,SOLARWATERHEATER,
+                                Old_Monitor,Monitor2010,Old_Mainunit,Mainunit2010
                         );
                     })
                     .build()
@@ -248,8 +262,15 @@ public class ModRegistry {
         return block;
     }
 
-    private static RegistryObject<Block> registerAppliance(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
+    // 普通方块
+    private static RegistryObject<Block> registerAppliance(String id, Map<Direction, VoxelShape> shape) {
         RegistryObject<Block> block = BLOCKS.register(id, () -> new GenericMetalBlock(shape));
+        ALL_BLOCKS.put(id, block);
+        return block;
+    }
+    // 屏幕方块
+    private static RegistryObject<Block> registerScreen(String id, Map<Direction, VoxelShape> shape) {
+        RegistryObject<Block> block = BLOCKS.register(id, () -> new Power(shape));
         ALL_BLOCKS.put(id, block);
         return block;
     }
@@ -265,5 +286,13 @@ public class ModRegistry {
         BLOCKS.register(bus);
         ITEMS.register(bus);
         TABS.register(bus);
+    }
+    public static List<RegistryObject<Block>> getApplianceBlocks() {
+        return List.of(AC_OUT_01, AC_OUT_02, AC_OUT_03, AC_OUT_04,
+                AC_OUT_05, AC_OUT_06, BIG_AC_OUT_HD, CentreAirConditionOutside,
+                AC_01,AC_02,AC_03,AC_04,CAC_HD,
+                MicroWaveOven,Fridge1,Fridge2,Old_Fridge,Freezer,
+                GASWATERHEATER,ELECTRICWATERHEATER,SOLARWATERHEATER,
+                Old_Monitor,Old_Mainunit);
     }
 }
