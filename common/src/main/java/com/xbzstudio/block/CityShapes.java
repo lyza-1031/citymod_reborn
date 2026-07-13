@@ -133,4 +133,10 @@ public class CityShapes {
             box(0, 5, 2, 1, 11, 14),
             box(15, 5, 2, 16, 11, 14)
     );
+    public static final Map<Direction, VoxelShape> ACCOVER = createShape(
+            box(-4, 0, -2, 18, 16, 2),
+            box(-4, 0, 14, 18, 16, 18),
+            box(-2, 0, -4, 2, 16, 18),
+			box(14, 0, -4, 18, 16, 18)
+    );
 }

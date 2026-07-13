@@ -2,10 +2,14 @@ package com.xbzstudio.block;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.phys.shapes.VoxelShape;
+
+import java.util.Map;
 
 public class ApplianceBlocks {
     public static final DeferredRegister<Block> BLOCKS =
@@ -20,6 +24,11 @@ public class ApplianceBlocks {
     public static final RegistrySupplier<Block> AC_OUT_04 = registerAppliances("ac_out_hd_4", ApplianceShapes.AC_OUT_04);
     public static final RegistrySupplier<Block> AC_OUT_05 = registerAppliances("ac_out_hd_5", ApplianceShapes.AC_OUT_05);
     public static final RegistrySupplier<Block> AC_OUT_06 = registerAppliances("ac_out_hd_6", ApplianceShapes.AC_OUT_06);
+    public static final RegistrySupplier<Block> AC2080 = registerAppliances("ac_out_nvidia", ApplianceShapes.AC2080);
+    public static final RegistrySupplier<Block> AC_INTEL = registerAppliances("ac_out_intel", ApplianceShapes.AC_OUT_06);
+    public static final RegistrySupplier<Block> ACAMD = registerAppliances("ac_out_amd", ApplianceShapes.AC2080);
+    public static final RegistrySupplier<Block> AC_630 = registerAppliances("ac_out_fake", ApplianceShapes.AC_OUT_05);
+    public static final RegistrySupplier<Block> AC_40hx = registerAppliances("ac_out_40_hx", ApplianceShapes.AC_40HX);
     public static final RegistrySupplier<Block> BIG_AC_OUT_HD = registerAppliances("big_ac_out_hd",  ApplianceShapes.BIG_AC_OUT_HD);
     public static final RegistrySupplier<Block> CentreAirConditionOutside = registerAppliances("centre_air_condition_outside", ApplianceShapes.CentreAirConditionOutside);
     public static final RegistrySupplier<Block> AC_01 = registerAppliances("air_condition_hd_1",ApplianceShapes.AC_01);
@@ -43,12 +52,24 @@ public class ApplianceBlocks {
     public static final RegistrySupplier<Block> ModernMonitor = registerScreen("modern_monitor_off",ApplianceShapes.ModernMonitor);
     public static final RegistrySupplier<Block> MODERNMAINUNIT = registerAppliances("main_unit_modern",ApplianceShapes.MODERMMAINUNIT);
     public static final RegistrySupplier<Block> AIOPC = registerScreen("all_in_one_pc",ApplianceShapes.AIOPC);
+    public static final RegistrySupplier<Block> LAPTOP = registerScreen("laptop", ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON);
+    public static final RegistrySupplier<Block> LAPTOP_ON = registerLight("laptop_poweron",ApplianceShapes.LAPTOP_ON);
+    public static final RegistrySupplier<Block> Old_Monitor_On = registerLight("old_monitor_on",ApplianceShapes.Old_Monitor);
+    public static final RegistrySupplier<Block> Monitor2010ON = registerLight("monitor_2010_on",ApplianceShapes.Monitor2010);
+    public static final RegistrySupplier<Block> ModernMonitorOn = registerLight("modern_monitor_on",ApplianceShapes.ModernMonitor);
+    public static final RegistrySupplier<Block> AIOPCON = registerLight("all_in_one_pc_on",ApplianceShapes.AIOPC);
 
     private static RegistrySupplier<Block> registerAppliances(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));
     }
+    private static RegistrySupplier<Block> registerLight(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
+        return BLOCKS.register(id, () -> new GenericLightBlock(shape));
+    }
     private static RegistrySupplier<Block> registerScreen(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new Power(shape));
+    }
+    private static RegistrySupplier<Block> registerScreen(String id, Map<Direction, VoxelShape> shapeOff, Map<Direction, VoxelShape> shapeOn) {
+        return BLOCKS.register(id, () -> new Power(shapeOff, shapeOn));
     }
     public static void init() {
         for (RegistrySupplier<Block> block : BLOCKS) {

@@ -260,4 +260,28 @@ public class ApplianceShapes {
                     box(9, 0, 0, 12.25, 13, 17),
                     box(3, 0, -1, 7, 0.6, 11))
     );
+    public static final Map<Direction, VoxelShape> LAPTOP = createShape(
+            box(1, 0, 2, 15, 0.75, 12),
+                   box(1, 0, 4, 15, 0.75, 14),
+                   box(2, 0, 1, 12, 0.75, 15),
+                   box(4, 0, 1, 14, 0.75, 15)
+    );
+    public static final Map<Direction, VoxelShape> LAPTOP_ON = createShape(
+               Shapes.or(box(1, 0.175, 2.125, 15, 10.175, 2.375), box(1, 0, 2.2, 15, 0.5, 11.95)),
+               Shapes.or(box(1, 0.175, 13.625, 15, 10.175, 13.875), box(1, 0, 4.05, 15, 0.5, 13.8)),
+                Shapes.or(box(2.125, 0.175, 1, 2.375, 10.175, 15), box(2.2, 0, 1, 11.95, 0.5, 15)),
+                Shapes.or(box(13.625, 0.175, 1, 13.875, 10.175, 15), box(4.05, 0, 1, 13.8, 0.5, 15))
+    );
+    public static final Map<Direction, VoxelShape> AC2080 = createShape(
+            box(-5, -16, 3, 21, 32, 13),
+            box(-5, -16, 3, 21, 32, 13),
+            box(3, -16, -5, 13, 32, 21),
+            box(3, -16, -5, 13, 32, 21)
+    );
+    public static final Map<Direction, VoxelShape> AC_40HX = createShape(
+            box(-5, -16, 3, 21, 20, 13),
+            box(-5, -16, 3, 21, 20, 13),
+            box(3, -16, -5, 13, 20, 21),
+            box(3, -16, -5, 13, 20, 21)
+    );
 }

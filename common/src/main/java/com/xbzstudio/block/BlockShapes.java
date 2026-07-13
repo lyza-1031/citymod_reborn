@@ -384,4 +384,10 @@ public class BlockShapes {
                     box(-0.5, 10, 0, 2.5, 13, 5), box(-0.5, 10, 11, 2.5, 13, 16), box(-0.5, 3, 11, 2.5, 6, 16), box(-0.5, 3, 0, 2.5, 6, 5), box(-1, 0, 5, 5, 16, 11)
             )
     );
+    public static final Map<Direction, VoxelShape> FREESIGN = createShape(
+            box(0, 0, 0, 16, 16, 1),
+			      box(0, 0, 15, 16, 16, 16),
+			      box(0, 0, 0, 1, 16, 16),
+			      box(15, 0, 0, 16, 16, 16)
+    );
 }

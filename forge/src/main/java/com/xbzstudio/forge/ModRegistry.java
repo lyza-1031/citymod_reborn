@@ -65,6 +65,8 @@ public class ModRegistry {
     public static final RegistryObject<Block> ROAD_4 = registerSign("road_4", BlockShapes.ROAD_4);
     public static final RegistryObject<Block> ROAD_5 = registerSign("road_5", BlockShapes.ROAD_5);
     public static final RegistryObject<Block> ROAD_12 = registerSign("road_12", BlockShapes.ROAD_12);
+    public static final RegistryObject<Block> FREESIGN = registerSign("free_road_sign", BlockShapes.FREESIGN);
+    public static final RegistryObject<Block> FREEExprSIGN = registerSign("free_expressway_sign", BlockShapes.FREESIGN);
     public static final RegistryObject<Block> OVER_PASS_5 = registerSign("over_pass_5", BlockShapes.OVER_PASS_5);
     public static final RegistryObject<Block> YELLOW_SIGN_2 = registerSign("yellow_sign_2", BlockShapes.YELLOW_SIGN_2);
     public static final RegistryObject<Block> ROADSCREEN = registerSign("road_screen", BlockShapes.ROADSCREEN);
@@ -97,6 +99,8 @@ public class ModRegistry {
     public static final RegistryObject<Block> RestRoomSignMale = registerAppliance("restroom_sign",  CityShapes.RestRoomSignMale);
     public static final RegistryObject<Block> RestRoomSignFeMale = registerAppliance("rest_room_sign_female",  CityShapes.RestRoomSignFeMale);
     public static final RegistryObject<Block> RestRoomSignThird = registerAppliance("restroom_sign_third",  CityShapes.RestRoomSignThird);
+    public static final RegistryObject<Block> ACCOVER = registerAppliance("ac_cover",  CityShapes.ACCOVER);
+    public static final RegistryObject<Block> ACCOVERLIGHT = registerAppliance("ac_cover_light",  CityShapes.ACCOVER);
 
     // ==================== 电器 ====================
     public static final RegistryObject<Block> AC_OUT_01 = registerAppliance("ac_out_hd_1", ApplianceShapes.AC_OUT_01);
@@ -127,6 +131,13 @@ public class ModRegistry {
     public static final RegistryObject<Block> Monitor2010 = registerScreen("monitor_2010off", ApplianceShapes.Monitor2010);
     public static final RegistryObject<Block> ModernMonitor = registerScreen("modern_monitor_off", ApplianceShapes.ModernMonitor);
     public static final RegistryObject<Block> AIOPC = registerScreen("all_in_one_pc", ApplianceShapes.AIOPC);
+    public static final RegistryObject<Block> LAPTOP = registerScreen("laptop", ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON);
+    // ==================== 废弃 ====================
+    public static final RegistryObject<Block> LAPTOP_ON = registerLight("laptop_poweron",ApplianceShapes.LAPTOP_ON);
+    public static final RegistryObject<Block> Old_Monitor_On = registerLight("old_monitor_on",ApplianceShapes.Old_Monitor);
+    public static final RegistryObject<Block> Monitor2010ON = registerLight("monitor_2010_on",ApplianceShapes.Monitor2010);
+    public static final RegistryObject<Block> ModernMonitorOn = registerLight("modern_monitor_on",ApplianceShapes.ModernMonitor);
+    public static final RegistryObject<Block> AIOPCON = registerLight("all_in_one_pc_on",ApplianceShapes.AIOPC);
     // ==================== 载具 ====================
     public static final RegistryObject<Block> BikeBlack = registerAppliance("bikeblack", VehicleShapes.BikeBlack );
     public static final RegistryObject<Block> BikeWhite = registerAppliance("bike", VehicleShapes.BikeWhite );
@@ -146,6 +157,12 @@ public class ModRegistry {
     public static final RegistryObject<Block> POST_431 = registerSign("post_431", PostShapes.Post431);
     public static final RegistryObject<Block> POST_432 = registerSign("post_432", PostShapes.Post432);
     public static final RegistryObject<Block> POST_433 = registerSign("post_433", PostShapes.Post433);
+    // ==================== 其他 ====================
+    public static final RegistryObject<Block> AC2080 = registerAppliance("ac_out_nvidia", ApplianceShapes.AC2080);
+    public static final RegistryObject<Block> AC_INTEL = registerAppliance("ac_out_intel", ApplianceShapes.AC_OUT_06);
+    public static final RegistryObject<Block> ACAMD = registerAppliance("ac_out_amd", ApplianceShapes.AC2080);
+    public static final RegistryObject<Block> AC_630 = registerAppliance("ac_out_fake", ApplianceShapes.AC_OUT_05);
+    public static final RegistryObject<Block> AC_40hx = registerAppliance("ac_out_40_hx", ApplianceShapes.AC_40HX);
 
     static {
         for (var entry : ALL_BLOCKS.entrySet()) {
@@ -170,6 +187,7 @@ public class ModRegistry {
                                 TRAFFIC_SIGN_1, TRAFFIC_SIGN_2,
                                 ROAD_1, ROAD_2, ROAD_3, ROAD_4, ROAD_5, ROAD_12,
                                 OVER_PASS_5, YELLOW_SIGN_2, ROADSCREEN,
+                                FREESIGN,FREEExprSIGN,
                                 POLE,POLE_JOINT_L,POLE_JOINT_,POLE_JOINT_D,POLE_H,POLE_EXPR_L,POLE_EXPR_R,POLE_EXPR_M,POLEFINE_D,POLEFINE_JOINT_D
                         );
                     })
@@ -184,7 +202,8 @@ public class ModRegistry {
                         addAll(output,
                                SpeedLimitSign4,SpeedLimitSign6,SpeedLimitSign5,SpeedLimitSign8,SpeedLimitSign7,SpeedLimitSign,SpeedLimitSign2,SpeedLimitSign3,
                                ModernFence, ModernFence2, ModernFence3,ModernIronFence,ModernIronFenceYellow,ModernIronFenceGreen,ModernIronFenceBlue,
-                               RestRoomSignMale,RestRoomSignFeMale,RestRoomSignThird
+                               RestRoomSignMale,RestRoomSignFeMale,RestRoomSignThird,
+                               ACCOVER,ACCOVERLIGHT
                         );
                     })
                     .build()
@@ -201,7 +220,8 @@ public class ModRegistry {
                                 AC_01,AC_02,AC_03,AC_04,CAC_HD,
                                 MicroWaveOven,Fridge1,Fridge2,Old_Fridge,Freezer,
                                 GASWATERHEATER,ELECTRICWATERHEATER,SOLARWATERHEATER,
-                                Old_Monitor,Monitor2010,ModernMonitor,AIOPC,Old_Mainunit,Mainunit2010,ModernMainunit
+                                Old_Monitor,Monitor2010,ModernMonitor,AIOPC,Old_Mainunit,Mainunit2010,ModernMainunit,
+                                LAPTOP
                         );
                     })
                     .build()
@@ -256,9 +276,11 @@ public class ModRegistry {
     public static final RegistryObject<CreativeModeTab> OTHER = TABS.register("other",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("item_group.citymod.other"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(AC_INTEL.get().asItem()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        addAll(output,
+                                AC2080,ACAMD,AC_INTEL,AC_630,AC_40hx
+                        );
                     })
                     .build()
     );
@@ -276,13 +298,22 @@ public class ModRegistry {
         ALL_BLOCKS.put(id, block);
         return block;
     }
+    private static RegistryObject<Block> registerLight(String id, Map<Direction, VoxelShape> shape) {
+        RegistryObject<Block> block = BLOCKS.register(id, () -> new GenericLightBlock(shape));
+        ALL_BLOCKS.put(id, block);
+        return block;
+    }
     // 屏幕方块
     private static RegistryObject<Block> registerScreen(String id, Map<Direction, VoxelShape> shape) {
         RegistryObject<Block> block = BLOCKS.register(id, () -> new Power(shape));
         ALL_BLOCKS.put(id, block);
         return block;
     }
-
+    private static RegistryObject<Block> registerScreen(String id, Map<Direction, VoxelShape> shapeOff, Map<Direction, VoxelShape> shapeOn) {
+        RegistryObject<Block> block = BLOCKS.register(id, () -> new Power(shapeOff, shapeOn));
+        ALL_BLOCKS.put(id, block);  // ← 加这行
+        return block;
+    }
     @SafeVarargs
     private static void addAll(CreativeModeTab.Output output, RegistryObject<Block>... blocks) {
         for (RegistryObject<Block> block : blocks) {

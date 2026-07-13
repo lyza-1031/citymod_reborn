@@ -54,6 +54,8 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.OVER_PASS_5.get().asItem());
                         output.accept(ModBlocks.ROAD_12.get().asItem());
                         output.accept(ModBlocks.YELLOW_SIGN_2.get().asItem());
+                        output.accept(ModBlocks.FREESIGN.get().asItem());
+                        output.accept(ModBlocks.FREEExprSIGN.get().asItem());
                         output.accept(ModBlocks.ROADSCREEN.get().asItem());
                         output.accept(ModBlocks.POLE.get().asItem());
                         output.accept(ModBlocks.POLE_JOINT_D.get().asItem());
@@ -92,6 +94,8 @@ public class ModCreativeTabs {
                         output.accept(CityBlocks.RestRoomSignMale.get().asItem());
                         output.accept(CityBlocks.RestRoomSignFeMale.get().asItem());
                         output.accept(CityBlocks.RestRoomSignThird.get().asItem());
+                        output.accept(CityBlocks.ACCOVER.get().asItem());
+                        output.accept(CityBlocks.ACCOVERLIGHT.get().asItem());
                     })
                     .build()
     );
@@ -131,6 +135,7 @@ public class ModCreativeTabs {
                         output.accept(ApplianceBlocks.ModernMonitor.get().asItem());
                         output.accept(ApplianceBlocks.MODERNMAINUNIT.get().asItem());
                         output.accept(ApplianceBlocks.AIOPC.get().asItem());
+                        output.accept(ApplianceBlocks.LAPTOP.get().asItem());
                     })
                     .build()
     );
@@ -193,9 +198,13 @@ public class ModCreativeTabs {
             "other",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 7)
                     .title(Component.translatable("item_group.citymod.other"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(ApplianceBlocks.AC_INTEL.get().asItem()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        output.accept(ApplianceBlocks.AC2080.get().asItem());
+                        output.accept(ApplianceBlocks.ACAMD.get().asItem());
+                        output.accept(ApplianceBlocks.AC_INTEL.get().asItem());
+                        output.accept(ApplianceBlocks.AC_630.get().asItem());
+                        output.accept(ApplianceBlocks.AC_40hx.get().asItem());
                     })
                     .build()
     );
