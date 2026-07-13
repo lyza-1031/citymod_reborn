@@ -60,6 +60,11 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.POLE_JOINT.get().asItem());
                         output.accept(ModBlocks.POLE_JOINT_L.get().asItem());
                         output.accept(ModBlocks.POLE_H.get().asItem());
+                        output.accept(ModBlocks.POLE_EXPR_L.get().asItem());
+                        output.accept(ModBlocks.POLE_EXPR_R.get().asItem());
+                        output.accept(ModBlocks.POLE_EXPR_M.get().asItem());
+                        output.accept(ModBlocks.POLEFINE_D.get().asItem());
+                        output.accept(ModBlocks.POLEFINE_JOINT_D.get().asItem());
                     })
                     .build()
     );
@@ -123,6 +128,9 @@ public class ModCreativeTabs {
                         output.accept(ApplianceBlocks.Monitor2010.get().asItem());
                         output.accept(ApplianceBlocks.OLD_MAINUNIT.get().asItem());
                         output.accept(ApplianceBlocks.MAINUNIT2010.get().asItem());
+                        output.accept(ApplianceBlocks.ModernMonitor.get().asItem());
+                        output.accept(ApplianceBlocks.MODERNMAINUNIT.get().asItem());
+                        output.accept(ApplianceBlocks.AIOPC.get().asItem());
                     })
                     .build()
     );

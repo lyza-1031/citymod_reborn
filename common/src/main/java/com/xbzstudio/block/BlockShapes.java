@@ -341,9 +341,47 @@ public class BlockShapes {
             )
     );
     public static final Map<Direction, VoxelShape> POLE_H = createShape(
-            box(0, 5.5, 11.5, 16, 10.5, 16.5),
-            box(0, 5.5, -0.5, 16, 10.5, 4.5),
-            box(11.5, 5.5, 0, 16.5, 10.5, 16),
-            box(-1, 0, 5, 5, 16, 11)
+            box(0, 5.75, 10.5, 16, 10.5, 15.5),
+                box(0, 5.75, 0.5, 16, 10.5, 5.5),
+			    box(10.5, 5.75, 0, 15.5, 10.5, 16),
+			    box(0.5, 5.75, 0, 5.5, 10.5, 16)
+    );
+    public static final Map<Direction, VoxelShape> POLE_EXPR_L = createShape(
+            Shapes.or(box(5, 0, 11, 11, 16, 17), box(11, 1, 11.25, 16, 3, 16.5), box(11, 13, 11.25, 16, 15, 16.5)),
+            Shapes.or(box(5, 0, -1, 11, 16, 5), box(0, 1, -0.5, 5, 3, 4.75), box(0, 13, -0.5, 5, 15, 4.75)),
+            Shapes.or(box(11, 0, 5, 17, 16, 11), box(11.25, 1, 0, 16.5, 3, 5), box(11.25, 13, 0, 16.5, 15, 5)),
+            Shapes.or(box(-1, 0, 5, 5, 16, 11), box(-0.5, 1, 11, 4.75, 3, 16), box(-0.5, 13, 11, 4.75, 15, 16))
+    );
+    public static final Map<Direction, VoxelShape> POLE_EXPR_R = createShape(
+            Shapes.or(box(5, 0, 11, 11, 16, 17), box(0, 1, 11.25, 5, 3, 16.5), box(0, 13, 11.25, 5, 15, 16.5)),
+            Shapes.or(box(5, 0, -1, 11, 16, 5), box(11, 1, -0.5, 16, 3, 4.75), box(11, 13, -0.5, 16, 15, 4.75)),
+            Shapes.or(box(11, 0, 5, 17, 16, 11), box(11.25, 1, 11, 16.5, 3, 16), box(11.25, 13, 11, 16.5, 15, 16)),
+            Shapes.or(box(-1, 0, 5, 5, 16, 11), box(-0.5, 1, 0, 4.75, 3, 5), box(-0.5, 13, 0, 4.75, 15, 5))
+    );
+    public static final Map<Direction, VoxelShape> POLE_EXPR_M = createShape(
+            box(0, 1, 11.25, 16, 15, 16.5),
+			box(0, 1, -0.5, 16, 15, 4.75),
+			box(11.25, 1, 0, 16.5, 15, 16),
+			box(-0.5, 1, 0, 4.75, 15, 16)
+    );
+    public static final Map<Direction, VoxelShape> POLEFINE_D = createShape(
+            box(0, 1, 12.25, 16, 15, 16.5),
+            box(0, 1, -0.5, 16, 15, 3.75),
+            box(12.25, 1, 0, 16.5, 15, 16),
+            box(-0.5, 1, 0, 3.75, 15, 16)
+    );
+    public static final Map<Direction, VoxelShape> POLEFINE_JOINT_D = createShape(
+            Shapes.or(
+                    box(0, 10, 13.5, 5, 13, 16.5), box(11, 10, 13.5, 16, 13, 16.5), box(11, 3, 13.5, 16, 6, 16.5), box(0, 3, 13.5, 5, 6, 16.5), box(5, 0, 11, 11, 16, 17)
+            ),
+            Shapes.or(
+                    box(11, 10, -0.5, 16, 13, 2.5), box(0, 10, -0.5, 5, 13, 2.5), box(0, 3, -0.5, 5, 6, 2.5), box(11, 3, -0.5, 16, 6, 2.5), box(5, 0, -1, 11, 16, 5)
+            ),
+            Shapes.or(
+                    box(13.5, 10, 11, 16.5, 13, 16), box(13.5, 10, 0, 16.5, 13, 5),box(13.5, 3, 0, 16.5, 6, 5), box(13.5, 3, 11, 16.5, 6, 16), box(11, 0, 5, 17, 16, 11)
+            ),
+            Shapes.or(
+                    box(-0.5, 10, 0, 2.5, 13, 5), box(-0.5, 10, 11, 2.5, 13, 16), box(-0.5, 3, 11, 2.5, 6, 16), box(-0.5, 3, 0, 2.5, 6, 5), box(-1, 0, 5, 5, 16, 11)
+            )
     );
 }

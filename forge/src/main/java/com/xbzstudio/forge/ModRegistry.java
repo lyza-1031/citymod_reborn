@@ -73,6 +73,11 @@ public class ModRegistry {
     public static final RegistryObject<Block> POLE_JOINT_D = registerSign("pole_joint_double", BlockShapes.POLE_JOINT_D);
     public static final RegistryObject<Block> POLE_JOINT_L = registerSign("pole_joint_l", BlockShapes.POLE_JOINT_L);
     public static final RegistryObject<Block> POLE_H = registerSign("pole_horizontal", BlockShapes.POLE_H);
+    public static final RegistryObject<Block> POLE_EXPR_L = registerSign("pole_expr", BlockShapes.POLE_EXPR_L);
+    public static final RegistryObject<Block> POLE_EXPR_R = registerSign("pole_expr_right", BlockShapes.POLE_EXPR_R);
+    public static final RegistryObject<Block> POLE_EXPR_M = registerSign("pole_exprmid", BlockShapes.POLE_EXPR_M);
+    public static final RegistryObject<Block> POLEFINE_D = registerSign("pole_fine_d", BlockShapes.POLEFINE_D);
+    public static final RegistryObject<Block> POLEFINE_JOINT_D = registerSign("polefine_joint_d", BlockShapes.POLEFINE_JOINT_D);
     // ==================== 城市 ====================
     public static final RegistryObject<Block> SpeedLimitSign = registerAppliance("speed_limit_sign_1", CityShapes.SpeedLimitSign);
     public static final RegistryObject<Block> SpeedLimitSign2 = registerAppliance("speed_limit_sign_2", CityShapes.SpeedLimitSign2);
@@ -117,8 +122,11 @@ public class ModRegistry {
     public static final RegistryObject<Block> SOLARWATERHEATER = registerAppliance("solarwaterheater", ApplianceShapes. SOLARWATERHEATER);
     public static final RegistryObject<Block> Old_Mainunit = registerAppliance("old_mainunit", ApplianceShapes.OLD_MAINUNIT);
     public static final RegistryObject<Block> Mainunit2010 = registerAppliance("mainunit_2010", ApplianceShapes.MAINUNIT2010);
+    public static final RegistryObject<Block> ModernMainunit = registerAppliance("main_unit_modern", ApplianceShapes.MODERMMAINUNIT);
     public static final RegistryObject<Block> Old_Monitor = registerScreen("old_monitor_off", ApplianceShapes.Old_Monitor);
     public static final RegistryObject<Block> Monitor2010 = registerScreen("monitor_2010off", ApplianceShapes.Monitor2010);
+    public static final RegistryObject<Block> ModernMonitor = registerScreen("modern_monitor_off", ApplianceShapes.ModernMonitor);
+    public static final RegistryObject<Block> AIOPC = registerScreen("all_in_one_pc", ApplianceShapes.AIOPC);
     // ==================== 载具 ====================
     public static final RegistryObject<Block> BikeBlack = registerAppliance("bikeblack", VehicleShapes.BikeBlack );
     public static final RegistryObject<Block> BikeWhite = registerAppliance("bike", VehicleShapes.BikeWhite );
@@ -162,7 +170,7 @@ public class ModRegistry {
                                 TRAFFIC_SIGN_1, TRAFFIC_SIGN_2,
                                 ROAD_1, ROAD_2, ROAD_3, ROAD_4, ROAD_5, ROAD_12,
                                 OVER_PASS_5, YELLOW_SIGN_2, ROADSCREEN,
-                                POLE,POLE_JOINT_L,POLE_JOINT_,POLE_JOINT_D,POLE_H
+                                POLE,POLE_JOINT_L,POLE_JOINT_,POLE_JOINT_D,POLE_H,POLE_EXPR_L,POLE_EXPR_R,POLE_EXPR_M,POLEFINE_D,POLEFINE_JOINT_D
                         );
                     })
                     .build()
@@ -193,7 +201,7 @@ public class ModRegistry {
                                 AC_01,AC_02,AC_03,AC_04,CAC_HD,
                                 MicroWaveOven,Fridge1,Fridge2,Old_Fridge,Freezer,
                                 GASWATERHEATER,ELECTRICWATERHEATER,SOLARWATERHEATER,
-                                Old_Monitor,Monitor2010,Old_Mainunit,Mainunit2010
+                                Old_Monitor,Monitor2010,ModernMonitor,AIOPC,Old_Mainunit,Mainunit2010,ModernMainunit
                         );
                     })
                     .build()

@@ -40,6 +40,9 @@ public class ApplianceBlocks {
     public static final RegistrySupplier<Block> OLD_MAINUNIT = registerAppliances("old_mainunit",ApplianceShapes.OLD_MAINUNIT);
     public static final RegistrySupplier<Block> Monitor2010 = registerScreen("monitor_2010off",ApplianceShapes.Monitor2010);
     public static final RegistrySupplier<Block> MAINUNIT2010 = registerAppliances("mainunit_2010",ApplianceShapes.MAINUNIT2010);
+    public static final RegistrySupplier<Block> ModernMonitor = registerScreen("modern_monitor_off",ApplianceShapes.ModernMonitor);
+    public static final RegistrySupplier<Block> MODERNMAINUNIT = registerAppliances("main_unit_modern",ApplianceShapes.MODERMMAINUNIT);
+    public static final RegistrySupplier<Block> AIOPC = registerScreen("all_in_one_pc",ApplianceShapes.AIOPC);
 
     private static RegistrySupplier<Block> registerAppliances(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));
