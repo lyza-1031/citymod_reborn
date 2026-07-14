@@ -145,6 +145,23 @@ public class ModRegistry {
     public static final RegistryObject<Block> ElectricMotorBlack = registerAppliance("electric_motorcycle_black", VehicleShapes.ElectricMotorBlack );
     public static final RegistryObject<Block> ScooterWhite = registerAppliance("scooter_white", VehicleShapes.ScooterWhite );
     public static final RegistryObject<Block> ScooterBlack = registerAppliance("scooter_black", VehicleShapes.ScooterBlack );
+    // ==================== 窗户 ====================
+    public static final RegistryObject<Block> WSW= registerWindow("window_small_white",  WindowsShapes.WINMA);
+    public static final RegistryObject<Block> WMAW= registerWindow("window_medium_a_white",  WindowsShapes.WINMA);
+    public static final RegistryObject<Block> WMBW= registerWindow("window_medium_b_white",  WindowsShapes.WINMB);
+    public static final RegistryObject<Block> WLW= registerWindow("window_large_white",  WindowsShapes.WINL);
+    public static final RegistryObject<Block> WSK= registerWindow("window_small_black",  WindowsShapes.WINS);
+    public static final RegistryObject<Block> WMAK= registerWindow("window_medium_a_black",  WindowsShapes.WINMA);
+    public static final RegistryObject<Block> WMBK= registerWindow("window_medium_b_black",  WindowsShapes.WINMB);
+    public static final RegistryObject<Block> WLK= registerWindow("window_large_black",  WindowsShapes.WINL);
+    public static final RegistryObject<Block> WSB= registerWindow("window_small_blue",  WindowsShapes.WINS);
+    public static final RegistryObject<Block> WMAB= registerWindow("window_medium_a_blue",  WindowsShapes.WINMA);
+    public static final RegistryObject<Block> WMBB= registerWindow("window_medium_b_blue",  WindowsShapes.WINMB);
+    public static final RegistryObject<Block> WLB= registerWindow("window_large_blue",  WindowsShapes.WINL);
+    public static final RegistryObject<Block> WSG= registerWindow("window_small_green",  WindowsShapes.WINS);
+    public static final RegistryObject<Block> WMAG= registerWindow("window_medium_a_green",  WindowsShapes.WINMA);
+    public static final RegistryObject<Block> WMBG= registerWindow("window_mediub_b_green",  WindowsShapes.WINMB);
+    public static final RegistryObject<Block> WLG= registerWindow("window_large_green",  WindowsShapes.WINL);
     // ==================== 海报 ====================
     public static final RegistryObject<Block> POST_1691 = registerSign("post_1691", PostShapes.Post1691);
     public static final RegistryObject<Block> POST_1692 = registerSign("post_1692", PostShapes.Post1692);
@@ -254,9 +271,11 @@ public class ModRegistry {
     public static final RegistryObject<CreativeModeTab> MW = TABS.register("modern_windows",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("item_group.citymod.modern_windows"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(WLW.get().asItem()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        addAll(output,
+                                WSW,WMAW,WMBW,WLW,WSK,WMAK,WMBK,WLK,WSB,WMAB,WMBB,WLB,WSG,WMAG,WMBG,WLG
+                        );
                     })
                     .build()
     );
@@ -291,7 +310,11 @@ public class ModRegistry {
         ALL_BLOCKS.put(id, block);
         return block;
     }
-
+    private static RegistryObject<Block> registerWindow(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
+        RegistryObject<Block> block = BLOCKS.register(id, () -> new GenericGlassBlock(shape));
+        ALL_BLOCKS.put(id, block);
+        return block;
+    }
     // 普通方块
     private static RegistryObject<Block> registerAppliance(String id, Map<Direction, VoxelShape> shape) {
         RegistryObject<Block> block = BLOCKS.register(id, () -> new GenericMetalBlock(shape));

@@ -2,6 +2,7 @@ package com.xbzstudio.fabric.client;
 
 import com.xbzstudio.block.ApplianceBlocks;
 import com.xbzstudio.block.CityBlocks;
+import com.xbzstudio.block.WindowsBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.renderer.RenderType;
@@ -15,6 +16,9 @@ public final class citymodFabricClient implements ClientModInitializer {
         }
         for (var block : CityBlocks.BLOCKS) {
             BlockRenderLayerMap.INSTANCE.putBlock(block.get(), RenderType.cutoutMipped());
+        }
+        for (var block : WindowsBlocks.BLOCKS) {
+            BlockRenderLayerMap.INSTANCE.putBlock(block.get(), RenderType.translucent());
         }
     }
 }

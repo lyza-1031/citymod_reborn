@@ -173,9 +173,24 @@ public class ModCreativeTabs {
             "modern_windows",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 5)
                     .title(Component.translatable("item_group.citymod.modern_windows"))
-                    .icon(() -> new ItemStack(Blocks.OAK_PLANKS))
+                    .icon(() -> new ItemStack(WindowsBlocks.WLW.get().asItem()))
                     .displayItems((params, output) -> {
-                        output.accept(Blocks.COMMAND_BLOCK);
+                        output.accept(WindowsBlocks.WSW.get().asItem());
+                        output.accept(WindowsBlocks.WMAW.get().asItem());
+                        output.accept(WindowsBlocks.WMBW.get().asItem());
+                        output.accept(WindowsBlocks.WLW.get().asItem());
+                        output.accept(WindowsBlocks.WSK.get().asItem());
+                        output.accept(WindowsBlocks.WMAK.get().asItem());
+                        output.accept(WindowsBlocks.WMBK.get().asItem());
+                        output.accept(WindowsBlocks.WLK.get().asItem());
+                        output.accept(WindowsBlocks.WSB.get().asItem());
+                        output.accept(WindowsBlocks.WMAB.get().asItem());
+                        output.accept(WindowsBlocks.WMBB.get().asItem());
+                        output.accept(WindowsBlocks.WLB.get().asItem());
+                        output.accept(WindowsBlocks.WSG.get().asItem());
+                        output.accept(WindowsBlocks.WMAG.get().asItem());
+                        output.accept(WindowsBlocks.WMBG.get().asItem());
+                        output.accept(WindowsBlocks.WLG.get().asItem());
                     })
                     .build()
     );

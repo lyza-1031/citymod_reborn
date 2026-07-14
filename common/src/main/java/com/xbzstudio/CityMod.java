@@ -12,6 +12,7 @@ public class CityMod {
         PostBlocks.init();
         CityBlocks.init();
         VehicleBlocks.init();
+        WindowsBlocks.init();
         ModBlocks.BLOCKS.register();
         ModBlocks.ITEMS.register();
         ModCreativeTabs.TABS.register();
@@ -23,5 +24,7 @@ public class CityMod {
         CityBlocks.ITEMS.register();
         VehicleBlocks.BLOCKS.register();
         VehicleBlocks.ITEMS.register();
+        WindowsBlocks.BLOCKS.register();
+        WindowsBlocks.ITEMS.register();
     }
 }
