@@ -2,6 +2,7 @@ package com.xbzstudio.block;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.EnumMap;
@@ -46,5 +47,17 @@ public class WindowsShapes {
             box(-16, 0, 0, 16, 32, 2),
             box(14, 0, -16, 16, 32, 16),
             box(0, 0, 0, 2, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> WINSC = createShape(
+            Shapes.or(box(0, 0, 14, 16, 16, 16),box(0, 0, 0, 2, 16, 16)),
+            Shapes.or(box(0, 0, 0, 16, 16, 2), box(14, 0, 0, 16, 16, 16)),
+            Shapes.or(box(14, 0, 0, 16, 16, 16), box(0, 0, 14, 16, 16, 16)),
+            Shapes.or(box(0, 0, 0, 2, 16, 16), box(0, 0, 0, 16, 16, 2))
+    );
+    public static final Map<Direction, VoxelShape> WINLC = createShape(
+            Shapes.or(box(0, 0, 14, 16, 16, 16),box(0, 0, 0, 2, 16, 16)),
+            Shapes.or(box(0, 0, 0, 16, 16, 2), box(14, 0, 0, 16, 16, 16)),
+            Shapes.or(box(14, 0, 0, 16, 16, 16), box(0, 0, 14, 16, 16, 16)),
+            Shapes.or(box(0, 0, 0, 2, 16, 16), box(0, 0, 0, 16, 16, 2))
     );
 }

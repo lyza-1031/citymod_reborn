@@ -162,6 +162,22 @@ public class ModRegistry {
     public static final RegistryObject<Block> WMAG= registerWindow("window_medium_a_green",  WindowsShapes.WINMA);
     public static final RegistryObject<Block> WMBG= registerWindow("window_mediub_b_green",  WindowsShapes.WINMB);
     public static final RegistryObject<Block> WLG= registerWindow("window_large_green",  WindowsShapes.WINL);
+    public static final RegistryObject<Block> WSCW= registerWindow("window_corner_white_small",  WindowsShapes.WINSC);
+    public static final RegistryObject<Block> WSCK= registerWindow("window_corner_black_small",  WindowsShapes.WINSC);
+    public static final RegistryObject<Block> WSCB= registerWindow("window_corner_small_blue",  WindowsShapes.WINSC);
+    public static final RegistryObject<Block> WSCG= registerWindow("window_corner_small_green",  WindowsShapes.WINSC);
+    public static final RegistryObject<Block> WLCW= registerWindow("window_corner_white_large",  WindowsShapes.WINLC);
+    public static final RegistryObject<Block> WLCK= registerWindow("window_corner_black_large",  WindowsShapes.WINLC);
+    public static final RegistryObject<Block> WLCB= registerWindow("window_corner_blue",  WindowsShapes.WINLC);
+    public static final RegistryObject<Block> WLCG= registerWindow("window_corner_green",  WindowsShapes.WINLC);
+    public static final RegistryObject<Block> WSOW= registerWindow("w_indow_oblique_white",  WindowsShapes.WINSC);
+    public static final RegistryObject<Block> WSOK= registerWindow("window_oblique",  WindowsShapes.WINSC);
+    public static final RegistryObject<Block> WSOB= registerWindow("window_oblique_blue",  WindowsShapes.WINSC);
+    public static final RegistryObject<Block> WSOG= registerWindow("window_oblique_green",  WindowsShapes.WINSC);
+    public static final RegistryObject<Block> WLOW= registerWindow("window_oblique_large_white",  WindowsShapes.WINLC);
+    public static final RegistryObject<Block> WLOK= registerWindow("window_oblique_large",  WindowsShapes.WINLC);
+    public static final RegistryObject<Block> WLOB= registerWindow("window_oblique_large_blue",  WindowsShapes.WINLC);
+    public static final RegistryObject<Block> WLOG= registerWindow("window_oblique_large_green",  WindowsShapes.WINLC);
     // ==================== 海报 ====================
     public static final RegistryObject<Block> POST_1691 = registerSign("post_1691", PostShapes.Post1691);
     public static final RegistryObject<Block> POST_1692 = registerSign("post_1692", PostShapes.Post1692);
@@ -274,7 +290,10 @@ public class ModRegistry {
                     .icon(() -> new ItemStack(WLW.get().asItem()))
                     .displayItems((params, output) -> {
                         addAll(output,
-                                WSW,WMAW,WMBW,WLW,WSK,WMAK,WMBK,WLK,WSB,WMAB,WMBB,WLB,WSG,WMAG,WMBG,WLG
+                                WSW,WMAW,WMBW,WLW,WSCW,WLCW,WSOW,WLOW,
+                                WSK,WMAK,WMBK,WLK,WSCK,WLCK,WSOK,WLOK,
+                                WSB,WMAB,WMBB,WLB,WSCB,WLCB,WLOB,WSOB,
+                                WSG,WMAG,WMBG,WLG,WSCG,WLCG,WSOG,WLOG
                         );
                     })
                     .build()

@@ -30,6 +30,22 @@ public class WindowsBlocks {
     public static final RegistrySupplier<Block> WMAG= registerWindows("window_medium_a_green",  WindowsShapes.WINMA);
     public static final RegistrySupplier<Block> WMBG= registerWindows("window_mediub_b_green",  WindowsShapes.WINMB);
     public static final RegistrySupplier<Block> WLG= registerWindows("window_large_green",  WindowsShapes.WINL);
+    public static final RegistrySupplier<Block> WSCW= registerWindows("window_corner_white_small",  WindowsShapes.WINSC);
+    public static final RegistrySupplier<Block> WSCK= registerWindows("window_corner_black_small",  WindowsShapes.WINSC);
+    public static final RegistrySupplier<Block> WSCB= registerWindows("window_corner_small_blue",  WindowsShapes.WINSC);
+    public static final RegistrySupplier<Block> WSCG= registerWindows("window_corner_small_green",  WindowsShapes.WINSC);
+    public static final RegistrySupplier<Block> WLCW= registerWindows("window_corner_white_large",  WindowsShapes.WINLC);
+    public static final RegistrySupplier<Block> WLCK= registerWindows("window_corner_black_large",  WindowsShapes.WINLC);
+    public static final RegistrySupplier<Block> WLCB= registerWindows("window_corner_blue",  WindowsShapes.WINLC);
+    public static final RegistrySupplier<Block> WLCG= registerWindows("window_corner_green",  WindowsShapes.WINLC);
+    public static final RegistrySupplier<Block> WSOW= registerWindows("w_indow_oblique_white",  WindowsShapes.WINSC);
+    public static final RegistrySupplier<Block> WSOK= registerWindows("window_oblique",  WindowsShapes.WINSC);
+    public static final RegistrySupplier<Block> WSOB= registerWindows("window_oblique_blue",  WindowsShapes.WINSC);
+    public static final RegistrySupplier<Block> WSOG= registerWindows("window_oblique_green",  WindowsShapes.WINSC);
+    public static final RegistrySupplier<Block> WLOW= registerWindows("window_oblique_large_white",  WindowsShapes.WINLC);
+    public static final RegistrySupplier<Block> WLOK= registerWindows("window_oblique_large",  WindowsShapes.WINLC);
+    public static final RegistrySupplier<Block> WLOB= registerWindows("window_oblique_large_blue",  WindowsShapes.WINLC);
+    public static final RegistrySupplier<Block> WLOG= registerWindows("window_oblique_large_green",  WindowsShapes.WINLC);
 
     private static RegistrySupplier<Block> registerWindows(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericGlassBlock(shape));

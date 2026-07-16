@@ -179,18 +179,34 @@ public class ModCreativeTabs {
                         output.accept(WindowsBlocks.WMAW.get().asItem());
                         output.accept(WindowsBlocks.WMBW.get().asItem());
                         output.accept(WindowsBlocks.WLW.get().asItem());
+                        output.accept(WindowsBlocks.WSCW.get().asItem());
+                        output.accept(WindowsBlocks.WLCW.get().asItem());
+                        output.accept(WindowsBlocks.WSOW.get().asItem());
+                        output.accept(WindowsBlocks.WLOW.get().asItem());
                         output.accept(WindowsBlocks.WSK.get().asItem());
                         output.accept(WindowsBlocks.WMAK.get().asItem());
                         output.accept(WindowsBlocks.WMBK.get().asItem());
                         output.accept(WindowsBlocks.WLK.get().asItem());
+                        output.accept(WindowsBlocks.WSCK.get().asItem());
+                        output.accept(WindowsBlocks.WLCK.get().asItem());
+                        output.accept(WindowsBlocks.WSOK.get().asItem());
+                        output.accept(WindowsBlocks.WLOK.get().asItem());
                         output.accept(WindowsBlocks.WSB.get().asItem());
                         output.accept(WindowsBlocks.WMAB.get().asItem());
                         output.accept(WindowsBlocks.WMBB.get().asItem());
                         output.accept(WindowsBlocks.WLB.get().asItem());
+                        output.accept(WindowsBlocks.WSCB.get().asItem());
+                        output.accept(WindowsBlocks.WLCB.get().asItem());
+                        output.accept(WindowsBlocks.WSOB.get().asItem());
+                        output.accept(WindowsBlocks.WLOB.get().asItem());
                         output.accept(WindowsBlocks.WSG.get().asItem());
                         output.accept(WindowsBlocks.WMAG.get().asItem());
                         output.accept(WindowsBlocks.WMBG.get().asItem());
                         output.accept(WindowsBlocks.WLG.get().asItem());
+                        output.accept(WindowsBlocks.WSCG.get().asItem());
+                        output.accept(WindowsBlocks.WLCG.get().asItem());
+                        output.accept(WindowsBlocks.WSOG.get().asItem());
+                        output.accept(WindowsBlocks.WLOG.get().asItem());
                     })
                     .build()
     );
