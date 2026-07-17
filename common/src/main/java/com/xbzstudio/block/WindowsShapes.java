@@ -55,9 +55,33 @@ public class WindowsShapes {
             Shapes.or(box(0, 0, 0, 2, 16, 16), box(0, 0, 0, 16, 16, 2))
     );
     public static final Map<Direction, VoxelShape> WINLC = createShape(
-            Shapes.or(box(0, 0, 14, 16, 16, 16),box(0, 0, 0, 2, 16, 16)),
-            Shapes.or(box(0, 0, 0, 16, 16, 2), box(14, 0, 0, 16, 16, 16)),
-            Shapes.or(box(14, 0, 0, 16, 16, 16), box(0, 0, 14, 16, 16, 16)),
-            Shapes.or(box(0, 0, 0, 2, 16, 16), box(0, 0, 0, 16, 16, 2))
+            Shapes.or(box(0, 0, 14, 16, 32, 16),box(0, 0, 0, 2, 32, 16)),
+            Shapes.or(box(0, 0, 0, 16, 32, 2), box(14, 0, 0, 16, 32, 16)),
+            Shapes.or(box(14, 0, 0, 16, 32, 16), box(0, 0, 14, 16, 32, 16)),
+            Shapes.or(box(0, 0, 0, 2, 32, 16), box(0, 0, 0, 16, 32, 2))
+    );
+    public static final Map<Direction, VoxelShape> WINCS = createShape(
+            box(0, 0, 7, 16, 16, 9),
+			box(0, 0, 7, 16, 16, 9),
+			box(7, 0, 0, 9, 16, 16),
+			box(7, 0, 0, 9, 16, 16)
+    );
+    public static final Map<Direction, VoxelShape> WINCMA = createShape(
+            box(0, 0, 7, 16, 32, 9),
+            box(0, 0, 7, 16, 32, 9),
+            box(7, 0, 0, 9, 32, 16),
+            box(7, 0, 0, 9, 32, 16)
+    );
+    public static final Map<Direction, VoxelShape> WINCMB = createShape(
+            box(0, 0, 7, 32, 16, 9),
+            box(-16, 0, 7, 16, 16, 9),
+            box(7, 0, -16, 9, 16, 16),
+            box(7, 0, 0, 9, 16, 32)
+    );
+    public static final Map<Direction, VoxelShape> WINCL = createShape(
+            box(0, 0, 7, 32, 32, 9),
+            box(-16, 0, 7, 16, 32, 9),
+            box(7, 0, -16, 9, 32, 16),
+            box(7, 0, 0, 9, 32, 32)
     );
 }

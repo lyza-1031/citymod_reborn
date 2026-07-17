@@ -46,6 +46,14 @@ public class WindowsBlocks {
     public static final RegistrySupplier<Block> WLOK= registerWindows("window_oblique_large",  WindowsShapes.WINLC);
     public static final RegistrySupplier<Block> WLOB= registerWindows("window_oblique_large_blue",  WindowsShapes.WINLC);
     public static final RegistrySupplier<Block> WLOG= registerWindows("window_oblique_large_green",  WindowsShapes.WINLC);
+    public static final RegistrySupplier<Block> SIWC= registerWindows("style_iron_window_corner",  WindowsShapes.WINLC);
+    public static final RegistrySupplier<Block> SIW= registerWindows("style_iron_window",  WindowsShapes.WINMA);
+    public static final RegistrySupplier<Block> WW= registerWindows("wooden_window",  WindowsShapes.WINCS);
+    public static final RegistrySupplier<Block> SWS= registerWindows("security_window_small",  WindowsShapes.WINCS);
+    public static final RegistrySupplier<Block> SWMA= registerWindows("security_window_small_2",  WindowsShapes.WINCMB);
+    public static final RegistrySupplier<Block> SWMB= registerWindows("security_window_medium",  WindowsShapes.WINCMA);
+    public static final RegistrySupplier<Block> SWL= registerWindows("security_window_large",  WindowsShapes.WINCL);
+    public static final RegistrySupplier<Block> OW= registerWindows("old_window",  WindowsShapes.WINCS);
 
     private static RegistrySupplier<Block> registerWindows(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericGlassBlock(shape));

@@ -178,6 +178,14 @@ public class ModRegistry {
     public static final RegistryObject<Block> WLOK= registerWindow("window_oblique_large",  WindowsShapes.WINLC);
     public static final RegistryObject<Block> WLOB= registerWindow("window_oblique_large_blue",  WindowsShapes.WINLC);
     public static final RegistryObject<Block> WLOG= registerWindow("window_oblique_large_green",  WindowsShapes.WINLC);
+    public static final RegistryObject<Block> SIWC= registerWindow("style_iron_window_corner",  WindowsShapes.WINLC);
+    public static final RegistryObject<Block> SIW= registerWindow("style_iron_window",  WindowsShapes.WINMA);
+    public static final RegistryObject<Block> WW= registerWindow("wooden_window",  WindowsShapes.WINCS);
+    public static final RegistryObject<Block> OW= registerWindow("old_window",  WindowsShapes.WINCS);
+    public static final RegistryObject<Block> SWS= registerWindow("security_window_small",  WindowsShapes.WINCS);
+    public static final RegistryObject<Block> SWMA= registerWindow("security_window_small_2",  WindowsShapes.WINCMB);
+    public static final RegistryObject<Block> SWMB= registerWindow("security_window_medium",  WindowsShapes.WINCMA);
+    public static final RegistryObject<Block> SWL= registerWindow("security_window_large",  WindowsShapes.WINCL);
     // ==================== 海报 ====================
     public static final RegistryObject<Block> POST_1691 = registerSign("post_1691", PostShapes.Post1691);
     public static final RegistryObject<Block> POST_1692 = registerSign("post_1692", PostShapes.Post1692);
@@ -236,7 +244,8 @@ public class ModRegistry {
                                SpeedLimitSign4,SpeedLimitSign6,SpeedLimitSign5,SpeedLimitSign8,SpeedLimitSign7,SpeedLimitSign,SpeedLimitSign2,SpeedLimitSign3,
                                ModernFence, ModernFence2, ModernFence3,ModernIronFence,ModernIronFenceYellow,ModernIronFenceGreen,ModernIronFenceBlue,
                                RestRoomSignMale,RestRoomSignFeMale,RestRoomSignThird,
-                               ACCOVER,ACCOVERLIGHT
+                               ACCOVER,ACCOVERLIGHT,
+                               SWS,SWMA,SWMB,SWL
                         );
                     })
                     .build()
@@ -293,7 +302,8 @@ public class ModRegistry {
                                 WSW,WMAW,WMBW,WLW,WSCW,WLCW,WSOW,WLOW,
                                 WSK,WMAK,WMBK,WLK,WSCK,WLCK,WSOK,WLOK,
                                 WSB,WMAB,WMBB,WLB,WSCB,WLCB,WLOB,WSOB,
-                                WSG,WMAG,WMBG,WLG,WSCG,WLCG,WSOG,WLOG
+                                WSG,WMAG,WMBG,WLG,WSCG,WLCG,WSOG,WLOG,
+                                SIW,SIWC,WW,OW
                         );
                     })
                     .build()

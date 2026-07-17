@@ -96,6 +96,10 @@ public class ModCreativeTabs {
                         output.accept(CityBlocks.RestRoomSignThird.get().asItem());
                         output.accept(CityBlocks.ACCOVER.get().asItem());
                         output.accept(CityBlocks.ACCOVERLIGHT.get().asItem());
+                        output.accept(WindowsBlocks.SWS.get().asItem());
+                        output.accept(WindowsBlocks.SWMA.get().asItem());
+                        output.accept(WindowsBlocks.SWMB.get().asItem());
+                        output.accept(WindowsBlocks.SWL.get().asItem());
                     })
                     .build()
     );
@@ -207,6 +211,10 @@ public class ModCreativeTabs {
                         output.accept(WindowsBlocks.WLCG.get().asItem());
                         output.accept(WindowsBlocks.WSOG.get().asItem());
                         output.accept(WindowsBlocks.WLOG.get().asItem());
+                        output.accept(WindowsBlocks.SIWC.get().asItem());
+                        output.accept(WindowsBlocks.SIW.get().asItem());
+                        output.accept(WindowsBlocks.WW.get().asItem());
+                        output.accept(WindowsBlocks.OW.get().asItem());
                     })
                     .build()
     );
