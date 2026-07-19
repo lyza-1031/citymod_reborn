@@ -80,15 +80,29 @@ public class ModRegistry {
     public static final RegistryObject<Block> POLE_EXPR_M = registerSign("pole_exprmid", BlockShapes.POLE_EXPR_M);
     public static final RegistryObject<Block> POLEFINE_D = registerSign("pole_fine_d", BlockShapes.POLEFINE_D);
     public static final RegistryObject<Block> POLEFINE_JOINT_D = registerSign("polefine_joint_d", BlockShapes.POLEFINE_JOINT_D);
+    public static final RegistryObject<Block> DSign = registerAppliance("direction_sign",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignL = registerAppliance("direction_sign_left",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignR = registerAppliance("direction_sign_right",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignLS = registerAppliance("direction_sign_left_straight",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignRS = registerAppliance("direction_sign_right_straight",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignLR = registerAppliance("direction_sign_left_right",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignLT = registerAppliance("direction_sign_left_turnoff",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignT = registerAppliance("direction_signturnoff",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignST = registerAppliance("direction_straight_turnoff",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignA = registerAppliance("all_direction_sign",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignV = registerAppliance("variable_lanes",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignB = registerAppliance("bus_lane",  CityShapes.Direction_Sign);
+    public static final RegistryObject<Block> DSignBK = registerAppliance("bike_lane",  CityShapes.Direction_Sign);
     // ==================== 城市 ====================
-    public static final RegistryObject<Block> SpeedLimitSign = registerAppliance("speed_limit_sign_1", CityShapes.SpeedLimitSign);
-    public static final RegistryObject<Block> SpeedLimitSign2 = registerAppliance("speed_limit_sign_2", CityShapes.SpeedLimitSign2);
-    public static final RegistryObject<Block> SpeedLimitSign3 = registerAppliance("speed_limit_sign_3", CityShapes.SpeedLimitSign3);
-    public static final RegistryObject<Block> SpeedLimitSign4 = registerAppliance("speed_limit_sign_4", CityShapes.SpeedLimitSign4);
-    public static final RegistryObject<Block> SpeedLimitSign5 = registerAppliance("speed_limit_sign_5", CityShapes.SpeedLimitSign5);
-    public static final RegistryObject<Block> SpeedLimitSign6 = registerAppliance("speed_limit_sign_6", CityShapes.SpeedLimitSign8);
-    public static final RegistryObject<Block> SpeedLimitSign7 = registerAppliance("speed_limit_sign_7", CityShapes.SpeedLimitSign7);
-    public static final RegistryObject<Block> SpeedLimitSign8 = registerAppliance("speed_limit_sign_8", CityShapes.SpeedLimitSign8);
+    public static final RegistryObject<Block> SpeedLimitSign = registerAppliance("speed_limit_sign", CityShapes.SpeedLimitSign);
+    public static final RegistryObject<Block> SpeedLimitSign1 = registerAppliance("speed_limit_sign_1", CityShapes.SpeedLimitSign);
+    public static final RegistryObject<Block> SpeedLimitSign2 = registerAppliance("speed_limit_sign_2", CityShapes.SpeedLimitSign);
+    public static final RegistryObject<Block> SpeedLimitSign3 = registerAppliance("speed_limit_sign_3", CityShapes.SpeedLimitSign);
+    public static final RegistryObject<Block> SpeedLimitSign4 = registerAppliance("speed_limit_sign_4", CityShapes.SpeedLimitSign);
+    public static final RegistryObject<Block> SpeedLimitSign5 = registerAppliance("speed_limit_sign_5", CityShapes.SpeedLimitSign);
+    public static final RegistryObject<Block> SpeedLimitSign6 = registerAppliance("speed_limit_sign_6", CityShapes.SpeedLimitSign);
+    public static final RegistryObject<Block> SpeedLimitSign7 = registerAppliance("speed_limit_sign_7", CityShapes.SpeedLimitSign);
+    public static final RegistryObject<Block> SpeedLimitSign8 = registerAppliance("speed_limit_sign_8", CityShapes.SpeedLimitSign);
     public static final RegistryObject<Block> ModernFence = registerAppliance("modern_fence",  CityShapes.ModernFence);
     public static final RegistryObject<Block> ModernFence2 = registerAppliance("modern_fence_2",  CityShapes.ModernFence2);
     public static final RegistryObject<Block> ModernFence3 = registerAppliance("modern_fence_3",  CityShapes.ModernFence3);
@@ -242,6 +256,7 @@ public class ModRegistry {
                                 ROAD_1, ROAD_2, ROAD_3, ROAD_4, ROAD_5, ROAD_12,
                                 OVER_PASS_5, YELLOW_SIGN_2, ROADSCREEN,
                                 FREESIGN,FREEExprSIGN,
+                                DSign,DSignL,DSignR,DSignLS,DSignRS,DSignLR,DSignT,DSignST,DSignLT,DSignA,DSignB,DSignBK,DSignV,
                                 POLE,POLE_JOINT_L,POLE_JOINT_,POLE_JOINT_D,POLE_H,POLE_EXPR_L,POLE_EXPR_R,POLE_EXPR_M,POLEFINE_D,POLEFINE_JOINT_D
                         );
                     })
@@ -254,7 +269,7 @@ public class ModRegistry {
                     .icon(() -> new ItemStack(SpeedLimitSign.get().asItem()))
                     .displayItems((params, output) -> {
                         addAll(output,
-                               SpeedLimitSign4,SpeedLimitSign6,SpeedLimitSign5,SpeedLimitSign8,SpeedLimitSign7,SpeedLimitSign,SpeedLimitSign2,SpeedLimitSign3,
+                               SpeedLimitSign4,SpeedLimitSign6,SpeedLimitSign5,SpeedLimitSign8,SpeedLimitSign7,SpeedLimitSign,SpeedLimitSign1,SpeedLimitSign2,SpeedLimitSign3,
                                ModernFence, ModernFence2, ModernFence3,ModernIronFence,ModernIronFenceYellow,ModernIronFenceGreen,ModernIronFenceBlue,
                                RestRoomSignMale,RestRoomSignFeMale,RestRoomSignThird,
                                ACCOVER,ACCOVERLIGHT,

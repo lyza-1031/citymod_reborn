@@ -14,14 +14,15 @@ public class CityBlocks {
             DeferredRegister.create("citymod", Registries.ITEM);
 
     // ==================== 方块 ====================
-    public static final RegistrySupplier<Block> SpeedLimitSign = registerCities("speed_limit_sign_1",  CityShapes.SpeedLimitSign);
-    public static final RegistrySupplier<Block> SpeedLimitSign2 = registerCities("speed_limit_sign_2",  CityShapes.SpeedLimitSign2);
-    public static final RegistrySupplier<Block> SpeedLimitSign3 = registerCities("speed_limit_sign_3",  CityShapes.SpeedLimitSign3);
-    public static final RegistrySupplier<Block> SpeedLimitSign4 = registerCities("speed_limit_sign_4",  CityShapes.SpeedLimitSign4);
-    public static final RegistrySupplier<Block> SpeedLimitSign5 = registerCities("speed_limit_sign_5",  CityShapes.SpeedLimitSign5);
-    public static final RegistrySupplier<Block> SpeedLimitSign6 = registerCities("speed_limit_sign_6",  CityShapes.SpeedLimitSign6);
-    public static final RegistrySupplier<Block> SpeedLimitSign7 = registerCities("speed_limit_sign_7",  CityShapes.SpeedLimitSign7);
-    public static final RegistrySupplier<Block> SpeedLimitSign8 = registerCities("speed_limit_sign_8",  CityShapes.SpeedLimitSign8);
+    public static final RegistrySupplier<Block> SpeedLimitSign = registerCities("speed_limit_sign",  CityShapes.SpeedLimitSign);
+    public static final RegistrySupplier<Block> SpeedLimitSign1 = registerCities("speed_limit_sign_1",  CityShapes.SpeedLimitSign);
+    public static final RegistrySupplier<Block> SpeedLimitSign2 = registerCities("speed_limit_sign_2",  CityShapes.SpeedLimitSign);
+    public static final RegistrySupplier<Block> SpeedLimitSign3 = registerCities("speed_limit_sign_3",  CityShapes.SpeedLimitSign);
+    public static final RegistrySupplier<Block> SpeedLimitSign4 = registerCities("speed_limit_sign_4",  CityShapes.SpeedLimitSign);
+    public static final RegistrySupplier<Block> SpeedLimitSign5 = registerCities("speed_limit_sign_5",  CityShapes.SpeedLimitSign);
+    public static final RegistrySupplier<Block> SpeedLimitSign6 = registerCities("speed_limit_sign_6",  CityShapes.SpeedLimitSign);
+    public static final RegistrySupplier<Block> SpeedLimitSign7 = registerCities("speed_limit_sign_7",  CityShapes.SpeedLimitSign);
+    public static final RegistrySupplier<Block> SpeedLimitSign8 = registerCities("speed_limit_sign_8",  CityShapes.SpeedLimitSign);
     public static final RegistrySupplier<Block> ModernFence = registerCities("modern_fence",  CityShapes.ModernFence);
     public static final RegistrySupplier<Block> ModernFence2 = registerCities("modern_fence_2",  CityShapes.ModernFence2);
     public static final RegistrySupplier<Block> ModernFence3 = registerCities("modern_fence_3",  CityShapes.ModernFence3);
@@ -38,6 +39,19 @@ public class CityBlocks {
     public static final RegistrySupplier<Block> SHOPSIGNRED = registerCities("red_shop_sign",  CityShapes.ShopSign);
     public static final RegistrySupplier<Block> SHOPSIGNBLUEJ = registerCities("blue_shop_sign_joint",  CityShapes.ShopSignJ);
     public static final RegistrySupplier<Block> SHOPSIGNREDJ = registerCities("red_shop_sign_joint",  CityShapes.ShopSignJ);
+    public static final RegistrySupplier<Block> DSign = registerCities("direction_sign",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignL = registerCities("direction_sign_left",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignR = registerCities("direction_sign_right",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignLS = registerCities("direction_sign_left_straight",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignRS = registerCities("direction_sign_right_straight",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignLR = registerCities("direction_sign_left_right",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignLT = registerCities("direction_sign_left_turnoff",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignT = registerCities("direction_signturnoff",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignST = registerCities("direction_straight_turnoff",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignA = registerCities("all_direction_sign",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignV = registerCities("variable_lanes",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignB = registerCities("bus_lane",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> DSignBK = registerCities("bike_lane",  CityShapes.Direction_Sign);
 
     private static RegistrySupplier<Block> registerCities(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));

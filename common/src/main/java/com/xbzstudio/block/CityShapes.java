@@ -32,48 +32,6 @@ public class CityShapes {
             box(0, 2, 1, 0.125, 16, 15),
             box(15.875, 2, 1, 16, 16, 15)
     );
-    public static final Map<Direction, VoxelShape> SpeedLimitSign2 = createShape(
-            box(1, 2, 0, 15, 16, 0.125),
-            box(1, 2, 15.875, 15, 16, 16),
-            box(0, 2, 1, 0.125, 16, 15),
-            box(15.875, 2, 1, 16, 16, 15)
-    );
-    public static final Map<Direction, VoxelShape> SpeedLimitSign3 = createShape(
-            box(1, 2, 0, 15, 16, 0.125),
-            box(1, 2, 15.875, 15, 16, 16),
-            box(0, 2, 1, 0.125, 16, 15),
-            box(15.875, 2, 1, 16, 16, 15)
-    );
-    public static final Map<Direction, VoxelShape> SpeedLimitSign4 = createShape(
-            box(1, 2, 0, 15, 16, 0.125),
-            box(1, 2, 15.875, 15, 16, 16),
-            box(0, 2, 1, 0.125, 16, 15),
-            box(15.875, 2, 1, 16, 16, 15)
-    );
-    public static final Map<Direction, VoxelShape> SpeedLimitSign5 = createShape(
-            box(1, 2, 0, 15, 16, 0.125),
-            box(1, 2, 15.875, 15, 16, 16),
-            box(0, 2, 1, 0.125, 16, 15),
-            box(15.875, 2, 1, 16, 16, 15)
-    );
-    public static final Map<Direction, VoxelShape> SpeedLimitSign6 = createShape(
-            box(1, 2, 0, 15, 16, 0.125),
-            box(1, 2, 15.875, 15, 16, 16),
-            box(0, 2, 1, 0.125, 16, 15),
-            box(15.875, 2, 1, 16, 16, 15)
-    );
-    public static final Map<Direction, VoxelShape> SpeedLimitSign7 = createShape(
-            box(1, 2, 0, 15, 16, 0.125),
-            box(1, 2, 15.875, 15, 16, 16),
-            box(0, 2, 1, 0.125, 16, 15),
-            box(15.875, 2, 1, 16, 16, 15)
-    );
-    public static final Map<Direction, VoxelShape> SpeedLimitSign8 = createShape(
-            box(1, 2, 0, 15, 16, 0.125),
-            box(1, 2, 15.875, 15, 16, 16),
-            box(0, 2, 1, 0.125, 16, 15),
-            box(15.875, 2, 1, 16, 16, 15)
-    );
     public static final Map<Direction, VoxelShape> ModernFence = createShape(
             box(0, 0, 7, 16, 16, 9),
 			box(0, 0, 7, 16, 16, 9),
@@ -175,5 +133,11 @@ public class CityShapes {
                     box(10.75836, -1.79189, 2.001, 11.75636, 14.29799, 3.999),
                     box(10.75836, -1.79189, 12.001, 11.75636, 14.29799, 13.999),
                     box(2, 0, 2, 4, 15, 4))
+    );
+    public static final Map<Direction, VoxelShape> Direction_Sign = createShape(
+            box(0, 2, 0, 16, 32, 1),
+            box(0, 2, 15, 16, 32, 16),
+            box(0, 2, 0, 1, 32, 16),
+            box(15, 2, 0, 16, 32, 16)
     );
 }

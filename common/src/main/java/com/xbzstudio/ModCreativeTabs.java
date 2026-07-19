@@ -57,6 +57,19 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.FREESIGN.get().asItem());
                         output.accept(ModBlocks.FREEExprSIGN.get().asItem());
                         output.accept(ModBlocks.ROADSCREEN.get().asItem());
+                        output.accept(CityBlocks.DSign.get().asItem());
+                        output.accept(CityBlocks.DSignL.get().asItem());
+                        output.accept(CityBlocks.DSignR.get().asItem());
+                        output.accept(CityBlocks.DSignT.get().asItem());
+                        output.accept(CityBlocks.DSignLS.get().asItem());
+                        output.accept(CityBlocks.DSignRS.get().asItem());
+                        output.accept(CityBlocks.DSignLR.get().asItem());
+                        output.accept(CityBlocks.DSignLT.get().asItem());
+                        output.accept(CityBlocks.DSignST.get().asItem());
+                        output.accept(CityBlocks.DSignA.get().asItem());
+                        output.accept(CityBlocks.DSignV.get().asItem());
+                        output.accept(CityBlocks.DSignB.get().asItem());
+                        output.accept(CityBlocks.DSignBK.get().asItem());
                         output.accept(ModBlocks.POLE.get().asItem());
                         output.accept(ModBlocks.POLE_JOINT_D.get().asItem());
                         output.accept(ModBlocks.POLE_JOINT.get().asItem());
@@ -82,6 +95,7 @@ public class ModCreativeTabs {
                         output.accept(CityBlocks.SpeedLimitSign8.get().asItem());
                         output.accept(CityBlocks.SpeedLimitSign7.get().asItem());
                         output.accept(CityBlocks.SpeedLimitSign.get().asItem());
+                        output.accept(CityBlocks.SpeedLimitSign1.get().asItem());
                         output.accept(CityBlocks.SpeedLimitSign2.get().asItem());
                         output.accept(CityBlocks.SpeedLimitSign3.get().asItem());
                         output.accept(CityBlocks.ModernFence.get().asItem());
