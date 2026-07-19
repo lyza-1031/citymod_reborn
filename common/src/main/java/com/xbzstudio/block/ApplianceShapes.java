@@ -284,4 +284,28 @@ public class ApplianceShapes {
             box(3, -16, -5, 13, 20, 21),
             box(3, -16, -5, 13, 20, 21)
     );
+    public static final Map<Direction, VoxelShape> WardrobeL = createShape(
+            box(0, -16, 0, 32, 32, 16),
+            box(-16, -16, 0, 16, 32, 16),
+            box(0, -16, -16, 16, 32, 16),
+            box(0, -16, 0, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> WardrobeM = createShape(
+        box(0, -16, 0, 16, 32, 16),
+        box(0, -16, 0, 16, 32, 16),
+        box(0, -16, 0, 16, 32, 16),
+        box(0, -16, 0, 16, 32, 16)
+    );
+    public static final Map<Direction, VoxelShape> WardrobeS = createShape(
+            box(0, 0, 0, 16, 16, 16),
+            box(0, 0, 0, 16, 16, 16),
+            box(0, 0, 0, 16, 16, 16),
+            box(0, 0, 0, 16, 16, 16)
+    );
+    public static final Map<Direction, VoxelShape> ExpressBox = createShape(
+            box(-16, -16, 0, 16, 32, 14),
+			box(0, -16, 2, 32, 32, 16),
+			box(0, -16, 0, 14, 32, 32),
+			box(2, -16, -16, 16, 32, 16)
+    );
 }

@@ -2,6 +2,7 @@ package com.xbzstudio.block;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.EnumMap;
@@ -138,5 +139,41 @@ public class CityShapes {
             box(-4, 0, 14, 18, 16, 18),
             box(-2, 0, -4, 2, 16, 18),
 			box(14, 0, -4, 18, 16, 18)
+    );
+    public static final Map<Direction, VoxelShape> ShopSign = createShape(
+            box(0, 0, 14, 16, 15, 16),
+			box(0, 0, 0, 16, 15, 2),
+			box(14, 0, 0, 16, 15, 16),
+			box(0, 0, 0, 2, 15, 16)
+    );
+    public static final Map<Direction, VoxelShape> ShopSignJ = createShape(
+            Shapes.or(box(0, 0, 14, 16, 15, 16),
+                    box(12, 0, 12, 14, 15, 14),
+                    box(12, 0, 0, 14, 2, 12),
+                    box(2, 0, 0, 4, 2, 12),
+                    box(2.001, -1.79189, 4.24364, 3.999, 14.29799, 5.24164),
+                    box(12.001, -1.79189, 4.24364, 13.999, 14.29799, 5.24164),
+                    box(2, 0, 12, 4, 15, 14)),
+			Shapes.or(box(0, 0, 0, 16, 15, 2),
+                    box(2, 0, 2, 4, 15, 4),
+                    box(2, 0, 4, 4, 2, 16),
+                    box(12, 0, 4, 14, 2, 16),
+                    box(12.001, -1.79189, 10.75836, 13.999, 14.29799, 11.75636),
+                    box(2.001, -1.79189, 10.75836, 3.999, 14.29799, 11.75636),
+                    box(12, 0, 2, 14, 15, 4)),
+			Shapes.or(box(14, 0, 0, 16, 15, 16),
+                    box(12, 0, 2, 14, 15, 4),
+                    box(0, 0, 2, 12, 2, 4),
+                    box(0, 0, 12, 12, 2, 14),
+                    box(4.24364, -1.79189, 12.001, 5.24164, 14.29799, 13.999),
+                    box(4.24364, -1.79189, 2.001, 5.24164, 14.29799, 3.999),
+                    box(12, 0, 12, 14, 15, 14)),
+			Shapes.or(box(0, 0, 0, 2, 15, 16),
+                    box(2, 0, 12, 4, 15, 14),
+                    box(4, 0, 12, 16, 2, 14),
+                    box(4, 0, 2, 16, 2, 4),
+                    box(10.75836, -1.79189, 2.001, 11.75636, 14.29799, 3.999),
+                    box(10.75836, -1.79189, 12.001, 11.75636, 14.29799, 13.999),
+                    box(2, 0, 2, 4, 15, 4))
     );
 }

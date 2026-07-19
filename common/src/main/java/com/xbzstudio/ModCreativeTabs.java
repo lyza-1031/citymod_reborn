@@ -100,6 +100,10 @@ public class ModCreativeTabs {
                         output.accept(WindowsBlocks.SWMA.get().asItem());
                         output.accept(WindowsBlocks.SWMB.get().asItem());
                         output.accept(WindowsBlocks.SWL.get().asItem());
+                        output.accept(CityBlocks.SHOPSIGNBLUE.get().asItem());
+                        output.accept(CityBlocks.SHOPSIGNBLUEJ.get().asItem());
+                        output.accept(CityBlocks.SHOPSIGNRED.get().asItem());
+                        output.accept(CityBlocks.SHOPSIGNREDJ.get().asItem());
                     })
                     .build()
     );
@@ -140,6 +144,14 @@ public class ModCreativeTabs {
                         output.accept(ApplianceBlocks.MODERNMAINUNIT.get().asItem());
                         output.accept(ApplianceBlocks.AIOPC.get().asItem());
                         output.accept(ApplianceBlocks.LAPTOP.get().asItem());
+                        output.accept(ApplianceBlocks.OWardrobeS.get().asItem());
+                        output.accept(ApplianceBlocks.OWardrobeM.get().asItem());
+                        output.accept(ApplianceBlocks.OWardrobeC.get().asItem());
+                        output.accept(ApplianceBlocks.MWardrobeS.get().asItem());
+                        output.accept(ApplianceBlocks.MWardrobeM.get().asItem());
+                        output.accept(ApplianceBlocks.MWardrobeL.get().asItem());
+                        output.accept(ApplianceBlocks.EXPRESSBOX.get().asItem());
+                        output.accept(ApplianceBlocks.EXPRESSBOX2.get().asItem());
                     })
                     .build()
     );

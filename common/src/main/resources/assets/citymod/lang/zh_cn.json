@@ -214,7 +214,7 @@
   "block.citymod.pole_joint_l": "杆接头（左）",
   "block.citymod.glass_fence": "玻璃围栏",
   "block.citymod.micro_wave_oven": "微波炉",
-  "block.citymod.modernwardrobe": "老衣柜",
+  "block.citymod.modernwardrobe": "现代衣柜",
   "block.citymod.window_corner_white_small": "现代玻璃窗（白色）",
   "block.citymod.vehicle_distance_confirmation_sign_b": "保持车距标志牌",
   "block.citymod.window_large_green": "现代玻璃窗（绿色）",
@@ -353,5 +353,7 @@
   "block.citymod.ac_out_nvidia": "NVIDIA GeForce RTX 2080 Ti 2TB",
   "block.citymod.large_screen_white": "大型显示器",
   "block.citymod.air_condition_hd_2": "挂式空调（高模）",
-  "block.citymod.window_oblique_large_green": "现代玻璃窗（绿色）"
+  "block.citymod.window_oblique_large_green": "现代玻璃窗（绿色）",
+  "key.categories.citymod": "我的城市",
+  "message.citymod.kill_items": "已清除掉落物！"
 }

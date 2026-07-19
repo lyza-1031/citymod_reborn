@@ -353,5 +353,7 @@
   "block.citymod.ac_out_nvidia": "NVIDIA GeForce RTX 2080 Ti 2TB",
   "block.citymod.large_screen_white": "Large Screen",
   "block.citymod.air_condition_hd_2": "AirCondition HD",
-  "block.citymod.window_oblique_large_green": "Modern window"
+  "block.citymod.window_oblique_large_green": "Modern window",
+  "key.categories.citymod": "Citymod",
+  "message.citymod.kill_items": "Deleted items!"
 }

@@ -34,6 +34,10 @@ public class CityBlocks {
     public static final RegistrySupplier<Block> RestRoomSignThird = registerCities("restroom_sign_third",  CityShapes.RestRoomSignThird);
     public static final RegistrySupplier<Block> ACCOVER = registerCities("ac_cover",  CityShapes.ACCOVER);
     public static final RegistrySupplier<Block> ACCOVERLIGHT = registerCities("ac_cover_light",  CityShapes.ACCOVER);
+    public static final RegistrySupplier<Block> SHOPSIGNBLUE = registerCities("blue_shop_sign",  CityShapes.ShopSign);
+    public static final RegistrySupplier<Block> SHOPSIGNRED = registerCities("red_shop_sign",  CityShapes.ShopSign);
+    public static final RegistrySupplier<Block> SHOPSIGNBLUEJ = registerCities("blue_shop_sign_joint",  CityShapes.ShopSignJ);
+    public static final RegistrySupplier<Block> SHOPSIGNREDJ = registerCities("red_shop_sign_joint",  CityShapes.ShopSignJ);
 
     private static RegistrySupplier<Block> registerCities(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));

@@ -101,6 +101,10 @@ public class ModRegistry {
     public static final RegistryObject<Block> RestRoomSignThird = registerAppliance("restroom_sign_third",  CityShapes.RestRoomSignThird);
     public static final RegistryObject<Block> ACCOVER = registerAppliance("ac_cover",  CityShapes.ACCOVER);
     public static final RegistryObject<Block> ACCOVERLIGHT = registerAppliance("ac_cover_light",  CityShapes.ACCOVER);
+    public static final RegistryObject<Block> SHOPSIGNBLUE = registerAppliance("blue_shop_sign",  CityShapes.ShopSign);
+    public static final RegistryObject<Block> SHOPSIGNRED = registerAppliance("red_shop_sign",  CityShapes.ShopSign);
+    public static final RegistryObject<Block> SHOPSIGNBLUEJ = registerAppliance("blue_shop_sign_joint",  CityShapes.ShopSignJ);
+    public static final RegistryObject<Block> SHOPSIGNREDJ = registerAppliance("red_shop_sign_joint",  CityShapes.ShopSignJ);
 
     // ==================== 电器 ====================
     public static final RegistryObject<Block> AC_OUT_01 = registerAppliance("ac_out_hd_1", ApplianceShapes.AC_OUT_01);
@@ -132,6 +136,15 @@ public class ModRegistry {
     public static final RegistryObject<Block> ModernMonitor = registerScreen("modern_monitor_off", ApplianceShapes.ModernMonitor);
     public static final RegistryObject<Block> AIOPC = registerScreen("all_in_one_pc", ApplianceShapes.AIOPC);
     public static final RegistryObject<Block> LAPTOP = registerScreen("laptop", ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON);
+    public static final RegistryObject<Block> EXPRESSBOX = registerLight("express_box_1",ApplianceShapes.ExpressBox);
+    public static final RegistryObject<Block> EXPRESSBOX2 = registerLight("express_box_2",ApplianceShapes.ExpressBox);
+    // ==================== 家具 ====================
+    public static final RegistryObject<Block> OWardrobeM = registerLight("oldwardrobe",ApplianceShapes.WardrobeM);
+    public static final RegistryObject<Block> OWardrobeS = registerLight("oldwardrobesmall",ApplianceShapes.WardrobeS);
+    public static final RegistryObject<Block> OWardrobeC = registerLight("oldwardrobecorner",ApplianceShapes.WardrobeM);
+    public static final RegistryObject<Block> MWardrobeM = registerLight("modernwardrobe",ApplianceShapes.WardrobeM);
+    public static final RegistryObject<Block> MWardrobeS = registerLight("modernwardrobeup",ApplianceShapes.WardrobeS);
+    public static final RegistryObject<Block> MWardrobeL = registerLight("modernwardrobeb",ApplianceShapes.WardrobeL);
     // ==================== 废弃 ====================
     public static final RegistryObject<Block> LAPTOP_ON = registerLight("laptop_poweron",ApplianceShapes.LAPTOP_ON);
     public static final RegistryObject<Block> Old_Monitor_On = registerLight("old_monitor_on",ApplianceShapes.Old_Monitor);
@@ -245,7 +258,8 @@ public class ModRegistry {
                                ModernFence, ModernFence2, ModernFence3,ModernIronFence,ModernIronFenceYellow,ModernIronFenceGreen,ModernIronFenceBlue,
                                RestRoomSignMale,RestRoomSignFeMale,RestRoomSignThird,
                                ACCOVER,ACCOVERLIGHT,
-                               SWS,SWMA,SWMB,SWL
+                               SWS,SWMA,SWMB,SWL,
+                               SHOPSIGNBLUE,SHOPSIGNBLUEJ,SHOPSIGNRED,SHOPSIGNREDJ
                         );
                     })
                     .build()
@@ -262,8 +276,9 @@ public class ModRegistry {
                                 AC_01,AC_02,AC_03,AC_04,CAC_HD,
                                 MicroWaveOven,Fridge1,Fridge2,Old_Fridge,Freezer,
                                 GASWATERHEATER,ELECTRICWATERHEATER,SOLARWATERHEATER,
-                                Old_Monitor,Monitor2010,ModernMonitor,AIOPC,Old_Mainunit,Mainunit2010,ModernMainunit,
-                                LAPTOP
+                                Old_Monitor,Monitor2010,ModernMonitor,AIOPC,Old_Mainunit,Mainunit2010,ModernMainunit,LAPTOP,
+                                OWardrobeS,OWardrobeM,OWardrobeC,MWardrobeS,MWardrobeM,MWardrobeL,
+                                EXPRESSBOX,EXPRESSBOX2
                         );
                     })
                     .build()
