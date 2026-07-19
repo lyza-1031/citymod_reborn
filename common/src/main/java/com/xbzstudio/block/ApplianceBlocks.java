@@ -58,15 +58,15 @@ public class ApplianceBlocks {
     public static final RegistrySupplier<Block> Monitor2010ON = registerLight("monitor_2010_on",ApplianceShapes.Monitor2010);
     public static final RegistrySupplier<Block> ModernMonitorOn = registerLight("modern_monitor_on",ApplianceShapes.ModernMonitor);
     public static final RegistrySupplier<Block> AIOPCON = registerLight("all_in_one_pc_on",ApplianceShapes.AIOPC);
-    public static final RegistrySupplier<Block> EXPRESSBOX = registerLight("express_box_1",ApplianceShapes.ExpressBox);
-    public static final RegistrySupplier<Block> EXPRESSBOX2 = registerLight("express_box_2",ApplianceShapes.ExpressBox);
+    public static final RegistrySupplier<Block> EXPRESSBOX = registerAppliances("express_box_1",ApplianceShapes.ExpressBox);
+    public static final RegistrySupplier<Block> EXPRESSBOX2 = registerAppliances("express_box_2",ApplianceShapes.ExpressBox);
     // ==================== 家具 ====================
-    public static final RegistrySupplier<Block> OWardrobeM = registerLight("oldwardrobe",ApplianceShapes.WardrobeM);
-    public static final RegistrySupplier<Block> OWardrobeS = registerLight("oldwardrobesmall",ApplianceShapes.WardrobeS);
-    public static final RegistrySupplier<Block> OWardrobeC = registerLight("oldwardrobecorner",ApplianceShapes.WardrobeM);
-    public static final RegistrySupplier<Block> MWardrobeM = registerLight("modernwardrobe",ApplianceShapes.WardrobeM);
-    public static final RegistrySupplier<Block> MWardrobeS = registerLight("modernwardrobeup",ApplianceShapes.WardrobeS);
-    public static final RegistrySupplier<Block> MWardrobeL = registerLight("modernwardrobeb",ApplianceShapes.WardrobeL);
+    public static final RegistrySupplier<Block> OWardrobeM = registerAppliances("oldwardrobe",ApplianceShapes.WardrobeM);
+    public static final RegistrySupplier<Block> OWardrobeS = registerAppliances("oldwardrobesmall",ApplianceShapes.WardrobeS);
+    public static final RegistrySupplier<Block> OWardrobeC = registerAppliances("oldwardrobecorner",ApplianceShapes.WardrobeM);
+    public static final RegistrySupplier<Block> MWardrobeM = registerAppliances("modernwardrobe",ApplianceShapes.WardrobeM);
+    public static final RegistrySupplier<Block> MWardrobeS = registerAppliances("modernwardrobeup",ApplianceShapes.WardrobeS);
+    public static final RegistrySupplier<Block> MWardrobeL = registerAppliances("modernwardrobeb",ApplianceShapes.WardrobeL);
     private static RegistrySupplier<Block> registerAppliances(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));
     }

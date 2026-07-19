@@ -150,15 +150,15 @@ public class ModRegistry {
     public static final RegistryObject<Block> ModernMonitor = registerScreen("modern_monitor_off", ApplianceShapes.ModernMonitor);
     public static final RegistryObject<Block> AIOPC = registerScreen("all_in_one_pc", ApplianceShapes.AIOPC);
     public static final RegistryObject<Block> LAPTOP = registerScreen("laptop", ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON);
-    public static final RegistryObject<Block> EXPRESSBOX = registerLight("express_box_1",ApplianceShapes.ExpressBox);
-    public static final RegistryObject<Block> EXPRESSBOX2 = registerLight("express_box_2",ApplianceShapes.ExpressBox);
+    public static final RegistryObject<Block> EXPRESSBOX = registerAppliance("express_box_1",ApplianceShapes.ExpressBox);
+    public static final RegistryObject<Block> EXPRESSBOX2 = registerAppliance("express_box_2",ApplianceShapes.ExpressBox);
     // ==================== 家具 ====================
-    public static final RegistryObject<Block> OWardrobeM = registerLight("oldwardrobe",ApplianceShapes.WardrobeM);
-    public static final RegistryObject<Block> OWardrobeS = registerLight("oldwardrobesmall",ApplianceShapes.WardrobeS);
-    public static final RegistryObject<Block> OWardrobeC = registerLight("oldwardrobecorner",ApplianceShapes.WardrobeM);
-    public static final RegistryObject<Block> MWardrobeM = registerLight("modernwardrobe",ApplianceShapes.WardrobeM);
-    public static final RegistryObject<Block> MWardrobeS = registerLight("modernwardrobeup",ApplianceShapes.WardrobeS);
-    public static final RegistryObject<Block> MWardrobeL = registerLight("modernwardrobeb",ApplianceShapes.WardrobeL);
+    public static final RegistryObject<Block> OWardrobeM = registerAppliance("oldwardrobe",ApplianceShapes.WardrobeM);
+    public static final RegistryObject<Block> OWardrobeS = registerAppliance("oldwardrobesmall",ApplianceShapes.WardrobeS);
+    public static final RegistryObject<Block> OWardrobeC = registerAppliance("oldwardrobecorner",ApplianceShapes.WardrobeM);
+    public static final RegistryObject<Block> MWardrobeM = registerAppliance("modernwardrobe",ApplianceShapes.WardrobeM);
+    public static final RegistryObject<Block> MWardrobeS = registerAppliance("modernwardrobeup",ApplianceShapes.WardrobeS);
+    public static final RegistryObject<Block> MWardrobeL = registerAppliance("modernwardrobeb",ApplianceShapes.WardrobeL);
     // ==================== 废弃 ====================
     public static final RegistryObject<Block> LAPTOP_ON = registerLight("laptop_poweron",ApplianceShapes.LAPTOP_ON);
     public static final RegistryObject<Block> Old_Monitor_On = registerLight("old_monitor_on",ApplianceShapes.Old_Monitor);
