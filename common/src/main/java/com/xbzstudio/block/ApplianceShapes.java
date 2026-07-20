@@ -308,4 +308,16 @@ public class ApplianceShapes {
 			box(0, -16, 0, 14, 32, 32),
 			box(2, -16, -16, 16, 32, 16)
     );
+    public static final Map<Direction, VoxelShape> EOLACIN = createShape(
+            box(2, 0, 1, 14, 32, 6.25),
+            box(2, 0, 9.75, 14, 32, 15),
+            box(1, 0, 2, 6.25, 32, 14),
+            box(9.75, 0, 2, 15, 32, 14)
+    );
+    public static final Map<Direction, VoxelShape> EOLCAC = createShape(
+            box(-4, 15, -4, 20, 16, 20),
+			    box(-4, 15, -4, 20, 16, 20),
+			    box(-4, 15, -4, 20, 16, 20),
+			    box(-4, 15, -4, 20, 16, 20)
+    );
 }

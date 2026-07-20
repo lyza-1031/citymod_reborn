@@ -2,10 +2,7 @@ package com.xbzstudio.fabric.client;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.xbzstudio.CityMod;
-import com.xbzstudio.block.ApplianceBlocks;
-import com.xbzstudio.block.CityBlocks;
-import com.xbzstudio.block.ModBlocks;
-import com.xbzstudio.block.WindowsBlocks;
+import com.xbzstudio.block.BlockRegistry;
 import com.xbzstudio.network.KillItemsPacket;
 import dev.architectury.networking.NetworkManager;
 import net.fabricmc.api.ClientModInitializer;
@@ -15,7 +12,11 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 
 public final class citymodFabricClient implements ClientModInitializer {
 
@@ -26,17 +27,18 @@ public final class citymodFabricClient implements ClientModInitializer {
         System.setProperty("fabric.texture.size.limit", "4096");
 
         // 渲染层
-        for (var block : ApplianceBlocks.BLOCKS) {
-            BlockRenderLayerMap.INSTANCE.putBlock(block.get(), RenderType.cutoutMipped());
-        }
-        for (var block : CityBlocks.BLOCKS) {
-            BlockRenderLayerMap.INSTANCE.putBlock(block.get(), RenderType.cutoutMipped());
-        }
-        for (var block : WindowsBlocks.BLOCKS) {
-            BlockRenderLayerMap.INSTANCE.putBlock(block.get(), RenderType.translucent());
-        }
-        for (var block : ModBlocks.BLOCKS) {
-            BlockRenderLayerMap.INSTANCE.putBlock(block.get(), RenderType.cutout());
+        for (var def : BlockRegistry.BLOCKS) {
+            Block block = BuiltInRegistries.BLOCK.get(new ResourceLocation("citymod", def.id()));
+            if (block == Blocks.AIR) continue;
+
+            String id = def.id();
+            if (id.contains("window") || id.contains("glass")) {
+                BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.translucent());
+            } else if (id.contains("road")) {
+                BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.cutout());
+            } else {
+                BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.cutoutMipped());
+            }
         }
 
         // 按键绑定

@@ -1,39 +1,41 @@
 package com.xbzstudio;
 
-import com.xbzstudio.block.*;
+import com.xbzstudio.block.BlockRegistry;
 import com.xbzstudio.network.KillItemsPacket;
 import dev.architectury.networking.NetworkChannel;
+import dev.architectury.registry.registries.DeferredRegister;
+import dev.architectury.registry.registries.RegistrySupplier;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+
+import java.util.function.Supplier;
 
 public class CityMod {
     public static final String MODID = "citymod";
     public static final NetworkChannel CHANNEL = NetworkChannel.create(new ResourceLocation(MODID, "main"));
 
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(MODID, Registries.BLOCK);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MODID, Registries.ITEM);
+
     static {
         CHANNEL.register(KillItemsPacket.class, KillItemsPacket::encode, KillItemsPacket::new, KillItemsPacket::handle);
     }
 
+    @SuppressWarnings("unchecked")
     public static void init() {
-        ModBlocks.init();
-        ApplianceBlocks.init();
-        PostBlocks.init();
-        CityBlocks.init();
-        VehicleBlocks.init();
-        WindowsBlocks.init();
-
-        ModBlocks.BLOCKS.register();
-        ModBlocks.ITEMS.register();
-        ApplianceBlocks.BLOCKS.register();
-        ApplianceBlocks.ITEMS.register();
-        PostBlocks.BLOCKS.register();
-        PostBlocks.ITEMS.register();
-        CityBlocks.BLOCKS.register();
-        CityBlocks.ITEMS.register();
-        VehicleBlocks.BLOCKS.register();
-        VehicleBlocks.ITEMS.register();
-        WindowsBlocks.BLOCKS.register();
-        WindowsBlocks.ITEMS.register();
-
+        for (var def : BlockRegistry.BLOCKS) {
+            Supplier<Block> factory = (Supplier<Block>) def.factory();
+            RegistrySupplier<Block> block = BLOCKS.register(def.id(), factory);
+            ITEMS.register(def.id(), () -> new BlockItem(block.get(), new Item.Properties()));
+        }
+        BLOCKS.register();
+        ITEMS.register();
         ModCreativeTabs.TABS.register();
     }
+
 }

@@ -140,4 +140,28 @@ public class CityShapes {
             box(0, 2, 0, 1, 32, 16),
             box(15, 2, 0, 16, 32, 16)
     );
+    public static final Map<Direction, VoxelShape> Trashbin = createShape(
+            box(-3, 0, 2, 19, 22, 15),
+			    box(-3, 0, 1, 19, 22, 14),
+			    box(2, 0, -3, 15, 22, 19),
+			    box(1, 0, -3, 14, 22, 19)
+    );
+    public static final Map<Direction, VoxelShape> GlassFence = createShape(
+            box(0, 0, 7, 16, 14, 9),
+            box(0, 0, 7, 16, 14, 9),
+            box(7, 0, 0, 9, 14, 16),
+            box(7, 0, 0, 9, 14, 16)
+    );
+    public static final Map<Direction, VoxelShape> Concretebarrierfenced = createShape(
+            box(0, 0, 0, 16, 16, 16),
+            box(0, 0, 0, 16, 16, 16),
+            box(0, 0, 0, 16, 16, 16),
+            box(0, 0, 0, 16, 16, 16)
+    );
+    public static final Map<Direction, VoxelShape> Fireextinguisherbox = createShape(
+            box(2, 0, 0, 14, 16, 4),
+			box(2, 0, 12, 14, 16, 16),
+			box(0, 0, 2, 4, 16, 14),
+			box(12, 0, 2, 16, 16, 14)
+    );
 }

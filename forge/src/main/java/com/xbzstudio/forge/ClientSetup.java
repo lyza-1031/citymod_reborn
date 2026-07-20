@@ -28,14 +28,14 @@ public class ClientSetup {
             "key.categories.citymod"
     );
 
-    @SubscribeEvent
+    /*@SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             for (RegistryObject<Block> block : ModRegistry.getApplianceBlocks()) {
                 ItemBlockRenderTypes.setRenderLayer(block.get(), RenderType.cutoutMipped());
             }
         });
-    }
+    }*/
 
     @SubscribeEvent
     public static void registerKeys(RegisterKeyMappingsEvent event) {

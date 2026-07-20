@@ -396,4 +396,10 @@ public class BlockShapes {
             box(0, 0, 0, 16, 0.125, 16),
             box(0, 0, 0, 16, 0.125, 16)
     );
+    public static final Map<Direction, VoxelShape> IFRS = createShape(
+            Shapes.or(box(7.25, 0, 7.25, 8.75, 29, 8.75), box(-1, 24, 8.75, 17, 32, 9.025)),
+			    Shapes.or(box(7.25, 0, 7.25, 8.75, 29, 8.75), box(-1, 24, 6.975, 17, 32, 7.25)),
+			    Shapes.or(box(7.25, 0, 7.25, 8.75, 29, 8.75), box(8.75, 24, -1, 9.025, 32, 17)),
+			    Shapes.or(box(7.25, 0, 7.25, 8.75, 29, 8.75), box(6.975, 24, -1, 7.25, 32, 17))
+    );
 }
