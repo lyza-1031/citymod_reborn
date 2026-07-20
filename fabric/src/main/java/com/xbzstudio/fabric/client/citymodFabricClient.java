@@ -4,6 +4,7 @@ import com.mojang.blaze3d.platform.InputConstants;
 import com.xbzstudio.CityMod;
 import com.xbzstudio.block.ApplianceBlocks;
 import com.xbzstudio.block.CityBlocks;
+import com.xbzstudio.block.ModBlocks;
 import com.xbzstudio.block.WindowsBlocks;
 import com.xbzstudio.network.KillItemsPacket;
 import dev.architectury.networking.NetworkManager;
@@ -33,6 +34,9 @@ public final class citymodFabricClient implements ClientModInitializer {
         }
         for (var block : WindowsBlocks.BLOCKS) {
             BlockRenderLayerMap.INSTANCE.putBlock(block.get(), RenderType.translucent());
+        }
+        for (var block : ModBlocks.BLOCKS) {
+            BlockRenderLayerMap.INSTANCE.putBlock(block.get(), RenderType.cutout());
         }
 
         // 按键绑定

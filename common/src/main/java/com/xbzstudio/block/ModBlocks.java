@@ -62,11 +62,20 @@ public class ModBlocks {
     public static final RegistrySupplier<Block> POLEFINE_JOINT_D = registerSign("polefine_joint_d", BlockShapes.POLEFINE_JOINT_D);
     public static final RegistrySupplier<Block> FREESIGN = registerSign("free_road_sign", BlockShapes.FREESIGN);
     public static final RegistrySupplier<Block> FREEExprSIGN = registerSign("free_expressway_sign", BlockShapes.FREESIGN);
+    //交通划线
+    public static final RegistrySupplier<Block> LineW = registerSign("road_block", BlockShapes.TRAFFICLINE);
+    public static final RegistrySupplier<Block> LineWC = registerSign("road_white_connect", BlockShapes.TRAFFICLINE);
+    public static final RegistrySupplier<Block> LineY = registerSign("road_yellow", BlockShapes.TRAFFICLINE);
+    public static final RegistrySupplier<Block> LineYD = registerSign("road_yellow_double", BlockShapes.TRAFFICLINE);
+    public static final RegistrySupplier<Block> LineYC = registerSign("road_yellow_connect", BlockShapes.TRAFFICLINE);
+    public static final RegistrySupplier<Block> LineZ = registerSign("road_zebra_crossing", BlockShapes.TRAFFICLINE);
     // 路牌注册快捷方法
     private static RegistrySupplier<Block> registerSign(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericSignBlock(shape));
     }
-
+    private static RegistrySupplier<Block> registerAppliances(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
+        return BLOCKS.register(id, () -> new GenericMetalBlock(shape));
+    }
     // 初始化 BlockItems
     public static void init() {
         for (RegistrySupplier<Block> block : BLOCKS) {

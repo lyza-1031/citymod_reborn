@@ -52,7 +52,12 @@ public class CityBlocks {
     public static final RegistrySupplier<Block> DSignV = registerCities("variable_lanes",  CityShapes.Direction_Sign);
     public static final RegistrySupplier<Block> DSignB = registerCities("bus_lane",  CityShapes.Direction_Sign);
     public static final RegistrySupplier<Block> DSignBK = registerCities("bike_lane",  CityShapes.Direction_Sign);
+    public static final RegistrySupplier<Block> MH1 = registerSign("manhole_cover_a",  BlockShapes.TRAFFICLINE);
+    public static final RegistrySupplier<Block> MH2 = registerSign("manhole_cover_b",  BlockShapes.TRAFFICLINE);
 
+    private static RegistrySupplier<Block> registerSign(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
+        return BLOCKS.register(id, () -> new GenericSignBlock(shape));
+    }
     private static RegistrySupplier<Block> registerCities(String id, java.util.Map<net.minecraft.core.Direction, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         return BLOCKS.register(id, () -> new GenericMetalBlock(shape));
     }

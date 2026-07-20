@@ -390,4 +390,10 @@ public class BlockShapes {
 			      box(0, 0, 0, 1, 16, 16),
 			      box(15, 0, 0, 16, 16, 16)
     );
+    public static final Map<Direction, VoxelShape> TRAFFICLINE = createShape(
+            box(0, 0, 0, 16, 0.125, 16),
+            box(0, 0, 0, 16, 0.125, 16),
+            box(0, 0, 0, 16, 0.125, 16),
+            box(0, 0, 0, 16, 0.125, 16)
+    );
 }

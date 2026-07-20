@@ -80,6 +80,13 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.POLE_EXPR_M.get().asItem());
                         output.accept(ModBlocks.POLEFINE_D.get().asItem());
                         output.accept(ModBlocks.POLEFINE_JOINT_D.get().asItem());
+                        //标线
+                        output.accept(ModBlocks.LineW.get().asItem());
+                        output.accept(ModBlocks.LineWC.get().asItem());
+                        output.accept(ModBlocks.LineZ.get().asItem());
+                        output.accept(ModBlocks.LineY.get().asItem());
+                        output.accept(ModBlocks.LineYD.get().asItem());
+                        output.accept(ModBlocks.LineYC.get().asItem());
                     })
                     .build()
     );
@@ -118,6 +125,8 @@ public class ModCreativeTabs {
                         output.accept(CityBlocks.SHOPSIGNBLUEJ.get().asItem());
                         output.accept(CityBlocks.SHOPSIGNRED.get().asItem());
                         output.accept(CityBlocks.SHOPSIGNREDJ.get().asItem());
+                        output.accept(CityBlocks.MH1.get().asItem());
+                        output.accept(CityBlocks.MH2.get().asItem());
                     })
                     .build()
     );

@@ -93,6 +93,13 @@ public class ModRegistry {
     public static final RegistryObject<Block> DSignV = registerAppliance("variable_lanes",  CityShapes.Direction_Sign);
     public static final RegistryObject<Block> DSignB = registerAppliance("bus_lane",  CityShapes.Direction_Sign);
     public static final RegistryObject<Block> DSignBK = registerAppliance("bike_lane",  CityShapes.Direction_Sign);
+    //交通划线
+    public static final RegistryObject<Block> LineW = registerAppliance("road_block", BlockShapes.TRAFFICLINE);
+    public static final RegistryObject<Block> LineWC = registerAppliance("road_white_connect", BlockShapes.TRAFFICLINE);
+    public static final RegistryObject<Block> LineY = registerAppliance("road_yellow", BlockShapes.TRAFFICLINE);
+    public static final RegistryObject<Block> LineYD = registerAppliance("road_yellow_double", BlockShapes.TRAFFICLINE);
+    public static final RegistryObject<Block> LineYC = registerAppliance("road_yellow_connect", BlockShapes.TRAFFICLINE);
+    public static final RegistryObject<Block> LineZ = registerAppliance("road_zebra_crossing", BlockShapes.TRAFFICLINE);
     // ==================== 城市 ====================
     public static final RegistryObject<Block> SpeedLimitSign = registerAppliance("speed_limit_sign", CityShapes.SpeedLimitSign);
     public static final RegistryObject<Block> SpeedLimitSign1 = registerAppliance("speed_limit_sign_1", CityShapes.SpeedLimitSign);
@@ -119,6 +126,8 @@ public class ModRegistry {
     public static final RegistryObject<Block> SHOPSIGNRED = registerAppliance("red_shop_sign",  CityShapes.ShopSign);
     public static final RegistryObject<Block> SHOPSIGNBLUEJ = registerAppliance("blue_shop_sign_joint",  CityShapes.ShopSignJ);
     public static final RegistryObject<Block> SHOPSIGNREDJ = registerAppliance("red_shop_sign_joint",  CityShapes.ShopSignJ);
+    public static final RegistryObject<Block> MH1 = registerSign("manhole_cover_a",  BlockShapes.TRAFFICLINE);
+    public static final RegistryObject<Block> MH2 = registerSign("manhole_cover_b",  BlockShapes.TRAFFICLINE);
 
     // ==================== 电器 ====================
     public static final RegistryObject<Block> AC_OUT_01 = registerAppliance("ac_out_hd_1", ApplianceShapes.AC_OUT_01);
@@ -257,7 +266,8 @@ public class ModRegistry {
                                 OVER_PASS_5, YELLOW_SIGN_2, ROADSCREEN,
                                 FREESIGN,FREEExprSIGN,
                                 DSign,DSignL,DSignR,DSignLS,DSignRS,DSignLR,DSignT,DSignST,DSignLT,DSignA,DSignB,DSignBK,DSignV,
-                                POLE,POLE_JOINT_L,POLE_JOINT_,POLE_JOINT_D,POLE_H,POLE_EXPR_L,POLE_EXPR_R,POLE_EXPR_M,POLEFINE_D,POLEFINE_JOINT_D
+                                POLE,POLE_JOINT_L,POLE_JOINT_,POLE_JOINT_D,POLE_H,POLE_EXPR_L,POLE_EXPR_R,POLE_EXPR_M,POLEFINE_D,POLEFINE_JOINT_D,
+                                LineW,LineWC,LineZ,LineY,LineYD,LineYC
                         );
                     })
                     .build()
@@ -274,7 +284,8 @@ public class ModRegistry {
                                RestRoomSignMale,RestRoomSignFeMale,RestRoomSignThird,
                                ACCOVER,ACCOVERLIGHT,
                                SWS,SWMA,SWMB,SWL,
-                               SHOPSIGNBLUE,SHOPSIGNBLUEJ,SHOPSIGNRED,SHOPSIGNREDJ
+                               SHOPSIGNBLUE,SHOPSIGNBLUEJ,SHOPSIGNRED,SHOPSIGNREDJ,
+                               MH1,MH2
                         );
                     })
                     .build()
