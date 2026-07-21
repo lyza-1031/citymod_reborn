@@ -164,4 +164,34 @@ public class CityShapes {
 			box(0, 0, 2, 4, 16, 14),
 			box(12, 0, 2, 16, 16, 14)
     );
+    public static final Map<Direction, VoxelShape> RoadSign = createShape(
+            Shapes.or(box(7.25, 0, 7.25, 8.75, 29, 8.75), box(-1, 24, 8.75, 17, 32, 9.025)),
+       Shapes.or(box(7.25, 0, 7.25, 8.75, 29, 8.75), box(-1, 24, 6.975, 17, 32, 7.25)),
+        Shapes.or(box(7.25, 0, 7.25, 8.75, 29, 8.75), box(8.75, 24, -1, 9.025, 32, 17)),
+        Shapes.or(box(7.25, 0, 7.25, 8.75, 29, 8.75), box(6.975, 24, -1, 7.25, 32, 17))
+    );
+    public static final Map<Direction, VoxelShape> Barrier_gate_down = createShape(
+            box(0, 10, 12, 16, 14, 14.5),
+			box(0, 10, 1.5, 16, 14, 4),
+			box(12, 10, 0, 14.5, 14, 16),
+			box(1.5, 10, 0, 4, 14, 16)
+    );
+    public static final Map<Direction, VoxelShape> Barrier_gate_up = createShape(
+            box(6, 0, 12, 10, 16, 14.5),
+			box(6, 0, 1.5, 10, 16, 4),
+			box(12, 0, 6, 14.5, 16, 10),
+			box(1.5, 0, 6, 4, 16, 10)
+    );
+    public static final Map<Direction, VoxelShape> Barrier_gate_main_down = createShape(
+            Shapes.or(box(4, 0, 4, 12, 18, 12), box(8, 10, 12, 16, 14, 14.5)),
+			Shapes.or(box(4, 0, 4, 12, 18, 12), box(0, 10, 1.5, 8, 14, 4)),
+			Shapes.or(box(4, 0, 4, 12, 18, 12), box(12, 10, 0, 14.5, 14, 8)),
+			Shapes.or(box(4, 0, 4, 12, 18, 12), box(1.5, 10, 8, 4, 14, 16))
+    );
+    public static final Map<Direction, VoxelShape> Barrier_gate_main_up = createShape(
+            Shapes.or(box(4, 0, 4, 12, 18, 12), box(8, 10, 12, 12, 16, 14.5)),
+			Shapes.or(box(4, 0, 4, 12, 18, 12), box(4, 10, 1.5, 8, 16, 4)),
+			Shapes.or(box(4, 0, 4, 12, 18, 12), box(12, 10, 4, 14.5, 16, 8)),
+			Shapes.or(box(4, 0, 4, 12, 18, 12), box(1.5, 10, 8, 4, 16, 12))
+    );
 }

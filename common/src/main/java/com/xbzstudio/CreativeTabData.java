@@ -1,7 +1,9 @@
 package com.xbzstudio;
 
+import com.xbzstudio.block.BlockShapes;
 import com.xbzstudio.block.CityShapes;
 import com.xbzstudio.block.GenericMetalBlock;
+import com.xbzstudio.block.GenericSignBlock;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
@@ -29,7 +31,8 @@ public class CreativeTabData {
             "direction_signturnoff", "direction_straight_turnoff",
             "all_direction_sign", "variable_lanes", "bus_lane", "bike_lane",
             "road_block", "road_white_connect", "road_yellow", "road_yellow_double",
-            "road_yellow_connect", "road_zebra_crossing"
+            "road_yellow_connect", "road_zebra_crossing",
+            "road_diamond","road_straight"
     );
 
     public static final List<String> CITY_IDS = List.of(
@@ -47,7 +50,10 @@ public class CreativeTabData {
             "blue_shop_sign", "blue_shop_sign_joint",
             "red_shop_sign", "red_shop_sign_joint",
             "manhole_cover_a", "manhole_cover_b",
-            "trash_bin"
+            "trash_bin",
+            "roadsign_a","roadsign_b",
+            "barrier_gate_down","barrier_gate_up","barrier_gate_main_down","barrier_gate_main_up",
+            "sign","right_sign","left_sign","pedestrians","parking","noparking_sign"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox"
