@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/modern_ironfence"
+    },
+    "facing=east": {
+      "model": "citymod:block/modern_ironfence",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/modern_ironfence",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/modern_ironfence",
+      "y": 270
+    }
+  }
+}

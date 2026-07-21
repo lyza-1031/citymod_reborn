@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/barrier_gate_up",
+  "textures": {
+    "all": "citymod:block/barriergatedown",
+    "particle": "citymod:block/barriergatedown",
+    "1": "citymod:block/barriergatedown"
+  },
+  "render_type": "solid"
+}

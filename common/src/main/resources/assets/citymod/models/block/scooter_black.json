@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/scooter",
+  "textures": {
+    "all": "citymod:block/scooterblack",
+    "particle": "citymod:block/scooterblack",
+    "0": "citymod:block/scooterblack"
+  },
+  "render_type": "solid"
+}

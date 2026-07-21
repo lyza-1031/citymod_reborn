@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/electric_water_heater",
+  "textures": {
+    "all": "citymod:block/electric_water_heater",
+    "particle": "citymod:block/electric_water_heater",
+    "0": "citymod:block/electric_water_heater"
+  },
+  "render_type": "cutout_mipped"
+}

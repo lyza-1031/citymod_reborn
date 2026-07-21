@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/bike",
+  "textures": {
+    "all": "citymod:block/bicycle_black",
+    "particle": "citymod:block/bicycle_black",
+    "0": "citymod:block/bicycle_black"
+  },
+  "render_type": "cutout_mipped"
+}

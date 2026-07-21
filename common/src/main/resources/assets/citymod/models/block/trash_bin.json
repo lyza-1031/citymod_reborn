@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/trash_bin",
+  "textures": {
+    "all": "citymod:block/rubbish_bin",
+    "particle": "citymod:block/default",
+    "0": "citymod:block/rubbish_bin"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/trafficsign",
+  "textures": {
+    "all": "citymod:block/overpass2",
+    "particle": "citymod:block/overpass2",
+    "1": "citymod:block/overpass2"
+  },
+  "render_type": "solid"
+}

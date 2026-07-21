@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/stepfence",
+  "textures": {
+    "all": "citymod:block/stepfence",
+    "particle": "citymod:block/stepfence",
+    "0": "citymod:block/stepfence"
+  },
+  "render_type": "solid"
+}

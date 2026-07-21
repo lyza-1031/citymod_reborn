@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/laptop",
+  "textures": {
+    "all": "citymod:block/laptop",
+    "particle": "citymod:block/laptop",
+    "1": "citymod:block/laptop"
+  },
+  "render_type": "solid"
+}

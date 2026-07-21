@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/vehicle_distance_confirmation",
+  "textures": {
+    "all": "citymod:block/vdc1",
+    "particle": "citymod:block/vdc1",
+    "0": "citymod:block/vdc1"
+  },
+  "render_type": "solid"
+}

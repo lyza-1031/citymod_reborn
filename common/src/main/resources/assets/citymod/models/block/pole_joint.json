@@ -1,0 +1,8 @@
+{
+  "parent": "citymod:custom/pole_joint",
+  "textures": {
+    "pole_joint": "citymod:block/pole_joint",
+    "particle": "citymod:block/pole_joint"
+  },
+  "render_type": "solid"
+}

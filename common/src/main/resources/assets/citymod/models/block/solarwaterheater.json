@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/solar_water_heater",
+  "textures": {
+    "all": "citymod:block/solar_water__heater",
+    "particle": "citymod:block/solar_water__heater",
+    "0": "citymod:block/solar_water__heater"
+  },
+  "render_type": "solid"
+}

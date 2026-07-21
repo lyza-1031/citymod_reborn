@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/large_screen_white"
+    },
+    "facing=east": {
+      "model": "citymod:block/large_screen_white",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/large_screen_white",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/large_screen_white",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/shopsign",
+  "textures": {
+    "all": "citymod:block/bluewoodtexture",
+    "particle": "citymod:block/bluewoodtexture",
+    "0": "citymod:block/bluewoodtexture"
+  },
+  "render_type": "solid"
+}

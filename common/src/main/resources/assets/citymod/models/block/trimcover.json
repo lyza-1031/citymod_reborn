@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/trim_cover",
+  "textures": {
+    "all": "citymod:block/extractor",
+    "particle": "citymod:block/extractor",
+    "0": "citymod:block/extractor"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/safetywallgreen",
+  "textures": {
+    "all": "citymod:block/safetywallblue",
+    "particle": "citymod:block/safetywallblue",
+    "0": "citymod:block/safetywallblue"
+  },
+  "render_type": "solid"
+}

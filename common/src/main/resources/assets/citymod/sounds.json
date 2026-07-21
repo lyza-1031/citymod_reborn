@@ -1,0 +1,29 @@
+{
+  "rifleshoot": {
+    "subtitle": "subtitles.rifleshoot",
+    "sounds": [
+      {
+        "name": "citymod:rifleshoot",
+        "stream": false
+      }
+    ]
+  },
+  "error": {
+    "subtitle": "subtitles.error",
+    "sounds": [
+      {
+        "name": "citymod:err",
+        "stream": false
+      }
+    ]
+  },
+  "die": {
+    "subtitle": "subtitles.die",
+    "sounds": [
+      {
+        "name": "citymod:die",
+        "stream": false
+      }
+    ]
+  }
+}

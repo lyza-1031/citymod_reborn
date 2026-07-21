@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/laptopon",
+  "textures": {
+    "all": "citymod:block/laptopon",
+    "particle": "citymod:block/laptopon",
+    "1": "citymod:block/laptopon"
+  },
+  "render_type": "solid"
+}

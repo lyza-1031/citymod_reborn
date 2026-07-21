@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/wooden_window",
+  "textures": {
+    "all": "citymod:block/wooden_window",
+    "particle": "citymod:block/wooden_window",
+    "0": "citymod:block/wooden_window",
+    "missing": "citymod:block/woodtexture"
+  },
+  "render_type": "translucent"
+}

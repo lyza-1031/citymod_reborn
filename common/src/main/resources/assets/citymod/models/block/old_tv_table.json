@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/old_tv_table",
+  "textures": {
+    "all": "citymod:block/old_tv_table",
+    "particle": "citymod:block/old_tv_table",
+    "0": "citymod:block/old_tv_table"
+  },
+  "render_type": "solid"
+}

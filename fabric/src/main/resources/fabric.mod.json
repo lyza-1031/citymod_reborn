@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "citymod",
+  "version": "${version}",
+  "name": "citymod_reborn",
+  "description": "",
+  "authors": [
+    "Lyza_1031"
+  ],
+  "contact": {
+    "homepage": "https://github.com/lyza-1031/citymod_reborn"
+  },
+  "license": "CC-BY-NC 4.0",
+  "icon": "assets/citymod/textures/modlogo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.xbzstudio.fabric.citymodFabric"
+    ],
+    "client": [
+      "com.xbzstudio.fabric.client.citymodFabricClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "recommends": {
+    "sodium": ">=0.5.0"
+  },
+  "suggests": {
+    "sodium": "大幅度提升性能并能避免一些潜在的问题"
+  }
+}

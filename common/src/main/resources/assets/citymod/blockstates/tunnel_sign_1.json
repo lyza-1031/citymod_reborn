@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/tunnel_sign_1"
+    },
+    "facing=east": {
+      "model": "citymod:block/tunnel_sign_1",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/tunnel_sign_1",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/tunnel_sign_1",
+      "y": 270
+    }
+  }
+}

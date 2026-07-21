@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/all_in_one_pc",
+  "textures": {
+    "all": "citymod:block/all_in_one_pc_on",
+    "particle": "citymod:block/all_in_one_pc_on",
+    "0": "citymod:block/all_in_one_pc_on"
+  },
+  "render_type": "solid"
+}

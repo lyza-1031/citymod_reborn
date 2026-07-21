@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/mirror",
+  "textures": {
+    "all": "citymod:block/mirror",
+    "particle": "citymod:block/mirror",
+    "0": "citymod:block/mirror"
+  },
+  "render_type": "solid"
+}

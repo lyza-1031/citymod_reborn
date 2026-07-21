@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/tunnel_sign",
+  "textures": {
+    "all": "citymod:block/tunnel_sign2",
+    "particle": "citymod:block/tunnel_sign2",
+    "0": "citymod:block/tunnel_sign2"
+  },
+  "render_type": "solid"
+}

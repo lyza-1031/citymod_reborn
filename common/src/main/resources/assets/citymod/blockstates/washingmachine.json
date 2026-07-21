@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/washingmachine"
+    },
+    "facing=east": {
+      "model": "citymod:block/washingmachine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/washingmachine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/washingmachine",
+      "y": 270
+    }
+  }
+}

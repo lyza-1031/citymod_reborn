@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/windowobliquea",
+  "textures": {
+    "all": "citymod:block/windowgreen",
+    "particle": "citymod:block/windowgreen",
+    "1": "citymod:block/windowgreen"
+  },
+  "render_type": "translucent"
+}

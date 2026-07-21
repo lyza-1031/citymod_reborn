@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/gaswaterheater",
+  "textures": {
+    "all": "citymod:block/gaswaterheater",
+    "particle": "citymod:block/gaswaterheater",
+    "0": "citymod:block/gaswaterheater"
+  },
+  "render_type": "cutout_mipped"
+}

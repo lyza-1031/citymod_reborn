@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/oldmonitor",
+  "textures": {
+    "all": "citymod:block/oldmonitoroff",
+    "particle": "citymod:block/oldmonitoroff",
+    "1": "citymod:block/oldmonitoroff"
+  },
+  "render_type": "solid"
+}

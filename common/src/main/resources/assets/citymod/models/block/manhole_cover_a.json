@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/roadblock",
+  "textures": {
+    "all": "citymod:block/manhole_cover",
+    "particle": "citymod:block/manhole_cover",
+    "1": "citymod:block/manhole_cover"
+  },
+  "render_type": "cutout"
+}

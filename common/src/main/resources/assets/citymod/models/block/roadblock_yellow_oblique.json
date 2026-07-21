@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/roadblockoblique",
+  "textures": {
+    "all": "citymod:block/roadyellow",
+    "particle": "citymod:block/roadyellow",
+    "2": "citymod:block/roadyellow"
+  },
+  "render_type": "cutout"
+}

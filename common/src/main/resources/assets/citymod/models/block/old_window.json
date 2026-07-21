@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/oldwindow",
+  "textures": {
+    "all": "citymod:block/oldwindow",
+    "particle": "citymod:block/oldwindow",
+    "0": "citymod:block/oldwindow"
+  },
+  "render_type": "translucent"
+}

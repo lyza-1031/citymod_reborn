@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/acinsb_",
+  "textures": {
+    "all": "citymod:block/acinside2",
+    "particle": "citymod:block/acinside2",
+    "1": "citymod:block/acinside2"
+  },
+  "render_type": "solid"
+}

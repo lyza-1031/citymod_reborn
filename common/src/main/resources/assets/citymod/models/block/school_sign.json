@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/sign1",
+  "textures": {
+    "all": "citymod:block/school",
+    "particle": "citymod:block/school",
+    "1": "citymod:block/school"
+  },
+  "render_type": "cutout"
+}

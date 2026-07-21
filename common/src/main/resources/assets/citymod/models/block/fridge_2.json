@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/fridge2",
+  "textures": {
+    "all": "citymod:block/fridge2",
+    "particle": "citymod:block/fridge2",
+    "0": "citymod:block/fridge2"
+  },
+  "render_type": "solid"
+}

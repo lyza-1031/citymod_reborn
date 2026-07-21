@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/water_pipe_joint_red"
+    },
+    "facing=east": {
+      "model": "citymod:block/water_pipe_joint_red",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/water_pipe_joint_red",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/water_pipe_joint_red",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "citymod:block/water_pipe_joint_red",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "citymod:block/water_pipe_joint_red",
+      "x": 90
+    }
+  }
+}

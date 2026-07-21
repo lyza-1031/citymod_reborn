@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/old_mainunit",
+  "textures": {
+    "all": "citymod:block/old_mainunit",
+    "particle": "citymod:block/old_mainunit",
+    "0": "citymod:block/old_mainunit"
+  },
+  "render_type": "cutout_mipped"
+}

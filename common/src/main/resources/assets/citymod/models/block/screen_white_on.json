@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/largescreen",
+  "textures": {
+    "all": "citymod:block/largescreenwhite_open",
+    "particle": "citymod:block/largescreenwhite_open",
+    "0": "citymod:block/largescreenwhite_open"
+  },
+  "render_type": "solid"
+}
