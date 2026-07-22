@@ -25,6 +25,7 @@ public class CreativeTabData {
             "pole", "pole_joint", "pole_joint_double", "pole_joint_l",
             "pole_horizontal", "pole_expr", "pole_expr_right", "pole_exprmid",
             "pole_fine_d", "polefine_joint_d",
+            "warn_pole","road_light_down","lamppost",
             "direction_sign", "direction_sign_left", "direction_sign_right",
             "direction_sign_left_straight", "direction_sign_right_straight",
             "direction_sign_left_right", "direction_sign_left_turnoff",
@@ -32,14 +33,15 @@ public class CreativeTabData {
             "all_direction_sign", "variable_lanes", "bus_lane", "bike_lane",
             "road_block", "road_white_connect", "road_yellow", "road_yellow_double",
             "road_yellow_connect", "road_zebra_crossing",
-            "road_diamond","road_straight"
+            "road_diamond","road_straight",
+            "road_light","street_light","street_light_b","street_light_c","street_light_d"
     );
 
     public static final List<String> CITY_IDS = List.of(
             "speed_limit_sign", "speed_limit_sign_1", "speed_limit_sign_2",
             "speed_limit_sign_3", "speed_limit_sign_4", "speed_limit_sign_5",
             "speed_limit_sign_6", "speed_limit_sign_7", "speed_limit_sign_8",
-            "glass_fence","modern_fence", "modern_fence_2", "modern_fence_3",
+            "glass_fence","modern_fence", "modern_fence_2", "modern_fence_3","pole_fine",
             "modern_ironfence", "moderniron_fence_yellow",
             "moderniron_fence_green", "moderniron_fence_blue",
             "concretebarrierfenced",

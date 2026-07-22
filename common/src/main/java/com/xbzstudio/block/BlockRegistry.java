@@ -81,7 +81,9 @@ public class BlockRegistry {
         reg("pole_exprmid", () -> new GenericSignBlock(BlockShapes.POLE_EXPR_M));
         reg("pole_fine_d", () -> new GenericSignBlock(BlockShapes.POLEFINE_D));
         reg("polefine_joint_d", () -> new GenericSignBlock(BlockShapes.POLEFINE_JOINT_D));
-
+        reg("pole_fine", () -> new GenericSignBlock(BlockShapes.POLEFINE));
+        reg("road_light_down", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("lamppost", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         // 方向牌
         reg("direction_sign", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
         reg("direction_sign_left", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
@@ -96,7 +98,12 @@ public class BlockRegistry {
         reg("variable_lanes", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
         reg("bus_lane", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
         reg("bike_lane", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
-
+        //路灯
+        reg("road_light", () -> new GenericLightBlock(BlockShapes.ROADLIGHT));
+        reg("street_light", () -> new GenericLightBlock(BlockShapes.STREETLIGHT));
+        reg("street_light_b", () -> new GenericLightBlock(BlockShapes.STREETLIGHTB));
+        reg("street_light_c", () -> new GenericLightBlock(BlockShapes.STREETLIGHTC));
+        reg("street_light_d", () -> new GenericLightBlock(BlockShapes.STREETLIGHTD));
         // 交通标线
         reg("road_block", () -> new GenericMetalBlock(BlockShapes.TRAFFICLINE));
         reg("road_white_connect", () -> new GenericMetalBlock(BlockShapes.TRAFFICLINE));
