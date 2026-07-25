@@ -444,4 +444,10 @@ public class BlockShapes {
 			box(6, 0, 6, 10, 16, 10),
 			box(6, 0, 6, 10, 16, 10)
     );
+    public static final Map<Direction, VoxelShape> Hsign = createShape(
+            box(-16, 0, 0, 32, 16, 1),
+            box(-16, 0, 15, 32, 16, 16),
+            box(0, 0, -16, 1, 16, 32),
+            box(15, 0, -16, 16, 16, 32)
+    );
 }

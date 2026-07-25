@@ -4,7 +4,7 @@ license="CC-BY-NC 4.0"
 
 [[mods]]
 modId="citymod"
-version="0.2.16.25"
+version="0.2.16.26"
 displayName="CityMod"
 mixinConfigs="citymod.mixins.json"
 displayURL="https://space.bilibili.com/493607297"

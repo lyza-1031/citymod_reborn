@@ -16,12 +16,13 @@ public class CreativeTabData {
             "expr_1", "expr_2", "expr_3", "expr_4", "expr_5",
             "expr_5a", "expr_5b", "expr_5c", "expr_5_d", "expr_5_e", "expr_5_f",
             "service_area_sign", "overpass_sign", "overpass_sign_2", "overpass_sign_3",
-            "over_pass_sign_4", "over_pass_5","scenic_spot_sign",
+            "over_pass_sign_4", "over_pass_5","green_sign","scenic_spot_sign",
             "road_1", "road_2", "road_3", "road_4", "road_5", "road_6", "road_11", "road_12",
             "expr_sign_large", "expressway_exit_sign", "expr_t_ips",
             "traffic_sign", "traffic_sign_l", "traffic_sign_r", "traffic_sign_t",
-            "traffic_sign_1", "traffic_sign_2", "yellow_sign_2",
+            "traffic_sign_1", "traffic_sign_2", "yellow_sign_2","yellow_sign",
             "road_screen", "free_road_sign", "free_expressway_sign",
+            "white_sign",
             "pole", "pole_joint", "pole_joint_double", "pole_joint_l",
             "pole_horizontal", "pole_expr", "pole_expr_right", "pole_exprmid",
             "pole_fine_d", "polefine_joint_d",
@@ -34,7 +35,8 @@ public class CreativeTabData {
             "road_block", "road_white_connect", "road_yellow", "road_yellow_double",
             "road_yellow_connect", "road_zebra_crossing",
             "road_diamond","road_straight",
-            "road_light","street_light","street_light_b","street_light_c","street_light_d"
+            "road_light","street_light","street_light_b","street_light_c","street_light_d",
+            "separationpost","separationpostb","separationpostc"
     );
 
     public static final List<String> CITY_IDS = List.of(
@@ -44,8 +46,8 @@ public class CreativeTabData {
             "glass_fence","modern_fence", "modern_fence_2", "modern_fence_3","pole_fine",
             "modern_ironfence", "moderniron_fence_yellow",
             "moderniron_fence_green", "moderniron_fence_blue",
-            "concretebarrierfenced",
-            "restroom_sign", "rest_room_sign_female", "restroom_sign_third",
+            "concretebarrierfenced","concrete_wall_std","concrete_wall_warn",
+            "restroom_sign", "rest_room_sign_female", "restroom_sign_third","restroom_sign_public",
             "ac_cover", "ac_cover_light",
             "security_window_small", "security_window_small_2",
             "security_window_medium", "security_window_large",
@@ -55,7 +57,9 @@ public class CreativeTabData {
             "trash_bin",
             "roadsign_a","roadsign_b",
             "barrier_gate_down","barrier_gate_up","barrier_gate_main_down","barrier_gate_main_up",
-            "sign","right_sign","left_sign","pedestrians","parking","noparking_sign"
+            "sign","right_sign","left_sign","pedestrians","parking","noparking_sign",
+            "safety_wall_green","safety_wall_blue","safety_wall_alert",
+            "safety_wall_corner_green","safety_wall_corner_blue","safety_wall_corner_alert"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox"

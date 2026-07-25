@@ -69,6 +69,9 @@ public class BlockRegistry {
         reg("pedestrians", () -> new GenericSignBlock(BlockShapes.FREESIGN));
         reg("parking", () -> new GenericSignBlock(BlockShapes.FREESIGN));
         reg("noparking_sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
+        reg("white_sign", () -> new GenericSignBlock(BlockShapes.Hsign));
+        reg("green_sign", () -> new GenericSignBlock(BlockShapes.Hsign));
+        reg("yellow_sign", () -> new GenericSignBlock(CityShapes.Direction_Sign));
 
         // 杆子
         reg("pole", () -> new GenericSignBlock(BlockShapes.POLE));
@@ -84,6 +87,9 @@ public class BlockRegistry {
         reg("pole_fine", () -> new GenericSignBlock(BlockShapes.POLEFINE));
         reg("road_light_down", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("lamppost", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("separationpost", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("separationpostb", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("separationpostc", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         // 方向牌
         reg("direction_sign", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
         reg("direction_sign_left", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
@@ -152,6 +158,15 @@ public class BlockRegistry {
         reg("barrier_gate_up", () -> new GenericMetalBlock(CityShapes.Barrier_gate_up));
         reg("barrier_gate_main_down", () -> new GenericMetalBlock(CityShapes.Barrier_gate_main_down));
         reg("barrier_gate_main_up", () -> new GenericMetalBlock(CityShapes.Barrier_gate_main_up));
+        reg("concrete_wall_std", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
+        reg("concrete_wall_warn", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
+        reg("restroom_sign_public", () -> new GenericMetalBlock(CityShapes.RestRoomSignMale));
+        reg("safety_wall_green", () -> new GenericMetalBlock(CityShapes.SAFETYWALL));
+        reg("safety_wall_blue", () -> new GenericMetalBlock(CityShapes.SAFETYWALL));
+        reg("safety_wall_alert", () -> new GenericMetalBlock(CityShapes.SAFETYWALL));
+        reg("safety_wall_corner_green", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
+        reg("safety_wall_corner_blue", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
+        reg("safety_wall_corner_alert", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
         // ==================== 电器 ====================
         reg("ac_out_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
         reg("ac_out_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
