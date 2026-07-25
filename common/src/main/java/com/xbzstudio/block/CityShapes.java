@@ -194,4 +194,10 @@ public class CityShapes {
 			Shapes.or(box(4, 0, 4, 12, 18, 12), box(12, 10, 4, 14.5, 16, 8)),
 			Shapes.or(box(4, 0, 4, 12, 18, 12), box(1.5, 10, 8, 4, 16, 12))
     );
+    public static final Map<Direction, VoxelShape> SAFETYWALL = createShape(
+            box(0, 0, 8, 16, 16, 16),
+            box(0, 0, 0, 16, 16, 8),
+            box(8, 0, 0, 16, 16, 16),
+            box(0, 0, 0, 8, 16, 16)
+    );
 }
