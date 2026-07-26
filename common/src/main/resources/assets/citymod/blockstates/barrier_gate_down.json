@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/barrier_gate_down"
+    },
+    "facing=east": {
+      "model": "citymod:block/barrier_gate_down",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/barrier_gate_down",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/barrier_gate_down",
+      "y": 270
+    }
+  }
+}

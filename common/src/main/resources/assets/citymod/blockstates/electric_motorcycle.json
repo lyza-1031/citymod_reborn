@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/electric_motorcycle"
+    },
+    "facing=east": {
+      "model": "citymod:block/electric_motorcycle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/electric_motorcycle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/electric_motorcycle",
+      "y": 270
+    }
+  }
+}

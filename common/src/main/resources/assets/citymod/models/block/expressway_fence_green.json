@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/expressway-fence",
+  "textures": {
+    "all": "citymod:block/expressway-fence-green",
+    "particle": "citymod:block/expressway-fence-green",
+    "0": "citymod:block/expressway-fence-green"
+  },
+  "render_type": "solid"
+}

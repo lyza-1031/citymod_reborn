@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/oldairconditionoutside",
+  "textures": {
+    "all": "citymod:block/ac",
+    "particle": "citymod:block/ac",
+    "2": "citymod:block/ac"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/television",
+  "textures": {
+    "all": "citymod:block/televesion-pwon",
+    "particle": "citymod:block/televesion-pwon",
+    "1": "citymod:block/televesion-pwon"
+  },
+  "render_type": "solid"
+}

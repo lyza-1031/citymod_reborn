@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/large",
+  "textures": {
+    "all": "citymod:block/largestraight",
+    "particle": "citymod:block/largestraight",
+    "2": "citymod:block/largestraight"
+  },
+  "render_type": "cutout"
+}

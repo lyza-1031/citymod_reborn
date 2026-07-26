@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/stone_chair"
+    },
+    "facing=east": {
+      "model": "citymod:block/stone_chair",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/stone_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/stone_chair",
+      "y": 270
+    }
+  }
+}

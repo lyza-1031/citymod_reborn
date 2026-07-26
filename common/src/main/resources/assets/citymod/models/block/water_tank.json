@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/water_tank",
+  "textures": {
+    "all": "citymod:block/water_tank",
+    "particle": "citymod:block/water_tank",
+    "0": "citymod:block/water_tank"
+  },
+  "render_type": "solid"
+}

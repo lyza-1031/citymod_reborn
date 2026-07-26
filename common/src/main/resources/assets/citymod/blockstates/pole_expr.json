@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/pole_expr"
+    },
+    "facing=east": {
+      "model": "citymod:block/pole_expr",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/pole_expr",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/pole_expr",
+      "y": 270
+    }
+  }
+}

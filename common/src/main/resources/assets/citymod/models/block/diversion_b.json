@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/diversion",
+  "textures": {
+    "all": "citymod:block/diversionb",
+    "particle": "citymod:block/diversionb",
+    "0": "citymod:block/diversionb"
+  },
+  "render_type": "solid"
+}

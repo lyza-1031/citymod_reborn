@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/separation_post",
+  "textures": {
+    "all": "citymod:block/separation_post",
+    "particle": "citymod:block/separation_post",
+    "0": "citymod:block/separation_post"
+  },
+  "render_type": "solid"
+}

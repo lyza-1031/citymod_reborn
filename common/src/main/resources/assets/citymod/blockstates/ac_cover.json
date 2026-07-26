@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/ac_cover"
+    },
+    "facing=east": {
+      "model": "citymod:block/ac_cover",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/ac_cover",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/ac_cover",
+      "y": 270
+    }
+  }
+}

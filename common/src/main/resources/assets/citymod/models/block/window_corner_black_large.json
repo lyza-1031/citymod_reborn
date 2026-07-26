@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/windowcorner",
+  "textures": {
+    "all": "citymod:block/windowblack",
+    "particle": "citymod:block/windowblack",
+    "1": "citymod:block/windowblack"
+  },
+  "render_type": "translucent"
+}

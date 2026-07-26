@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/polefine_d",
+  "textures": {
+    "all": "citymod:block/polefine_d",
+    "particle": "citymod:block/polefine_d",
+    "1": "citymod:block/polefine_d"
+  },
+  "render_type": "solid"
+}

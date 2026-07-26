@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/ac_02",
+  "textures": {
+    "all": "citymod:block/ac_2",
+    "particle": "citymod:block/ac_2",
+    "0": "citymod:block/ac_2"
+  },
+  "render_type": "solid"
+}

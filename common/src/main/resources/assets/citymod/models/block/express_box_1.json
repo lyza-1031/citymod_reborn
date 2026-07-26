@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/expressbox",
+  "textures": {
+    "all": "citymod:block/expressbox1",
+    "particle": "citymod:block/expressbox1",
+    "0": "citymod:block/expressbox1"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/security_window_large"
+    },
+    "facing=east": {
+      "model": "citymod:block/security_window_large",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/security_window_large",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/security_window_large",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "citymod:blocks/window_corner_white_small",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "citymod:window_corner_white_small"
+        }
+      ]
+    }
+  ]
+}

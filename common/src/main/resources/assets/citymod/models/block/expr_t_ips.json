@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/exprtips",
+  "textures": {
+    "all": "citymod:block/exprsign5d",
+    "particle": "citymod:block/exprsign5d",
+    "1": "citymod:block/exprsign5d"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/microwave_oven",
+  "textures": {
+    "all": "citymod:block/microwave_oven",
+    "particle": "citymod:block/microwave_oven",
+    "2": "citymod:block/microwave_oven"
+  },
+  "render_type": "solid"
+}

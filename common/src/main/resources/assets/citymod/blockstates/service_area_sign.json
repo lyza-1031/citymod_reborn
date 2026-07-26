@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/service_area_sign"
+    },
+    "facing=east": {
+      "model": "citymod:block/service_area_sign",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/service_area_sign",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/service_area_sign",
+      "y": 270
+    }
+  }
+}

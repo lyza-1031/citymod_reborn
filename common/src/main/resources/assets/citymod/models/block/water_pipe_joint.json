@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/water_pipe_joint",
+  "textures": {
+    "all": "citymod:block/grey_water_pipe",
+    "particle": "citymod:block/grey_water_pipe",
+    "0": "citymod:block/grey_water_pipe"
+  },
+  "render_type": "solid"
+}

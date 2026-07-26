@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/2010monitor",
+  "textures": {
+    "all": "citymod:block/2010monitoroff",
+    "particle": "citymod:block/2010monitoroff",
+    "0": "citymod:block/2010monitoroff"
+  },
+  "render_type": "solid"
+}

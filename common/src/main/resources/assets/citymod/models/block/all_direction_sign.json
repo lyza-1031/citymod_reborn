@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/direction_sign",
+  "textures": {
+    "all": "citymod:block/alldirecetion",
+    "particle": "citymod:block/alldirecetion",
+    "0": "citymod:block/alldirecetion"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/cac_out_hd1",
+  "textures": {
+    "all": "citymod:block/cac_out_hd1",
+    "particle": "citymod:block/cac_out_hd1",
+    "0": "citymod:block/cac_out_hd1"
+  },
+  "render_type": "cutout_mipped"
+}

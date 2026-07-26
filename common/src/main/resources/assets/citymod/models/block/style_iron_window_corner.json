@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/styleironwindowcorner",
+  "textures": {
+    "all": "citymod:block/styleironwindow",
+    "particle": "citymod:block/styleironwindow",
+    "0": "citymod:block/styleironwindow"
+  },
+  "render_type": "solid"
+}

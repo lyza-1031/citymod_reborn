@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/whitesign",
+  "textures": {
+    "all": "citymod:block/whitesign",
+    "particle": "citymod:block/whitesign",
+    "1": "citymod:block/whitesign"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/gaming_pc",
+  "textures": {
+    "all": "citymod:block/gaming_pc_black",
+    "particle": "citymod:block/gaming_pc_black",
+    "0": "citymod:block/gaming_pc_black"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/shopsignjoint",
+  "textures": {
+    "all": "citymod:block/bluewoodtexture",
+    "particle": "citymod:block/bluewoodtexture",
+    "0": "citymod:block/bluewoodtexture",
+    "1": "citymod:block/joint"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/safetywallcorner",
+  "textures": {
+    "all": "citymod:block/safetywallcornerblue",
+    "particle": "citymod:block/safetywallcornerblue",
+    "missing": "citymod:block/safetywallcornerblue"
+  },
+  "render_type": "solid"
+}

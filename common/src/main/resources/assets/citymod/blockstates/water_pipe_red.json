@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "citymod:block/water_pipe_red",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "citymod:block/water_pipe_red"
+    },
+    "axis=z": {
+      "model": "citymod:block/water_pipe_red",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/concrete_wall",
+  "textures": {
+    "all": "citymod:block/concrete_wall_std",
+    "particle": "citymod:block/concrete_wall_std",
+    "0": "citymod:block/concrete_wall_std"
+  },
+  "render_type": "solid"
+}

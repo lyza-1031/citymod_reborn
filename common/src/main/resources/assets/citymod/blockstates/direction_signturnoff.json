@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/direction_signturnoff"
+    },
+    "facing=east": {
+      "model": "citymod:block/direction_signturnoff",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/direction_signturnoff",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/direction_signturnoff",
+      "y": 270
+    }
+  }
+}

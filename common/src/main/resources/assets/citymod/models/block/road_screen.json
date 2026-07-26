@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/roadscreen",
+  "textures": {
+    "all": "citymod:block/roadscreen",
+    "particle": "citymod:block/roadscreen",
+    "0": "citymod:block/roadscreen"
+  },
+  "render_type": "solid"
+}

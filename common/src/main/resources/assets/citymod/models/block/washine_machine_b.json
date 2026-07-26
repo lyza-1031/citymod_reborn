@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/washingmachineb",
+  "textures": {
+    "all": "citymod:block/washingmachineb",
+    "particle": "citymod:block/washingmachineb",
+    "0": "citymod:block/washingmachineb"
+  },
+  "render_type": "translucent"
+}

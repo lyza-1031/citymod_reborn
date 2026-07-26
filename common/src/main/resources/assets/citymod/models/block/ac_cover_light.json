@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/ac_cover",
+  "textures": {
+    "all": "minecraft:block/stripped_birch_log",
+    "particle": "minecraft:block/stripped_birch_log",
+    "missing": "minecraft:block/stripped_birch_log"
+  },
+  "render_type": "solid"
+}

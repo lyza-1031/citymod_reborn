@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/roadblock",
+  "textures": {
+    "all": "citymod:block/zebracrossing",
+    "particle": "citymod:block/zebracrossing",
+    "1": "citymod:block/zebracrossing"
+  },
+  "render_type": "cutout"
+}

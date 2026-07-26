@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/ninebot",
+  "textures": {
+    "all": "citymod:block/ninebot2",
+    "particle": "citymod:block/ninebot2",
+    "0": "citymod:block/ninebot2"
+  },
+  "render_type": "cutout_mipped"
+}

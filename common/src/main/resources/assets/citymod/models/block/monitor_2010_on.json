@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/2010monitor",
+  "textures": {
+    "all": "citymod:block/2010monitoron",
+    "particle": "citymod:block/2010monitoron",
+    "0": "citymod:block/2010monitoron"
+  },
+  "render_type": "cutout"
+}

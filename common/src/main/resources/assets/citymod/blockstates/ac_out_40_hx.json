@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/ac_out_40_hx"
+    },
+    "facing=east": {
+      "model": "citymod:block/ac_out_40_hx",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/ac_out_40_hx",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/ac_out_40_hx",
+      "y": 270
+    }
+  }
+}

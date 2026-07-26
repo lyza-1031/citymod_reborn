@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/trafficsign",
+  "textures": {
+    "all": "citymod:block/crossroadssign_-l",
+    "particle": "citymod:block/crossroadssign_-l",
+    "1": "citymod:block/crossroadssign_-l"
+  },
+  "render_type": "solid"
+}

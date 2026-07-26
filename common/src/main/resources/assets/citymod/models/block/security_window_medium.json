@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/security_window_medium",
+  "textures": {
+    "all": "citymod:block/security_window_large",
+    "particle": "citymod:block/security_window_large",
+    "0": "citymod:block/security_window_large"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/direction_sign",
+  "textures": {
+    "all": "citymod:block/leftturnoff",
+    "particle": "citymod:block/leftturnoff",
+    "0": "citymod:block/leftturnoff"
+  },
+  "render_type": "solid"
+}

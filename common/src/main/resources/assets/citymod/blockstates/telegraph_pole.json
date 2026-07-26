@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/telegraph_pole"
+    },
+    "facing=east": {
+      "model": "citymod:block/telegraph_pole",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/telegraph_pole",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/telegraph_pole",
+      "y": 270
+    }
+  }
+}

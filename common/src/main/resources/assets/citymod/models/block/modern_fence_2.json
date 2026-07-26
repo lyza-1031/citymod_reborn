@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/modernfence2",
+  "textures": {
+    "all": "citymod:block/modernfence2",
+    "particle": "citymod:block/modernfence2",
+    "0": "citymod:block/modernfence2"
+  },
+  "render_type": "solid"
+}

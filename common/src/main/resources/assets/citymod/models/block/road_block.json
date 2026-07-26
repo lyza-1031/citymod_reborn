@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/roadblock",
+  "textures": {
+    "all": "citymod:block/roadwhite",
+    "particle": "citymod:block/roadwhite",
+    "1": "citymod:block/roadwhite"
+  },
+  "render_type": "cutout"
+}

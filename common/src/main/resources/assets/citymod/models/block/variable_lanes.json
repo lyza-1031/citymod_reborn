@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/direction_sign",
+  "textures": {
+    "all": "citymod:block/variablelanes",
+    "particle": "citymod:block/variablelanes",
+    "0": "citymod:block/variablelanes"
+  },
+  "render_type": "solid"
+}

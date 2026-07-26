@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/sign",
+  "textures": {
+    "all": "citymod:block/parking",
+    "particle": "citymod:block/parking",
+    "0": "citymod:block/parking"
+  },
+  "render_type": "cutout"
+}

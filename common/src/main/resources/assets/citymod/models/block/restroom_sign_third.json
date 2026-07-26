@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/wc",
+  "textures": {
+    "all": "citymod:block/wc_t",
+    "particle": "citymod:block/wc_t",
+    "2": "citymod:block/wc_t"
+  },
+  "render_type": "solid"
+}

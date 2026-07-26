@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/trafficsign",
+  "textures": {
+    "all": "citymod:block/road1",
+    "particle": "citymod:block/road1",
+    "1": "citymod:block/road1"
+  },
+  "render_type": "solid"
+}

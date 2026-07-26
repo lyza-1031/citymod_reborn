@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/acinside",
+  "textures": {
+    "all": "citymod:block/oldacin2",
+    "particle": "citymod:block/oldacin2",
+    "0": "citymod:block/oldacin2"
+  },
+  "render_type": "solid"
+}

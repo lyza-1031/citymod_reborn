@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "citymod:item/direction_sign_left_turnoff"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/freesign",
+  "textures": {
+    "all": "citymod:block/freesign2",
+    "particle": "citymod:block/freesign2",
+    "0": "citymod:block/freesign2"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/telegraph_pole",
+  "textures": {
+    "all": "citymod:block/warn",
+    "particle": "citymod:block/warn",
+    "1": "citymod:block/"
+  },
+  "render_type": "solid"
+}

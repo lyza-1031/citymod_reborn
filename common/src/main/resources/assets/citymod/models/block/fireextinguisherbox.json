@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/fire_extinguisher_box",
+  "textures": {
+    "all": "citymod:block/fire_extinguisher_box",
+    "particle": "citymod:block/fire_extinguisher_box",
+    "0": "citymod:block/fire_extinguisher_box"
+  },
+  "render_type": "solid"
+}

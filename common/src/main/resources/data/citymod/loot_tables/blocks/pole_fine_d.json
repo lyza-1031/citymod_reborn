@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "citymod:blocks/pole_fine_d",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "citymod:pole_fine_d"
+        }
+      ]
+    }
+  ]
+}

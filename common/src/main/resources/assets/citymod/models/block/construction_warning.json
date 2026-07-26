@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/constructionwarning",
+  "textures": {
+    "all": "citymod:block/constructionwarning",
+    "particle": "citymod:block/constructionwarning",
+    "0": "citymod:block/constructionwarning"
+  },
+  "render_type": "solid"
+}
