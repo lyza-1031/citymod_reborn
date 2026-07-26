@@ -450,4 +450,10 @@ public class BlockShapes {
             box(0, 0, -16, 1, 16, 32),
             box(15, 0, -16, 16, 16, 32)
     );
+    public static final Map<Direction, VoxelShape> LineO = createShape(
+            box(0, 0, 0, 16, 0.1, 16),
+			box(0, 0, 0, 16, 0.1, 16),
+			box(0, 0, 0, 16, 0.1, 16),
+			box(0, 0, 0, 16, 0.1, 16)
+    );
 }

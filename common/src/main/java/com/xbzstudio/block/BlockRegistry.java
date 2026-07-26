@@ -72,7 +72,9 @@ public class BlockRegistry {
         reg("white_sign", () -> new GenericSignBlock(BlockShapes.Hsign));
         reg("green_sign", () -> new GenericSignBlock(BlockShapes.Hsign));
         reg("yellow_sign", () -> new GenericSignBlock(CityShapes.Direction_Sign));
-
+        //消防
+        reg("fireextinguisherbox", () -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
+        reg("water_tank", () -> new GenericSignBlock(CityShapes.Concretebarrierfenced));
         // 杆子
         reg("pole", () -> new GenericSignBlock(BlockShapes.POLE));
         reg("pole_joint", () -> new GenericSignBlock(BlockShapes.POLE_JOINT));
@@ -121,6 +123,10 @@ public class BlockRegistry {
         reg("manhole_cover_b", () -> new GenericMetalBlock(BlockShapes.TRAFFICLINE));
         reg("road_diamond", () -> new GenericMetalBlock(BlockShapes.TRAFFICLINE));
         reg("road_straight", () -> new GenericMetalBlock(BlockShapes.TRAFFICLINE));
+        reg("roadblock_oblique", () -> new GenericMetalBlock(BlockShapes.LineO));
+        reg("roadblock_yellow_oblique", () -> new GenericMetalBlock(BlockShapes.LineO));
+        reg("roadblock_double_oblique", () -> new GenericMetalBlock(BlockShapes.LineO));
+        reg("zebracrossing_oblique", () -> new GenericMetalBlock(BlockShapes.LineO));
 
         // 城市设施
         reg("speed_limit_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
@@ -141,7 +147,6 @@ public class BlockRegistry {
         reg("moderniron_fence_green", () -> new GenericMetalBlock(CityShapes.ModernIronFenceGreen));
         reg("moderniron_fence_blue", () -> new GenericMetalBlock(CityShapes.ModernIronFenceBlue));
         reg("concretebarrierfenced", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
-        reg("fireextinguisherbox", () -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
         reg("restroom_sign", () -> new GenericMetalBlock(CityShapes.RestRoomSignMale));
         reg("rest_room_sign_female", () -> new GenericMetalBlock(CityShapes.RestRoomSignFeMale));
         reg("restroom_sign_third", () -> new GenericMetalBlock(CityShapes.RestRoomSignThird));
@@ -167,6 +172,11 @@ public class BlockRegistry {
         reg("safety_wall_corner_green", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
         reg("safety_wall_corner_blue", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
         reg("safety_wall_corner_alert", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
+        reg("powerbox", () -> new GenericMetalBlock(CityShapes.PWRBOX1));
+        reg("power_box_2", () -> new GenericMetalBlock(CityShapes.PWRBOX2));
+        reg("power_box_3", () -> new GenericMetalBlock(CityShapes.PWRBOX3));
+        reg("power_box_4", () -> new GenericMetalBlock(CityShapes.PWRBOX4));
+        reg("power_box_5", () -> new GenericMetalBlock(CityShapes.PWRBOX5));
         // ==================== 电器 ====================
         reg("ac_out_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
         reg("ac_out_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
@@ -186,6 +196,7 @@ public class BlockRegistry {
         reg("fridge_1", () -> new GenericMetalBlock(ApplianceShapes.Fridge1));
         reg("fridge_2", () -> new GenericMetalBlock(ApplianceShapes.Fridge2));
         reg("old_fridge", () -> new GenericMetalBlock(ApplianceShapes.Old_Fridge));
+        reg("old_tv_table", () -> new GenericMetalBlock(ApplianceShapes.OldTVTable));
         reg("freezer", () -> new GenericMetalBlock(ApplianceShapes.Freezer));
         reg("gas_water_heater", () -> new GenericMetalBlock(ApplianceShapes.GASWATERHEATER));
         reg("electric_water_heater", () -> new GenericMetalBlock(ApplianceShapes.ELECTRICWATERHEATER));
@@ -195,6 +206,9 @@ public class BlockRegistry {
         reg("main_unit_modern", () -> new GenericMetalBlock(ApplianceShapes.MODERMMAINUNIT));
         reg("express_box_1", () -> new GenericMetalBlock(ApplianceShapes.ExpressBox));
         reg("express_box_2", () -> new GenericMetalBlock(ApplianceShapes.ExpressBox));
+        reg("old_mirror", () -> new GenericMetalBlock(BlockShapes.FREESIGN));
+        reg("old_calendar", () -> new GenericMetalBlock(ApplianceShapes.OldCalendar));
+        reg("television", () -> new Power(ApplianceShapes.TELEVISION));
 
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor));
@@ -215,6 +229,7 @@ public class BlockRegistry {
         reg("large_air_conditioning_external_unit", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
         reg("centr_alir_conditioning", () -> new GenericMetalBlock(ApplianceShapes.EOLCAC));
         reg("road_sign", () -> new GenericSignBlock(CityShapes.RoadSign));
+        reg("television_power_on", () -> new GenericLightBlock(ApplianceShapes.TELEVISION));
         // 家具
         reg("oldwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM));
         reg("oldwardrobesmall", () -> new GenericMetalBlock(ApplianceShapes.WardrobeS));

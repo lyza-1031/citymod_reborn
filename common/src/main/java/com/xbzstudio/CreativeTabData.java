@@ -34,7 +34,7 @@ public class CreativeTabData {
             "all_direction_sign", "variable_lanes", "bus_lane", "bike_lane",
             "road_block", "road_white_connect", "road_yellow", "road_yellow_double",
             "road_yellow_connect", "road_zebra_crossing",
-            "road_diamond","road_straight",
+            "road_diamond","road_straight","roadblock_block_oblique","roadblock_oblique","roadblock_yellow_oblique","roadblock_double_oblique","zebracrossing_oblique",
             "road_light","street_light","street_light_b","street_light_c","street_light_d",
             "separationpost","separationpostb","separationpostc"
     );
@@ -59,10 +59,11 @@ public class CreativeTabData {
             "barrier_gate_down","barrier_gate_up","barrier_gate_main_down","barrier_gate_main_up",
             "sign","right_sign","left_sign","pedestrians","parking","noparking_sign",
             "safety_wall_green","safety_wall_blue","safety_wall_alert",
-            "safety_wall_corner_green","safety_wall_corner_blue","safety_wall_corner_alert"
+            "safety_wall_corner_green","safety_wall_corner_blue","safety_wall_corner_alert",
+            "powerbox","power_box_2","power_box_3","power_box_4","power_box_5"
     );
     public static final List<String> FireFighting_IDS = List.of(
-            "fireextinguisherbox"
+            "fireextinguisherbox","water_tank"
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
@@ -71,14 +72,15 @@ public class CreativeTabData {
             "air_condition_hd_1", "air_condition_hd_2",
             "airconditionhd_3", "airconditionhd_4",
             "air_condition_old_hd", "central_ac_hd",
-            "micro_wave_oven", "fridge_1", "fridge_2", "old_fridge", "freezer",
+            "micro_wave_oven", "fridge_1", "fridge_2",  "freezer",
             "gas_water_heater", "electric_water_heater", "solarwaterheater",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
-            "all_in_one_pc", "laptop",
+            "all_in_one_pc", "laptop","television",
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
             "modernwardrobe", "modernwardrobeup", "modernwardrobeb",
-            "express_box_1", "express_box_2"
+            "express_box_1", "express_box_2",
+            "old_tv_table","old_fridge","old_mirror","old_calendar"
     );
 
     public static final List<String> POST_IDS = List.of(
