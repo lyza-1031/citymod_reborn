@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/yellowsign",
+  "textures": {
+    "all": "citymod:block/bluesign",
+    "particle": "citymod:block/bluesign",
+    "0": "citymod:block/bluesign"
+  },
+  "render_type": "solid"
+}

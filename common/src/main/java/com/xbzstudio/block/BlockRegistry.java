@@ -72,6 +72,24 @@ public class BlockRegistry {
         reg("white_sign", () -> new GenericSignBlock(BlockShapes.Hsign));
         reg("green_sign", () -> new GenericSignBlock(BlockShapes.Hsign));
         reg("yellow_sign", () -> new GenericSignBlock(CityShapes.Direction_Sign));
+        reg("orangesign", () -> new GenericSignBlock(CityShapes.Direction_Sign));
+        reg("orangesign_2", () -> new GenericSignBlock(BlockShapes.YELLOW_SIGN_2));
+        reg("mediumsign_green", () -> new GenericSignBlock(BlockShapes.MediumSign));
+        reg("mediumsign_blue", () -> new GenericSignBlock(BlockShapes.MediumSign));
+        reg("mediumsign_white", () -> new GenericSignBlock(BlockShapes.MediumSign));
+        reg("mediumsign_yellow", () -> new GenericSignBlock(BlockShapes.MediumSign));
+        reg("mediumsign_orange", () -> new GenericSignBlock(BlockShapes.MediumSign));
+        reg("sign_mini_green", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
+        reg("sign_mini_blue", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
+        reg("sign_mini_white", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
+        reg("sign_mini_yellow", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
+        reg("sign_mini_orange", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
+        reg("sign_mini_red", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
+        reg("white_sign2", () -> new GenericSignBlock(BlockShapes.YELLOW_SIGN_2));
+        reg("expr_5g", () -> new GenericSignBlock(BlockShapes.EXPR_5_f));
+        reg("bluesign", () -> new GenericSignBlock(CityShapes.Direction_Sign));
+        reg("greensign2", () -> new GenericSignBlock(CityShapes.Direction_Sign));
+        reg("whitesign3", () -> new GenericSignBlock(BlockShapes.Hsign));
         //消防
         reg("fireextinguisherbox", () -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
         reg("water_tank", () -> new GenericSignBlock(CityShapes.Concretebarrierfenced));

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/sign_mini_yellow"
+    },
+    "facing=east": {
+      "model": "citymod:block/sign_mini_yellow",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/sign_mini_yellow",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/sign_mini_yellow",
+      "y": 270
+    }
+  }
+}

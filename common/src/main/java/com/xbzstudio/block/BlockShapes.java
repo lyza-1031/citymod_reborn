@@ -456,4 +456,16 @@ public class BlockShapes {
 			box(0, 0, 0, 16, 0.1, 16),
 			box(0, 0, 0, 16, 0.1, 16)
     );
+    public static final Map<Direction, VoxelShape> MediumSign = createShape(
+            box(0, 0, 0, 32, 32, 1),
+            box(-16, 0, 15, 16, 32, 16),
+            box(0, 0, -16, 1, 32, 16),
+            box(15, 0, 0, 16, 32, 32)
+    );
+    public static final Map<Direction, VoxelShape> SIGNMINI = createShape(
+            box(0, 3, 0, 16, 13, 1),
+            box(0, 3, 15, 16, 13, 16),
+            box(0, 3, 0, 1, 13, 16),
+            box(15, 3, 0, 16, 13, 16)
+    );
 }

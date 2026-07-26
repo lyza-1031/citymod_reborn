@@ -1,5 +1,4 @@
 {
-  "parent": "citymod:custom/pole_horizontal",
   "textures": {
     "all": "citymod:block/pole_joint_d",
     "particle": "citymod:block/pole_joint_d",

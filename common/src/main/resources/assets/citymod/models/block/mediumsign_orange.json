@@ -1,0 +1,8 @@
+{
+  "parent": "citymod:custom/mediumsign",
+  "textures": {
+    "particle": "citymod:block/medium_road_sign_orange",
+    "0": "citymod:block/medium_road_sign_orange"
+  },
+  "render_type": "solid"
+}
