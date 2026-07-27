@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/trafficsign",
+  "textures": {
+    "all": "citymod:block/orangesign_2",
+    "particle": "citymod:block/orangesign_2",
+    "1": "citymod:block/orangesign_2"
+  },
+  "render_type": "solid"
+}

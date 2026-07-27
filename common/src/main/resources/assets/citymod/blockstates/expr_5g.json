@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/expr_5g"
+    },
+    "facing=east": {
+      "model": "citymod:block/expr_5g",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/expr_5g",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/expr_5g",
+      "y": 270
+    }
+  }
+}

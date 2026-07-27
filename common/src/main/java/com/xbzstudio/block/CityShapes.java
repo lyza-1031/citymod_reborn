@@ -200,4 +200,40 @@ public class CityShapes {
             box(8, 0, 0, 16, 16, 16),
             box(0, 0, 0, 8, 16, 16)
     );
+    public static final Map<Direction, VoxelShape> PWRBOX1 = createShape(
+            box(0.5, 0, 0, 15.5, 22, 6),
+            box(0.5, 0, 10, 15.5, 22, 16),
+            box(0, 0, 0.5, 6, 22, 15.5),
+            box(10, 0, 0.5, 16, 22, 15.5)
+    );
+    public static final Map<Direction, VoxelShape> PWRBOX2 = createShape(
+            box(0.5, 0, 0, 15.5, 31, 6),
+            box(0.5, 0, 10, 15.5, 31, 16),
+            box(0, 0, 0.5, 6, 31, 15.5),
+            box(10, 0, 0.5, 16, 31, 15.5)
+    );
+    public static final Map<Direction, VoxelShape> PWRBOX3 = createShape(
+            box(2.5, 4, 0, 13.5, 20, 6),
+            box(2.5, 4, 10, 13.5, 20, 16),
+            box(0, 4, 2.5, 6, 20, 13.5),
+            box(10, 4, 2.5, 16, 20, 13.5)
+    );
+    public static final Map<Direction, VoxelShape> PWRBOX4 = createShape(
+            box(0.5, 2, 0, 15.5, 21, 6),
+            box(0.5, 2, 10, 15.5, 21, 16),
+            box(0, 2, 0.5, 6, 21, 15.5),
+            box(10, 2, 0.5, 16, 21, 15.5)
+    );
+    public static final Map<Direction, VoxelShape> PWRBOX5 = createShape(
+            box(2.5, 5, 0, 13.5, 19, 6),
+            box(2.5, 5, 10, 13.5, 19, 16),
+            box(0, 5, 2.5, 6, 19, 13.5),
+            box(10, 5, 2.5, 16, 19, 13.5)
+    );
+    public static final Map<Direction, VoxelShape> ACBRACKET = createShape(
+            box(0, 8, 0, 16, 16, 16),
+            box(0, 8, 0, 16, 16, 16),
+            box(0, 8, 0, 16, 16, 16),
+            box(0, 8, 0, 16, 16, 16)
+    );
 }
