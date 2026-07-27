@@ -370,5 +370,8 @@
   "block.citymod.sign_mini_white":"小型指示牌",
   "block.citymod.sign_mini_red":"小型指示牌",
   "block.citymod.expr_5g":"高速公路指示牌",
-  "block.citymod.white_sign2":"白色标志牌"
+  "block.citymod.white_sign2":"白色标志牌",
+  "block.citymod.white_sign3": "白色标志牌",
+  "block.citymod.green_sign2": "绿色指示牌",
+  "block.citymod.bluesign": "蓝色指示牌"
 }

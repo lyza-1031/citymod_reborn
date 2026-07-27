@@ -230,4 +230,10 @@ public class CityShapes {
             box(0, 5, 2.5, 6, 19, 13.5),
             box(10, 5, 2.5, 16, 19, 13.5)
     );
+    public static final Map<Direction, VoxelShape> ACBRACKET = createShape(
+            box(0, 8, 0, 16, 16, 16),
+            box(0, 8, 0, 16, 16, 16),
+            box(0, 8, 0, 16, 16, 16),
+            box(0, 8, 0, 16, 16, 16)
+    );
 }

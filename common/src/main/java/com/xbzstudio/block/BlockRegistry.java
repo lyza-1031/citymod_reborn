@@ -3,6 +3,7 @@ package com.xbzstudio.block;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.material.MapColor;
@@ -90,6 +91,13 @@ public class BlockRegistry {
         reg("bluesign", () -> new GenericSignBlock(CityShapes.Direction_Sign));
         reg("greensign2", () -> new GenericSignBlock(CityShapes.Direction_Sign));
         reg("whitesign3", () -> new GenericSignBlock(BlockShapes.Hsign));
+        reg("expressway_fence", () -> new GenericSignBlock(BlockShapes.ExprFence));
+        reg("expressway_fence_green", () -> new GenericSignBlock(BlockShapes.ExprFence));
+        reg("expressway_fence_joint", () -> new GenericSignBlock(BlockShapes.ExprFenceJ));
+        reg("expressway_fence_green_joint", () -> new GenericSignBlock(BlockShapes.ExprFenceJ));
+        reg("vehicle_dstance_confirmation_sign", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
+        reg("vehicle_distance_confirmation_sign_b", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
+        reg("vehicle_distance_confirmation_sign_c", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
         //消防
         reg("fireextinguisherbox", () -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
         reg("water_tank", () -> new GenericSignBlock(CityShapes.Concretebarrierfenced));
@@ -110,6 +118,7 @@ public class BlockRegistry {
         reg("separationpost", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("separationpostb", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("separationpostc", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+
         // 方向牌
         reg("direction_sign", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
         reg("direction_sign_left", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
@@ -145,6 +154,9 @@ public class BlockRegistry {
         reg("roadblock_yellow_oblique", () -> new GenericMetalBlock(BlockShapes.LineO));
         reg("roadblock_double_oblique", () -> new GenericMetalBlock(BlockShapes.LineO));
         reg("zebracrossing_oblique", () -> new GenericMetalBlock(BlockShapes.LineO));
+        reg("whiteline_block", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("yellowline_block", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("double_yellowline_block", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
 
         // 城市设施
         reg("speed_limit_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
@@ -195,6 +207,8 @@ public class BlockRegistry {
         reg("power_box_3", () -> new GenericMetalBlock(CityShapes.PWRBOX3));
         reg("power_box_4", () -> new GenericMetalBlock(CityShapes.PWRBOX4));
         reg("power_box_5", () -> new GenericMetalBlock(CityShapes.PWRBOX5));
+        reg("ac_bracket", () -> new GenericMetalBlock(CityShapes.ACBRACKET));
+        reg("bracket", () -> new GenericMetalBlock(CityShapes.ACBRACKET));
         // ==================== 电器 ====================
         reg("ac_out_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
         reg("ac_out_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
