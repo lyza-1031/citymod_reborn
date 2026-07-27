@@ -5,5 +5,5 @@
     "particle": "citymod:block/2010monitoron",
     "0": "citymod:block/2010monitoron"
   },
-  "render_type": "cutout"
+  "render_type": "solid"
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/trafficsign",
+  "textures": {
+    "all": "citymod:block/white_sign2",
+    "particle": "citymod:block/white_sign2",
+    "1": "citymod:block/white_sign2"
+  },
+  "render_type": "solid"
+}

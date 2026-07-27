@@ -14,15 +14,16 @@ public class CreativeTabData {
 
     public static final List<String> TRAFFIC_IDS = List.of(
             "expr_1", "expr_2", "expr_3", "expr_4", "expr_5",
-            "expr_5a", "expr_5b", "expr_5c", "expr_5_d", "expr_5_e", "expr_5_f",
+            "expr_5a", "expr_5b", "expr_5c", "expr_5_d", "expr_5_e", "expr_5_f","expr_5g",
             "service_area_sign", "overpass_sign", "overpass_sign_2", "overpass_sign_3",
-            "over_pass_sign_4", "over_pass_5","green_sign","scenic_spot_sign",
+            "over_pass_sign_4", "over_pass_5","green_sign","greensign2","expr_sign_large", "expressway_exit_sign", "expr_t_ips","mediumsign_green","sign_mini_green",
+            "vehicle_dstance_confirmation_sign","vehicle_distance_confirmation_sign_b","vehicle_distance_confirmation_sign_c","scenic_spot_sign",
             "road_1", "road_2", "road_3", "road_4", "road_5", "road_6", "road_11", "road_12",
-            "expr_sign_large", "expressway_exit_sign", "expr_t_ips",
-            "traffic_sign", "traffic_sign_l", "traffic_sign_r", "traffic_sign_t",
-            "traffic_sign_1", "traffic_sign_2", "yellow_sign_2","yellow_sign",
+            "traffic_sign", "traffic_sign_l", "traffic_sign_r", "traffic_sign_t","mediumsign_blue","bluesign","sign_mini_blue",
+            "traffic_sign_1", "traffic_sign_2", "yellow_sign_2","yellow_sign","mediumsign_yellow","sign_mini_yellow",
             "road_screen", "free_road_sign", "free_expressway_sign",
-            "white_sign",
+            "white_sign2","white_sign","whitesign3","mediumsign_white","sign_mini_white",
+            "orangesign","orangesign_2","mediumsign_orange","sign_mini_orange","sign_mini_red",
             "pole", "pole_joint", "pole_joint_double", "pole_joint_l",
             "pole_horizontal", "pole_expr", "pole_expr_right", "pole_exprmid",
             "pole_fine_d", "polefine_joint_d",
@@ -33,10 +34,11 @@ public class CreativeTabData {
             "direction_signturnoff", "direction_straight_turnoff",
             "all_direction_sign", "variable_lanes", "bus_lane", "bike_lane",
             "road_block", "road_white_connect", "road_yellow", "road_yellow_double",
-            "road_yellow_connect", "road_zebra_crossing",
-            "road_diamond","road_straight",
+            "road_yellow_connect", "road_zebra_crossing","whiteline_block","yellowline_block","double_yellowline_block",
+            "road_diamond","road_straight","roadblock_block_oblique","roadblock_oblique","roadblock_yellow_oblique","roadblock_double_oblique","zebracrossing_oblique",
             "road_light","street_light","street_light_b","street_light_c","street_light_d",
-            "separationpost","separationpostb","separationpostc"
+            "separationpost","separationpostb","separationpostc",
+            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint"
     );
 
     public static final List<String> CITY_IDS = List.of(
@@ -59,10 +61,12 @@ public class CreativeTabData {
             "barrier_gate_down","barrier_gate_up","barrier_gate_main_down","barrier_gate_main_up",
             "sign","right_sign","left_sign","pedestrians","parking","noparking_sign",
             "safety_wall_green","safety_wall_blue","safety_wall_alert",
-            "safety_wall_corner_green","safety_wall_corner_blue","safety_wall_corner_alert"
+            "safety_wall_corner_green","safety_wall_corner_blue","safety_wall_corner_alert",
+            "powerbox","power_box_2","power_box_3","power_box_4","power_box_5",
+            "ac_bracket","bracket"
     );
     public static final List<String> FireFighting_IDS = List.of(
-            "fireextinguisherbox"
+            "fireextinguisherbox","water_tank"
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
@@ -71,14 +75,15 @@ public class CreativeTabData {
             "air_condition_hd_1", "air_condition_hd_2",
             "airconditionhd_3", "airconditionhd_4",
             "air_condition_old_hd", "central_ac_hd",
-            "micro_wave_oven", "fridge_1", "fridge_2", "old_fridge", "freezer",
+            "micro_wave_oven", "fridge_1", "fridge_2",  "freezer",
             "gas_water_heater", "electric_water_heater", "solarwaterheater",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
-            "all_in_one_pc", "laptop",
+            "all_in_one_pc", "laptop","television",
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
             "modernwardrobe", "modernwardrobeup", "modernwardrobeb",
-            "express_box_1", "express_box_2"
+            "express_box_1", "express_box_2",
+            "old_tv_table","old_fridge","old_mirror","old_calendar"
     );
 
     public static final List<String> POST_IDS = List.of(
