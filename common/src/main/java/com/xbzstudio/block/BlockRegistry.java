@@ -98,6 +98,8 @@ public class BlockRegistry {
         reg("vehicle_dstance_confirmation_sign", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
         reg("vehicle_distance_confirmation_sign_b", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
         reg("vehicle_distance_confirmation_sign_c", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
+        reg("tunnel_sign_1", () -> new GenericLightBlock(BlockShapes.DEFAULT));
+        reg("tunnel_sign_2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         //消防
         reg("fireextinguisherbox", () -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
         reg("water_tank", () -> new GenericSignBlock(CityShapes.Concretebarrierfenced));
@@ -118,6 +120,7 @@ public class BlockRegistry {
         reg("separationpost", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("separationpostb", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("separationpostc", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("light_pole_with_flag", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
 
         // 方向牌
         reg("direction_sign", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
@@ -209,6 +212,15 @@ public class BlockRegistry {
         reg("power_box_5", () -> new GenericMetalBlock(CityShapes.PWRBOX5));
         reg("ac_bracket", () -> new GenericMetalBlock(CityShapes.ACBRACKET));
         reg("bracket", () -> new GenericMetalBlock(CityShapes.ACBRACKET));
+        reg("school_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
+        reg("no_honking_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
+        reg("governmentsign", () -> new GenericMetalBlock(CityShapes.GSign));
+        reg("sign_board", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("construction_warning", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("step_fence", () -> new GenericMetalBlock(CityShapes.StepFence));
+        reg("stone_table", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("stone_chair", () -> new GenericMetalBlock(CityShapes.StoneChair));
+        reg("speed_bump", () -> new GenericMetalBlock(CityShapes.SpeedBump));
         // ==================== 电器 ====================
         reg("ac_out_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
         reg("ac_out_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
@@ -241,6 +253,7 @@ public class BlockRegistry {
         reg("old_mirror", () -> new GenericMetalBlock(BlockShapes.FREESIGN));
         reg("old_calendar", () -> new GenericMetalBlock(ApplianceShapes.OldCalendar));
         reg("television", () -> new Power(ApplianceShapes.TELEVISION));
+        reg("printer", () -> new GenericMetalBlock(CityShapes.StoneChair));
 
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor));

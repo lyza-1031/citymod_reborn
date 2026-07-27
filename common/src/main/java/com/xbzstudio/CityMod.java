@@ -8,7 +8,9 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -21,12 +23,10 @@ public class CityMod {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(MODID, Registries.BLOCK);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MODID, Registries.ITEM);
-
     static {
         CHANNEL.register(KillItemsPacket.class, KillItemsPacket::encode, KillItemsPacket::new, KillItemsPacket::handle);
     }
 
-    @SuppressWarnings("unchecked")
     public static void init() {
         for (var def : BlockRegistry.BLOCKS) {
             Supplier<Block> factory = (Supplier<Block>) def.factory();

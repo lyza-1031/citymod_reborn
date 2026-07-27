@@ -27,7 +27,7 @@ public class CreativeTabData {
             "pole", "pole_joint", "pole_joint_double", "pole_joint_l",
             "pole_horizontal", "pole_expr", "pole_expr_right", "pole_exprmid",
             "pole_fine_d", "polefine_joint_d",
-            "warn_pole","road_light_down","lamppost",
+            "warn_pole","road_light_down","lamppost","light_pole_with_flag",
             "direction_sign", "direction_sign_left", "direction_sign_right",
             "direction_sign_left_straight", "direction_sign_right_straight",
             "direction_sign_left_right", "direction_sign_left_turnoff",
@@ -38,14 +38,15 @@ public class CreativeTabData {
             "road_diamond","road_straight","roadblock_block_oblique","roadblock_oblique","roadblock_yellow_oblique","roadblock_double_oblique","zebracrossing_oblique",
             "road_light","street_light","street_light_b","street_light_c","street_light_d",
             "separationpost","separationpostb","separationpostc",
-            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint"
+            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint",
+            "tunnel_sign_1","tunnel_sign_2"
     );
 
     public static final List<String> CITY_IDS = List.of(
             "speed_limit_sign", "speed_limit_sign_1", "speed_limit_sign_2",
             "speed_limit_sign_3", "speed_limit_sign_4", "speed_limit_sign_5",
-            "speed_limit_sign_6", "speed_limit_sign_7", "speed_limit_sign_8",
-            "glass_fence","modern_fence", "modern_fence_2", "modern_fence_3","pole_fine",
+            "speed_limit_sign_6", "speed_limit_sign_7", "speed_limit_sign_8","pole_fine",
+            "glass_fence","modern_fence", "modern_fence_2", "modern_fence_3","step_fence",
             "modern_ironfence", "moderniron_fence_yellow",
             "moderniron_fence_green", "moderniron_fence_blue",
             "concretebarrierfenced","concrete_wall_std","concrete_wall_warn",
@@ -59,11 +60,13 @@ public class CreativeTabData {
             "trash_bin",
             "roadsign_a","roadsign_b",
             "barrier_gate_down","barrier_gate_up","barrier_gate_main_down","barrier_gate_main_up",
-            "sign","right_sign","left_sign","pedestrians","parking","noparking_sign",
+            "sign","right_sign","left_sign","pedestrians","parking","noparking_sign","no_honking_sign","school_sign",
             "safety_wall_green","safety_wall_blue","safety_wall_alert",
             "safety_wall_corner_green","safety_wall_corner_blue","safety_wall_corner_alert",
-            "powerbox","power_box_2","power_box_3","power_box_4","power_box_5",
-            "ac_bracket","bracket"
+            "powerbox","power_box_2","power_box_3","power_box_4","power_box_5","speed_bump",
+            "ac_bracket","bracket",
+            "construction_warning","sign_board","governmentsign",
+            "stone_table","stone_chair"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox","water_tank"
@@ -79,7 +82,7 @@ public class CreativeTabData {
             "gas_water_heater", "electric_water_heater", "solarwaterheater",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
-            "all_in_one_pc", "laptop","television",
+            "all_in_one_pc", "laptop","printer","television",
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
             "modernwardrobe", "modernwardrobeup", "modernwardrobeb",
             "express_box_1", "express_box_2",
