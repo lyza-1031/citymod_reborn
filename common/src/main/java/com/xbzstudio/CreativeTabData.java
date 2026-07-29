@@ -69,7 +69,7 @@ public class CreativeTabData {
             "stone_table","stone_chair"
     );
     public static final List<String> FireFighting_IDS = List.of(
-            "fireextinguisherbox","water_tank"
+            "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2"
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
@@ -82,7 +82,7 @@ public class CreativeTabData {
             "gas_water_heater", "electric_water_heater", "solarwaterheater",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
-            "all_in_one_pc", "laptop","printer","television",
+            "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","crt_tv",
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
             "modernwardrobe", "modernwardrobeup", "modernwardrobeb",
             "express_box_1", "express_box_2",

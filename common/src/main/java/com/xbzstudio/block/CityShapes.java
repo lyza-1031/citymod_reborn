@@ -260,4 +260,16 @@ public class CityShapes {
             box(0, 0, 0, 16, 10, 16),
             box(0, 0, 0, 16, 10, 16)
     );
+    public static final Map<Direction, VoxelShape> NOZZLE = createShape(
+            box(0, 7, 7, 16, 9, 9),
+			box(0, 7, 7, 16, 9, 9),
+			box(7, 7, 0, 9, 9, 16),
+			box(7, 7, 0, 9, 9, 16)
+    );
+    public static final Map<Direction, VoxelShape> NOZZLE2 = createShape(
+            box(0, 7, 7, 8, 9, 9),
+            box(0, 7, 7, 8, 9, 9),
+            box(7, 7, 0, 9, 9, 8),
+            box(7, 7, 0, 9, 9, 8)
+    );
 }
