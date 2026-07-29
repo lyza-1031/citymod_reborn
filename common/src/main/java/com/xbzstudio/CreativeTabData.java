@@ -16,10 +16,10 @@ public class CreativeTabData {
             "expr_1", "expr_2", "expr_3", "expr_4", "expr_5",
             "expr_5a", "expr_5b", "expr_5c", "expr_5_d", "expr_5_e", "expr_5_f","expr_5g",
             "service_area_sign", "overpass_sign", "overpass_sign_2", "overpass_sign_3",
-            "over_pass_sign_4", "over_pass_5","green_sign","greensign2","expr_sign_large", "expressway_exit_sign", "expr_t_ips","mediumsign_green","sign_mini_green",
-            "vehicle_dstance_confirmation_sign","vehicle_distance_confirmation_sign_b","vehicle_distance_confirmation_sign_c","scenic_spot_sign",
-            "road_1", "road_2", "road_3", "road_4", "road_5", "road_6", "road_11", "road_12",
-            "traffic_sign", "traffic_sign_l", "traffic_sign_r", "traffic_sign_t","mediumsign_blue","bluesign","sign_mini_blue",
+            "over_pass_sign_4","road_11","tollgate_sign","green_sign","greensign2","expr_sign_large", "expressway_exit_sign", "expr_t_ips","mediumsign_green","sign_mini_green",
+            "vehicle_dstance_confirmation_sign","vehicle_distance_confirmation_sign_b","vehicle_distance_confirmation_sign_c","diversion_b","diversion_sign","scenic_spot_sign",
+            "road_1", "road_2", "road_3", "road_4", "road_5", "road_6","road_8",  "road_12",
+            "traffic_sign", "traffic_sign_l", "traffic_sign_r", "traffic_sign_t","over_pass_5","mediumsign_blue","bluesign","sign_mini_blue",
             "traffic_sign_1", "traffic_sign_2", "yellow_sign_2","yellow_sign","mediumsign_yellow","sign_mini_yellow",
             "road_screen", "free_road_sign", "free_expressway_sign",
             "white_sign2","white_sign","whitesign3","mediumsign_white","sign_mini_white",
@@ -86,7 +86,8 @@ public class CreativeTabData {
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
             "modernwardrobe", "modernwardrobeup", "modernwardrobeb",
             "express_box_1", "express_box_2",
-            "old_tv_table","old_fridge","old_mirror","old_calendar"
+            "old_tv_table","old_fridge","old_mirror","old_calendar",
+            "extractor","trimcover","washingmachine","washine_machine_b"
     );
 
     public static final List<String> POST_IDS = List.of(

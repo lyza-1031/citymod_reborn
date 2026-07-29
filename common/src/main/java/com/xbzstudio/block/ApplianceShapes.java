@@ -338,4 +338,16 @@ public class ApplianceShapes {
             Shapes.or(box(1.25, 0, -16, 2, 2, 32), box(1.25, 29, -16, 2, 30, 32), box(1.25, 2, 31, 2, 29, 32), box(1.25, 2, -16, 2, 29, -15), box(1.25, 2, -15, 1.75, 29, 31), box(1, 0, -16, 1.25, 30, 32), box(0, 2, -12, 1, 28, 28)),
             Shapes.or(box(14, 0, -16, 14.75, 2, 32), box(14, 29, -16, 14.75, 30, 32), box(14, 2, -16, 14.75, 29, -15), box(14, 2, 31, 14.75, 29, 32), box(14.25, 2, -15, 14.75, 29, 31), box(14.75, 0, -16, 15, 30, 32), box(15, 2, -12, 16, 28, 28))
     );
+    public static final Map<Direction, VoxelShape> WASHINGMACHINEA = createShape(
+            box(-4, 0, 0, 20, 24, 20),
+            box(-4, 0, -4, 20, 24, 16),
+            box(0, 0, -4, 20, 24, 20),
+            box(-4, 0, -4, 16, 24, 20)
+    );
+    public static final Map<Direction, VoxelShape> WASHINGMACHINEB = createShape(
+            box(0, 0, 0, 16, 19, 16),
+            box(0, 0, 0, 16, 19, 16),
+            box(0, 0, 0, 16, 19, 16),
+            box(0, 0, 0, 16, 19, 16)
+    );
 }
