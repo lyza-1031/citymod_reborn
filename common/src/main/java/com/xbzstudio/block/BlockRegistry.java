@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.ArrayList;
@@ -98,9 +99,18 @@ public class BlockRegistry {
         reg("vehicle_dstance_confirmation_sign", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
         reg("vehicle_distance_confirmation_sign_b", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
         reg("vehicle_distance_confirmation_sign_c", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
+        reg("tunnel_sign_1", () -> new GenericLightBlock(BlockShapes.DEFAULT));
+        reg("tunnel_sign_2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
+        reg("tollgate_sign", () -> new GenericSignBlock(BlockShapes.ROAD_4));
+        reg("road_8", () -> new GenericSignBlock(BlockShapes.ROAD_4));
+        reg("stone_ball", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("expresswayfence2", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("expresswayfence2_r", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         //消防
         reg("fireextinguisherbox", () -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
         reg("water_tank", () -> new GenericSignBlock(CityShapes.Concretebarrierfenced));
+        reg("nozzle_1", () -> new GenericSignBlock(CityShapes.NOZZLE));
+        reg("nozzle_2", () -> new GenericSignBlock(CityShapes.NOZZLE2));
         // 杆子
         reg("pole", () -> new GenericSignBlock(BlockShapes.POLE));
         reg("pole_joint", () -> new GenericSignBlock(BlockShapes.POLE_JOINT));
@@ -118,6 +128,7 @@ public class BlockRegistry {
         reg("separationpost", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("separationpostb", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("separationpostc", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("light_pole_with_flag", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
 
         // 方向牌
         reg("direction_sign", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
@@ -133,6 +144,8 @@ public class BlockRegistry {
         reg("variable_lanes", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
         reg("bus_lane", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
         reg("bike_lane", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
+        reg("diversion_b", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
+        reg("diversion_sign", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
         //路灯
         reg("road_light", () -> new GenericLightBlock(BlockShapes.ROADLIGHT));
         reg("street_light", () -> new GenericLightBlock(BlockShapes.STREETLIGHT));
@@ -209,6 +222,15 @@ public class BlockRegistry {
         reg("power_box_5", () -> new GenericMetalBlock(CityShapes.PWRBOX5));
         reg("ac_bracket", () -> new GenericMetalBlock(CityShapes.ACBRACKET));
         reg("bracket", () -> new GenericMetalBlock(CityShapes.ACBRACKET));
+        reg("school_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
+        reg("no_honking_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
+        reg("governmentsign", () -> new GenericMetalBlock(CityShapes.GSign));
+        reg("sign_board", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("construction_warning", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("step_fence", () -> new GenericMetalBlock(CityShapes.StepFence));
+        reg("stone_table", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("stone_chair", () -> new GenericMetalBlock(CityShapes.StoneChair));
+        reg("speed_bump", () -> new GenericMetalBlock(CityShapes.SpeedBump));
         // ==================== 电器 ====================
         reg("ac_out_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
         reg("ac_out_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
@@ -241,13 +263,22 @@ public class BlockRegistry {
         reg("old_mirror", () -> new GenericMetalBlock(BlockShapes.FREESIGN));
         reg("old_calendar", () -> new GenericMetalBlock(ApplianceShapes.OldCalendar));
         reg("television", () -> new Power(ApplianceShapes.TELEVISION));
-
+        reg("printer", () -> new GenericMetalBlock(CityShapes.StoneChair));
+        reg("extractor", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("trimcover", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("washingmachine", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEA));
+        reg("washine_machine_b", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEB));
+        reg("crt_tv", () -> new Power(ApplianceShapes.CRTTV));
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor));
         reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010));
         reg("modern_monitor_off", () -> new Power(ApplianceShapes.ModernMonitor));
         reg("all_in_one_pc", () -> new Power(ApplianceShapes.AIOPC));
         reg("laptop", () -> new Power(ApplianceShapes.LAPTOP));
+        reg("large_screen_black", () -> new Power(ApplianceShapes.LARGESCREEN));
+        reg("large_screen_white", () -> new Power(ApplianceShapes.LARGESCREEN));
+        reg("gaming_pc_white", () -> new GenericGlassBlock(ApplianceShapes.GAMINGPC));
+        reg("gaming_pcblack", () -> new GenericGlassBlock(ApplianceShapes.GAMINGPC));
 
         // 已废弃
         reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON));
@@ -262,6 +293,14 @@ public class BlockRegistry {
         reg("centr_alir_conditioning", () -> new GenericMetalBlock(ApplianceShapes.EOLCAC));
         reg("road_sign", () -> new GenericSignBlock(CityShapes.RoadSign));
         reg("television_power_on", () -> new GenericLightBlock(ApplianceShapes.TELEVISION));
+        reg("old_ac_in", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN));
+        reg("old_ac_in_b", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
+        reg("old_ac_in_c", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN));
+        reg("air_condition_b", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN));
+        reg("screen_black_on", () -> new GenericLightBlock(ApplianceShapes.LARGESCREEN));
+        reg("screen_white_on", () -> new GenericLightBlock(ApplianceShapes.LARGESCREEN));
+        reg("crt_tv_on", () -> new Power(ApplianceShapes.CRTTV));
+        reg("old_ac_out", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
         // 家具
         reg("oldwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM));
         reg("oldwardrobesmall", () -> new GenericMetalBlock(ApplianceShapes.WardrobeS));
@@ -369,6 +408,48 @@ public class BlockRegistry {
                 default -> Block.box(0, 0, 0, 16, 16, 16);
             };
         }));
+        reg("water_pipe", () -> new GenericAxisBlock(Map.of(
+                Direction.Axis.X, Block.box(0, 7, 7, 16, 9, 9),
+                Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9),
+                Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16)
+        )));
+        reg("water_pipe_red", () -> new GenericAxisBlock(Map.of(
+                Direction.Axis.X, Block.box(0, 7, 7, 16, 9, 9),
+                Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9),
+                Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16)
+        )));
+        reg("water_pipe_joint", () -> new GenericDirectionBlock(Map.of(
+                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
+                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
+                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+        )));
+        reg("water_pipe_joint_red", () -> new GenericDirectionBlock(Map.of(
+                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
+                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
+                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+        )));
+        reg("water_pipe_joint_r", () -> new GenericDirectionBlock(Map.of(
+                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
+                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
+                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+        )));
+        reg("water_pipe_joint_red_r", () -> new GenericDirectionBlock(Map.of(
+                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
+                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
+                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+        )));
     }
 
     private static void reg(String id, Supplier<? extends Block> factory) {

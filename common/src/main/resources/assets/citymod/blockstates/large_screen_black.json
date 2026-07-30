@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=north": {
+    "facing=north,powered=false": {
       "model": "citymod:block/large_screen_black"
     },
-    "facing=east": {
+    "facing=east,powered=false": {
       "model": "citymod:block/large_screen_black",
       "y": 90
     },
-    "facing=south": {
+    "facing=south,powered=false": {
       "model": "citymod:block/large_screen_black",
       "y": 180
     },
-    "facing=west": {
+    "facing=west,powered=false": {
       "model": "citymod:block/large_screen_black",
+      "y": 270
+    },
+    "facing=north,powered=true": {
+      "model": "citymod:block/screen_black_on"
+    },
+    "facing=east,powered=true": {
+      "model": "citymod:block/screen_black_on",
+      "y": 90
+    },
+    "facing=south,powered=true": {
+      "model": "citymod:block/screen_black_on",
+      "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "citymod:block/screen_black_on",
       "y": 270
     }
   }

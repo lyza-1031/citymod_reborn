@@ -373,5 +373,7 @@
   "block.citymod.white_sign2":"White sign",
   "block.citymod.white_sign3":"White sign",
   "block.citymod.green_sign2":"Green sign",
-  "block.citymod.bluesign":"Blue sign"
+  "block.citymod.bluesign":"Blue sign",
+  "block.citymod.expresswayfence2": "Expressway fence",
+  "block.citymod.expresswayfence2_r": "Expressway fence"
 }

@@ -135,10 +135,10 @@ public class CityShapes {
                     box(2, 0, 2, 4, 15, 4))
     );
     public static final Map<Direction, VoxelShape> Direction_Sign = createShape(
-            box(0, 2, 0, 16, 32, 1),
-            box(0, 2, 15, 16, 32, 16),
-            box(0, 2, 0, 1, 32, 16),
-            box(15, 2, 0, 16, 32, 16)
+            box(0, 0, 0, 16, 32, 1),
+            box(0, 0, 15, 16, 32, 16),
+            box(0, 0, 0, 1, 32, 16),
+            box(15, 0, 0, 16, 32, 16)
     );
     public static final Map<Direction, VoxelShape> Trashbin = createShape(
             box(-3, 0, 2, 19, 22, 15),
@@ -235,5 +235,41 @@ public class CityShapes {
             box(0, 8, 0, 16, 16, 16),
             box(0, 8, 0, 16, 16, 16),
             box(0, 8, 0, 16, 16, 16)
+    );
+    public static final Map<Direction, VoxelShape> GSign = createShape(
+            box(0, -16, 0, 16, 32, 1),
+            box(0, -16, 15, 16, 32, 16),
+            box(0, -16, 0, 1, 32, 16),
+            box(15, -16, 0, 16, 32, 16)
+    );
+    public static final Map<Direction, VoxelShape> StepFence = createShape(
+            Shapes.or(box(7, -9, 7, 9, -2, 9), box(0, -2, 7, 16, 0, 9)),
+			Shapes.or(box(7, -9, 7, 9, -2, 9), box(0, -2, 7, 16, 0, 9)),
+			Shapes.or(box(7, -9, 7, 9, -2, 9), box(7, -2, 0, 9, 0, 16)),
+			Shapes.or(box(7, -9, 7, 9, -2, 9), box(7, -2, 0, 9, 0, 16))
+    );
+    public static final Map<Direction, VoxelShape> SpeedBump = createShape(
+            box(0, 0, 3, 16, 4, 13),
+            box(0, 0, 3, 16, 4, 13),
+            box(3, 0, 0, 13, 4, 16),
+            box(3, 0, 0, 13, 4, 16)
+    );
+    public static final Map<Direction, VoxelShape> StoneChair = createShape(
+            box(0, 0, 0, 16, 10, 16),
+            box(0, 0, 0, 16, 10, 16),
+            box(0, 0, 0, 16, 10, 16),
+            box(0, 0, 0, 16, 10, 16)
+    );
+    public static final Map<Direction, VoxelShape> NOZZLE = createShape(
+            box(0, 7, 7, 16, 9, 9),
+			box(0, 7, 7, 16, 9, 9),
+			box(7, 7, 0, 9, 9, 16),
+			box(7, 7, 0, 9, 9, 16)
+    );
+    public static final Map<Direction, VoxelShape> NOZZLE2 = createShape(
+            box(0, 7, 7, 8, 9, 9),
+            box(0, 7, 7, 8, 9, 9),
+            box(7, 7, 0, 9, 9, 8),
+            box(7, 7, 0, 9, 9, 8)
     );
 }
