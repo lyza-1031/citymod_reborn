@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/expresswayfence2_r",
+  "textures": {
+    "1": "minecraft:block/polished_andesite",
+    "particle": "citymod:block/expresswayfence2",
+    "0": "citymod:block/expresswayfence2"
+  },
+  "render_type": "solid"
+}

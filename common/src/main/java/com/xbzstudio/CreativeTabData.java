@@ -38,7 +38,7 @@ public class CreativeTabData {
             "road_diamond","road_straight","roadblock_block_oblique","roadblock_oblique","roadblock_yellow_oblique","roadblock_double_oblique","zebracrossing_oblique",
             "road_light","street_light","street_light_b","street_light_c","street_light_d",
             "separationpost","separationpostb","separationpostc",
-            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint",
+            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint","expresswayfence2","expresswayfence2_r",
             "tunnel_sign_1","tunnel_sign_2"
     );
 
@@ -66,10 +66,11 @@ public class CreativeTabData {
             "powerbox","power_box_2","power_box_3","power_box_4","power_box_5","speed_bump",
             "ac_bracket","bracket",
             "construction_warning","sign_board","governmentsign",
-            "stone_table","stone_chair"
+            "stone_table","stone_chair","stone_ball"
     );
     public static final List<String> FireFighting_IDS = List.of(
-            "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2"
+            "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
+            "water_pipe_joint","water_pipe_joint_r","water_pipe_joint_red","water_pipe_joint_red_r"
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",

@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.ArrayList;
@@ -102,7 +103,9 @@ public class BlockRegistry {
         reg("tunnel_sign_2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("tollgate_sign", () -> new GenericSignBlock(BlockShapes.ROAD_4));
         reg("road_8", () -> new GenericSignBlock(BlockShapes.ROAD_4));
-
+        reg("stone_ball", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("expresswayfence2", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("expresswayfence2_r", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         //消防
         reg("fireextinguisherbox", () -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
         reg("water_tank", () -> new GenericSignBlock(CityShapes.Concretebarrierfenced));
@@ -297,6 +300,7 @@ public class BlockRegistry {
         reg("screen_black_on", () -> new GenericLightBlock(ApplianceShapes.LARGESCREEN));
         reg("screen_white_on", () -> new GenericLightBlock(ApplianceShapes.LARGESCREEN));
         reg("crt_tv_on", () -> new Power(ApplianceShapes.CRTTV));
+        reg("old_ac_out", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
         // 家具
         reg("oldwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM));
         reg("oldwardrobesmall", () -> new GenericMetalBlock(ApplianceShapes.WardrobeS));
@@ -413,6 +417,38 @@ public class BlockRegistry {
                 Direction.Axis.X, Block.box(0, 7, 7, 16, 9, 9),
                 Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9),
                 Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16)
+        )));
+        reg("water_pipe_joint", () -> new GenericDirectionBlock(Map.of(
+                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
+                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
+                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+        )));
+        reg("water_pipe_joint_red", () -> new GenericDirectionBlock(Map.of(
+                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
+                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
+                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+        )));
+        reg("water_pipe_joint_r", () -> new GenericDirectionBlock(Map.of(
+                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
+                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
+                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+        )));
+        reg("water_pipe_joint_red_r", () -> new GenericDirectionBlock(Map.of(
+                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
+                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
+                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
         )));
     }
 
