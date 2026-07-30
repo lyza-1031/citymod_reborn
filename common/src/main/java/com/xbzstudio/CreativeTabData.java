@@ -16,10 +16,10 @@ public class CreativeTabData {
             "expr_1", "expr_2", "expr_3", "expr_4", "expr_5",
             "expr_5a", "expr_5b", "expr_5c", "expr_5_d", "expr_5_e", "expr_5_f","expr_5g",
             "service_area_sign", "overpass_sign", "overpass_sign_2", "overpass_sign_3",
-            "over_pass_sign_4", "over_pass_5","green_sign","greensign2","expr_sign_large", "expressway_exit_sign", "expr_t_ips","mediumsign_green","sign_mini_green",
-            "vehicle_dstance_confirmation_sign","vehicle_distance_confirmation_sign_b","vehicle_distance_confirmation_sign_c","scenic_spot_sign",
-            "road_1", "road_2", "road_3", "road_4", "road_5", "road_6", "road_11", "road_12",
-            "traffic_sign", "traffic_sign_l", "traffic_sign_r", "traffic_sign_t","mediumsign_blue","bluesign","sign_mini_blue",
+            "over_pass_sign_4","road_11","tollgate_sign","green_sign","greensign2","expr_sign_large", "expressway_exit_sign", "expr_t_ips","mediumsign_green","sign_mini_green",
+            "vehicle_dstance_confirmation_sign","vehicle_distance_confirmation_sign_b","vehicle_distance_confirmation_sign_c","diversion_b","diversion_sign","scenic_spot_sign",
+            "road_1", "road_2", "road_3", "road_4", "road_5", "road_6","road_8",  "road_12",
+            "traffic_sign", "traffic_sign_l", "traffic_sign_r", "traffic_sign_t","over_pass_5","mediumsign_blue","bluesign","sign_mini_blue",
             "traffic_sign_1", "traffic_sign_2", "yellow_sign_2","yellow_sign","mediumsign_yellow","sign_mini_yellow",
             "road_screen", "free_road_sign", "free_expressway_sign",
             "white_sign2","white_sign","whitesign3","mediumsign_white","sign_mini_white",
@@ -27,7 +27,7 @@ public class CreativeTabData {
             "pole", "pole_joint", "pole_joint_double", "pole_joint_l",
             "pole_horizontal", "pole_expr", "pole_expr_right", "pole_exprmid",
             "pole_fine_d", "polefine_joint_d",
-            "warn_pole","road_light_down","lamppost",
+            "warn_pole","road_light_down","lamppost","light_pole_with_flag",
             "direction_sign", "direction_sign_left", "direction_sign_right",
             "direction_sign_left_straight", "direction_sign_right_straight",
             "direction_sign_left_right", "direction_sign_left_turnoff",
@@ -38,14 +38,15 @@ public class CreativeTabData {
             "road_diamond","road_straight","roadblock_block_oblique","roadblock_oblique","roadblock_yellow_oblique","roadblock_double_oblique","zebracrossing_oblique",
             "road_light","street_light","street_light_b","street_light_c","street_light_d",
             "separationpost","separationpostb","separationpostc",
-            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint"
+            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint","expresswayfence2","expresswayfence2_r",
+            "tunnel_sign_1","tunnel_sign_2"
     );
 
     public static final List<String> CITY_IDS = List.of(
             "speed_limit_sign", "speed_limit_sign_1", "speed_limit_sign_2",
             "speed_limit_sign_3", "speed_limit_sign_4", "speed_limit_sign_5",
-            "speed_limit_sign_6", "speed_limit_sign_7", "speed_limit_sign_8",
-            "glass_fence","modern_fence", "modern_fence_2", "modern_fence_3","pole_fine",
+            "speed_limit_sign_6", "speed_limit_sign_7", "speed_limit_sign_8","pole_fine",
+            "glass_fence","modern_fence", "modern_fence_2", "modern_fence_3","step_fence",
             "modern_ironfence", "moderniron_fence_yellow",
             "moderniron_fence_green", "moderniron_fence_blue",
             "concretebarrierfenced","concrete_wall_std","concrete_wall_warn",
@@ -59,14 +60,17 @@ public class CreativeTabData {
             "trash_bin",
             "roadsign_a","roadsign_b",
             "barrier_gate_down","barrier_gate_up","barrier_gate_main_down","barrier_gate_main_up",
-            "sign","right_sign","left_sign","pedestrians","parking","noparking_sign",
+            "sign","right_sign","left_sign","pedestrians","parking","noparking_sign","no_honking_sign","school_sign",
             "safety_wall_green","safety_wall_blue","safety_wall_alert",
             "safety_wall_corner_green","safety_wall_corner_blue","safety_wall_corner_alert",
-            "powerbox","power_box_2","power_box_3","power_box_4","power_box_5",
-            "ac_bracket","bracket"
+            "powerbox","power_box_2","power_box_3","power_box_4","power_box_5","speed_bump",
+            "ac_bracket","bracket",
+            "construction_warning","sign_board","governmentsign",
+            "stone_table","stone_chair","stone_ball"
     );
     public static final List<String> FireFighting_IDS = List.of(
-            "fireextinguisherbox","water_tank"
+            "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
+            "water_pipe_joint","water_pipe_joint_r","water_pipe_joint_red","water_pipe_joint_red_r"
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
@@ -79,11 +83,12 @@ public class CreativeTabData {
             "gas_water_heater", "electric_water_heater", "solarwaterheater",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
-            "all_in_one_pc", "laptop","television",
+            "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","crt_tv",
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
             "modernwardrobe", "modernwardrobeup", "modernwardrobeb",
             "express_box_1", "express_box_2",
-            "old_tv_table","old_fridge","old_mirror","old_calendar"
+            "old_tv_table","old_fridge","old_mirror","old_calendar",
+            "extractor","trimcover","washingmachine","washine_machine_b"
     );
 
     public static final List<String> POST_IDS = List.of(

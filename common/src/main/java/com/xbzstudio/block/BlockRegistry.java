@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.ArrayList;
@@ -99,9 +100,18 @@ public class BlockRegistry {
         reg("vehicle_dstance_confirmation_sign", (id) -> new GenericSignBlock(id,BlockShapes.SIGNMINI));
         reg("vehicle_distance_confirmation_sign_b", (id) -> new GenericSignBlock(id,BlockShapes.SIGNMINI));
         reg("vehicle_distance_confirmation_sign_c", (id) -> new GenericSignBlock(id,BlockShapes.SIGNMINI));
+        reg("tunnel_sign_1", (id) -> new GenericLightBlock(id,BlockShapes.DEFAULT));
+        reg("tunnel_sign_2", (id) -> new GenericLightBlock(id,BlockShapes.DEFAULT));
+        reg("tollgate_sign", (id) -> new GenericSignBlock(id,BlockShapes.ROAD_4));
+        reg("road_8", (id) -> new GenericSignBlock(id,BlockShapes.ROAD_4));
+        reg("stone_ball", (id) -> new GenericSignBlock(id,BlockShapes.DEFAULT));
+        reg("expresswayfence2", (id) -> new GenericSignBlock(id,BlockShapes.DEFAULT));
+        reg("expresswayfence2_r", (id) -> new GenericSignBlock(id,BlockShapes.DEFAULT));
         //消防
         reg("fireextinguisherbox", (id) -> new GenericMetalBlock(id,CityShapes.Fireextinguisherbox));
         reg("water_tank", (id) -> new GenericSignBlock(id,CityShapes.Concretebarrierfenced));
+        reg("nozzle_1", (id) -> new GenericSignBlock(id,CityShapes.NOZZLE));
+        reg("nozzle_2", (id) -> new GenericSignBlock(id,CityShapes.NOZZLE2));
         // 杆子
         reg("pole", (id) -> new GenericSignBlock(id,BlockShapes.POLE));
         reg("pole_joint", (id) -> new GenericSignBlock(id,BlockShapes.POLE_JOINT));
@@ -119,6 +129,7 @@ public class BlockRegistry {
         reg("separationpost", (id) -> new GenericSignBlock(id,BlockShapes.LAMPPOST));
         reg("separationpostb", (id) -> new GenericSignBlock(id,BlockShapes.LAMPPOST));
         reg("separationpostc", (id) -> new GenericSignBlock(id,BlockShapes.LAMPPOST));
+        reg("light_pole_with_flag", (id) -> new GenericSignBlock(id,BlockShapes.LAMPPOST));
 
         // 方向牌
         reg("direction_sign", (id) -> new GenericMetalBlock(id,CityShapes.Direction_Sign));
@@ -134,6 +145,8 @@ public class BlockRegistry {
         reg("variable_lanes", (id) -> new GenericMetalBlock(id,CityShapes.Direction_Sign));
         reg("bus_lane", (id) -> new GenericMetalBlock(id,CityShapes.Direction_Sign));
         reg("bike_lane", (id) -> new GenericMetalBlock(id,CityShapes.Direction_Sign));
+        reg("diversion_b", (id) -> new GenericMetalBlock(id,CityShapes.Direction_Sign));
+        reg("diversion_sign", (id) -> new GenericMetalBlock(id,CityShapes.Direction_Sign));
         //路灯
         reg("road_light", (id) -> new GenericLightBlock(id,BlockShapes.ROADLIGHT));
         reg("street_light", (id) -> new GenericLightBlock(id,BlockShapes.STREETLIGHT));
@@ -210,6 +223,15 @@ public class BlockRegistry {
         reg("power_box_5", (id) -> new GenericMetalBlock(id,CityShapes.PWRBOX5));
         reg("ac_bracket", (id) -> new GenericMetalBlock(id,CityShapes.ACBRACKET));
         reg("bracket", (id) -> new GenericMetalBlock(id,CityShapes.ACBRACKET));
+        reg("school_sign", (id) -> new GenericMetalBlock(id,CityShapes.SpeedLimitSign));
+        reg("no_honking_sign", (id) -> new GenericMetalBlock(id,CityShapes.SpeedLimitSign));
+        reg("governmentsign", (id) -> new GenericMetalBlock(id,CityShapes.GSign));
+        reg("sign_board", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
+        reg("construction_warning", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
+        reg("step_fence", (id) -> new GenericMetalBlock(id,CityShapes.StepFence));
+        reg("stone_table", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
+        reg("stone_chair", (id) -> new GenericMetalBlock(id,CityShapes.StoneChair));
+        reg("speed_bump", (id) -> new GenericMetalBlock(id,CityShapes.SpeedBump));
         // ==================== 电器 ====================
         reg("ac_out_hd_1", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_01));
         reg("ac_out_hd_2", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_02));
@@ -242,13 +264,22 @@ public class BlockRegistry {
         reg("old_mirror", (id) -> new GenericMetalBlock(id,BlockShapes.FREESIGN));
         reg("old_calendar", (id) -> new GenericMetalBlock(id,ApplianceShapes.OldCalendar));
         reg("television", (id) -> new Power(id,ApplianceShapes.TELEVISION));
-
+        reg("printer", (id) -> new GenericMetalBlock(id,CityShapes.StoneChair));
+        reg("extractor", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
+        reg("trimcover", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
+        reg("washingmachine", (id) -> new GenericMetalBlock(id,ApplianceShapes.WASHINGMACHINEA));
+        reg("washine_machine_b", (id) -> new GenericMetalBlock(id,ApplianceShapes.WASHINGMACHINEB));
+        reg("crt_tv", (id) -> new Power(id,ApplianceShapes.CRTTV));
         // 显示器（带开关）
         reg("old_monitor_off", (id) -> new Power(id,ApplianceShapes.Old_Monitor));
         reg("monitor_2010off", (id) -> new Power(id,ApplianceShapes.Monitor2010));
         reg("modern_monitor_off", (id) -> new Power(id,ApplianceShapes.ModernMonitor));
         reg("all_in_one_pc", (id) -> new Power(id,ApplianceShapes.AIOPC));
         reg("laptop", (id) -> new Power(id,ApplianceShapes.LAPTOP));
+        reg("large_screen_black", (id) -> new Power(id,ApplianceShapes.LARGESCREEN));
+        reg("large_screen_white", (id) -> new Power(id,ApplianceShapes.LARGESCREEN));
+        reg("gaming_pc_white", (id) -> new GenericGlassBlock(id,ApplianceShapes.GAMINGPC));
+        reg("gaming_pcblack", (id) -> new GenericGlassBlock(id,ApplianceShapes.GAMINGPC));
 
         // 已废弃
         reg("laptop_poweron", (id) -> new GenericLightBlock(id,ApplianceShapes.LAPTOP_ON));
@@ -263,6 +294,14 @@ public class BlockRegistry {
         reg("centr_alir_conditioning", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLCAC));
         reg("road_sign", (id) -> new GenericSignBlock(id,CityShapes.RoadSign));
         reg("television_power_on", (id) -> new GenericLightBlock(id,ApplianceShapes.TELEVISION));
+        reg("old_ac_in", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN));
+        reg("old_ac_in_b", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_02));
+        reg("old_ac_in_c", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN));
+        reg("air_condition_b", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN));
+        reg("screen_black_on", (id) -> new GenericLightBlock(id,ApplianceShapes.LARGESCREEN));
+        reg("screen_white_on", (id) -> new GenericLightBlock(id,ApplianceShapes.LARGESCREEN));
+        reg("crt_tv_on", (id) -> new Power(id,ApplianceShapes.CRTTV));
+        reg("old_ac_out", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_02));
         // 家具
         reg("oldwardrobe", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeM));
         reg("oldwardrobesmall", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeS));
@@ -370,6 +409,20 @@ public class BlockRegistry {
                 default -> Block.box(0, 0, 0, 16, 16, 16);
             };
         }));
+        reg("water_pipe", (id) -> new GenericAxisBlock(id,Map.of(
+                Direction.Axis.X, Block.box(0, 7, 7, 16, 9, 9),
+                Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9),
+                Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16)
+        )));
+        reg("water_pipe_red", (id) -> new GenericAxisBlock(id,Map.of(
+                Direction.Axis.X, Block.box(0, 7, 7, 16, 9, 9),
+                Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9),
+                Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16)
+        )));
+        reg("water_pipe_joint", (id) -> new GenericDirectionBlock(id));
+        reg("water_pipe_joint_red", GenericDirectionBlock::new);
+        reg("water_pipe_joint_r", (id) -> new GenericDirectionBlock(id));
+        reg("water_pipe_joint_red_r", (id) -> new GenericDirectionBlock(id));
     }
 
     private static void reg(String id, Function<Identifier, ? extends Block> factory) {

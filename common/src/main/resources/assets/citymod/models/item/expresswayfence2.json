@@ -1,5 +1,5 @@
 {
-  "parent": "citymod:block/stone_ball",
+  "parent": "citymod:block/expresswayfence2",
   "display": {
     "thirdperson": {
       "rotation": [
