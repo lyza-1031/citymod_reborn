@@ -31,7 +31,7 @@ public class GenericLightBlock extends Block implements SimpleWaterloggedBlock {
                 .mapColor(MapColor.STONE)
                 .sound(SoundType.METAL)
                 .strength(1f, 1f)
-                .lightLevel(state -> 15)  // ← 常亮15级
+                .lightLevel(state -> 15)
                 .emissiveRendering((state, world, pos) -> true)  // ← 自发光
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)

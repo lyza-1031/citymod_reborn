@@ -91,7 +91,7 @@ public class BlockRegistry {
         reg("expr_5g", () -> new GenericSignBlock(BlockShapes.EXPR_5_f));
         reg("bluesign", () -> new GenericSignBlock(CityShapes.Direction_Sign));
         reg("greensign2", () -> new GenericSignBlock(CityShapes.Direction_Sign));
-        reg("whitesign3", () -> new GenericSignBlock(BlockShapes.Hsign));
+        reg("whitesign3", () -> new GenericSignBlock(CityShapes.Direction_Sign));
         reg("expressway_fence", () -> new GenericSignBlock(BlockShapes.ExprFence));
         reg("expressway_fence_green", () -> new GenericSignBlock(BlockShapes.ExprFence));
         reg("expressway_fence_joint", () -> new GenericSignBlock(BlockShapes.ExprFenceJ));
@@ -308,7 +308,8 @@ public class BlockRegistry {
         reg("modernwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM));
         reg("modernwardrobeup", () -> new GenericMetalBlock(ApplianceShapes.WardrobeS));
         reg("modernwardrobeb", () -> new GenericMetalBlock(ApplianceShapes.WardrobeL));
-
+        //红绿灯
+        reg("pedestrian_traffic_light_r",()->new TimedPower((BlockShapes.PTrafficLight)));
         // 载具
         reg("bikeblack", () -> new GenericMetalBlock(VehicleShapes.BikeBlack));
         reg("bike", () -> new GenericMetalBlock(VehicleShapes.BikeWhite));

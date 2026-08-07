@@ -371,9 +371,10 @@
   "block.citymod.sign_mini_red":"Mini sign",
   "block.citymod.expr_5g":"Expressway sign",
   "block.citymod.white_sign2":"White sign",
-  "block.citymod.white_sign3":"White sign",
-  "block.citymod.green_sign2":"Green sign",
+  "block.citymod.whitesign3":"White sign",
+  "block.citymod.greensign2":"Green sign",
   "block.citymod.bluesign":"Blue sign",
   "block.citymod.expresswayfence2": "Expressway fence",
-  "block.citymod.expresswayfence2_r": "Expressway fence"
+  "block.citymod.expresswayfence2_r": "Expressway fence",
+  "block.citymod.pedestrian_traffic_light_r": "Pedestrian traffic light"
 }

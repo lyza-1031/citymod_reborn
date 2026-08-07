@@ -370,10 +370,11 @@
   "block.citymod.sign_mini_red":"小型指示牌",
   "block.citymod.expr_5g":"高速公路指示牌",
   "block.citymod.white_sign2":"白色标志牌",
-  "block.citymod.white_sign3": "白色标志牌",
-  "block.citymod.green_sign2": "绿色指示牌",
+  "block.citymod.whitesign3": "白色标志牌",
+  "block.citymod.greensign2": "绿色指示牌",
   "block.citymod.bluesign": "蓝色指示牌",
   "painting.citymod.polbot.title": "波尔布特",
   "block.citymod.expresswayfence2": "高速路护栏",
-  "block.citymod.expresswayfence2_r": "高速路护栏"
+  "block.citymod.expresswayfence2_r": "高速路护栏",
+  "block.citymod.pedestrian_traffic_light_r": "人行道红绿灯"
 }

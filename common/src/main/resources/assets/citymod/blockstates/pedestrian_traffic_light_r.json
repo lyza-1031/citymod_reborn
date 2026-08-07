@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,powered=false": {
+      "model": "citymod:block/pedestrian_traffic_light_r"
+    },
+    "facing=east,powered=false": {
+      "model": "citymod:block/pedestrian_traffic_light_r",
+      "y": 90
+    },
+    "facing=south,powered=false": {
+      "model": "citymod:block/pedestrian_traffic_light_r",
+      "y": 180
+    },
+    "facing=west,powered=false": {
+      "model": "citymod:block/pedestrian_traffic_light_r",
+      "y": 270
+    },
+    "facing=north,powered=true": {
+      "model": "citymod:block/pedestrian_traffic_light_g"
+    },
+    "facing=east,powered=true": {
+      "model": "citymod:block/pedestrian_traffic_light_g",
+      "y": 90
+    },
+    "facing=south,powered=true": {
+      "model": "citymod:block/pedestrian_traffic_light_g",
+      "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "citymod:block/pedestrian_traffic_light_g",
+      "y": 270
+    }
+  }
+}
