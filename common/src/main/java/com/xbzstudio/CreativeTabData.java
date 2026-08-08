@@ -40,7 +40,7 @@ public class CreativeTabData {
             "separationpost","separationpostb","separationpostc",
             "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint","expresswayfence2","expresswayfence2_r",
             "tunnel_sign_1","tunnel_sign_2",
-            "pedestrian_traffic_light_r"
+            "traffic_light_round_green","pedestrian_traffic_light_r"
     );
 
     public static final List<String> CITY_IDS = List.of(

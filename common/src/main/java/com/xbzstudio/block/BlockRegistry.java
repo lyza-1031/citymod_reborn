@@ -310,6 +310,7 @@ public class BlockRegistry {
         reg("modernwardrobeb", () -> new GenericMetalBlock(ApplianceShapes.WardrobeL));
         //红绿灯
         reg("pedestrian_traffic_light_r",()->new TimedPower((BlockShapes.PTrafficLight)));
+        reg("traffic_light_round_green",()->new TimedPower((BlockShapes.TrafficLight)));
         // 载具
         reg("bikeblack", () -> new GenericMetalBlock(VehicleShapes.BikeBlack));
         reg("bike", () -> new GenericMetalBlock(VehicleShapes.BikeWhite));

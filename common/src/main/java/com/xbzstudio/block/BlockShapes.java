@@ -499,4 +499,10 @@ public class BlockShapes {
             Block.box(6, -16, 2, 10, 32, 14),
             Block.box(6, -16, 2, 10, 32, 14)
     );
+    public static final Map<Direction, VoxelShape> TrafficLight = createShape(
+            Block.box(2, -2, 0, 14, 26, 6),
+            Block.box(2, -2, 0, 14, 26, 6),
+            Block.box(0, -2, 2, 6, 26, 14),
+            Block.box(0, -2, 2, 6, 26, 14)
+    );
 }

@@ -25,6 +25,7 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
+    public static final BooleanProperty FLASHING = BooleanProperty.create("flashing");
 
     private final Map<Direction, VoxelShape> shapesOff;
     private final Map<Direction, VoxelShape> shapesOn;
@@ -35,7 +36,7 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
                 .sound(SoundType.METAL)
                 .strength(1f, 10f)
                 .lightLevel(state -> 15)
-                .hasPostProcess((state, world, pos) -> state.getValue(POWERED))
+                .hasPostProcess((state, world, pos) -> state.getValue(POWERED) || state.getValue(FLASHING))
                 .noOcclusion()
                 .randomTicks()
                 .isRedstoneConductor((bs, br, bp) -> false)
@@ -46,7 +47,8 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(WATERLOGGED, false)
-                .setValue(POWERED, false));
+                .setValue(POWERED, false)
+                .setValue(FLASHING, false));
     }
 
     public TimedPower(Map<Direction, VoxelShape> shapes) {
@@ -55,7 +57,7 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        Map<Direction, VoxelShape> shapes = state.getValue(POWERED) ? shapesOn : shapesOff;
+        Map<Direction, VoxelShape> shapes = state.getValue(POWERED) || state.getValue(FLASHING) ? shapesOn : shapesOff;
         return shapes.getOrDefault(state.getValue(FACING), Shapes.empty());
     }
 
@@ -79,35 +81,42 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
         return this.defaultBlockState()
                 .setValue(FACING, facing)
                 .setValue(WATERLOGGED, fluid.getType() == Fluids.WATER)
-                .setValue(POWERED, powered);
+                .setValue(POWERED, powered)
+                .setValue(FLASHING, false);
     }
 
     @Override
     public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean moved) {
-        if (!level.isClientSide()) {
-            long gameTime = level.getGameTime();
-            long nextTick = 600 - (gameTime % 600);
-            level.scheduleTick(pos, this, (int) nextTick);
+        if (!level.isClientSide() && oldState.isAir()) {
+            level.scheduleTick(pos, this, 2);
         }
     }
 
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        long phase = (level.getGameTime() / 600) % 2;
-        boolean shouldBePowered = (state.getValue(FACING) == Direction.EAST || state.getValue(FACING) == Direction.WEST) ^ (phase == 1);
-        if (state.getValue(POWERED) != shouldBePowered) {
-            level.setBlock(pos, state.setValue(POWERED, shouldBePowered), Block.UPDATE_ALL_IMMEDIATE);
+        long gameTime = level.getGameTime();
+        long phase = (gameTime / 600) % 2;
+        boolean shouldBePowered = (state.getValue(FACING) == Direction.EAST ||
+                state.getValue(FACING) == Direction.WEST) ^ (phase == 1);
+
+        if (state.getValue(FLASHING)) {
+            level.setBlock(pos, state.setValue(FLASHING, false).setValue(POWERED, shouldBePowered),
+                    Block.UPDATE_ALL);
+            // 不要 return，继续走到下面统一对齐
+        } else if (state.getValue(POWERED) && !shouldBePowered) {
+            level.setBlock(pos, state.setValue(FLASHING, true).setValue(POWERED, false),
+                    Block.UPDATE_ALL);
+            level.scheduleTick(pos, this, 60);
+            return;
+        } else if (!state.getValue(POWERED) && shouldBePowered) {
+            level.setBlock(pos, state.setValue(POWERED, true), Block.UPDATE_ALL);
         }
-        level.scheduleTick(pos, this, 600);
-    }
 
-    @Override
-    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean moving) {
-        // 方向被改后，不需要重新计算，状态基于世界时间和当前朝向
-        // 保持当前状态即可，下一个 tick 会自动纠正
-        super.neighborChanged(state, level, pos, block, fromPos, moving);
+        long remainder = gameTime % 600;
+        int next = (int) (600 - remainder);
+        if (next <= 0) next = 600;
+        level.scheduleTick(pos, this, next);
     }
-
     @Override
     public float getShadeBrightness(BlockState state, BlockGetter world, BlockPos pos) {
         return 1.0F;
@@ -124,9 +133,9 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
     }
 
 
-
     @Override
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState,
+                                  LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
@@ -135,7 +144,7 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING, WATERLOGGED, POWERED);
+        builder.add(FACING, WATERLOGGED, POWERED, FLASHING);
     }
 
     @Override
