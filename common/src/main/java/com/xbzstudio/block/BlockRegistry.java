@@ -311,6 +311,10 @@ public class BlockRegistry {
         //红绿灯
         reg("pedestrian_traffic_light_r",()->new TimedPower((BlockShapes.PTrafficLight)));
         reg("traffic_light_round_green",()->new TimedPower((BlockShapes.TrafficLight)));
+        reg("traffic_light_s_green",()->new TimedPower((BlockShapes.TrafficLight)));
+        reg("traffic_light_l_green",()->new TimedPower((BlockShapes.TrafficLight)));
+        reg("traffic_light_r_green",()->new TimedPower((BlockShapes.TrafficLight)));
+        //reg("traffictimescreengreen",()->new TimedPower((BlockShapes.FREESIGN)));
         // 载具
         reg("bikeblack", () -> new GenericMetalBlock(VehicleShapes.BikeBlack));
         reg("bike", () -> new GenericMetalBlock(VehicleShapes.BikeWhite));

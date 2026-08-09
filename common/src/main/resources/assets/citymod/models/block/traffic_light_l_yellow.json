@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/traffic_light_round_yellow",
+  "textures": {
+    "all": "citymod:block/traffic_light_l",
+    "particle": "citymod:block/traffic_light_l",
+    "0": "citymod:block/traffic_light_l"
+  },
+  "render_type": "cutout_mipped"
+}

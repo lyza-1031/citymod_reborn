@@ -34,7 +34,7 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
         super(BlockBehaviour.Properties.of()
                 .mapColor(MapColor.METAL)
                 .sound(SoundType.METAL)
-                .strength(1f, 10f)
+                .strength(1f, 1f)
                 .lightLevel(state -> 15)
                 .hasPostProcess((state, world, pos) -> state.getValue(POWERED) || state.getValue(FLASHING))
                 .noOcclusion()
@@ -102,13 +102,15 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
         if (state.getValue(FLASHING)) {
             level.setBlock(pos, state.setValue(FLASHING, false).setValue(POWERED, shouldBePowered),
                     Block.UPDATE_ALL);
-            // 不要 return，继续走到下面统一对齐
+            level.sendBlockUpdated(pos, state, state, Block.UPDATE_ALL);
         } else if (state.getValue(POWERED) && !shouldBePowered) {
             level.setBlock(pos, state.setValue(FLASHING, true).setValue(POWERED, false),
                     Block.UPDATE_ALL);
+            level.sendBlockUpdated(pos, state, state, Block.UPDATE_ALL);
             level.scheduleTick(pos, this, 60);
             return;
         } else if (!state.getValue(POWERED) && shouldBePowered) {
+            level.sendBlockUpdated(pos, state, state, Block.UPDATE_ALL);
             level.setBlock(pos, state.setValue(POWERED, true), Block.UPDATE_ALL);
         }
 
