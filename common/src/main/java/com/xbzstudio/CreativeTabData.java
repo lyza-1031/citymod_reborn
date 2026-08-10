@@ -79,7 +79,7 @@ public class CreativeTabData {
             "big_ac_out_hd", "centre_air_condition_outside",
             "air_condition_hd_1", "air_condition_hd_2",
             "airconditionhd_3", "airconditionhd_4",
-            "air_condition_old_hd", "central_ac_hd",
+            "air_condition_old_hd", "central_ac_hd","ac_airvent_hd",
             "micro_wave_oven", "fridge_1", "fridge_2",  "freezer",
             "gas_water_heater", "electric_water_heater", "solarwaterheater",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
@@ -122,7 +122,7 @@ public class CreativeTabData {
 
     public static final List<String> OTHER_IDS = List.of(
             "ac_out_nvidia", "ac_out_amd", "ac_out_intel",
-            "ac_out_fake", "ac_out_40_hx","internet_famous_road_sign"
+            "ac_out_fake", "ac_out_40_hx","blackwell_6000","internet_famous_road_sign"
     );
     public static final List<TabDef> TABS = List.of(
             new TabDef("traffic", Component.translatable("item_group.citymod.traffic"), "traffic_sign", TRAFFIC_IDS),

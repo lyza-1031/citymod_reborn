@@ -376,5 +376,11 @@
   "block.citymod.bluesign":"Blue sign",
   "block.citymod.expresswayfence2": "Expressway fence",
   "block.citymod.expresswayfence2_r": "Expressway fence",
-  "block.citymod.pedestrian_traffic_light_r": "Pedestrian traffic light"
+  "block.citymod.pedestrian_traffic_light_r": "Pedestrian traffic light",
+  "block.citymod.ac_airvent_hd": "Aircondition air-vant",
+  "block.citymod.traffic_light_round_green": "traffic light",
+  "block.citymod.traffic_light_s_green": "traffic light",
+  "block.citymod.traffic_light_l_green": "traffic light",
+  "block.citymod.traffic_light_r_green": "traffic light",
+  "block.citymod.blackwell_6000": "NVIDIA Geforge RTX Blackwell 6000"
 }

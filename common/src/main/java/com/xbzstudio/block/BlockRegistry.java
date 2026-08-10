@@ -384,6 +384,7 @@ public class BlockRegistry {
         reg("ac_out_amd", () -> new GenericMetalBlock(ApplianceShapes.AC2080));
         reg("ac_out_fake", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_05));
         reg("ac_out_40_hx", () -> new GenericMetalBlock(ApplianceShapes.AC_40HX));
+        reg("blackwell_6000", () -> new GenericMetalBlock(ApplianceShapes.BIG_AC_OUT_HD));
         reg("internet_famous_road_sign", () -> new GenericSignBlock(BlockShapes.IFRS));
         //多方向
         reg("central_air_conditioning", () -> new GenericMultiFaceBlock(state -> {
@@ -410,6 +411,34 @@ public class BlockRegistry {
                     case FLOOR -> Block.box(4, 0, -10, 12, 1, 26);
                     case WALL -> Block.box(15, 4, -10, 16, 12, 26);
                     case CEILING -> Block.box(4, 15, -10, 12, 16, 26);
+                };
+                default -> Block.box(0, 0, 0, 16, 16, 16);
+            };
+        }));
+        reg("ac_airvent_hd", () -> new GenericMultiFaceBlock(state -> {
+            Direction facing = state.getValue(GenericMultiFaceBlock.FACING);
+            AttachFace face = state.getValue(GenericMultiFaceBlock.FACE);
+
+            return switch (facing) {
+                case SOUTH -> switch (face) {
+                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
+                    case WALL -> Block.box(0, 4, 0, 16, 12, 1);
+                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
+                };
+                case NORTH -> switch (face) {
+                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
+                    case WALL -> Block.box(0, 4, 15, 16, 12, 16);
+                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
+                };
+                case EAST -> switch (face) {
+                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
+                    case WALL -> Block.box(0, 4, 0, 1, 12, 16);
+                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
+                };
+                case WEST -> switch (face) {
+                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
+                    case WALL -> Block.box(15, 4, 0, 16, 12, 16);
+                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
                 };
                 default -> Block.box(0, 0, 0, 16, 16, 16);
             };

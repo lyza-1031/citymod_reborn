@@ -376,5 +376,11 @@
   "painting.citymod.polbot.title": "波尔布特",
   "block.citymod.expresswayfence2": "高速路护栏",
   "block.citymod.expresswayfence2_r": "高速路护栏",
-  "block.citymod.pedestrian_traffic_light_r": "人行道红绿灯"
+  "block.citymod.pedestrian_traffic_light_r": "人行道红绿灯",
+  "block.citymod.ac_airvent_hd": "空调出风口",
+  "block.citymod.traffic_light_round_green": "红绿灯",
+  "block.citymod.traffic_light_s_green": "红绿灯",
+  "block.citymod.traffic_light_l_green": "红绿灯",
+  "block.citymod.traffic_light_r_green": "红绿灯",
+  "block.citymod.blackwell_6000": "NVIDIA Geforge RTX Blackwell 6000"
 }

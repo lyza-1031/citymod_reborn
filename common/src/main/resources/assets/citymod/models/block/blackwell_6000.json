@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/blackwell_6000",
+  "textures": {
+    "all": "citymod:block/blackwell_6000",
+    "particle": "citymod:block/blackwell_6000",
+    "0": "citymod:block/blackwell_6000"
+  },
+  "render_type": "cutout_mipped"
+}
