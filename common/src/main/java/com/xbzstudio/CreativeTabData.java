@@ -38,7 +38,7 @@ public class CreativeTabData {
             "road_diamond","road_straight","roadblock_block_oblique","roadblock_oblique","roadblock_yellow_oblique","roadblock_double_oblique","zebracrossing_oblique",
             "road_light","street_light","street_light_b","street_light_c","street_light_d",
             "separationpost","separationpostb","separationpostc",
-            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint","expresswayfence2","expresswayfence2_r",
+            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint","expresswayfence2","expresswayfence2_r","median_strip_1",
             "tunnel_sign_1","tunnel_sign_2",
             "traffic_light_round_green","traffic_light_s_green","traffic_light_l_green","traffic_light_r_green","pedestrian_traffic_light_r"
     );
@@ -79,7 +79,7 @@ public class CreativeTabData {
             "big_ac_out_hd", "centre_air_condition_outside",
             "air_condition_hd_1", "air_condition_hd_2",
             "airconditionhd_3", "airconditionhd_4",
-            "air_condition_old_hd", "central_ac_hd","ac_airvent_hd",
+            "air_condition_old_hd", "central_ac_hd","ac_airvent_hd_l","ac_airvent_hd","ac_airvent_hd_r",
             "micro_wave_oven", "fridge_1", "fridge_2",  "freezer",
             "gas_water_heater", "electric_water_heater", "solarwaterheater",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
@@ -94,8 +94,8 @@ public class CreativeTabData {
 
     public static final List<String> POST_IDS = List.of(
             "post_1691", "post_1692", "post_1693", "post_1694",
-            "post_1695", "post_1696", "post_1697", "post_1698",
-            "post_431", "post_432", "post_433"
+            "post_1695", "post_1696", "post_1697", "post_1698","post_1699",
+            "post_431", "post_432", "post_433","post_434"
     );
 
     public static final List<String> WINDOW_IDS = List.of(

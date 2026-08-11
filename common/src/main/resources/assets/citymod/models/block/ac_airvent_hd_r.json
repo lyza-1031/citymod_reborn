@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/ac_airvent_hd_r",
+  "textures": {
+    "all": "citymod:block/ac_airvent_hd",
+    "particle": "citymod:block/ac_airvent_hd",
+    "0": "citymod:block/ac_airvent_hd"
+  },
+  "render_type": "solid"
+}

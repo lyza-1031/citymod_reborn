@@ -505,4 +505,10 @@ public class BlockShapes {
             Block.box(0, -2, 2, 6, 26, 14),
             Block.box(0, -2, 2, 6, 26, 14)
     );
+    public static final Map<Direction, VoxelShape> Median_Strip_1 = createShape(
+            box(0, -16, 7, 16, 32, 9),
+            box(0, -16, 7, 16, 32, 9),
+            box(7, -16, 0, 9, 32, 16),
+            box(7, -16, 0, 9, 32, 16)
+    );
 }

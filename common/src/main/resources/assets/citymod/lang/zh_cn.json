@@ -378,9 +378,14 @@
   "block.citymod.expresswayfence2_r": "高速路护栏",
   "block.citymod.pedestrian_traffic_light_r": "人行道红绿灯",
   "block.citymod.ac_airvent_hd": "空调出风口",
+  "block.citymod.ac_airvent_hd_l": "空调出风口(左)",
+  "block.citymod.ac_airvent_hd_r": "空调出风口(右)",
   "block.citymod.traffic_light_round_green": "红绿灯",
   "block.citymod.traffic_light_s_green": "红绿灯",
   "block.citymod.traffic_light_l_green": "红绿灯",
   "block.citymod.traffic_light_r_green": "红绿灯",
-  "block.citymod.blackwell_6000": "NVIDIA Geforge RTX Blackwell 6000"
+  "block.citymod.blackwell_6000": "NVIDIA Geforge RTX Blackwell 6000",
+  "block.citymod.median_strip_1": "高速路隔离带",
+  "block.citymod.post_1699": "海报",
+  "block.citymod.post_434": "海报"
 }

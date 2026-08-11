@@ -377,10 +377,15 @@
   "block.citymod.expresswayfence2": "Expressway fence",
   "block.citymod.expresswayfence2_r": "Expressway fence",
   "block.citymod.pedestrian_traffic_light_r": "Pedestrian traffic light",
+  "block.citymod.ac_airvent_hd_l": "Aircondition air-vant left",
+  "block.citymod.ac_airvent_hd_r": "Aircondition air-vant right",
   "block.citymod.ac_airvent_hd": "Aircondition air-vant",
   "block.citymod.traffic_light_round_green": "traffic light",
   "block.citymod.traffic_light_s_green": "traffic light",
   "block.citymod.traffic_light_l_green": "traffic light",
   "block.citymod.traffic_light_r_green": "traffic light",
-  "block.citymod.blackwell_6000": "NVIDIA Geforge RTX Blackwell 6000"
+  "block.citymod.blackwell_6000": "NVIDIA Geforge RTX Blackwell 6000",
+  "block.citymod.median_strip_1": "median strip",
+  "block.citymod.post_1699": "post",
+  "block.citymod.post_434": "post"
 }
