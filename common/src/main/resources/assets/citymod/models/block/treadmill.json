@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/treadmill",
+  "textures": {
+    "all": "citymod:block/treadmill",
+    "particle": "citymod:block/treadmill",
+    "0": "citymod:block/treadmill"
+  },
+  "render_type": "solid"
+}

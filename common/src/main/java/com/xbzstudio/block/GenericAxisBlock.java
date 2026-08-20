@@ -31,7 +31,7 @@ public class GenericAxisBlock extends Block {
                 .sound(SoundType.METAL)
                 .strength(1f, 1f)
                 .noOcclusion()
-                .setId(ResourceKey.create(Registries.BLOCK, id)) // 设置方块 ID
+                .setId(ResourceKey.create(Registries.BLOCK, id))
         );
         this.shapes = shapes;
         this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/traffictimescreen",
+  "textures": {
+    "all": "citymod:block/traffictimescreengreen",
+    "particle": "citymod:block/traffictimescreengreen",
+    "0": "citymod:block/traffictimescreengreen"
+  },
+  "render_type": "solid"
+}

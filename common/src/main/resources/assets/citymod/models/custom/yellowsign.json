@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"elements": [
 		{
-			"from": [0, 0, 14.925],
+			"from": [0, 0, 15],
 			"to": [16, 32, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-1, 0, 14]},
 			"faces": {

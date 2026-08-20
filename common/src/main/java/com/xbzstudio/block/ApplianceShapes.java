@@ -372,4 +372,22 @@ public class ApplianceShapes {
                     Shapes.or(box(0.5, 1, -2.75, 3.5, 18.5, -1), box(3.5, 1, -2.75, 5.5, 18.5, 18.75), box(5.5, 2, 0.25, 14.5, 15.25, 15.75), box(14.5, 4, 2.25, 16.5, 13.25, 13.75), box(2.5, 0, 1.25, 11.5, 2, 14.75),
                             box(0.5, 1, 17, 3.5, 18.5, 18.75), box(0.5, 1, -1, 3.5, 3, 17), box(0.5, 16.5, -1, 3.5, 18.5, 17))
     );
+    public static final Map<Direction, VoxelShape> TREADMILL = createShape(
+            box(-8, 0, -16, 24, 8, 32),
+            box(-8, 0, -16, 24, 8, 32),
+            box(-16, 0, -8, 32, 8, 24),
+            box(-16, 0, -8, 32, 8, 24)
+    );
+    public static final Map<Direction, VoxelShape> DESKLAMP = createShape(
+            box(2, 0, 4, 8, 16, 12),
+            box(8, 0, 4, 12, 16, 12),
+            box(4, 0, 8, 12, 16, 12),
+            box(4, 0, 2, 12, 16, 8)
+    );
+    public static final Map<Direction, VoxelShape> TVHD = createShape(
+            box(-16,0,7,32,30,9),
+            box(-16,0,7,32,30,9),
+            box(7,0,-16,9,30,32),
+            box(7,0,-16,9,30,32)
+    );
 }

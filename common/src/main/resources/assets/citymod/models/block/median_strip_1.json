@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/median_strip_1",
+  "textures": {
+    "all": "citymod:block/median_strip_1",
+    "particle": "citymod:block/median_strip_1",
+    "0": "citymod:block/median_strip_1"
+  },
+  "render_type": "solid"
+}

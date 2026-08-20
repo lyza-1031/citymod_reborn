@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/blackwell_6000"
+    },
+    "facing=east": {
+      "model": "citymod:block/blackwell_6000",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/blackwell_6000",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/blackwell_6000",
+      "y": 270
+    }
+  }
+}

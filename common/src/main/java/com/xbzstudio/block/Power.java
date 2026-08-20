@@ -44,7 +44,7 @@ public class Power extends Block implements SimpleWaterloggedBlock {
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)
                 .isViewBlocking((bs, br, bp) -> false)
-                .setId(ResourceKey.create(Registries.BLOCK, id)) // 设置 ID
+                .setId(ResourceKey.create(Registries.BLOCK, id))
         );
         this.shapesOff = shapesOff;
         this.shapesOn = shapesOn;
@@ -55,7 +55,7 @@ public class Power extends Block implements SimpleWaterloggedBlock {
     }
 
     public Power(Identifier id, Map<Direction, VoxelShape> shapes) {
-        this(id, shapes, shapes); // 调用主构造函数
+        this(id, shapes, shapes);
     }
 
     @Override

@@ -30,70 +30,13 @@ public class BlockShapes {
             box(0, 0, 0, 16, 16, 16),
             box(0, 0, 0, 16, 16, 16)
     );
-    public static final Map<Direction, VoxelShape> EXPR_1 = createShape(
+    public static final Map<Direction, VoxelShape> EXPR = createShape(
             box(-16, 0, 0, 32, 32, 1),
             box(-16, 0, 15, 32, 32, 16),
             box(0, 0, -16, 1, 32, 32),
             box(15, 0, -16, 16, 32, 32)
     );
-
-    public static final Map<Direction, VoxelShape> EXPR_2 = createShape(
-            box(-16, 0, 0, 32, 32, 1),
-            box(-16, 0, 15, 32, 32, 16),
-            box(0, 0, -16, 1, 32, 32),
-            box(15, 0, -16, 16, 32, 32)
-    );
-
-    public static final Map<Direction, VoxelShape> EXPR_3 = createShape(
-            box(-16, 0, 0, 32, 32, 1),
-            box(-16, 0, 15, 32, 32, 16),
-            box(0, 0, -16, 1, 32, 32),
-            box(15, 0, -16, 16, 32, 32)
-    );
-
-    public static final Map<Direction, VoxelShape> EXPR_4 = createShape(
-            box(-16, 0, 0, 32, 32, 1),
-            box(-16, 0, 15, 32, 32, 16),
-            box(0, 0, -16, 1, 32, 32),
-            box(15, 0, -16, 16, 32, 32)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5 = createShape(
-            box(-16, 0, 0, 32, 32, 1),
-            box(-16, 0, 15, 32, 32, 16),
-            box(0, 0, -16, 1, 32, 32),
-            box(15, 0, -16, 16, 32, 32)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5a = createShape(
-            box(-11, 0, 0, 27, 32, 1),
-            box(-11, 0, 15, 27, 32, 16),
-            box(0, 0, -11, 1, 32, 27),
-            box(15, 0, -11, 16, 32, 27)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5b = createShape(
-            box(-11, 0, 0, 27, 32, 1),
-            box(-11, 0, 15, 27, 32, 16),
-            box(0, 0, -11, 1, 32, 27),
-            box(15, 0, -11, 16, 32, 27)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5c = createShape(
-            box(-11, 0, 0, 27, 32, 1),
-            box(-11, 0, 15, 27, 32, 16),
-            box(0, 0, -11, 1, 32, 27),
-            box(15, 0, -11, 16, 32, 27)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5_d = createShape(
-            box(-11, 0, 0, 27, 32, 1),
-            box(-11, 0, 15, 27, 32, 16),
-            box(0, 0, -11, 1, 32, 27),
-            box(15, 0, -11, 16, 32, 27)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5_e = createShape(
-            box(-11, 0, 0, 27, 32, 1),
-            box(-11, 0, 15, 27, 32, 16),
-            box(0, 0, -11, 1, 32, 27),
-            box(15, 0, -11, 16, 32, 27)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5_f = createShape(
+    public static final Map<Direction, VoxelShape> EXPR_S = createShape(
             box(-11, 0, 0, 27, 32, 1),
             box(-11, 0, 15, 27, 32, 16),
             box(0, 0, -11, 1, 32, 27),
@@ -492,5 +435,23 @@ public class BlockShapes {
     box(6.75, 9.5, -16, 9.25, 10, 10), box(6.75, 14.5, -16, 9.25, 15, 10), box(6.25, 9.5, 10, 9.75, 18.5, 12), box(5.5, 9, 12, 10.5, 19, 15.5)),
 			Shapes.or(box(6.75, 0, 6.75, 9.25, 9.5, 9.25), box(6.65, 13, 6.75, 9.35, 15.5, 9.25), box(6.25, 10, 6, 9.75, 13, 32), box(6.25, 15, 6, 9.75, 18, 32), box(7.25, 13, 6, 8.75, 14.5, 32), box(6.75, 18, 6, 9.25, 18.5, 32),
     box(6.75, 9.5, 6, 9.25, 10, 32), box(6.75, 14.5, 6, 9.25, 15, 32), box(6.25, 9.5, 4, 9.75, 18.5, 6), box(5.5, 9, 0.5, 10.5, 19, 4))
+    );
+    public static final Map<Direction, VoxelShape> PTrafficLight = createShape(
+            Block.box(2, -16, 6, 14, 32, 10),
+            Block.box(2, -16, 6, 14, 32, 10),
+            Block.box(6, -16, 2, 10, 32, 14),
+            Block.box(6, -16, 2, 10, 32, 14)
+    );
+    public static final Map<Direction, VoxelShape> TrafficLight = createShape(
+            Block.box(2, -2, 0, 14, 26, 6),
+            Block.box(2, -2, 0, 14, 26, 6),
+            Block.box(0, -2, 2, 6, 26, 14),
+            Block.box(0, -2, 2, 6, 26, 14)
+    );
+    public static final Map<Direction, VoxelShape> Median_Strip_1 = createShape(
+            box(0, -16, 7, 16, 32, 9),
+            box(0, -16, 7, 16, 32, 9),
+            box(7, -16, 0, 9, 32, 16),
+            box(7, -16, 0, 9, 32, 16)
     );
 }

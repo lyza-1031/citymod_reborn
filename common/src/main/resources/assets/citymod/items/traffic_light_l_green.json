@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "citymod:item/traffic_light_l_green"
+  }
+}

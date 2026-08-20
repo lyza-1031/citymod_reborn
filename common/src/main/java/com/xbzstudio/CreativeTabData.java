@@ -24,7 +24,7 @@ public class CreativeTabData {
             "road_screen", "free_road_sign", "free_expressway_sign",
             "white_sign2","white_sign","whitesign3","mediumsign_white","sign_mini_white",
             "orangesign","orangesign_2","mediumsign_orange","sign_mini_orange","sign_mini_red",
-            "pole", "pole_joint", "pole_joint_double", "pole_joint_l",
+            "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",
             "pole_horizontal", "pole_expr", "pole_expr_right", "pole_exprmid",
             "pole_fine_d", "polefine_joint_d",
             "warn_pole","road_light_down","lamppost","light_pole_with_flag",
@@ -38,8 +38,9 @@ public class CreativeTabData {
             "road_diamond","road_straight","roadblock_block_oblique","roadblock_oblique","roadblock_yellow_oblique","roadblock_double_oblique","zebracrossing_oblique",
             "road_light","street_light","street_light_b","street_light_c","street_light_d",
             "separationpost","separationpostb","separationpostc",
-            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint","expresswayfence2","expresswayfence2_r",
-            "tunnel_sign_1","tunnel_sign_2"
+            "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint","expresswayfence2","expresswayfence2_r","median_strip_1",
+            "tunnel_sign_1","tunnel_sign_2",
+            "traffic_light_round_green","traffic_light_s_green","traffic_light_l_green","traffic_light_r_green","pedestrian_traffic_light_r"
     );
 
     public static final List<String> CITY_IDS = List.of(
@@ -78,23 +79,24 @@ public class CreativeTabData {
             "big_ac_out_hd", "centre_air_condition_outside",
             "air_condition_hd_1", "air_condition_hd_2",
             "airconditionhd_3", "airconditionhd_4",
-            "air_condition_old_hd", "central_ac_hd",
+            "air_condition_old_hd", "central_ac_hd","ac_airvent_hd_l","ac_airvent_hd","ac_airvent_hd_r",
             "micro_wave_oven", "fridge_1", "fridge_2",  "freezer",
             "gas_water_heater", "electric_water_heater", "solarwaterheater",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
-            "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","crt_tv",
+            "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv",
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
             "modernwardrobe", "modernwardrobeup", "modernwardrobeb",
             "express_box_1", "express_box_2",
             "old_tv_table","old_fridge","old_mirror","old_calendar",
-            "extractor","trimcover","washingmachine","washine_machine_b"
+            "extractor","trimcover","washingmachine","washine_machine_b",
+            "desklamp","treadmill","sausage_cooker"
     );
 
     public static final List<String> POST_IDS = List.of(
             "post_1691", "post_1692", "post_1693", "post_1694",
-            "post_1695", "post_1696", "post_1697", "post_1698",
-            "post_431", "post_432", "post_433"
+            "post_1695", "post_1696", "post_1697", "post_1698","post_1699",
+            "post_431", "post_432", "post_433","post_434"
     );
 
     public static final List<String> WINDOW_IDS = List.of(
@@ -121,7 +123,7 @@ public class CreativeTabData {
 
     public static final List<String> OTHER_IDS = List.of(
             "ac_out_nvidia", "ac_out_amd", "ac_out_intel",
-            "ac_out_fake", "ac_out_40_hx","internet_famous_road_sign"
+            "ac_out_fake", "ac_out_40_hx","blackwell_6000","internet_famous_road_sign"
     );
     public static final List<TabDef> TABS = List.of(
             new TabDef("traffic", Component.translatable("item_group.citymod.traffic"), "traffic_sign", TRAFFIC_IDS),

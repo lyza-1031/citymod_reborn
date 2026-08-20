@@ -4,7 +4,7 @@ license="CC-BY-NC 4.0"
 
 [[mods]]
 modId="citymod"
-version="2.0.1"
+version="2.1.0"
 displayName="CityMod"
 displayURL="https://space.bilibili.com/493607297"
 logoFile="logo.png"
@@ -15,7 +15,7 @@ description="Use this mod to build Better Chinese Style City"
 [[dependencies.citymod]]
 modId="minecraft"
 type="required"
-versionRange="[1.21.10,1.21.11]"
+versionRange="[1.21.11]"
 ordering="AFTER"
 side="BOTH"
 

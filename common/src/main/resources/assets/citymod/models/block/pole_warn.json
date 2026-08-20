@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/pole",
+  "textures": {
+    "all": "citymod:block/pole_warn",
+    "particle": "citymod:block/pole_warn",
+    "0": "citymod:block/pole_warn"
+  },
+  "render_type": "solid"
+}
