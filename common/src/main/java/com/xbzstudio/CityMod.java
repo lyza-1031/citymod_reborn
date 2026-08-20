@@ -30,5 +30,6 @@ public class CityMod {
             Registry.register(BuiltInRegistries.ITEM, id, new ModBlockItem(block, props, def.id()));
         }
         ModCreativeTabs.TABS.register();
+        ModCreativeTabs.appendItems();
     }
 }

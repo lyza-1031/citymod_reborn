@@ -1,7 +1,11 @@
 package com.xbzstudio;
 
+import dev.architectury.registry.CreativeTabRegistry;
+import dev.architectury.registry.registries.DeferredRegister;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -9,9 +13,9 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
-import java.util.function.Function;
-
 public class CreativeTabRegistrar {
+    public static final DeferredRegister<CreativeModeTab> TABS =
+            DeferredRegister.create(CityMod.MODID, Registries.CREATIVE_MODE_TAB);
 
     private static Block getBlock(String id) {
         return BuiltInRegistries.BLOCK.get(Identifier.fromNamespaceAndPath("citymod", id))
@@ -19,22 +23,15 @@ public class CreativeTabRegistrar {
                 .orElse(Blocks.AIR);
     }
 
-    public static void register(Function<CreativeModeTab, Void> registry) {
+    public static void register() {
         for (var tab : CreativeTabData.TABS) {
-            CreativeModeTab creativeTab = CreativeModeTab.builder(CreativeModeTab.Row.TOP, CreativeTabData.TABS.indexOf(tab))
-                    .title(tab.title())
-                    .icon(() -> {
+            TABS.register(tab.id(), () -> CreativeTabRegistry.create(
+                    tab.title(),
+                    () -> {
                         Block b = getBlock(tab.iconId());
                         return new ItemStack(b != Blocks.AIR ? b.asItem() : Items.STONE);
-                    })
-                    .displayItems((params, output) -> {
-                        for (String id : tab.blockIds()) {
-                            Block b = getBlock(id);
-                            if (b != Blocks.AIR) output.accept(b.asItem());
-                        }
-                    })
-                    .build();
-            registry.apply(creativeTab);
+                    }
+            ));
         }
     }
 }

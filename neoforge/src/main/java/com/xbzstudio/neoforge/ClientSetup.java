@@ -19,7 +19,6 @@ import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.neoforge.client.RenderTypeHelper;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,8 +43,6 @@ public class ClientSetup {
             Minecraft mc = Minecraft.getInstance();
             if (mc.player != null && KILL_ITEMS_KEY.consumeClick()) {
                 ClientPacketDistributor.sendToServer(new KillItemsPacket());
-                mc.player.displayClientMessage(
-                        Component.translatable("message.citymod.kill_items"), true);
             }
         }
     }

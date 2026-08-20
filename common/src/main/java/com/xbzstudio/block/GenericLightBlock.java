@@ -38,7 +38,7 @@ public class GenericLightBlock extends Block implements SimpleWaterloggedBlock {
                 .sound(SoundType.METAL)
                 .strength(1f, 1f)
                 .lightLevel(state -> 15)
-                .hasPostProcess((state, world, pos) -> true)
+                .emissiveRendering((state, world, pos) -> true)
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)

@@ -39,7 +39,7 @@ public class Power extends Block implements SimpleWaterloggedBlock {
                 .sound(SoundType.METAL)
                 .strength(1f, 10f)
                 .lightLevel(state -> state.getValue(POWERED) ? 15 : 0)
-                .hasPostProcess((state, world, pos) -> state.getValue(POWERED))
+                .emissiveRendering((state, world, pos) -> state.getValue(POWERED))
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)

@@ -42,7 +42,7 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
                 .sound(SoundType.METAL)
                 .strength(1f, 1f)
                 .lightLevel(state -> 15)
-                .hasPostProcess((state, world, pos) -> state.getValue(POWERED) || state.getValue(FLASHING))
+                .emissiveRendering((state, world, pos) -> state.getValue(POWERED) || state.getValue(FLASHING))
                 .noOcclusion()
                 .randomTicks()
                 .isRedstoneConductor((bs, br, bp) -> false)

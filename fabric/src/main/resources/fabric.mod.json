@@ -3,7 +3,7 @@
   "id": "citymod",
   "version": "${version}",
   "name": "citymod_reborn",
-  "description": "",
+  "description": "Use this mod to build Better Chinese Style City",
   "authors": [
     "Lyza_1031"
   ],
@@ -23,7 +23,7 @@
   },
   "depends": {
     "fabricloader": ">=0.19.3",
-    "minecraft": "~1.21.11",
+    "minecraft": "~26.1.2",
     "java": ">=21",
     "architectury": ">=19.0.1",
     "fabric-api": "*"
