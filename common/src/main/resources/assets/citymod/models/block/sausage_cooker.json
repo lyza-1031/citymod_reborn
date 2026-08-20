@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/sausage_cooker",
+  "textures": {
+    "all": "citymod:block/sausage_cooker",
+    "particle": "citymod:block/sausage_cooker",
+    "0": "citymod:block/sausage_cooker"
+  },
+  "render_type": "cutout"
+}

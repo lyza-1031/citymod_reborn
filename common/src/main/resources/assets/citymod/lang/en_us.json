@@ -387,5 +387,10 @@
   "block.citymod.blackwell_6000": "NVIDIA Geforge RTX Blackwell 6000",
   "block.citymod.median_strip_1": "median strip",
   "block.citymod.post_1699": "post",
-  "block.citymod.post_434": "post"
+  "block.citymod.post_434": "post",
+  "block.citymod.tv_hd": "television",
+  "block.citymod.desklamp": "desklamp",
+  "block.citymod.treadmill": "treadmill",
+  "block.citymod.sausage_cooker": "sausage cooker",
+  "block.citymod.pole_warn": "pole"
 }

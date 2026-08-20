@@ -4,10 +4,10 @@ license="CC-BY-NC 4.0"
 
 [[mods]]
 modId="citymod"
-version="2.0.9"
+version="2.1.0"
 displayName="CityMod"
 mixinConfigs="citymod.mixins.json"
-displayURL="https://space.bilibili.com/493607297"
+displayURL="https://github.com/lyza-1031/citymod_reborn"
 logoFile="logo.png"
 authors="Lyza_1031"
 description="Use this mod to build better Chinese style city"

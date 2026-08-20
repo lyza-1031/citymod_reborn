@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "citymod",
-  "version": "2.0.9",
+  "version": "2.1.0",
   "name": "citymod:reborn",
-  "description": "",
+  "description": "Use this mod to build better Chinese style city",
   "authors": ["Lyza_1031"],
   "contact": {
     "homepage": "https://github.com/lyza-1031/citymod_reborn"  },

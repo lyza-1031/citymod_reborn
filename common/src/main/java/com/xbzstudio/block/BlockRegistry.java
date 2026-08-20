@@ -26,17 +26,17 @@ public class BlockRegistry {
 
     static {
         // ==================== 路牌 ====================
-        reg("expr_1", () -> new GenericSignBlock(BlockShapes.EXPR_1));
-        reg("expr_2", () -> new GenericSignBlock(BlockShapes.EXPR_2));
-        reg("expr_3", () -> new GenericSignBlock(BlockShapes.EXPR_3));
-        reg("expr_4", () -> new GenericSignBlock(BlockShapes.EXPR_4));
-        reg("expr_5", () -> new GenericSignBlock(BlockShapes.EXPR_5));
-        reg("expr_5a", () -> new GenericSignBlock(BlockShapes.EXPR_5a));
-        reg("expr_5b", () -> new GenericSignBlock(BlockShapes.EXPR_5b));
-        reg("expr_5c", () -> new GenericSignBlock(BlockShapes.EXPR_5c));
-        reg("expr_5_d", () -> new GenericSignBlock(BlockShapes.EXPR_5_d));
-        reg("expr_5_e", () -> new GenericSignBlock(BlockShapes.EXPR_5_e));
-        reg("expr_5_f", () -> new GenericSignBlock(BlockShapes.EXPR_5_f));
+        reg("expr_1", () -> new GenericSignBlock(BlockShapes.EXPR));
+        reg("expr_2", () -> new GenericSignBlock(BlockShapes.EXPR));
+        reg("expr_3", () -> new GenericSignBlock(BlockShapes.EXPR));
+        reg("expr_4", () -> new GenericSignBlock(BlockShapes.EXPR));
+        reg("expr_5", () -> new GenericSignBlock(BlockShapes.EXPR));
+        reg("expr_5a", () -> new GenericSignBlock(BlockShapes.EXPR_S));
+        reg("expr_5b", () -> new GenericSignBlock(BlockShapes.EXPR_S));
+        reg("expr_5c", () -> new GenericSignBlock(BlockShapes.EXPR_S));
+        reg("expr_5_d", () -> new GenericSignBlock(BlockShapes.EXPR_S));
+        reg("expr_5_e", () -> new GenericSignBlock(BlockShapes.EXPR_S));
+        reg("expr_5_f", () -> new GenericSignBlock(BlockShapes.EXPR_S));
         reg("service_area_sign", () -> new GenericSignBlock(BlockShapes.SERVICE_AREA_SIGN));
         reg("overpass_sign", () -> new GenericSignBlock(BlockShapes.OVERPASS_SIGN));
         reg("overpass_sign_2", () -> new GenericSignBlock(BlockShapes.OVERPASS_SIGN_2));
@@ -64,7 +64,7 @@ public class BlockRegistry {
         reg("road_screen", () -> new GenericSignBlock(BlockShapes.ROADSCREEN));
         reg("free_road_sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
         reg("free_expressway_sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
-        reg("scenic_spot_sign", () -> new GenericSignBlock(BlockShapes.EXPR_1));
+        reg("scenic_spot_sign", () -> new GenericSignBlock(BlockShapes.EXPR));
         reg("sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
         reg("left_sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
         reg("right_sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
@@ -88,7 +88,7 @@ public class BlockRegistry {
         reg("sign_mini_orange", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
         reg("sign_mini_red", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
         reg("white_sign2", () -> new GenericSignBlock(BlockShapes.YELLOW_SIGN_2));
-        reg("expr_5g", () -> new GenericSignBlock(BlockShapes.EXPR_5_f));
+        reg("expr_5g", () -> new GenericSignBlock(BlockShapes.EXPR_S));
         reg("bluesign", () -> new GenericSignBlock(CityShapes.Direction_Sign));
         reg("greensign2", () -> new GenericSignBlock(CityShapes.Direction_Sign));
         reg("whitesign3", () -> new GenericSignBlock(CityShapes.Direction_Sign));
@@ -130,6 +130,7 @@ public class BlockRegistry {
         reg("separationpostb", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("separationpostc", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("light_pole_with_flag", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("pole_warn", () -> new GenericSignBlock(BlockShapes.POLE));
 
         // 方向牌
         reg("direction_sign", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
@@ -270,6 +271,10 @@ public class BlockRegistry {
         reg("washingmachine", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEA));
         reg("washine_machine_b", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEB));
         reg("crt_tv", () -> new Power(ApplianceShapes.CRTTV));
+        reg("desklamp", () -> new GenericLightBlock(ApplianceShapes.DESKLAMP));
+        reg("treadmill", () -> new GenericMetalBlock(ApplianceShapes.TREADMILL));
+        reg("tv_hd", () -> new Power(ApplianceShapes.TVHD));
+        reg("sausage_cooker", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor));
         reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010));

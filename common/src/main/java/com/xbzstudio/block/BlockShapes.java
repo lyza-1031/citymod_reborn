@@ -30,70 +30,13 @@ public class BlockShapes {
             box(0, 0, 0, 16, 16, 16),
             box(0, 0, 0, 16, 16, 16)
     );
-    public static final Map<Direction, VoxelShape> EXPR_1 = createShape(
+    public static final Map<Direction, VoxelShape> EXPR = createShape(
             box(-16, 0, 0, 32, 32, 1),
             box(-16, 0, 15, 32, 32, 16),
             box(0, 0, -16, 1, 32, 32),
             box(15, 0, -16, 16, 32, 32)
     );
-
-    public static final Map<Direction, VoxelShape> EXPR_2 = createShape(
-            box(-16, 0, 0, 32, 32, 1),
-            box(-16, 0, 15, 32, 32, 16),
-            box(0, 0, -16, 1, 32, 32),
-            box(15, 0, -16, 16, 32, 32)
-    );
-
-    public static final Map<Direction, VoxelShape> EXPR_3 = createShape(
-            box(-16, 0, 0, 32, 32, 1),
-            box(-16, 0, 15, 32, 32, 16),
-            box(0, 0, -16, 1, 32, 32),
-            box(15, 0, -16, 16, 32, 32)
-    );
-
-    public static final Map<Direction, VoxelShape> EXPR_4 = createShape(
-            box(-16, 0, 0, 32, 32, 1),
-            box(-16, 0, 15, 32, 32, 16),
-            box(0, 0, -16, 1, 32, 32),
-            box(15, 0, -16, 16, 32, 32)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5 = createShape(
-            box(-16, 0, 0, 32, 32, 1),
-            box(-16, 0, 15, 32, 32, 16),
-            box(0, 0, -16, 1, 32, 32),
-            box(15, 0, -16, 16, 32, 32)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5a = createShape(
-            box(-11, 0, 0, 27, 32, 1),
-            box(-11, 0, 15, 27, 32, 16),
-            box(0, 0, -11, 1, 32, 27),
-            box(15, 0, -11, 16, 32, 27)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5b = createShape(
-            box(-11, 0, 0, 27, 32, 1),
-            box(-11, 0, 15, 27, 32, 16),
-            box(0, 0, -11, 1, 32, 27),
-            box(15, 0, -11, 16, 32, 27)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5c = createShape(
-            box(-11, 0, 0, 27, 32, 1),
-            box(-11, 0, 15, 27, 32, 16),
-            box(0, 0, -11, 1, 32, 27),
-            box(15, 0, -11, 16, 32, 27)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5_d = createShape(
-            box(-11, 0, 0, 27, 32, 1),
-            box(-11, 0, 15, 27, 32, 16),
-            box(0, 0, -11, 1, 32, 27),
-            box(15, 0, -11, 16, 32, 27)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5_e = createShape(
-            box(-11, 0, 0, 27, 32, 1),
-            box(-11, 0, 15, 27, 32, 16),
-            box(0, 0, -11, 1, 32, 27),
-            box(15, 0, -11, 16, 32, 27)
-    );
-    public static final Map<Direction, VoxelShape> EXPR_5_f = createShape(
+    public static final Map<Direction, VoxelShape> EXPR_S = createShape(
             box(-11, 0, 0, 27, 32, 1),
             box(-11, 0, 15, 27, 32, 16),
             box(0, 0, -11, 1, 32, 27),

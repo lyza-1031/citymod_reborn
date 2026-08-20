@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/tv_hd",
+  "textures": {
+    "all": "citymod:block/tv_hd_on",
+    "particle": "citymod:block/tv_hd_on",
+    "0": "citymod:block/tv_hd_on"
+  },
+  "render_type": "solid"
+}
