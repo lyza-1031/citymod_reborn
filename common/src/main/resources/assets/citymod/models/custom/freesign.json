@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"elements": [
 		{
-			"from": [0, 0, 14.975],
+			"from": [0, 0, 15],
 			"to": [16, 16, 16],
 			"faces": {
 				"north": {"uv": [0, 0, 4, 4], "texture": "#0"},

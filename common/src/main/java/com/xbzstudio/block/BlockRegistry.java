@@ -26,17 +26,17 @@ public class BlockRegistry {
 
     static {
         // ==================== 路牌 ====================
-        reg("expr_1", () -> new GenericSignBlock(BlockShapes.EXPR_1));
-        reg("expr_2", () -> new GenericSignBlock(BlockShapes.EXPR_2));
-        reg("expr_3", () -> new GenericSignBlock(BlockShapes.EXPR_3));
-        reg("expr_4", () -> new GenericSignBlock(BlockShapes.EXPR_4));
-        reg("expr_5", () -> new GenericSignBlock(BlockShapes.EXPR_5));
-        reg("expr_5a", () -> new GenericSignBlock(BlockShapes.EXPR_5a));
-        reg("expr_5b", () -> new GenericSignBlock(BlockShapes.EXPR_5b));
-        reg("expr_5c", () -> new GenericSignBlock(BlockShapes.EXPR_5c));
-        reg("expr_5_d", () -> new GenericSignBlock(BlockShapes.EXPR_5_d));
-        reg("expr_5_e", () -> new GenericSignBlock(BlockShapes.EXPR_5_e));
-        reg("expr_5_f", () -> new GenericSignBlock(BlockShapes.EXPR_5_f));
+        reg("expr_1", () -> new GenericSignBlock(BlockShapes.EXPR));
+        reg("expr_2", () -> new GenericSignBlock(BlockShapes.EXPR));
+        reg("expr_3", () -> new GenericSignBlock(BlockShapes.EXPR));
+        reg("expr_4", () -> new GenericSignBlock(BlockShapes.EXPR));
+        reg("expr_5", () -> new GenericSignBlock(BlockShapes.EXPR));
+        reg("expr_5a", () -> new GenericSignBlock(BlockShapes.EXPR_S));
+        reg("expr_5b", () -> new GenericSignBlock(BlockShapes.EXPR_S));
+        reg("expr_5c", () -> new GenericSignBlock(BlockShapes.EXPR_S));
+        reg("expr_5_d", () -> new GenericSignBlock(BlockShapes.EXPR_S));
+        reg("expr_5_e", () -> new GenericSignBlock(BlockShapes.EXPR_S));
+        reg("expr_5_f", () -> new GenericSignBlock(BlockShapes.EXPR_S));
         reg("service_area_sign", () -> new GenericSignBlock(BlockShapes.SERVICE_AREA_SIGN));
         reg("overpass_sign", () -> new GenericSignBlock(BlockShapes.OVERPASS_SIGN));
         reg("overpass_sign_2", () -> new GenericSignBlock(BlockShapes.OVERPASS_SIGN_2));
@@ -64,7 +64,7 @@ public class BlockRegistry {
         reg("road_screen", () -> new GenericSignBlock(BlockShapes.ROADSCREEN));
         reg("free_road_sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
         reg("free_expressway_sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
-        reg("scenic_spot_sign", () -> new GenericSignBlock(BlockShapes.EXPR_1));
+        reg("scenic_spot_sign", () -> new GenericSignBlock(BlockShapes.EXPR));
         reg("sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
         reg("left_sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
         reg("right_sign", () -> new GenericSignBlock(BlockShapes.FREESIGN));
@@ -88,10 +88,10 @@ public class BlockRegistry {
         reg("sign_mini_orange", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
         reg("sign_mini_red", () -> new GenericSignBlock(BlockShapes.SIGNMINI));
         reg("white_sign2", () -> new GenericSignBlock(BlockShapes.YELLOW_SIGN_2));
-        reg("expr_5g", () -> new GenericSignBlock(BlockShapes.EXPR_5_f));
+        reg("expr_5g", () -> new GenericSignBlock(BlockShapes.EXPR_S));
         reg("bluesign", () -> new GenericSignBlock(CityShapes.Direction_Sign));
         reg("greensign2", () -> new GenericSignBlock(CityShapes.Direction_Sign));
-        reg("whitesign3", () -> new GenericSignBlock(BlockShapes.Hsign));
+        reg("whitesign3", () -> new GenericSignBlock(CityShapes.Direction_Sign));
         reg("expressway_fence", () -> new GenericSignBlock(BlockShapes.ExprFence));
         reg("expressway_fence_green", () -> new GenericSignBlock(BlockShapes.ExprFence));
         reg("expressway_fence_joint", () -> new GenericSignBlock(BlockShapes.ExprFenceJ));
@@ -106,6 +106,7 @@ public class BlockRegistry {
         reg("stone_ball", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         reg("expresswayfence2", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         reg("expresswayfence2_r", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("median_strip_1", () -> new GenericSignBlock(BlockShapes.Median_Strip_1));
         //消防
         reg("fireextinguisherbox", () -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
         reg("water_tank", () -> new GenericSignBlock(CityShapes.Concretebarrierfenced));
@@ -129,6 +130,7 @@ public class BlockRegistry {
         reg("separationpostb", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("separationpostc", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("light_pole_with_flag", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("pole_warn", () -> new GenericSignBlock(BlockShapes.POLE));
 
         // 方向牌
         reg("direction_sign", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
@@ -269,6 +271,10 @@ public class BlockRegistry {
         reg("washingmachine", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEA));
         reg("washine_machine_b", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEB));
         reg("crt_tv", () -> new Power(ApplianceShapes.CRTTV));
+        reg("desklamp", () -> new GenericLightBlock(ApplianceShapes.DESKLAMP));
+        reg("treadmill", () -> new GenericMetalBlock(ApplianceShapes.TREADMILL));
+        reg("tv_hd", () -> new Power(ApplianceShapes.TVHD));
+        reg("sausage_cooker", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor));
         reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010));
@@ -308,7 +314,13 @@ public class BlockRegistry {
         reg("modernwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM));
         reg("modernwardrobeup", () -> new GenericMetalBlock(ApplianceShapes.WardrobeS));
         reg("modernwardrobeb", () -> new GenericMetalBlock(ApplianceShapes.WardrobeL));
-
+        //红绿灯
+        reg("pedestrian_traffic_light_r",()->new TimedPower((BlockShapes.PTrafficLight)));
+        reg("traffic_light_round_green",()->new TimedPower((BlockShapes.TrafficLight)));
+        reg("traffic_light_s_green",()->new TimedPower((BlockShapes.TrafficLight)));
+        reg("traffic_light_l_green",()->new TimedPower((BlockShapes.TrafficLight)));
+        reg("traffic_light_r_green",()->new TimedPower((BlockShapes.TrafficLight)));
+        //reg("traffictimescreengreen",()->new TimedPower((BlockShapes.FREESIGN)));
         // 载具
         reg("bikeblack", () -> new GenericMetalBlock(VehicleShapes.BikeBlack));
         reg("bike", () -> new GenericMetalBlock(VehicleShapes.BikeWhite));
@@ -360,17 +372,19 @@ public class BlockRegistry {
         reg("security_window_large", () -> new GenericGlassBlock(WindowsShapes.WINCL));
 
         // 海报
-        reg("post_1691", () -> new GenericSignBlock(PostShapes.Post1691));
-        reg("post_1692", () -> new GenericSignBlock(PostShapes.Post1692));
-        reg("post_1693", () -> new GenericSignBlock(PostShapes.Post1693));
-        reg("post_1694", () -> new GenericSignBlock(PostShapes.Post1694));
-        reg("post_1695", () -> new GenericSignBlock(PostShapes.Post1695));
-        reg("post_1696", () -> new GenericSignBlock(PostShapes.Post1696));
-        reg("post_1697", () -> new GenericSignBlock(PostShapes.Post1697));
-        reg("post_1698", () -> new GenericSignBlock(PostShapes.Post1698));
-        reg("post_431", () -> new GenericSignBlock(PostShapes.Post431));
-        reg("post_432", () -> new GenericSignBlock(PostShapes.Post432));
-        reg("post_433", () -> new GenericSignBlock(PostShapes.Post433));
+        reg("post_1691", () -> new GenericSignBlock(PostShapes.Post169));
+        reg("post_1692", () -> new GenericSignBlock(PostShapes.Post169));
+        reg("post_1693", () -> new GenericSignBlock(PostShapes.Post169));
+        reg("post_1694", () -> new GenericSignBlock(PostShapes.Post169));
+        reg("post_1695", () -> new GenericSignBlock(PostShapes.Post169));
+        reg("post_1696", () -> new GenericSignBlock(PostShapes.Post169));
+        reg("post_1697", () -> new GenericSignBlock(PostShapes.Post169));
+        reg("post_1698", () -> new GenericSignBlock(PostShapes.Post169));
+        reg("post_1699", () -> new GenericSignBlock(PostShapes.Post169));
+        reg("post_431", () -> new GenericSignBlock(PostShapes.Post43));
+        reg("post_432", () -> new GenericSignBlock(PostShapes.Post43));
+        reg("post_433", () -> new GenericSignBlock(PostShapes.Post43));
+        reg("post_434", () -> new GenericSignBlock(PostShapes.Post43));
 
         // 其他
         reg("ac_out_nvidia", () -> new GenericMetalBlock(ApplianceShapes.AC2080));
@@ -378,6 +392,7 @@ public class BlockRegistry {
         reg("ac_out_amd", () -> new GenericMetalBlock(ApplianceShapes.AC2080));
         reg("ac_out_fake", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_05));
         reg("ac_out_40_hx", () -> new GenericMetalBlock(ApplianceShapes.AC_40HX));
+        reg("blackwell_6000", () -> new GenericMetalBlock(ApplianceShapes.BIG_AC_OUT_HD));
         reg("internet_famous_road_sign", () -> new GenericSignBlock(BlockShapes.IFRS));
         //多方向
         reg("central_air_conditioning", () -> new GenericMultiFaceBlock(state -> {
@@ -404,6 +419,90 @@ public class BlockRegistry {
                     case FLOOR -> Block.box(4, 0, -10, 12, 1, 26);
                     case WALL -> Block.box(15, 4, -10, 16, 12, 26);
                     case CEILING -> Block.box(4, 15, -10, 12, 16, 26);
+                };
+                default -> Block.box(0, 0, 0, 16, 16, 16);
+            };
+        }));
+        reg("ac_airvent_hd", () -> new GenericMultiFaceBlock(state -> {
+            Direction facing = state.getValue(GenericMultiFaceBlock.FACING);
+            AttachFace face = state.getValue(GenericMultiFaceBlock.FACE);
+
+            return switch (facing) {
+                case SOUTH -> switch (face) {
+                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
+                    case WALL -> Block.box(0, 4, 0, 16, 12, 1);
+                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
+                };
+                case NORTH -> switch (face) {
+                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
+                    case WALL -> Block.box(0, 4, 15, 16, 12, 16);
+                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
+                };
+                case EAST -> switch (face) {
+                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
+                    case WALL -> Block.box(0, 4, 0, 1, 12, 16);
+                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
+                };
+                case WEST -> switch (face) {
+                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
+                    case WALL -> Block.box(15, 4, 0, 16, 12, 16);
+                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
+                };
+                default -> Block.box(0, 0, 0, 16, 16, 16);
+            };
+        }));
+        reg("ac_airvent_hd_l", () -> new GenericMultiFaceBlock(state -> {
+            Direction facing = state.getValue(GenericMultiFaceBlock.FACING);
+            AttachFace face = state.getValue(GenericMultiFaceBlock.FACE);
+
+            return switch (facing) {
+                case SOUTH -> switch (face) {
+                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
+                    case WALL -> Block.box(0, 4, 0, 16, 12, 1);
+                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
+                };
+                case NORTH -> switch (face) {
+                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
+                    case WALL -> Block.box(0, 4, 15, 16, 12, 16);
+                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
+                };
+                case EAST -> switch (face) {
+                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
+                    case WALL -> Block.box(0, 4, 0, 1, 12, 16);
+                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
+                };
+                case WEST -> switch (face) {
+                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
+                    case WALL -> Block.box(15, 4, 0, 16, 12, 16);
+                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
+                };
+                default -> Block.box(0, 0, 0, 16, 16, 16);
+            };
+        }));
+        reg("ac_airvent_hd_r", () -> new GenericMultiFaceBlock(state -> {
+            Direction facing = state.getValue(GenericMultiFaceBlock.FACING);
+            AttachFace face = state.getValue(GenericMultiFaceBlock.FACE);
+
+            return switch (facing) {
+                case SOUTH -> switch (face) {
+                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
+                    case WALL -> Block.box(0, 4, 0, 16, 12, 1);
+                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
+                };
+                case NORTH -> switch (face) {
+                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
+                    case WALL -> Block.box(0, 4, 15, 16, 12, 16);
+                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
+                };
+                case EAST -> switch (face) {
+                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
+                    case WALL -> Block.box(0, 4, 0, 1, 12, 16);
+                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
+                };
+                case WEST -> switch (face) {
+                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
+                    case WALL -> Block.box(15, 4, 0, 16, 12, 16);
+                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
                 };
                 default -> Block.box(0, 0, 0, 16, 16, 16);
             };

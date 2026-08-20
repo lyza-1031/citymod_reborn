@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/sausage_cooker"
+    },
+    "facing=east": {
+      "model": "citymod:block/sausage_cooker",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/sausage_cooker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/sausage_cooker",
+      "y": 270
+    }
+  }
+}

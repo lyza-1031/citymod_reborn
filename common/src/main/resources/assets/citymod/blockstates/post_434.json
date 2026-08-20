@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/post_434"
+    },
+    "facing=east": {
+      "model": "citymod:block/post_434",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/post_434",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/post_434",
+      "y": 270
+    }
+  }
+}

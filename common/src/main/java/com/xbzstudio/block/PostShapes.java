@@ -24,66 +24,13 @@ public class PostShapes {
     }
 
 
-    public static final Map<Direction, VoxelShape> Post1691 = createShape(
+    public static final Map<Direction, VoxelShape> Post169 = createShape(
             box(-16, 0.1, 0, 32, 32, 0.05),
             box(-16, 0.1, 15.95, 32, 32, 16),
             box(0, 0.1, -16, 0.05, 32, 32),
             box(15.95, 0.1, -16, 16, 32, 32)
     );
-    public static final Map<Direction, VoxelShape> Post1692 = createShape(
-            box(-16, 0.1, 0, 32, 32, 0.05),
-            box(-16, 0.1, 15.95, 32, 32, 16),
-            box(0, 0.1, -16, 0.05, 32, 32),
-            box(15.95, 0.1, -16, 16, 32, 32)
-    );
-    public static final Map<Direction, VoxelShape> Post1693 = createShape(
-            box(-16, 0.1, 0, 32, 32, 0.05),
-            box(-16, 0.1, 15.95, 32, 32, 16),
-            box(0, 0.1, -16, 0.05, 32, 32),
-            box(15.95, 0.1, -16, 16, 32, 32)
-    );   public static final Map<Direction, VoxelShape> Post1694 = createShape(
-            box(-16, 0.1, 0, 32, 32, 0.05),
-            box(-16, 0.1, 15.95, 32, 32, 16),
-            box(0, 0.1, -16, 0.05, 32, 32),
-            box(15.95, 0.1, -16, 16, 32, 32)
-    );
-    public static final Map<Direction, VoxelShape> Post1695 = createShape(
-            box(-16, 0.1, 0, 32, 32, 0.05),
-            box(-16, 0.1, 15.95, 32, 32, 16),
-            box(0, 0.1, -16, 0.05, 32, 32),
-            box(15.95, 0.1, -16, 16, 32, 32)
-    );
-    public static final Map<Direction, VoxelShape> Post1696 = createShape(
-            box(-16, 0.1, 0, 32, 32, 0.05),
-            box(-16, 0.1, 15.95, 32, 32, 16),
-            box(0, 0.1, -16, 0.05, 32, 32),
-            box(15.95, 0.1, -16, 16, 32, 32)
-    );
-    public static final Map<Direction, VoxelShape> Post1697 = createShape(
-            box(-16, 0.1, 0, 32, 32, 0.05),
-            box(-16, 0.1, 15.95, 32, 32, 16),
-            box(0, 0.1, -16, 0.05, 32, 32),
-            box(15.95, 0.1, -16, 16, 32, 32)
-    );
-    public static final Map<Direction, VoxelShape> Post1698 = createShape(
-            box(-16, 0.1, 0, 32, 32, 0.05),
-            box(-16, 0.1, 15.95, 32, 32, 16),
-            box(0, 0.1, -16, 0.05, 32, 32),
-            box(15.95, 0.1, -16, 16, 32, 32)
-    );
-    public static final Map<Direction, VoxelShape> Post431 = createShape(
-            box(-12, 0.1, 0, 28, 30, 0.05),
-            box(-12, 0.1, 15.95, 28, 30, 16),
-            box(0, 0.1, -12, 0.05, 30, 28),
-            box(15.95, 0.1, -12, 16, 30, 28)
-    );
-    public static final Map<Direction, VoxelShape> Post432 = createShape(
-            box(-12, 0.1, 0, 28, 30, 0.05),
-            box(-12, 0.1, 15.95, 28, 30, 16),
-            box(0, 0.1, -12, 0.05, 30, 28),
-            box(15.95, 0.1, -12, 16, 30, 28)
-    );
-    public static final Map<Direction, VoxelShape> Post433 = createShape(
+    public static final Map<Direction, VoxelShape> Post43 = createShape(
             box(-12, 0.1, 0, 28, 30, 0.05),
             box(-12, 0.1, 15.95, 28, 30, 16),
             box(0, 0.1, -12, 0.05, 30, 28),

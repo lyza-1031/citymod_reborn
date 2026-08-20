@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,powered=false": {
+      "model": "citymod:block/tv_hd"
+    },
+    "facing=east,powered=false": {
+      "model": "citymod:block/tv_hd",
+      "y": 90
+    },
+    "facing=south,powered=false": {
+      "model": "citymod:block/tv_hd",
+      "y": 180
+    },
+    "facing=west,powered=false": {
+      "model": "citymod:block/tv_hd",
+      "y": 270
+    },
+    "facing=north,powered=true": {
+      "model": "citymod:block/tv_hd_on"
+    },
+    "facing=east,powered=true": {
+      "model": "citymod:block/tv_hd_on",
+      "y": 90
+    },
+    "facing=south,powered=true": {
+      "model": "citymod:block/tv_hd_on",
+      "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "citymod:block/tv_hd_on",
+      "y": 270
+    }
+  }
+}
