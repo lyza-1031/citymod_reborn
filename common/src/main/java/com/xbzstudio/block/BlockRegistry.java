@@ -131,6 +131,17 @@ public class BlockRegistry {
         reg("separationpostc", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("light_pole_with_flag", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("pole_warn", () -> new GenericSignBlock(BlockShapes.POLE));
+        reg("pole_w", () -> new GenericSignBlock(BlockShapes.POLE));
+        reg("pole_joint_w", () -> new GenericSignBlock(BlockShapes.POLE_JOINT));
+        reg("pole_joint_double_w", () -> new GenericSignBlock(BlockShapes.POLE_JOINT_D));
+        reg("pole_joint_l_w", () -> new GenericSignBlock(BlockShapes.POLE_JOINT_L));
+        reg("pole_horizontal_w", () -> new GenericSignBlock(BlockShapes.POLE_H));
+        reg("pole_expr_w", () -> new GenericSignBlock(BlockShapes.POLE_EXPR_L));
+        reg("pole_expr_right_w", () -> new GenericSignBlock(BlockShapes.POLE_EXPR_R));
+        reg("pole_exprmid_w", () -> new GenericSignBlock(BlockShapes.POLE_EXPR_M));
+        reg("pole_fine_d_w", () -> new GenericSignBlock(BlockShapes.POLEFINE_D));
+        reg("polefine_joint_d_w", () -> new GenericSignBlock(BlockShapes.POLEFINE_JOINT_D));
+        //reg("light_pole_with_flag_w", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
 
         // 方向牌
         reg("direction_sign", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
@@ -275,6 +286,7 @@ public class BlockRegistry {
         reg("treadmill", () -> new GenericMetalBlock(ApplianceShapes.TREADMILL));
         reg("tv_hd", () -> new Power(ApplianceShapes.TVHD));
         reg("sausage_cooker", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("ac_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor));
         reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010));

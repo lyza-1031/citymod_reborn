@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/lightpoleflag",
+  "textures": {
+    "all": "citymod:block/lightpoleflag_w",
+    "particle": "citymod:block/lightpoleflag_w",
+    "1": "citymod:block/lightpoleflag_w"
+  },
+  "render_type": "solid"
+}

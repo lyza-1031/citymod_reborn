@@ -24,10 +24,6 @@ public class CreativeTabData {
             "road_screen", "free_road_sign", "free_expressway_sign",
             "white_sign2","white_sign","whitesign3","mediumsign_white","sign_mini_white",
             "orangesign","orangesign_2","mediumsign_orange","sign_mini_orange","sign_mini_red",
-            "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",
-            "pole_horizontal", "pole_expr", "pole_expr_right", "pole_exprmid",
-            "pole_fine_d", "polefine_joint_d",
-            "warn_pole","road_light_down","lamppost","light_pole_with_flag",
             "direction_sign", "direction_sign_left", "direction_sign_right",
             "direction_sign_left_straight", "direction_sign_right_straight",
             "direction_sign_left_right", "direction_sign_left_turnoff",
@@ -73,12 +69,22 @@ public class CreativeTabData {
             "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
             "water_pipe_joint","water_pipe_joint_r","water_pipe_joint_red","water_pipe_joint_red_r"
     );
+    public static final List<String> POLE_IDS = List.of(
+            "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",
+            "pole_horizontal", "pole_expr", "pole_expr_right", "pole_exprmid",
+            "pole_fine_d", "polefine_joint_d",
+            "warn_pole","road_light_down","lamppost","light_pole_with_flag",
+            "pole_w","pole_warn_w", "pole_joint_w", "pole_joint_double_w", "pole_joint_l_w",
+            "pole_horizontal_w", "pole_expr_w", "pole_expr_right_w", "pole_exprmid_w",
+            "pole_fine_d_w", "polefine_joint_d_w",
+            "warn_pole_w","light_pole_with_flag_w"
+    );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
             "ac_out_hd_5", "ac_out_hd_6",
             "big_ac_out_hd", "centre_air_condition_outside",
             "air_condition_hd_1", "air_condition_hd_2",
-            "airconditionhd_3", "airconditionhd_4",
+            "airconditionhd_3", "airconditionhd_4","ac_modern",
             "air_condition_old_hd", "central_ac_hd","ac_airvent_hd_l","ac_airvent_hd","ac_airvent_hd_r",
             "micro_wave_oven", "fridge_1", "fridge_2",  "freezer",
             "gas_water_heater", "electric_water_heater", "solarwaterheater",
@@ -127,6 +133,7 @@ public class CreativeTabData {
     );
     public static final List<TabDef> TABS = List.of(
             new TabDef("traffic", Component.translatable("item_group.citymod.traffic"), "traffic_sign", TRAFFIC_IDS),
+            new TabDef("pole", Component.translatable("item_group.citymod.pole"), "pole_joint_double", POLE_IDS),
             new TabDef("city", Component.translatable("item_group.citymod.urban_facilities"), "speed_limit_sign", CITY_IDS),
             new TabDef("household_appliances", Component.translatable("item_group.citymod.household_appliances"), "ac_out_hd_3", HA_IDS),
             new TabDef("posts", Component.translatable("item_group.citymod.posts"), "post_1691", POST_IDS),
