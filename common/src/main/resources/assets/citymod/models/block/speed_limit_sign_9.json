@@ -1,9 +1,9 @@
 {
   "parent": "citymod:custom/speedlimitsign",
   "textures": {
-    "all": "citymod:block/40",
-    "particle": "citymod:block/40",
-    "1": "citymod:block/40"
+    "all": "citymod:block/0",
+    "particle": "citymod:block/0",
+    "1": "citymod:block/0"
   },
   "render_type": "cutout"
 }

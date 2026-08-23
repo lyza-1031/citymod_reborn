@@ -408,5 +408,7 @@
   "painting.citymod.urbanization.title": "城市化",
   "subtitles.die": "显史器：去世",
   "subtitles.error": "显史器：鸣叫",
-  "subtitles.rifleshoot": "步枪：射击"
+  "subtitles.rifleshoot": "步枪：射击",
+  "block.citymod.speed_limit_sign_9": "限速指示牌",
+  "block.citymod.speed_limit_sign_0": "禁止通行"
 }

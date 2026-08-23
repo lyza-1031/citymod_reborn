@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "citymod",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "name": "citymod:reborn",
   "description": "Use this mod to build better Chinese style city",
   "authors": ["Lyza_1031"],
@@ -26,7 +26,8 @@
     ,"fabric-api": "*"
   },
   "recommends": {
-    "sodium": ">=0.5.0"
+    "sodium": "*",
+    "modernui": "*"
   },
   "suggests": {
     "sodium": "大幅度提升性能并能避免一些潜在的问题"

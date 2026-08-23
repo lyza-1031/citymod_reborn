@@ -157,8 +157,8 @@ public class BlockRegistry {
         reg("variable_lanes", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
         reg("bus_lane", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
         reg("bike_lane", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
-        reg("diversion_b", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
-        reg("diversion_sign", () -> new GenericMetalBlock(CityShapes.Direction_Sign));
+        reg("diversion_b", () -> new GenericMetalBlock(BlockShapes.FREESIGN));
+        reg("diversion_sign", () -> new GenericMetalBlock(BlockShapes.FREESIGN));
         //路灯
         reg("road_light", () -> new GenericLightBlock(BlockShapes.ROADLIGHT));
         reg("street_light", () -> new GenericLightBlock(BlockShapes.STREETLIGHT));
@@ -194,6 +194,8 @@ public class BlockRegistry {
         reg("speed_limit_sign_6", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
         reg("speed_limit_sign_7", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
         reg("speed_limit_sign_8", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
+        reg("speed_limit_sign_9", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
+        reg("speed_limit_sign0", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
         reg("glass_fence", () -> new GenericMetalBlock(CityShapes.GlassFence));
         reg("modern_fence", () -> new GenericMetalBlock(CityShapes.ModernFence));
         reg("modern_fence_2", () -> new GenericMetalBlock(CityShapes.ModernFence2));

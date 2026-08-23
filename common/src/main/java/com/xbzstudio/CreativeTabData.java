@@ -42,7 +42,8 @@ public class CreativeTabData {
     public static final List<String> CITY_IDS = List.of(
             "speed_limit_sign", "speed_limit_sign_1", "speed_limit_sign_2",
             "speed_limit_sign_3", "speed_limit_sign_4", "speed_limit_sign_5",
-            "speed_limit_sign_6", "speed_limit_sign_7", "speed_limit_sign_8","pole_fine",
+            "speed_limit_sign_6", "speed_limit_sign_7", "speed_limit_sign_8","speed_limit_sign_9","speed_limit_sign0",
+            "pole_fine",
             "glass_fence","modern_fence", "modern_fence_2", "modern_fence_3","step_fence",
             "modern_ironfence", "moderniron_fence_yellow",
             "moderniron_fence_green", "moderniron_fence_blue",
