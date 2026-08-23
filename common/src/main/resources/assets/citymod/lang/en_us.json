@@ -403,5 +403,10 @@
   "block.citymod.sausage_cooker": "sausage cooker",
   "block.citymod.pole_warn": "pole",
   "block.citymod.ac_modern": "Modern air-condition",
-  "item_group.citymod.pole": "Pole"
+  "item_group.citymod.pole": "Pole",
+  "block.citymod.ac_out_modern": "Modern air-condition",
+  "block.citymod.window_largeb_black": "Modern Window",
+  "block.citymod.window_largeb_blue": "Modern Window",
+  "block.citymod.window_largeb_green": "Modern Window",
+  "block.citymod.window_largeb_white": "Modern Window"
 }

@@ -81,7 +81,7 @@ public class CreativeTabData {
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
-            "ac_out_hd_5", "ac_out_hd_6",
+            "ac_out_hd_5", "ac_out_hd_6","ac_out_modern",
             "big_ac_out_hd", "centre_air_condition_outside",
             "air_condition_hd_1", "air_condition_hd_2",
             "airconditionhd_3", "airconditionhd_4","ac_modern",
@@ -106,16 +106,16 @@ public class CreativeTabData {
     );
 
     public static final List<String> WINDOW_IDS = List.of(
-            "window_small_white", "window_medium_a_white", "window_medium_b_white", "window_large_white",
+            "window_small_white", "window_medium_a_white", "window_medium_b_white", "window_large_white","window_largeb_white",
             "window_corner_white_small", "window_corner_white_large",
             "w_indow_oblique_white", "window_oblique_large_white",
-            "window_small_black", "window_medium_a_black", "window_medium_b_black", "window_large_black",
+            "window_small_black", "window_medium_a_black", "window_medium_b_black", "window_large_black","window_largeb_black",
             "window_corner_black_small", "window_corner_black_large",
             "window_oblique", "window_oblique_large",
-            "window_small_blue", "window_medium_a_blue", "window_medium_b_blue", "window_large_blue",
+            "window_small_blue", "window_medium_a_blue", "window_medium_b_blue", "window_large_blue","window_largeb_blue",
             "window_corner_small_blue", "window_corner_blue",
             "window_oblique_blue", "window_oblique_large_blue",
-            "window_small_green", "window_medium_a_green", "window_mediub_b_green", "window_large_green",
+            "window_small_green", "window_medium_a_green", "window_mediub_b_green", "window_large_green","window_largeb_green",
             "window_corner_small_green", "window_corner_green",
             "window_oblique_green", "window_oblique_large_green",
             "style_iron_window_corner", "style_iron_window",

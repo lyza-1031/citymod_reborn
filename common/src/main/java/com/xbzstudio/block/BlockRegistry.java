@@ -287,6 +287,7 @@ public class BlockRegistry {
         reg("tv_hd", () -> new Power(ApplianceShapes.TVHD));
         reg("sausage_cooker", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("ac_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
+        reg("ac_out_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_06));
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor));
         reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010));
@@ -382,6 +383,10 @@ public class BlockRegistry {
         reg("security_window_small_2", () -> new GenericGlassBlock(WindowsShapes.WINCMB));
         reg("security_window_medium", () -> new GenericGlassBlock(WindowsShapes.WINCMA));
         reg("security_window_large", () -> new GenericGlassBlock(WindowsShapes.WINCL));
+        reg("window_largeb_black", () -> new GenericGlassBlock(WindowsShapes.WINL));
+        reg("window_largeb_blue", () -> new GenericGlassBlock(WindowsShapes.WINL));
+        reg("window_largeb_green", () -> new GenericGlassBlock(WindowsShapes.WINL));
+        reg("window_largeb_white", () -> new GenericGlassBlock(WindowsShapes.WINL));
 
         // 海报
         reg("post_1691", () -> new GenericSignBlock(PostShapes.Post169));
