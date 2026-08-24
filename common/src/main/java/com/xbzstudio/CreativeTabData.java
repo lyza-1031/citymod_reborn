@@ -138,7 +138,7 @@ public class CreativeTabData {
             new TabDef("city", Component.translatable("item_group.citymod.urban_facilities"), "speed_limit_sign", CITY_IDS),
             new TabDef("household_appliances", Component.translatable("item_group.citymod.household_appliances"), "ac_out_hd_3", HA_IDS),
             new TabDef("posts", Component.translatable("item_group.citymod.posts"), "post_1691", POST_IDS),
-            new TabDef("modern_windows", Component.translatable("item_group.citymod.modern_windows"), "window_large_white", WINDOW_IDS),
+            new TabDef("modern_windows", Component.translatable("item_group.citymod.modern_windows"), "window_largeb_white", WINDOW_IDS),
             new TabDef("vehicle", Component.translatable("item_group.citymod.vehicle"), "bikeblack", VEHICLE_IDS),
             new TabDef("firefighting", Component.translatable("item_group.citymod.firefighting"), "fireextinguisherbox", FireFighting_IDS),
             new TabDef("other", Component.translatable("item_group.citymod.other"), "ac_out_intel", OTHER_IDS)

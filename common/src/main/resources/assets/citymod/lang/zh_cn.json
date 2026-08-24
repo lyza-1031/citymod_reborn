@@ -393,7 +393,7 @@
   "item_group.citymod.firefighting": "消防设施",
   "item_group.citymod.household_appliances": "家用电器",
   "item_group.citymod.modern_windows": "现代玻璃窗",
-  "item_group.citymod.other": "其他",
+  "item_group.citymod.other": "其他和联动",
   "item_group.citymod.pole": "杆子",
   "item_group.citymod.posts": "城市海报",
   "item_group.citymod.traffic": "交通",
@@ -410,5 +410,5 @@
   "subtitles.error": "显史器：鸣叫",
   "subtitles.rifleshoot": "步枪：射击",
   "block.citymod.speed_limit_sign_9": "限速指示牌",
-  "block.citymod.speed_limit_sign_0": "禁止通行"
+  "block.citymod.speed_limit_sign0": "禁止通行"
 }

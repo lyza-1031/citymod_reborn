@@ -1,9 +1,9 @@
 {
-  "parent": "citymod:custom/sign",
+  "parent": "citymod:custom/slowsign",
   "textures": {
     "all": "citymod:block/slow",
     "particle": "citymod:block/slow",
-    "0": "citymod:block/slow"
+    "1": "citymod:block/slow"
   },
   "render_type": "cutout"
 }
