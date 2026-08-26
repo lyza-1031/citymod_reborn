@@ -91,6 +91,7 @@
   "block.citymod.air_condition_old_hd": "Old AirCondition HD",
   "block.citymod.monitor_2010_on": "Old monitor",
   "block.citymod.solarwaterheater": "Solarwaterheater",
+  "block.citymod.solarwaterheaterred": "Solarwaterheater",
   "block.citymod.direction_sign_right": "Traffic Sign",
   "block.citymod.window_small_black": "Modern Window",
   "block.citymod.window_medium_a_green": "Modern Window",
@@ -410,5 +411,8 @@
   "block.citymod.window_largeb_green": "Modern Window",
   "block.citymod.window_largeb_white": "Modern Window",
   "block.citymod.speed_limit_sign_9": "Speed limit sign",
-  "block.citymod.speed_limit_sign0": "No entry sign"
+  "block.citymod.speed_limit_sign0": "No entry sign",
+  "block.citymod.computer_desk_black": "Computer desk",
+  "block.citymod.computer_desk_white": "Computer desk",
+  "block.citymod.office_desk": "Office desk"
 }

@@ -153,10 +153,10 @@ public class ApplianceShapes {
 			box(-2, -2, -8, 16, 16, 24)
     );
     public static final Map<Direction, VoxelShape> SOLARWATERHEATER = createShape(
-            box(-16, 0, -16, 16, 32, 16),
-			box(0, 0, 0, 32, 32, 32),
-			box(-16, 0, 0, 16, 32, 32),
-			box(0, 0, -16, 32, 32, 16)
+            box(0, 0, 0, 16, 20, 16),
+            box(0, 0, 0, 16, 20, 16),
+            box(0, 0, 0, 16, 20, 16),
+            box(0, 0, 0, 16, 20, 16)
     );
     public static final Map<Direction, VoxelShape> Old_Monitor = createShape(
             // SOUTH (default)
@@ -389,5 +389,11 @@ public class ApplianceShapes {
             box(-16,0,7,32,30,9),
             box(7,0,-16,9,30,32),
             box(7,0,-16,9,30,32)
+    );
+    public static final Map<Direction, VoxelShape> PCDESK = createShape(
+            box(-16, 0, 0, 32, 16, 16),
+            box(-16, 0, 0, 32, 16, 16),
+            box(0, 0, -16, 16, 16, 32),
+            box(0, 0, -16, 16, 16, 32)
     );
 }

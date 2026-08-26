@@ -3,7 +3,7 @@
 	"texture_size": [32, 32],
 	"elements": [
 		{
-			"from": [1, 2, 14.975],
+			"from": [1, 2, 15.225],
 			"to": [15, 16, 15.975],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 0.5]},
 			"faces": {

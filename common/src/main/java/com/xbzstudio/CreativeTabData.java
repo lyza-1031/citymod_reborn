@@ -88,7 +88,7 @@ public class CreativeTabData {
             "airconditionhd_3", "airconditionhd_4","ac_modern",
             "air_condition_old_hd", "central_ac_hd","ac_airvent_hd_l","ac_airvent_hd","ac_airvent_hd_r",
             "micro_wave_oven", "fridge_1", "fridge_2",  "freezer",
-            "gas_water_heater", "electric_water_heater", "solarwaterheater",
+            "gas_water_heater", "electric_water_heater", "solarwaterheater","solarwaterheaterred",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
             "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv",
@@ -97,7 +97,8 @@ public class CreativeTabData {
             "express_box_1", "express_box_2",
             "old_tv_table","old_fridge","old_mirror","old_calendar",
             "extractor","trimcover","washingmachine","washine_machine_b",
-            "desklamp","treadmill","sausage_cooker"
+            "desklamp","treadmill","sausage_cooker",
+            "computer_desk_black","computer_desk_white","office_desk"
     );
 
     public static final List<String> POST_IDS = List.of(

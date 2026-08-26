@@ -275,6 +275,7 @@
   "block.citymod.sign_mini_white": "小型指示牌",
   "block.citymod.sign_mini_yellow": "小型指示牌",
   "block.citymod.solarwaterheater": "太阳能热水器",
+  "block.citymod.solarwaterheaterred": "太阳能热水器",
   "block.citymod.speed_bump": "减速带",
   "block.citymod.speed_limit_sign": "限速标志牌",
   "block.citymod.speed_limit_sign_1": "限速标志牌",
@@ -410,5 +411,8 @@
   "subtitles.error": "显史器：鸣叫",
   "subtitles.rifleshoot": "步枪：射击",
   "block.citymod.speed_limit_sign_9": "限速指示牌",
-  "block.citymod.speed_limit_sign0": "禁止通行"
+  "block.citymod.speed_limit_sign0": "禁止通行",
+  "block.citymod.computer_desk_black": "电脑桌",
+  "block.citymod.computer_desk_white": "电脑桌",
+  "block.citymod.office_desk": "工位"
 }

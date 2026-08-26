@@ -290,17 +290,21 @@ public class BlockRegistry {
         reg("sausage_cooker", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("ac_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
         reg("ac_out_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_06));
+        reg("solarwaterheaterred", () -> new GenericMetalBlock(ApplianceShapes.SOLARWATERHEATER));
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor));
         reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010));
         reg("modern_monitor_off", () -> new Power(ApplianceShapes.ModernMonitor));
         reg("all_in_one_pc", () -> new Power(ApplianceShapes.AIOPC));
-        reg("laptop", () -> new Power(ApplianceShapes.LAPTOP));
+        reg("laptop", () -> new Power(ApplianceShapes.LAPTOP,ApplianceShapes.LAPTOP_ON));
         reg("large_screen_black", () -> new Power(ApplianceShapes.LARGESCREEN));
         reg("large_screen_white", () -> new Power(ApplianceShapes.LARGESCREEN));
         reg("gaming_pc_white", () -> new GenericGlassBlock(ApplianceShapes.GAMINGPC));
         reg("gaming_pcblack", () -> new GenericGlassBlock(ApplianceShapes.GAMINGPC));
-
+        //家具
+        reg("computer_desk_black", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
+        reg("computer_desk_white", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
+        reg("office_desk", () -> new GenericGlassBlock(ApplianceShapes.PCDESK));
         // 已废弃
         reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON));
         reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor));

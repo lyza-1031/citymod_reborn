@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/solarwaterheaterred"
+    },
+    "facing=east": {
+      "model": "citymod:block/solarwaterheaterred",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/solarwaterheaterred",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/solarwaterheaterred",
+      "y": 270
+    }
+  }
+}
