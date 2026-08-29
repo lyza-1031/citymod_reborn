@@ -1,9 +1,9 @@
 package com.xbzstudio.fabric.client;
 
 import com.mojang.blaze3d.platform.InputConstants;
-import com.xbzstudio.CityMod;
-import com.xbzstudio.block.BlockRegistry;
-import com.xbzstudio.network.KillItemsPacket;
+import com.xbzstudio.citymod.CityMod;
+import com.xbzstudio.citymod.block.BlockRegistry;
+import com.xbzstudio.citymod.network.KillItemsPacket;
 import dev.architectury.networking.NetworkManager;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;

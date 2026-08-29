@@ -1,4 +1,4 @@
-package com.xbzstudio.block;
+package com.xbzstudio.citymod.block;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;

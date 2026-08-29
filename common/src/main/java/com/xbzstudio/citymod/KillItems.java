@@ -1,4 +1,4 @@
-package com.xbzstudio;
+package com.xbzstudio.citymod;
 
 import net.minecraft.commands.CommandSource;
 import net.minecraft.commands.CommandSourceStack;

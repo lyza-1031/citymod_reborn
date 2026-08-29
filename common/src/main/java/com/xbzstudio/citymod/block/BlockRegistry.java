@@ -1,22 +1,14 @@
-package com.xbzstudio.block;
+package com.xbzstudio.citymod.block;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.function.Supplier;
-
-import static net.minecraft.world.phys.shapes.Shapes.box;
 
 public class BlockRegistry {
 
@@ -291,6 +283,7 @@ public class BlockRegistry {
         reg("ac_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
         reg("ac_out_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_06));
         reg("solarwaterheaterred", () -> new GenericMetalBlock(ApplianceShapes.SOLARWATERHEATER));
+        reg("game_pc_black", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor));
         reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010));

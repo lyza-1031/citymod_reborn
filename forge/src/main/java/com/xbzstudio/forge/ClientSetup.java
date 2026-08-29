@@ -1,8 +1,8 @@
 package com.xbzstudio.forge;
 
 import com.mojang.blaze3d.platform.InputConstants;
-import com.xbzstudio.CityMod;
-import com.xbzstudio.network.KillItemsPacket;
+import com.xbzstudio.citymod.CityMod;
+import com.xbzstudio.citymod.network.KillItemsPacket;
 import dev.architectury.networking.NetworkManager;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;

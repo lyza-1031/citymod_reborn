@@ -1,6 +1,6 @@
-package com.xbzstudio.network;
+package com.xbzstudio.citymod.network;
 
-import com.xbzstudio.KillItems;
+import com.xbzstudio.citymod.KillItems;
 import dev.architectury.networking.NetworkManager;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;

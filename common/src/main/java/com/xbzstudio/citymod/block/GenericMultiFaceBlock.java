@@ -1,4 +1,4 @@
-package com.xbzstudio.block;
+package com.xbzstudio.citymod.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -6,11 +6,10 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
@@ -18,32 +17,39 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import java.util.Map;
+import java.util.function.Function;
 
-public class GenericPostBlock extends Block implements SimpleWaterloggedBlock {
-    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+public class GenericMultiFaceBlock extends Block implements SimpleWaterloggedBlock {
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<AttachFace> FACE = BlockStateProperties.ATTACH_FACE;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    private final Map<Direction, VoxelShape> shapes;
+    private final Function<BlockState, VoxelShape> shapeGetter;
 
-    public GenericPostBlock(Map<Direction, VoxelShape> shapes) {
-        super(Properties.of()
-                .mapColor(MapColor.STONE)
-                .sound(SoundType.WOOL)
-                .strength(1f, 1f)
+    public GenericMultiFaceBlock(MapColor color, SoundType sound, float hardness, float resistance,
+                                 Function<BlockState, VoxelShape> shapeGetter) {
+        super(BlockBehaviour.Properties.of()
+                .mapColor(color)
+                .sound(sound)
+                .strength(hardness, resistance)
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)
                 .isViewBlocking((bs, br, bp) -> false));
-        this.shapes = shapes;
+        this.shapeGetter = shapeGetter;
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
+                .setValue(FACE, AttachFace.WALL)
                 .setValue(WATERLOGGED, false));
+    }
+
+    public GenericMultiFaceBlock(Function<BlockState, VoxelShape> shapeGetter) {
+        this(MapColor.STONE, SoundType.STONE, 1f, 10f, shapeGetter);
     }
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        return shapes.getOrDefault(state.getValue(FACING), Shapes.empty());
+        return shapeGetter.apply(state);
     }
 
     @Override
@@ -70,8 +76,16 @@ public class GenericPostBlock extends Block implements SimpleWaterloggedBlock {
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
         return this.defaultBlockState()
+                .setValue(FACE, faceForDirection(context.getNearestLookingDirection()))
                 .setValue(FACING, context.getHorizontalDirection().getOpposite())
                 .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
+    }
+
+    private AttachFace faceForDirection(Direction direction) {
+        if (direction.getAxis() == Direction.Axis.Y)
+            return direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR;
+        else
+            return AttachFace.WALL;
     }
 
     @Override
@@ -85,7 +99,7 @@ public class GenericPostBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING, WATERLOGGED);
+        builder.add(FACING, FACE, WATERLOGGED);
     }
 
     @Override

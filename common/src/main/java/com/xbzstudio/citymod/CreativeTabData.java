@@ -1,9 +1,5 @@
-package com.xbzstudio;
+package com.xbzstudio.citymod;
 
-import com.xbzstudio.block.BlockShapes;
-import com.xbzstudio.block.CityShapes;
-import com.xbzstudio.block.GenericMetalBlock;
-import com.xbzstudio.block.GenericSignBlock;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
@@ -91,6 +87,7 @@ public class CreativeTabData {
             "gas_water_heater", "electric_water_heater", "solarwaterheater","solarwaterheaterred",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
+            //"game_pc_black",
             "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv",
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
             "modernwardrobe", "modernwardrobeup", "modernwardrobeb",

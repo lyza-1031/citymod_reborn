@@ -1,7 +1,7 @@
-package com.xbzstudio;
+package com.xbzstudio.citymod;
 
-import com.xbzstudio.block.BlockRegistry;
-import com.xbzstudio.network.KillItemsPacket;
+import com.xbzstudio.citymod.block.BlockRegistry;
+import com.xbzstudio.citymod.network.KillItemsPacket;
 import dev.architectury.networking.NetworkChannel;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;

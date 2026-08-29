@@ -1,6 +1,6 @@
 package com.xbzstudio.forge;
 
-import com.xbzstudio.CityMod;
+import com.xbzstudio.citymod.CityMod;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
