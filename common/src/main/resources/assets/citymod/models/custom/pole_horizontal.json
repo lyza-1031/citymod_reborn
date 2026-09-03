@@ -1,9 +1,4 @@
 {
-  "textures": {
-    "all": "citymod:block/pole_joint_d",
-    "particle": "citymod:block/pole_joint_d",
-    "1": "citymod:block/pole_joint_d"
-  },
   "elements": [
     {
       "from": [0, 5.7019, 0.76256],

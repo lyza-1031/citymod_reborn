@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/pole_expr",
+  "textures": {
+    "all": "citymod:block/pole_expr_w",
+    "particle": "citymod:block/pole_expr_w",
+    "0": "citymod:block/pole_expr_w"
+  },
+  "render_type": "solid"
+}

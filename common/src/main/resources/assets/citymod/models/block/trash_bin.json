@@ -5,5 +5,5 @@
     "particle": "citymod:block/default",
     "0": "citymod:block/rubbish_bin"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

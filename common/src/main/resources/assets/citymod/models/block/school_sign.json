@@ -1,5 +1,5 @@
 {
-  "parent": "citymod:custom/sign1",
+  "parent": "citymod:custom/slowsign",
   "textures": {
     "all": "citymod:block/school",
     "particle": "citymod:block/school",

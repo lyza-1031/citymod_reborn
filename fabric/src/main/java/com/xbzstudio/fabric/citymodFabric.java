@@ -1,6 +1,6 @@
 package com.xbzstudio.fabric;
 
-import com.xbzstudio.CityMod;
+import com.xbzstudio.citymod.CityMod;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 

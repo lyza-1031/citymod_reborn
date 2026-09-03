@@ -1,7 +1,7 @@
 package com.xbzstudio.neoforge;
 
-import com.xbzstudio.CityMod;
-import com.xbzstudio.network.KillItemsPacket;
+import com.xbzstudio.citymod.CityMod;
+import com.xbzstudio.citymod.network.KillItemsPacket;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;

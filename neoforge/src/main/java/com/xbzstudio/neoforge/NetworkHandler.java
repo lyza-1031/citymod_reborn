@@ -1,7 +1,7 @@
 package com.xbzstudio.neoforge;
 
-import com.xbzstudio.KillItems;
-import com.xbzstudio.network.KillItemsPacket;
+import com.xbzstudio.citymod.KillItems;
+import com.xbzstudio.citymod.network.KillItemsPacket;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
