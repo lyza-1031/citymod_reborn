@@ -11,19 +11,19 @@
     "homepage": "https://github.com/lyza-1031/citymod_reborn"
   },
   "license": "CC-BY-NC 4.0",
-  "icon": "assets/citymod/textures/modlogo.png",
+  "icon": "logo.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.xbzstudio.fabric.citymodFabric"
+      "com.xbzstudio.citymod.fabric.citymodFabric"
     ],
     "client": [
-      "com.xbzstudio.fabric.client.citymodFabricClient"
+      "com.xbzstudio.citymod.fabric.client.citymodFabricClient"
     ]
   },
   "depends": {
     "fabricloader": ">=0.19.3",
-    "minecraft": "~26.1.2",
+    "minecraft": ">=26.1 <=26.2",
     "java": ">=21",
     "architectury": ">=19.0.1",
     "fabric-api": "*"

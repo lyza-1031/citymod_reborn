@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/ac_out_modern",
+  "textures": {
+    "all": "citymod:block/ac_out_modern",
+    "particle": "citymod:block/ac_out_modern",
+    "0": "citymod:block/ac_out_modern"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,7 +1,0 @@
-{
-  "parent": "citymod:custom/rifle",
-  "textures": {
-    "0": "citymod:block/rifle",
-    "particle": "citymod:item/rifle"
-  }
-}

@@ -7,5 +7,5 @@
     "overlay": "citymod:block/gray_concrete_powder",
     "particle": "citymod:block/gray_concrete_powder"
   },
-  "render_type": "cutout"
+  "render_type": "cutout_mipped"
 }

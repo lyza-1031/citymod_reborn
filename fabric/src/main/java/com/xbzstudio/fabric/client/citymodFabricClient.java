@@ -1,7 +1,7 @@
-package com.xbzstudio.fabric.client;
+package com.xbzstudio.citymod.fabric.client;
 
 import com.mojang.blaze3d.platform.InputConstants;
-import com.xbzstudio.block.BlockRegistry;
+import com.xbzstudio.citymod.block.BlockRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;

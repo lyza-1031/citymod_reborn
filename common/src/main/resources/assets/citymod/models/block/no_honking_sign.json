@@ -1,5 +1,5 @@
 {
-  "parent": "citymod:custom/sign1",
+  "parent": "citymod:custom/speedlimitsign",
   "textures": {
     "all": "citymod:block/no_honking",
     "particle": "citymod:block/no_honking",

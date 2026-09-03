@@ -48,19 +48,26 @@ repositories {
 
 dependencies {
     neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
-
     implementation "dev.architectury:architectury-neoforge:$rootProject.architectury_api_version"
-
     common project(':common')
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
 }
 
 shadowJar {
-    configurations = [project.configurations.shadowBundle]
     archiveClassifier = 'dev-shadow'
+    dependsOn project(':common').tasks.compileJava
+    from project(':common').sourceSets.main.output
+    configurations = [project.configurations.shadowBundle]
+    exclude 'net/fabricmc/loader/**'
+    exclude 'META-INF/versions/**'
+    exclude 'module-info.class'
+    zip64 true
 }
 
 jar {
-    from shadowJar
+    dependsOn shadowJar
+    from zipTree(shadowJar.archiveFile)
     archiveClassifier = ''
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    archiveFileName = "citymod-26.1.x-26.2-neoforge-${project.version}.jar"
 }

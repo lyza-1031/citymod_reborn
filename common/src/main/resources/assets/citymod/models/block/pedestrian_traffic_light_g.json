@@ -5,5 +5,5 @@
     "particle": "citymod:block/pedestrian_traffic_light_g",
     "1": "citymod:block/pedestrian_traffic_light_g"
   },
-  "render_type": "cutout"
+  "render_type": "cutout_mipped"
 }

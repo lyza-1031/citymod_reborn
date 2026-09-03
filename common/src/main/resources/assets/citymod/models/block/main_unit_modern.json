@@ -5,5 +5,5 @@
     "particle": "citymod:block/modern_mainunit",
     "0": "citymod:block/modern_mainunit"
   },
-  "render_type": "cutout"
+  "render_type": "cutout_mipped"
 }

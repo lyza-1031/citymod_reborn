@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/windowlargeb",
+  "textures": {
+    "all": "citymod:block/windowgreen",
+    "particle": "citymod:block/windowgreen",
+    "0": "citymod:block/windowgreen"
+  },
+  "render_type": "translucent"
+}

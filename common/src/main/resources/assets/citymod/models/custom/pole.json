@@ -9,8 +9,8 @@
 	},
 	"elements": [
 		{
-			"from": [7, 0, -1],
-			"to": [9, 16, 5],
+			"from": [7.005, 0.005, -0.995],
+			"to": [8.995, 15.995, 4.995],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -6]},
 			"faces": {
 				"north": {"uv": [0, 0, 3, 8], "texture": "#0"},
@@ -72,6 +72,7 @@
 		{
 			"name": "group",
 			"origin": [8, 8, 8],
+			"scope": 0,
 			"color": 0,
 			"children": [0, 1, 2, 3]
 		}

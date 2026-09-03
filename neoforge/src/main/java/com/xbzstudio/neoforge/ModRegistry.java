@@ -1,9 +1,9 @@
-package com.xbzstudio.neoforge;
+package com.xbzstudio.citymod.neoforge;
 
-import com.xbzstudio.CityMod;
-import com.xbzstudio.CreativeTabData;
-import com.xbzstudio.ModBlockItem;
-import com.xbzstudio.block.BlockRegistry;
+import com.xbzstudio.citymod.CityMod;
+import com.xbzstudio.citymod.CreativeTabData;
+import com.xbzstudio.citymod.ModBlockItem;
+import com.xbzstudio.citymod.block.BlockRegistry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;

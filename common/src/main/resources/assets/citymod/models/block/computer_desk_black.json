@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/computer_desk",
+  "textures": {
+    "all": "citymod:block/computer_desk_black",
+    "particle": "citymod:block/computer_desk_black",
+    "1": "citymod:block/computer_desk_black"
+  },
+  "render_type": "soild"
+}
