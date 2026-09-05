@@ -60,11 +60,16 @@ public class CreativeTabData {
             "powerbox","power_box_2","power_box_3","power_box_4","power_box_5","speed_bump",
             "ac_bracket","bracket",
             "construction_warning","sign_board","governmentsign",
-            "stone_table","stone_chair","stone_ball"
+            "stone_table","stone_chair","stone_ball","express_box_1", "express_box_2"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
             "water_pipe_joint","water_pipe_joint_r","water_pipe_joint_red","water_pipe_joint_red_r"
+    );
+    public static final List<String> FURNITURE_IDS = List.of(
+            "computer_desk_black","computer_desk_white","office_desk","old_tv_table","old_fridge","old_mirror","old_calendar",
+            "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
+            "modernwardrobe", "modernwardrobeup", "modernwardrobeb"
     );
     public static final List<String> POLE_IDS = List.of(
             "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",
@@ -89,13 +94,8 @@ public class CreativeTabData {
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
             //"game_pc_black",
             "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv",
-            "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
-            "modernwardrobe", "modernwardrobeup", "modernwardrobeb",
-            "express_box_1", "express_box_2",
-            "old_tv_table","old_fridge","old_mirror","old_calendar",
             "extractor","trimcover","washingmachine","washine_machine_b",
-            "desklamp","treadmill","sausage_cooker",
-            "computer_desk_black","computer_desk_white","office_desk"
+            "desklamp","treadmill","sausage_cooker"
     );
 
     public static final List<String> POST_IDS = List.of(
@@ -134,6 +134,7 @@ public class CreativeTabData {
             new TabDef("traffic", Component.translatable("item_group.citymod.traffic"), "traffic_sign", TRAFFIC_IDS),
             new TabDef("pole", Component.translatable("item_group.citymod.pole"), "pole_joint_double", POLE_IDS),
             new TabDef("city", Component.translatable("item_group.citymod.urban_facilities"), "speed_limit_sign", CITY_IDS),
+            new TabDef("furniture", Component.translatable("item_group.citymod.furniture"), "computer_desk_black", FURNITURE_IDS),
             new TabDef("household_appliances", Component.translatable("item_group.citymod.household_appliances"), "ac_out_hd_3", HA_IDS),
             new TabDef("posts", Component.translatable("item_group.citymod.posts"), "post_1691", POST_IDS),
             new TabDef("modern_windows", Component.translatable("item_group.citymod.modern_windows"), "window_largeb_white", WINDOW_IDS),

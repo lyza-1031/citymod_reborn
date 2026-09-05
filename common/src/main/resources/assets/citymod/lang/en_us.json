@@ -414,5 +414,6 @@
   "block.citymod.speed_limit_sign0": "No entry sign",
   "block.citymod.computer_desk_black": "Computer desk",
   "block.citymod.computer_desk_white": "Computer desk",
-  "block.citymod.office_desk": "Office desk"
+  "block.citymod.office_desk": "Office desk",
+  "item_group.citymod.furniture": "Furnitures"
 }

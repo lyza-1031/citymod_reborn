@@ -414,5 +414,6 @@
   "block.citymod.speed_limit_sign0": "禁止通行",
   "block.citymod.computer_desk_black": "电脑桌",
   "block.citymod.computer_desk_white": "电脑桌",
-  "block.citymod.office_desk": "工位"
+  "block.citymod.office_desk": "工位",
+  "item_group.citymod.furniture": "家具"
 }
