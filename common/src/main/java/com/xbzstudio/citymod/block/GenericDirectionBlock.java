@@ -1,7 +1,11 @@
 package com.xbzstudio.citymod.block;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
@@ -15,21 +19,33 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import java.util.List;
 import java.util.Map;
 
 public class GenericDirectionBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
     private final Map<Direction, VoxelShape> shapes;
+    private final String tooltipKey;
 
     public GenericDirectionBlock(Map<Direction, VoxelShape> shapes) {
+        this(shapes, null);
+    }
+    public GenericDirectionBlock(Map<Direction, VoxelShape> shapes, String tooltipKey) {
         super(BlockBehaviour.Properties.of()
                 .mapColor(MapColor.STONE)
                 .sound(SoundType.METAL)
                 .strength(1f, 1f)
                 .noOcclusion());
         this.shapes = shapes;
+        this.tooltipKey = tooltipKey;
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+    }
+    @Override
+    public void appendHoverText(ItemStack stack, BlockGetter world, List<Component> tooltip, TooltipFlag flag) {
+        if (tooltipKey != null && !tooltipKey.isEmpty()) {
+            tooltip.add(Component.translatable(tooltipKey).withStyle(ChatFormatting.GRAY));
+        }
     }
 
     @Override

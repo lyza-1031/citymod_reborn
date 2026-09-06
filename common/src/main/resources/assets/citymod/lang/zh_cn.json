@@ -415,5 +415,14 @@
   "block.citymod.computer_desk_black": "电脑桌",
   "block.citymod.computer_desk_white": "电脑桌",
   "block.citymod.office_desk": "工位",
-  "item_group.citymod.furniture": "家具"
+  "item_group.citymod.furniture": "家具",
+  "tooltip.citymod.old": "§o§6此方块已废弃，未来不保证继续存在",
+  "tooltip.citymod.tall": "§o§6需要垫高一格方块",
+  "tooltip.citymod.tall_trafficlight": "§o§6需要垫高一格方块,每30秒自动切换颜色",
+  "tooltip.citymod.trafficlight": "§o§6每30秒自动切换颜色",
+  "tooltip.citymod.powerable": "§o§6点击可开启",
+  "block.citymod.office_chair_black": "黑色办公椅",
+  "block.citymod.office_chair_white": "白色办公椅",
+  "block.citymod.toplamp1": "吸顶灯",
+  "block.citymod.plastic_chair_red": "塑料椅子"
 }

@@ -1,7 +1,11 @@
 package com.xbzstudio.citymod.block;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
@@ -17,6 +21,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import java.util.List;
 import java.util.function.Function;
 
 public class GenericMultiFaceBlock extends Block implements SimpleWaterloggedBlock {
@@ -25,9 +30,23 @@ public class GenericMultiFaceBlock extends Block implements SimpleWaterloggedBlo
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     private final Function<BlockState, VoxelShape> shapeGetter;
+    private final String tooltipKey;
+
+    public GenericMultiFaceBlock(Function<BlockState, VoxelShape> shapeGetter) {
+        this(MapColor.STONE, SoundType.STONE, 1f, 1f, shapeGetter, null);
+    }
+
+    public GenericMultiFaceBlock(Function<BlockState, VoxelShape> shapeGetter, String tooltipKey) {
+        this(MapColor.STONE, SoundType.STONE, 1f, 1f, shapeGetter, tooltipKey);
+    }
 
     public GenericMultiFaceBlock(MapColor color, SoundType sound, float hardness, float resistance,
                                  Function<BlockState, VoxelShape> shapeGetter) {
+        this(color, sound, hardness, resistance, shapeGetter, null);
+    }
+
+    public GenericMultiFaceBlock(MapColor color, SoundType sound, float hardness, float resistance,
+                                 Function<BlockState, VoxelShape> shapeGetter, String tooltipKey) {
         super(BlockBehaviour.Properties.of()
                 .mapColor(color)
                 .sound(sound)
@@ -37,14 +56,18 @@ public class GenericMultiFaceBlock extends Block implements SimpleWaterloggedBlo
                 .isSuffocating((bs, br, bp) -> false)
                 .isViewBlocking((bs, br, bp) -> false));
         this.shapeGetter = shapeGetter;
+        this.tooltipKey = tooltipKey;
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(FACE, AttachFace.WALL)
                 .setValue(WATERLOGGED, false));
     }
 
-    public GenericMultiFaceBlock(Function<BlockState, VoxelShape> shapeGetter) {
-        this(MapColor.STONE, SoundType.STONE, 1f, 10f, shapeGetter);
+    @Override
+    public void appendHoverText(ItemStack stack, BlockGetter world, List<Component> tooltip, TooltipFlag flag) {
+        if (tooltipKey != null && !tooltipKey.isEmpty()) {
+            tooltip.add(Component.translatable(tooltipKey).withStyle(ChatFormatting.GRAY));
+        }
     }
 
     @Override

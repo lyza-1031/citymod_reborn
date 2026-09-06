@@ -1,11 +1,15 @@
 package com.xbzstudio.citymod.block;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -19,6 +23,7 @@ import net.minecraft.world.level.material.*;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.*;
 
+import java.util.List;
 import java.util.Map;
 
 public class TimedPower extends Block implements SimpleWaterloggedBlock {
@@ -29,8 +34,12 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
 
     private final Map<Direction, VoxelShape> shapesOff;
     private final Map<Direction, VoxelShape> shapesOn;
+    private final String tooltipKey;
 
-    public TimedPower(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn) {
+    public TimedPower(Map<Direction, VoxelShape> shapes, String tooltipKey) {
+        this(shapes, shapes, tooltipKey);
+    }
+    public TimedPower(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn, String tooltipKey) {
         super(BlockBehaviour.Properties.of()
                 .mapColor(MapColor.METAL)
                 .sound(SoundType.METAL)
@@ -44,6 +53,7 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
                 .isViewBlocking((bs, br, bp) -> false));
         this.shapesOff = shapesOff;
         this.shapesOn = shapesOn;
+        this.tooltipKey = tooltipKey;
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(WATERLOGGED, false)
@@ -51,10 +61,12 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
                 .setValue(FLASHING, false));
     }
 
-    public TimedPower(Map<Direction, VoxelShape> shapes) {
-        this(shapes, shapes);
+    @Override
+    public void appendHoverText(ItemStack stack, BlockGetter world, List<Component> tooltip, TooltipFlag flag) {
+        if (tooltipKey != null && !tooltipKey.isEmpty()) {
+            tooltip.add(Component.translatable(tooltipKey).withStyle(ChatFormatting.GRAY));
+        }
     }
-
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         Map<Direction, VoxelShape> shapes = state.getValue(POWERED) || state.getValue(FLASHING) ? shapesOn : shapesOff;

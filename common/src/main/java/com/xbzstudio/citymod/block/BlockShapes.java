@@ -454,4 +454,16 @@ public class BlockShapes {
             box(7, -16, 0, 9, 32, 16),
             box(7, -16, 0, 9, 32, 16)
     );
+    public static final Map<Direction, VoxelShape> TOPLAMPS = createShape(
+            box(0, 14, 0, 16, 16, 16),
+            box(0, 14, 0, 16, 16, 16),
+            box(0, 14, 0, 16, 16, 16),
+            box(0, 14, 0, 16, 16, 16)
+    );
+    public static final Map<Direction, VoxelShape> TALLCHAIR = createShape(
+            box(2, 0, 2, 14, 12.5, 14),
+            box(2, 0, 2, 14, 12.5, 14),
+            box(2, 0, 2, 14, 12.5, 14),
+            box(2, 0, 2, 14, 12.5, 14)
+    );
 }

@@ -1,7 +1,11 @@
 package com.xbzstudio.citymod.block;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
@@ -19,15 +23,19 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import java.util.List;
 import java.util.Map;
 
 public class GenericSignBlock extends Block implements SimpleWaterloggedBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-
+    private final String tooltipKey;
     private final Map<Direction, VoxelShape> shapes;
-
     public GenericSignBlock(Map<Direction, VoxelShape> shapes) {
+        this(shapes, null);
+    }
+
+    public GenericSignBlock(Map<Direction, VoxelShape> shapes, String tooltipKey) {
         super(BlockBehaviour.Properties.of()
                 .mapColor(MapColor.STONE)
                 .sound(SoundType.STONE)
@@ -37,9 +45,16 @@ public class GenericSignBlock extends Block implements SimpleWaterloggedBlock {
                 .isSuffocating((bs, br, bp) -> false)
                 .isViewBlocking((bs, br, bp) -> false));
         this.shapes = shapes;
+        this.tooltipKey = tooltipKey;
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(WATERLOGGED, false));
+    }
+    @Override
+    public void appendHoverText(ItemStack stack, BlockGetter world, List<Component> tooltip, TooltipFlag flag) {
+        if (tooltipKey != null && !tooltipKey.isEmpty()) {
+            tooltip.add(Component.translatable(tooltipKey).withStyle(ChatFormatting.GRAY));
+        }
     }
 
     @Override

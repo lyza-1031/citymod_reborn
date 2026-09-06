@@ -1,5 +1,6 @@
 package com.xbzstudio.citymod.block;
 
+import com.xbzstudio.citymod.BlockDef;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.AttachFace;
@@ -11,8 +12,6 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public class BlockRegistry {
-
-    public record BlockDef(String id, Supplier<? extends Block> factory) {}
 
     public static final List<BlockDef> BLOCKS = new ArrayList<>();
 
@@ -43,7 +42,7 @@ public class BlockRegistry {
         reg("road_6", () -> new GenericSignBlock(BlockShapes.ROAD_6));
         reg("road_11", () -> new GenericSignBlock(BlockShapes.ROAD_11));
         reg("road_12", () -> new GenericSignBlock(BlockShapes.ROAD_12));
-        reg("expr_sign_large", () -> new GenericSignBlock(BlockShapes.EXPR_SIGN_LARGE));
+        reg("expr_sign_large", () -> new GenericSignBlock(BlockShapes.EXPR_SIGN_LARGE,"tooltip.citymod.tall"));
         reg("expressway_exit_sign", () -> new GenericSignBlock(BlockShapes.EXPRESSWAY_EXIT_SIGN));
         reg("expr_t_ips", () -> new GenericSignBlock(BlockShapes.EXPR_T_IPS));
         reg("traffic_sign", () -> new GenericSignBlock(BlockShapes.TRAFFIC_SIGN));
@@ -231,7 +230,7 @@ public class BlockRegistry {
         reg("bracket", () -> new GenericMetalBlock(CityShapes.ACBRACKET));
         reg("school_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
         reg("no_honking_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
-        reg("governmentsign", () -> new GenericMetalBlock(CityShapes.GSign));
+        reg("governmentsign", () -> new GenericMetalBlock(CityShapes.GSign,"tooltip.citymod.tall"));
         reg("sign_board", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("construction_warning", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("step_fence", () -> new GenericMetalBlock(CityShapes.StepFence));
@@ -245,17 +244,17 @@ public class BlockRegistry {
         reg("ac_out_hd_4", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_04));
         reg("ac_out_hd_5", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_05));
         reg("ac_out_hd_6", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_06));
-        reg("air_condition_old_hd", () -> new GenericMetalBlock(ApplianceShapes.OLD_AC_HD));
-        reg("big_ac_out_hd", () -> new GenericMetalBlock(ApplianceShapes.BIG_AC_OUT_HD));
-        reg("centre_air_condition_outside", () -> new GenericMetalBlock(ApplianceShapes.CentreAirConditionOutside));
-        reg("air_condition_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_01));
+        reg("air_condition_old_hd", () -> new GenericMetalBlock(ApplianceShapes.OLD_AC_HD,"tooltip.citymod.tall"));
+        reg("big_ac_out_hd", () -> new GenericMetalBlock(ApplianceShapes.BIG_AC_OUT_HD,"tooltip.citymod.tall"));
+        reg("centre_air_condition_outside", () -> new GenericMetalBlock(ApplianceShapes.CentreAirConditionOutside,"tooltip.citymod.tall"));
+        reg("air_condition_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_01,"tooltip.citymod.tall"));
         reg("air_condition_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
         reg("airconditionhd_3", () -> new GenericMetalBlock(ApplianceShapes.AC_03));
-        reg("airconditionhd_4", () -> new GenericMetalBlock(ApplianceShapes.AC_04));
+        reg("airconditionhd_4", () -> new GenericMetalBlock(ApplianceShapes.AC_04,"tooltip.citymod.tall"));
         reg("central_ac_hd", () -> new GenericMetalBlock(ApplianceShapes.CAC_HD));
         reg("micro_wave_oven", () -> new GenericMetalBlock(ApplianceShapes.MicroWaveOven));
-        reg("fridge_1", () -> new GenericMetalBlock(ApplianceShapes.Fridge1));
-        reg("fridge_2", () -> new GenericMetalBlock(ApplianceShapes.Fridge2));
+        reg("fridge_1", () -> new GenericMetalBlock(ApplianceShapes.Fridge1,"tooltip.citymod.tall"));
+        reg("fridge_2", () -> new GenericMetalBlock(ApplianceShapes.Fridge2,"tooltip.citymod.tall"));
         reg("old_fridge", () -> new GenericMetalBlock(ApplianceShapes.Old_Fridge));
         reg("old_tv_table", () -> new GenericMetalBlock(ApplianceShapes.OldTVTable));
         reg("freezer", () -> new GenericMetalBlock(ApplianceShapes.Freezer));
@@ -265,73 +264,77 @@ public class BlockRegistry {
         reg("old_mainunit", () -> new GenericMetalBlock(ApplianceShapes.OLD_MAINUNIT));
         reg("mainunit_2010", () -> new GenericMetalBlock(ApplianceShapes.MAINUNIT2010));
         reg("main_unit_modern", () -> new GenericMetalBlock(ApplianceShapes.MODERMMAINUNIT));
-        reg("express_box_1", () -> new GenericMetalBlock(ApplianceShapes.ExpressBox));
-        reg("express_box_2", () -> new GenericMetalBlock(ApplianceShapes.ExpressBox));
+        reg("express_box_1", () -> new GenericMetalBlock(ApplianceShapes.ExpressBox,"tooltip.citymod.tall"));
+        reg("express_box_2", () -> new GenericMetalBlock(ApplianceShapes.ExpressBox,"tooltip.citymod.tall"));
         reg("old_mirror", () -> new GenericMetalBlock(BlockShapes.FREESIGN));
         reg("old_calendar", () -> new GenericMetalBlock(ApplianceShapes.OldCalendar));
-        reg("television", () -> new Power(ApplianceShapes.TELEVISION));
+        reg("television", () -> new Power(ApplianceShapes.TELEVISION,  "tooltip.citymod.powerable"));
         reg("printer", () -> new GenericMetalBlock(CityShapes.StoneChair));
         reg("extractor", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("trimcover", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("washingmachine", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEA));
         reg("washine_machine_b", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEB));
-        reg("crt_tv", () -> new Power(ApplianceShapes.CRTTV));
+        reg("crt_tv", () -> new Power(ApplianceShapes.CRTTV,  "tooltip.citymod.powerable"));
         reg("desklamp", () -> new GenericLightBlock(ApplianceShapes.DESKLAMP));
         reg("treadmill", () -> new GenericMetalBlock(ApplianceShapes.TREADMILL));
-        reg("tv_hd", () -> new Power(ApplianceShapes.TVHD));
+        reg("tv_hd", () -> new Power(ApplianceShapes.TVHD,  "tooltip.citymod.powerable"));
         reg("sausage_cooker", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("ac_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
         reg("ac_out_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_06));
         reg("solarwaterheaterred", () -> new GenericMetalBlock(ApplianceShapes.SOLARWATERHEATER));
         reg("game_pc_black", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
+        reg("toplamp1", () -> new GenericLightBlock((BlockShapes.TOPLAMPS)));
         // 显示器（带开关）
-        reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor));
-        reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010));
-        reg("modern_monitor_off", () -> new Power(ApplianceShapes.ModernMonitor));
-        reg("all_in_one_pc", () -> new Power(ApplianceShapes.AIOPC));
-        reg("laptop", () -> new Power(ApplianceShapes.LAPTOP,ApplianceShapes.LAPTOP_ON));
-        reg("large_screen_black", () -> new Power(ApplianceShapes.LARGESCREEN));
-        reg("large_screen_white", () -> new Power(ApplianceShapes.LARGESCREEN));
+        reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor,  "tooltip.citymod.powerable"));
+        reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010,  "tooltip.citymod.powerable"));
+        reg("modern_monitor_off", () -> new Power(ApplianceShapes.ModernMonitor,  "tooltip.citymod.powerable"));
+        reg("all_in_one_pc", () -> new Power(ApplianceShapes.AIOPC,  "tooltip.citymod.powerable"));
+        reg("laptop", () -> new Power(ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON,  "tooltip.citymod.powerable"));
+        reg("large_screen_black", () -> new Power(ApplianceShapes.LARGESCREEN,  "tooltip.citymod.powerable"));
+        reg("large_screen_white", () -> new Power(ApplianceShapes.LARGESCREEN,  "tooltip.citymod.powerable"));
         reg("gaming_pc_white", () -> new GenericGlassBlock(ApplianceShapes.GAMINGPC));
         reg("gaming_pcblack", () -> new GenericGlassBlock(ApplianceShapes.GAMINGPC));
         //家具
         reg("computer_desk_black", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
         reg("computer_desk_white", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
         reg("office_desk", () -> new GenericGlassBlock(ApplianceShapes.PCDESK));
+        reg("office_chair_black", () -> new GenericGlassBlock(CityShapes.StoneChair));
+        reg("office_chair_white", () -> new GenericGlassBlock(CityShapes.StoneChair));
+        reg("plastic_chair_red", () -> new GenericSignBlock((BlockShapes.TALLCHAIR)));
         // 已废弃
-        reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON));
-        reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor));
-        reg("monitor_2010_on", () -> new GenericLightBlock(ApplianceShapes.Monitor2010));
-        reg("modern_monitor_on", () -> new GenericLightBlock(ApplianceShapes.ModernMonitor));
-        reg("all_in_one_pc_on", () -> new GenericLightBlock(ApplianceShapes.AIOPC));
-        reg("air_conditioning", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN));
-        reg("hanging_air_conditioning", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
-        reg("air_conditioning_external_unit", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
-        reg("large_air_conditioning_external_unit", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
-        reg("centr_alir_conditioning", () -> new GenericMetalBlock(ApplianceShapes.EOLCAC));
-        reg("road_sign", () -> new GenericSignBlock(CityShapes.RoadSign));
-        reg("television_power_on", () -> new GenericLightBlock(ApplianceShapes.TELEVISION));
-        reg("old_ac_in", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN));
-        reg("old_ac_in_b", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
-        reg("old_ac_in_c", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN));
-        reg("air_condition_b", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN));
-        reg("screen_black_on", () -> new GenericLightBlock(ApplianceShapes.LARGESCREEN));
-        reg("screen_white_on", () -> new GenericLightBlock(ApplianceShapes.LARGESCREEN));
-        reg("crt_tv_on", () -> new Power(ApplianceShapes.CRTTV));
-        reg("old_ac_out", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
+        reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON, "tooltip.citymod.old"));
+        reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor, "tooltip.citymod.old"));
+        reg("monitor_2010_on", () -> new GenericLightBlock(ApplianceShapes.Monitor2010, "tooltip.citymod.old"));
+        reg("modern_monitor_on", () -> new GenericLightBlock(ApplianceShapes.ModernMonitor, "tooltip.citymod.old"));
+        reg("all_in_one_pc_on", () -> new GenericLightBlock(ApplianceShapes.AIOPC, "tooltip.citymod.old"));
+        reg("air_conditioning", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN, "tooltip.citymod.old"));
+        reg("hanging_air_conditioning", () -> new GenericMetalBlock(ApplianceShapes.AC_02, "tooltip.citymod.old"));
+        reg("air_conditioning_external_unit", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01, "tooltip.citymod.old"));
+        reg("large_air_conditioning_external_unit", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02, "tooltip.citymod.old"));
+        reg("centr_alir_conditioning", () -> new GenericMetalBlock(ApplianceShapes.EOLCAC, "tooltip.citymod.old"));
+        reg("road_sign", () -> new GenericSignBlock(CityShapes.RoadSign, "tooltip.citymod.old"));
+        reg("television_power_on", () -> new GenericLightBlock(ApplianceShapes.TELEVISION, "tooltip.citymod.old"));
+        reg("old_ac_in", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN, "tooltip.citymod.old"));
+        reg("old_ac_in_b", () -> new GenericMetalBlock(ApplianceShapes.AC_02, "tooltip.citymod.old"));
+        reg("old_ac_in_c", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN, "tooltip.citymod.old"));
+        reg("air_condition_b", () -> new GenericMetalBlock(ApplianceShapes.EOLACIN, "tooltip.citymod.old"));
+        reg("screen_black_on", () -> new GenericLightBlock(ApplianceShapes.LARGESCREEN, "tooltip.citymod.old"));
+        reg("screen_white_on", () -> new GenericLightBlock(ApplianceShapes.LARGESCREEN, "tooltip.citymod.old"));
+        reg("crt_tv_on", () -> new GenericLightBlock(ApplianceShapes.CRTTV, "tooltip.citymod.old"));
+        reg("old_ac_out", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02, "tooltip.citymod.old"));
         // 家具
-        reg("oldwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM));
+        reg("oldwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
         reg("oldwardrobesmall", () -> new GenericMetalBlock(ApplianceShapes.WardrobeS));
-        reg("oldwardrobecorner", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM));
-        reg("modernwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM));
+        reg("oldwardrobecorner", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
+        reg("modernwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
         reg("modernwardrobeup", () -> new GenericMetalBlock(ApplianceShapes.WardrobeS));
-        reg("modernwardrobeb", () -> new GenericMetalBlock(ApplianceShapes.WardrobeL));
+        reg("modernwardrobeb", () -> new GenericMetalBlock(ApplianceShapes.WardrobeL,"tooltip.citymod.tall"));
         //红绿灯
-        reg("pedestrian_traffic_light_r",()->new TimedPower((BlockShapes.PTrafficLight)));
-        reg("traffic_light_round_green",()->new TimedPower((BlockShapes.TrafficLight)));
-        reg("traffic_light_s_green",()->new TimedPower((BlockShapes.TrafficLight)));
-        reg("traffic_light_l_green",()->new TimedPower((BlockShapes.TrafficLight)));
-        reg("traffic_light_r_green",()->new TimedPower((BlockShapes.TrafficLight)));
+        reg("pedestrian_traffic_light_r", () -> new TimedPower(BlockShapes.PTrafficLight, "tooltip.citymod.tall_trafficlight"));
+        reg("traffic_light_round_green", () -> new TimedPower(BlockShapes.TrafficLight, "tooltip.citymod.trafficlight"));
+        reg("traffic_light_s_green", () -> new TimedPower(BlockShapes.TrafficLight, "tooltip.citymod.trafficlight"));
+        reg("traffic_light_l_green", () -> new TimedPower(BlockShapes.TrafficLight, "tooltip.citymod.trafficlight"));
+        reg("traffic_light_r_green", () -> new TimedPower(BlockShapes.TrafficLight, "tooltip.citymod.trafficlight"));
         //reg("traffictimescreengreen",()->new TimedPower((BlockShapes.FREESIGN)));
         // 载具
         reg("bikeblack", () -> new GenericMetalBlock(VehicleShapes.BikeBlack));
@@ -536,38 +539,38 @@ public class BlockRegistry {
         reg("water_pipe_joint", () -> new GenericDirectionBlock(Map.of(
                 Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
                 Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
-                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
-                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
-                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
-                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+                Direction.EAST, Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST, Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
         )));
         reg("water_pipe_joint_red", () -> new GenericDirectionBlock(Map.of(
                 Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
                 Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
-                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
-                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
-                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
-                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+                Direction.EAST, Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST, Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
         )));
         reg("water_pipe_joint_r", () -> new GenericDirectionBlock(Map.of(
                 Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
                 Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
-                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
-                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
-                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
-                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+                Direction.EAST, Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST, Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
         )));
         reg("water_pipe_joint_red_r", () -> new GenericDirectionBlock(Map.of(
                 Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
                 Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
-                Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
-                Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
-                Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
-                Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
+                Direction.EAST, Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
+                Direction.WEST, Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
+                Direction.UP, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
+                Direction.DOWN, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
         )));
     }
 
-    private static void reg(String id, Supplier<? extends Block> factory) {
+    private static void reg(String id, Supplier<Block> factory) {
         BLOCKS.add(new BlockDef(id, factory));
     }
 }

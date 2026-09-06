@@ -415,5 +415,14 @@
   "block.citymod.computer_desk_black": "Computer desk",
   "block.citymod.computer_desk_white": "Computer desk",
   "block.citymod.office_desk": "Office desk",
-  "item_group.citymod.furniture": "Furnitures"
+  "item_group.citymod.furniture": "Furnitures",
+  "tooltip.citymod.old": "§o§6These blocks are abandoned,future not guaranteed to continue to exist.",
+  "tooltip.citymod.tall": "§o§6Need raise a block.",
+  "tooltip.citymod.tall_trafficlight": "§o§6Need raise a block,switch color per 30 seconds.",
+  "tooltip.citymod.trafficlight": "§o§6switch color per 30 seconds.",
+  "tooltip.citymod.powerable": "§o§6Click to turn on",
+  "block.citymod.office_chair_black": "Black office chair",
+  "block.citymod.office_chair_white": "White office chair",
+  "block.citymod.toplamp1": "Top lamp",
+  "block.citymod.plastic_chair_red": "Plastic chair"
 }
