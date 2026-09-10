@@ -396,4 +396,10 @@ public class ApplianceShapes {
             box(0, 0, -16, 16, 16, 32),
             box(0, 0, -16, 16, 16, 32)
     );
+    public static final Map<Direction, VoxelShape> GAMEMONITOR = createShape(
+            box(-10, 0, 7, 20, 20, 9),
+            box(-10, 0, 7, 20, 20, 9),
+            box(7, 0, -10, 9, 20, 20),
+            box(7, 0, -10, 9, 20, 20)
+    );
 }

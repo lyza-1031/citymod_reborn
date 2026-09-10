@@ -421,8 +421,14 @@
   "tooltip.citymod.tall_trafficlight": "§o§6Need raise a block,switch color per 30 seconds.",
   "tooltip.citymod.trafficlight": "§o§6switch color per 30 seconds.",
   "tooltip.citymod.powerable": "§o§6Click to turn on",
+  "tooltip.citymod.nohead": "§o§6Don't wear it on head",
   "block.citymod.office_chair_black": "Black office chair",
   "block.citymod.office_chair_white": "White office chair",
   "block.citymod.toplamp1": "Top lamp",
-  "block.citymod.plastic_chair_red": "Plastic chair"
+  "block.citymod.plastic_chair_red": "Plastic chair",
+  "block.citymod.plastic_chair_blue": "Plastic chair",
+  "block.citymod.game_pc_black": "Gaming PC Black",
+  "block.citymod.game_pc_white": "Gaming PC White",
+  "block.citymod.game_monitor_black_off": "Gaming Monitor Black",
+  "block.citymod.game_monitor_white_off": "Gaming Monitor White"
 }

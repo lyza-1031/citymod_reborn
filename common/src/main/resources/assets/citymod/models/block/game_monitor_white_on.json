@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/game_monitor_white",
+  "textures": {
+    "all": "citymod:block/game_monitor_white",
+    "particle": "citymod:block/game_monitor_white",
+    "0": "citymod:block/game_monitor_white",
+    "1": "citymod:block/gamemonitor_screen"
+  },
+  "render_type": "solid"
+}
