@@ -174,6 +174,10 @@ public class BlockRegistry {
         reg("whiteline_block", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("yellowline_block", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("double_yellowline_block", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("road_block_side", () -> new GenericMetalBlock(BlockShapes.TRAFFICLINE));
+        reg("road_yellow_side", () -> new GenericMetalBlock(BlockShapes.TRAFFICLINE));
+        reg("whitelineside_block", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("yellowlineside_block", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
 
         // 城市设施
         reg("speed_limit_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));

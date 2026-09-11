@@ -1,5 +1,7 @@
 package com.xbzstudio.citymod;
 
+import com.xbzstudio.citymod.block.BlockShapes;
+import com.xbzstudio.citymod.block.GenericMetalBlock;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
@@ -25,8 +27,8 @@ public class CreativeTabData {
             "direction_sign_left_right", "direction_sign_left_turnoff",
             "direction_signturnoff", "direction_straight_turnoff",
             "all_direction_sign", "variable_lanes", "bus_lane", "bike_lane",
-            "road_block", "road_white_connect", "road_yellow", "road_yellow_double",
-            "road_yellow_connect", "road_zebra_crossing","whiteline_block","yellowline_block","double_yellowline_block",
+            "road_block", "road_white_connect", "road_yellow", "road_yellow_double","road_block_side","road_yellow_side",
+            "road_yellow_connect", "road_zebra_crossing","whiteline_block","yellowline_block","double_yellowline_block","whitelineside_block", "yellowlineside_block",
             "road_diamond","road_straight","roadblock_block_oblique","roadblock_oblique","roadblock_yellow_oblique","roadblock_double_oblique","zebracrossing_oblique",
             "road_light","street_light","street_light_b","street_light_c","street_light_d",
             "separationpost","separationpostb","separationpostc",

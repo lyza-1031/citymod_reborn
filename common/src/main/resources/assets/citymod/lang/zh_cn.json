@@ -430,5 +430,9 @@
   "block.citymod.game_pc_black": "黑色电竞主机",
   "block.citymod.game_pc_white": "白色电竞主机",
   "block.citymod.game_monitor_black_off": "黑色电竞显示器",
-  "block.citymod.game_monitor_white_off": "白色电竞显示器"
+  "block.citymod.game_monitor_white_off": "白色电竞显示器",
+  "block.citymod.road_block_side": "白线",
+  "block.citymod.road_yellow_side": "黄线",
+  "block.citymod.whitelineside_block": "白线方块",
+  "block.citymod.yellowlineside_block": "黄线方块"
 }

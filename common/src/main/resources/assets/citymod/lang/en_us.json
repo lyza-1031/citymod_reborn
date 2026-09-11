@@ -430,5 +430,9 @@
   "block.citymod.game_pc_black": "Gaming PC Black",
   "block.citymod.game_pc_white": "Gaming PC White",
   "block.citymod.game_monitor_black_off": "Gaming Monitor Black",
-  "block.citymod.game_monitor_white_off": "Gaming Monitor White"
+  "block.citymod.game_monitor_white_off": "Gaming Monitor White",
+  "block.citymod.road_block_side": "Road White",
+  "block.citymod.road_yellow_side": "Road Yellow",
+  "block.citymod.whitelineside_block": "Road White",
+  "block.citymod.yellowlineside_block": "Road Yellow"
 }
