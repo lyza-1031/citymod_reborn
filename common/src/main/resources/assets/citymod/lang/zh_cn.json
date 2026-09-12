@@ -425,14 +425,19 @@
   "block.citymod.office_chair_black": "黑色办公椅",
   "block.citymod.office_chair_white": "白色办公椅",
   "block.citymod.toplamp1": "吸顶灯",
+  "block.citymod.toplamp2": "吸顶灯",
   "block.citymod.plastic_chair_red": "塑料椅子",
   "block.citymod.plastic_chair_blue": "塑料椅子",
   "block.citymod.game_pc_black": "黑色电竞主机",
   "block.citymod.game_pc_white": "白色电竞主机",
-  "block.citymod.game_monitor_black_off": "黑色电竞显示器",
-  "block.citymod.game_monitor_white_off": "白色电竞显示器",
+  "block.citymod.game_monitor_black_off": "黑色电竞显示器（机械臂）",
+  "block.citymod.game_monitor_white_off": "白色电竞显示器（机械臂）",
+  "block.citymod.game_monitor_black_std": "黑色电竞显示器",
+  "block.citymod.game_monitor_white_std": "白色电竞显示器",
   "block.citymod.road_block_side": "白线",
   "block.citymod.road_yellow_side": "黄线",
   "block.citymod.whitelineside_block": "白线方块",
-  "block.citymod.yellowlineside_block": "黄线方块"
+  "block.citymod.yellowlineside_block": "黄线方块",
+  "block.citymod.monitor_bracket_black": "显示器增高架（带桌面音响）",
+  "block.citymod.monitor_bracket_white": "显示器增高架（带桌面音响）"
 }

@@ -425,14 +425,19 @@
   "block.citymod.office_chair_black": "Black office chair",
   "block.citymod.office_chair_white": "White office chair",
   "block.citymod.toplamp1": "Top lamp",
+  "block.citymod.toplamp2": "Top lamp",
   "block.citymod.plastic_chair_red": "Plastic chair",
   "block.citymod.plastic_chair_blue": "Plastic chair",
   "block.citymod.game_pc_black": "Gaming PC Black",
   "block.citymod.game_pc_white": "Gaming PC White",
-  "block.citymod.game_monitor_black_off": "Gaming Monitor Black",
-  "block.citymod.game_monitor_white_off": "Gaming Monitor White",
+  "block.citymod.game_monitor_black_off": "Gaming Monitor Black(Robotic arm)",
+  "block.citymod.game_monitor_white_off": "Gaming Monitor White(Robotic arm)",
+  "block.citymod.game_monitor_black_std": "Gaming Monitor Black",
+  "block.citymod.game_monitor_white_std": "Gaming Monitor White",
   "block.citymod.road_block_side": "Road White",
   "block.citymod.road_yellow_side": "Road Yellow",
   "block.citymod.whitelineside_block": "Road White",
-  "block.citymod.yellowlineside_block": "Road Yellow"
+  "block.citymod.yellowlineside_block": "Road Yellow",
+  "block.citymod.monitor_bracket_black": "Monitor bracket with loudspeakers",
+  "block.citymod.monitor_bracket_white": "Monitor bracket with loudspeakers"
 }

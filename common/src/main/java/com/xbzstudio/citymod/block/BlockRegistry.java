@@ -289,6 +289,7 @@ public class BlockRegistry {
         reg("game_pc_black", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
         reg("game_pc_white", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
         reg("toplamp1", () -> new GenericLightBlock((BlockShapes.TOPLAMPS)));
+        reg("toplamp2", () -> new GenericLightBlock((BlockShapes.TOPLAMPS)));
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor,  "tooltip.citymod.powerable"));
         reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010,  "tooltip.citymod.powerable"));
@@ -301,6 +302,8 @@ public class BlockRegistry {
         reg("gaming_pcblack", () -> new GenericGlassBlock(ApplianceShapes.GAMINGPC));
         reg("game_monitor_black_off", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
         reg("game_monitor_white_off", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
+        reg("game_monitor_black_std", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
+        reg("game_monitor_white_std", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
         //家具
         reg("computer_desk_black", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
         reg("computer_desk_white", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
@@ -309,6 +312,8 @@ public class BlockRegistry {
         reg("office_chair_white", () -> new GenericGlassBlock(CityShapes.StoneChair));
         reg("plastic_chair_red", () -> new GenericSignBlock(BlockShapes.TALLCHAIR,"tooltip.citymod.nohead"));
         reg("plastic_chair_blue", () -> new GenericSignBlock(BlockShapes.TALLCHAIR,"tooltip.citymod.nohead"));
+        reg("monitor_bracket_black", () -> new GenericSignBlock(ApplianceShapes.MONITORBRACKET));
+        reg("monitor_bracket_white", () -> new GenericSignBlock(ApplianceShapes.MONITORBRACKET));
         // 已废弃
         reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON, "tooltip.citymod.old"));
         reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor, "tooltip.citymod.old"));

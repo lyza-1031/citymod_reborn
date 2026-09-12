@@ -72,7 +72,8 @@ public class CreativeTabData {
             "computer_desk_black","computer_desk_white","office_desk","office_chair_black","office_chair_white",
             "old_tv_table","old_fridge","old_mirror","old_calendar",
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
-            "modernwardrobe", "modernwardrobeup", "modernwardrobeb","plastic_chair_red","plastic_chair_blue"
+            "modernwardrobe", "modernwardrobeup", "modernwardrobeb","monitor_bracket_black","monitor_bracket_white",
+            "plastic_chair_red","plastic_chair_blue"
     );
     public static final List<String> POLE_IDS = List.of(
             "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",
@@ -95,10 +96,10 @@ public class CreativeTabData {
             "gas_water_heater", "electric_water_heater", "solarwaterheater","solarwaterheaterred",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
-            "game_pc_black","game_monitor_black_off","game_pc_white","game_monitor_white_off",
+            "game_pc_black","game_monitor_black_off","game_monitor_black_std","game_pc_white","game_monitor_white_off","game_monitor_white_std",
             "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv",
             "extractor","trimcover","washingmachine","washine_machine_b",
-            "desklamp","treadmill","sausage_cooker","toplamp1"
+            "desklamp","treadmill","sausage_cooker","toplamp1","toplamp2"
     );
 
     public static final List<String> POST_IDS = List.of(

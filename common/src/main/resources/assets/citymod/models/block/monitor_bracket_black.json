@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/monitor_bracket",
+  "textures": {
+    "all": "citymod:block/monitor_bracket_black",
+    "particle": "citymod:block/monitor_bracket_black",
+    "1": "citymod:block/monitor_bracket_black"
+  },
+  "render_type": "solid"
+}
