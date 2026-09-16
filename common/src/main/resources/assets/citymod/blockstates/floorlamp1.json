@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/floorlamp1"
+    },
+    "facing=east": {
+      "model": "citymod:block/floorlamp1",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/floorlamp1",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/floorlamp1",
+      "y": 270
+    }
+  }
+}

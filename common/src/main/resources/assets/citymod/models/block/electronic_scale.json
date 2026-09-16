@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/electronic_scale",
+  "textures": {
+    "all": "citymod:block/electronic_scale",
+    "particle": "citymod:block/electronic_scale",
+    "0": "citymod:block/electronic_scale"
+  },
+  "render_type": "cutout"
+}

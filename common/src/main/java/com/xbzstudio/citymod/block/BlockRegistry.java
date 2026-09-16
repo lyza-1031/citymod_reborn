@@ -279,7 +279,6 @@ public class BlockRegistry {
         reg("washingmachine", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEA));
         reg("washine_machine_b", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEB));
         reg("crt_tv", () -> new Power(ApplianceShapes.CRTTV,  "tooltip.citymod.powerable"));
-        reg("desklamp", () -> new GenericLightBlock(ApplianceShapes.DESKLAMP));
         reg("treadmill", () -> new GenericMetalBlock(ApplianceShapes.TREADMILL));
         reg("tv_hd", () -> new Power(ApplianceShapes.TVHD,  "tooltip.citymod.powerable"));
         reg("sausage_cooker", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
@@ -288,8 +287,16 @@ public class BlockRegistry {
         reg("solarwaterheaterred", () -> new GenericMetalBlock(ApplianceShapes.SOLARWATERHEATER));
         reg("game_pc_black", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
         reg("game_pc_white", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
-        reg("toplamp1", () -> new GenericLightBlock((BlockShapes.TOPLAMPS)));
-        reg("toplamp2", () -> new GenericLightBlock((BlockShapes.TOPLAMPS)));
+        reg("electronic_scale", () -> new GenericGlassBlock((BlockShapes.TRAFFICLINE)));
+        //灯具
+        reg("toplamp1", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
+        reg("toplamp2", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
+        reg("desklamp", () -> new GenericLightBlock(ApplianceShapes.DESKLAMP));
+        reg("desklamp2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
+        reg("floorlamp1", () -> new GenericLightBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
+        reg("chandelier1", () -> new GenericLightBlock(BlockShapes.DEFAULT));
+        reg("chandelier2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
+        reg("chandelier3", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor,  "tooltip.citymod.powerable"));
         reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010,  "tooltip.citymod.powerable"));
@@ -314,6 +321,12 @@ public class BlockRegistry {
         reg("plastic_chair_blue", () -> new GenericSignBlock(BlockShapes.TALLCHAIR,"tooltip.citymod.nohead"));
         reg("monitor_bracket_black", () -> new GenericSignBlock(ApplianceShapes.MONITORBRACKET));
         reg("monitor_bracket_white", () -> new GenericSignBlock(ApplianceShapes.MONITORBRACKET));
+        reg("monitor_light_black", () -> new GenericLightBlock(ApplianceShapes.MONITORLIGHT));
+        reg("monitor_light_white", () -> new GenericLightBlock(ApplianceShapes.MONITORLIGHT));
+        reg("monitor_light_black_std", () -> new GenericLightBlock(ApplianceShapes.MONITORLIGHT));
+        reg("monitor_light_white_std", () -> new GenericLightBlock(ApplianceShapes.MONITORLIGHT));
+        reg("kitchen_chair", () -> new GenericSignBlock(BlockShapes.TALLCHAIR));
+        reg("old_chair", () -> new GenericSignBlock(BlockShapes.TALLCHAIR));
         // 已废弃
         reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON, "tooltip.citymod.old"));
         reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor, "tooltip.citymod.old"));

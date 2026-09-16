@@ -408,4 +408,10 @@ public class ApplianceShapes {
             box(2, 0, 4, 9, 4, 30),
             box(2, 0, 4, 9, 4, 30)
     );
+    public static final Map<Direction, VoxelShape> MONITORLIGHT = createShape(
+            box(-8, 0, 6, 18, 6, 10),
+            box(-8, 0, 6, 18, 6, 10),
+            box(6, 0, -8, 10, 6, 18),
+            box(6, 0, -8, 10, 6, 18)
+    );
 }

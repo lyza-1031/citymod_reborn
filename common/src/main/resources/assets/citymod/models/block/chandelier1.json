@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/chandelier1",
+  "textures": {
+    "all": "citymod:block/chandelier",
+    "particle": "citymod:block/chandelier",
+    "1": "citymod:block/chandelier"
+  },
+  "render_type": "solid"
+}

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "id": "citymod",
-  "version": "2.2.5",
+  "version": "2.2.7",
   "name": "citymod:reborn",
   "description": "Use this mod to build better Chinese style city",
   "authors": ["Lyza_1031"],
   "contact": {
     "homepage": "https://github.com/lyza-1031/citymod_reborn"  },
-  "license": "CC-BY-NC 4.0",
+  "license": "Code:LGPL v3;Resources&Jars:CC-BY-NC 4.0",
   "icon": "assets/citymod/textures/modlogo.png",
   "environment": "*",
   "entrypoints": {
@@ -21,9 +21,9 @@
   "depends": {
     "fabricloader": ">=0.19.0",
     "minecraft": "~1.20.1",
-    "java": ">=17"
-    ,"architectury": ">=9.1.10"
-    ,"fabric-api": "*"
+    "java": ">=17",
+    "architectury": ">=9.1.10",
+    "fabric-api": "*"
   },
   "recommends": {
     "sodium": "*",

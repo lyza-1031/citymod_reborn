@@ -1,6 +1,8 @@
 package com.xbzstudio.citymod;
 
+import com.xbzstudio.citymod.block.ApplianceShapes;
 import com.xbzstudio.citymod.block.BlockShapes;
+import com.xbzstudio.citymod.block.GenericLightBlock;
 import com.xbzstudio.citymod.block.GenericMetalBlock;
 import net.minecraft.network.chat.Component;
 
@@ -73,6 +75,8 @@ public class CreativeTabData {
             "old_tv_table","old_fridge","old_mirror","old_calendar",
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
             "modernwardrobe", "modernwardrobeup", "modernwardrobeb","monitor_bracket_black","monitor_bracket_white",
+            "monitor_light_black","monitor_light_white","monitor_light_black_std","monitor_light_white_std",
+            "kitchen_chair","old_chair",
             "plastic_chair_red","plastic_chair_blue"
     );
     public static final List<String> POLE_IDS = List.of(
@@ -99,7 +103,8 @@ public class CreativeTabData {
             "game_pc_black","game_monitor_black_off","game_monitor_black_std","game_pc_white","game_monitor_white_off","game_monitor_white_std",
             "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv",
             "extractor","trimcover","washingmachine","washine_machine_b",
-            "desklamp","treadmill","sausage_cooker","toplamp1","toplamp2"
+            "desklamp","desklamp2","floorlamp1","treadmill","sausage_cooker","toplamp1","toplamp2","chandelier1","chandelier2","chandelier3",
+            "electronic_scale"
     );
 
     public static final List<String> POST_IDS = List.of(
