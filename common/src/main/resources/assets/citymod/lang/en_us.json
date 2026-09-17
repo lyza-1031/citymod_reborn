@@ -61,7 +61,7 @@
   "block.citymod.whiteline_block": "Whiteline block",
   "block.citymod.road_12": "Traffic Sign",
   "block.citymod.road_11": "Traffic Sign",
-  "item_group.citymod.vehicle": "Vehicle",
+  "item_group.citymod.lamp": "Modern lamp",
   "block.citymod.window_mediub_b_green": "Modern Window",
   "block.citymod.gaming_pc_white": "Gaming PC",
   "block.citymod.scooter_white": "Scooter White",
@@ -436,5 +436,14 @@
   "block.citymod.floorlamp1": "Floor lamp",
   "block.citymod.chandelier1": "Chandelier",
   "block.citymod.chandelier2": "Chandelier",
-  "block.citymod.chandelier3": "Chandelier"
+  "block.citymod.chandelier3": "Chandelier",
+  "block.citymod.chandelier4": "Chandelier",
+  "block.citymod.busstop1": "Simple bus stop",
+  "block.citymod.busstop2": "Simple bus stop",
+  "block.citymod.busstop3": "Simple bus stop",
+  "block.citymod.busstop_m": "Bus stop",
+  "block.citymod.busstop_ad": "Bus stop",
+  "block.citymod.busstop_pole": "Bus stop pole",
+  "block.citymod.busstop_top": "Bus stop top",
+  "block.citymod.busstop_chair": "Bus stop chair"
 }

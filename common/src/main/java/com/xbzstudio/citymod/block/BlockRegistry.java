@@ -297,6 +297,16 @@ public class BlockRegistry {
         reg("chandelier1", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("chandelier2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("chandelier3", () -> new GenericLightBlock(BlockShapes.DEFAULT));
+        reg("chandelier4", () -> new GenericLightBlock(BlockShapes.DEFAULT));
+        //公交站台
+        reg("busstop1", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.tall"));
+        reg("busstop2", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.tall"));
+        reg("busstop3", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.tall"));
+        reg("busstop_m", () -> new GenericMetalBlock(BlockShapes.BUSSTOPM,"tooltip.citymod.tall"));
+        reg("busstop_ad", () -> new GenericMetalBlock(BlockShapes.BUSSTOPAD,"tooltip.citymod.tall"));
+        reg("busstop_pole", () -> new GenericMetalBlock(BlockShapes.BUSSTOPPOLE,"tooltip.citymod.tall"));
+        reg("busstop_top", () -> new GenericMetalBlock(BlockShapes.BUSSTOP_top));
+        reg("busstop_chair", () -> new GenericMetalBlock(BlockShapes.BUSCHAIR));
         // 显示器（带开关）
         reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor,  "tooltip.citymod.powerable"));
         reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010,  "tooltip.citymod.powerable"));

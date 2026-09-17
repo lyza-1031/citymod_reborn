@@ -36,7 +36,10 @@ public class CreativeTabData {
             "separationpost","separationpostb","separationpostc",
             "expressway_fence","expressway_fence_joint","expressway_fence_green","expressway_fence_green_joint","expresswayfence2","expresswayfence2_r","median_strip_1",
             "tunnel_sign_1","tunnel_sign_2",
-            "traffic_light_round_green","traffic_light_s_green","traffic_light_l_green","traffic_light_r_green","pedestrian_traffic_light_r"
+            "traffic_light_round_green","traffic_light_s_green","traffic_light_l_green","traffic_light_r_green","pedestrian_traffic_light_r",
+            "bike", "bikeblack",
+            "electric_motorcycle", "electric_motorcycle_black",
+            "scooter_white", "scooter_black"
     );
 
     public static final List<String> CITY_IDS = List.of(
@@ -64,7 +67,8 @@ public class CreativeTabData {
             "powerbox","power_box_2","power_box_3","power_box_4","power_box_5","speed_bump",
             "ac_bracket","bracket",
             "construction_warning","sign_board","governmentsign",
-            "stone_table","stone_chair","stone_ball","express_box_1", "express_box_2"
+            "stone_table","stone_chair","stone_ball","express_box_1", "express_box_2",
+            "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_pole","busstop_top","busstop_chair"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
@@ -103,7 +107,7 @@ public class CreativeTabData {
             "game_pc_black","game_monitor_black_off","game_monitor_black_std","game_pc_white","game_monitor_white_off","game_monitor_white_std",
             "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv",
             "extractor","trimcover","washingmachine","washine_machine_b",
-            "desklamp","desklamp2","floorlamp1","treadmill","sausage_cooker","toplamp1","toplamp2","chandelier1","chandelier2","chandelier3",
+            "desklamp","desklamp2","floorlamp1","treadmill","sausage_cooker","toplamp1","toplamp2","chandelier1","chandelier2","chandelier3","chandelier4",
             "electronic_scale"
     );
 
@@ -129,11 +133,9 @@ public class CreativeTabData {
             "style_iron_window_corner", "style_iron_window",
             "wooden_window", "old_window"
     );
-    public static final List<String> VEHICLE_IDS = List.of(
-            "bike", "bikeblack",
-            "electric_motorcycle", "electric_motorcycle_black",
-            "scooter_white", "scooter_black"
-    );
+    /*public static final List<String> LAMP_IDS = List.of(
+
+    );*/
 
     public static final List<String> OTHER_IDS = List.of(
             "ac_out_nvidia", "ac_out_amd", "ac_out_intel",
@@ -147,7 +149,7 @@ public class CreativeTabData {
             new TabDef("household_appliances", Component.translatable("item_group.citymod.household_appliances"), "ac_out_hd_3", HA_IDS),
             new TabDef("posts", Component.translatable("item_group.citymod.posts"), "post_1691", POST_IDS),
             new TabDef("modern_windows", Component.translatable("item_group.citymod.modern_windows"), "window_largeb_white", WINDOW_IDS),
-            new TabDef("vehicle", Component.translatable("item_group.citymod.vehicle"), "bikeblack", VEHICLE_IDS),
+            //new TabDef("lamp", Component.translatable("item_group.citymod.lamp"), "chandelier2", LAMP_IDS),
             new TabDef("firefighting", Component.translatable("item_group.citymod.firefighting"), "fireextinguisherbox", FireFighting_IDS),
             new TabDef("other", Component.translatable("item_group.citymod.other"), "ac_out_intel", OTHER_IDS)
     );

@@ -387,7 +387,7 @@
   "item_group.citymod.posts": "城市海报",
   "item_group.citymod.traffic": "交通",
   "item_group.citymod.urban_facilities": "城市设施",
-  "item_group.citymod.vehicle": "载具",
+  "item_group.citymod.lamp": "现代灯具",
   "key.categories.citymod": "我的城市",
   "key.citymod.kill_items_key": "清除掉落物",
   "message.citymod.kill_items": "已清除掉落物！",
@@ -432,5 +432,14 @@
   "block.citymod.floorlamp1": "落地灯",
   "block.citymod.chandelier1": "吊灯",
   "block.citymod.chandelier2": "吊灯",
-  "block.citymod.chandelier3": "吊灯"
+  "block.citymod.chandelier3": "吊灯",
+  "block.citymod.chandelier4": "吊灯",
+  "block.citymod.busstop1": "简易公交站台",
+  "block.citymod.busstop2": "简易公交站台",
+  "block.citymod.busstop3": "简易公交站台",
+  "block.citymod.busstop_m": "公交站台",
+  "block.citymod.busstop_ad": "公交站台",
+  "block.citymod.busstop_pole": "公交站台柱",
+  "block.citymod.busstop_top": "公交站台顶",
+  "block.citymod.busstop_chair": "公交站台长椅"
 }
