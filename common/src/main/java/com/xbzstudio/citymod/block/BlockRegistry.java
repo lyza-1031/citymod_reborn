@@ -284,10 +284,12 @@ public class BlockRegistry {
         reg("sausage_cooker", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("ac_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
         reg("ac_out_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_06));
+        reg("ac_out_modern2", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_06));
         reg("solarwaterheaterred", () -> new GenericMetalBlock(ApplianceShapes.SOLARWATERHEATER));
         reg("game_pc_black", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
         reg("game_pc_white", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
         reg("electronic_scale", () -> new GenericGlassBlock((BlockShapes.TRAFFICLINE)));
+        reg("ac_modern_2", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
         //灯具
         reg("toplamp1", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("toplamp2", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
@@ -300,10 +302,11 @@ public class BlockRegistry {
         reg("chandelier4", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         //公交站台
         reg("busstop1", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.tall"));
-        reg("busstop2", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.tall"));
-        reg("busstop3", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.tall"));
+        reg("busstop2", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.lcgy"));
+        reg("busstop3", () -> new GenericMetalBlock(BlockShapes.BUSSTOPM,"tooltip.citymod.lcgy"));
         reg("busstop_m", () -> new GenericMetalBlock(BlockShapes.BUSSTOPM,"tooltip.citymod.tall"));
         reg("busstop_ad", () -> new GenericMetalBlock(BlockShapes.BUSSTOPAD,"tooltip.citymod.tall"));
+        reg("busstop_ad1", () -> new GenericMetalBlock(BlockShapes.BUSSTOPAD,"tooltip.citymod.tall"));
         reg("busstop_pole", () -> new GenericMetalBlock(BlockShapes.BUSSTOPPOLE,"tooltip.citymod.tall"));
         reg("busstop_top", () -> new GenericMetalBlock(BlockShapes.BUSSTOP_top));
         reg("busstop_chair", () -> new GenericMetalBlock(BlockShapes.BUSCHAIR));
@@ -321,6 +324,7 @@ public class BlockRegistry {
         reg("game_monitor_white_off", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
         reg("game_monitor_black_std", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
         reg("game_monitor_white_std", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
+        reg("small_tv", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
         //家具
         reg("computer_desk_black", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
         reg("computer_desk_white", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
@@ -436,6 +440,7 @@ public class BlockRegistry {
         reg("post_1697", () -> new GenericSignBlock(PostShapes.Post169));
         reg("post_1698", () -> new GenericSignBlock(PostShapes.Post169));
         reg("post_1699", () -> new GenericSignBlock(PostShapes.Post169));
+        reg("post_16910", () -> new GenericSignBlock(PostShapes.Post169));
         reg("post_431", () -> new GenericSignBlock(PostShapes.Post43));
         reg("post_432", () -> new GenericSignBlock(PostShapes.Post43));
         reg("post_433", () -> new GenericSignBlock(PostShapes.Post43));
@@ -449,6 +454,7 @@ public class BlockRegistry {
         reg("ac_out_40_hx", () -> new GenericMetalBlock(ApplianceShapes.AC_40HX));
         reg("blackwell_6000", () -> new GenericMetalBlock(ApplianceShapes.BIG_AC_OUT_HD));
         reg("internet_famous_road_sign", () -> new GenericSignBlock(BlockShapes.IFRS));
+        reg("anniversary", () -> new GenericLightBlock(BlockShapes.EXPR));
         //多方向
         reg("central_air_conditioning", () -> new GenericMultiFaceBlock(state -> {
             Direction facing = state.getValue(GenericMultiFaceBlock.FACING);

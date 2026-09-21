@@ -402,6 +402,7 @@
   "tooltip.citymod.tall_trafficlight": "§o§6需要垫高一格方块,每30秒自动切换颜色",
   "tooltip.citymod.trafficlight": "§o§6每30秒自动切换颜色",
   "tooltip.citymod.powerable": "§o§6点击可开启",
+  "tooltip.citymod.lcgy": "§o§6由服务器《灵创工艺》定制的方块",
   "tooltip.citymod.nohead": "§o§6禁止戴在头上",
   "block.citymod.office_chair_black": "黑色办公椅",
   "block.citymod.office_chair_white": "白色办公椅",
@@ -439,7 +440,13 @@
   "block.citymod.busstop3": "简易公交站台",
   "block.citymod.busstop_m": "公交站台",
   "block.citymod.busstop_ad": "公交站台",
+  "block.citymod.busstop_ad1": "公交站台",
   "block.citymod.busstop_pole": "公交站台柱",
   "block.citymod.busstop_top": "公交站台顶",
-  "block.citymod.busstop_chair": "公交站台长椅"
+  "block.citymod.busstop_chair": "公交站台长椅",
+  "block.citymod.ac_modern_2": "现代空调",
+  "block.citymod.ac_out_modern2": "现代空调外机",
+  "block.citymod.small_tv": "小型电视",
+  "block.citymod.post_16910": "海报",
+  "block.citymod.anniversary": "2.5周年庆海报"
 }

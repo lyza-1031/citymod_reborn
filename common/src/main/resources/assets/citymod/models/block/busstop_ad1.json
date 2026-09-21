@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/busstop_ad",
+  "textures": {
+    "all": "citymod:block/busstop_ad",
+    "particle": "citymod:block/busstop_ad",
+    "0": "citymod:block/busstop_ad",
+    "1": "citymod:block/post196_10"
+  },
+  "render_type": "solid"
+}

@@ -405,6 +405,7 @@
   "tooltip.citymod.tall": "§o§6Need raise a block.",
   "tooltip.citymod.tall_trafficlight": "§o§6Need raise a block,switch color per 30 seconds.",
   "tooltip.citymod.trafficlight": "§o§6switch color per 30 seconds.",
+  "tooltip.citymod.lcgy": "§o§6 ",
   "tooltip.citymod.powerable": "§o§6Click to turn on",
   "tooltip.citymod.nohead": "§o§6Don't wear it on head",
   "block.citymod.office_chair_black": "Black office chair",
@@ -443,7 +444,13 @@
   "block.citymod.busstop3": "Simple bus stop",
   "block.citymod.busstop_m": "Bus stop",
   "block.citymod.busstop_ad": "Bus stop",
+  "block.citymod.busstop_ad1": "Bus stop",
   "block.citymod.busstop_pole": "Bus stop pole",
   "block.citymod.busstop_top": "Bus stop top",
-  "block.citymod.busstop_chair": "Bus stop chair"
+  "block.citymod.busstop_chair": "Bus stop chair",
+  "block.citymod.ac_modern_2": "Modern AirCondition",
+  "block.citymod.ac_out_modern2": "Modern AirCondition Outside",
+  "block.citymod.small_tv": "Small television",
+  "block.citymod.post_16910": "Post",
+  "block.citymod.anniversary": "Anniversary post"
 }

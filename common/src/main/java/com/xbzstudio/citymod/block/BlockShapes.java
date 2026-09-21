@@ -479,10 +479,10 @@ public class BlockShapes {
             box(6.75, -15, 0, 9.25, 32, 2.5)
     );
     public static final Map<Direction, VoxelShape> BUSSTOPM= createShape(
-            box(0, -4, 6, 16, 32, 10),
-            box(0, -4, 6, 16, 32, 10),
-            box(6, -4, 0, 10, 32, 16),
-            box(6, -4, 0, 10, 32, 16)
+            box(0, -16, 6, 16, 32, 10),
+            box(0, -16, 6, 16, 32, 10),
+            box(6, -16, 0, 10, 32, 16),
+            box(6, -16, 0, 10, 32, 16)
     );
     public static final Map<Direction, VoxelShape> BUSSTOPAD= createShape(
             box(-16, -4, 6, 32, 32, 10),
@@ -491,10 +491,10 @@ public class BlockShapes {
             box(6, -4, -16, 10, 32, 32)
     );
     public static final Map<Direction, VoxelShape> BUSCHAIR = createShape(
-            box(-8, 0, 2, 24, 11, 14),
-            box(-8, 0, 2, 24, 11, 14),
-            box(2, 0, -8, 14, 11, 24),
-            box(2, 0, -8, 14, 11, 24)
+            box(-8, 0, 2, 24, 10, 14),
+            box(-8, 0, 2, 24, 10, 14),
+            box(2, 0, -8, 14, 10, 24),
+            box(2, 0, -8, 14, 10, 24)
     );
     public static final Map<Direction, VoxelShape> BUSSTOP_top = createShape(
             box(0, 0, 0, 16, 2.5, 16),

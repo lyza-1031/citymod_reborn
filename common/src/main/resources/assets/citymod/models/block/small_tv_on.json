@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/small_tv",
+  "textures": {
+    "all": "citymod:block/small_tv_on",
+    "particle": "citymod:block/small_tv_on",
+    "0": "citymod:block/small_tv_on"
+  },
+  "render_type": "cutout"
+}

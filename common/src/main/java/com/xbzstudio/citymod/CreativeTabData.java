@@ -68,7 +68,7 @@ public class CreativeTabData {
             "ac_bracket","bracket",
             "construction_warning","sign_board","governmentsign",
             "stone_table","stone_chair","stone_ball","express_box_1", "express_box_2",
-            "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_pole","busstop_top","busstop_chair"
+            "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_ad1","busstop_pole","busstop_top","busstop_chair"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
@@ -95,17 +95,17 @@ public class CreativeTabData {
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
-            "ac_out_hd_5", "ac_out_hd_6","ac_out_modern",
+            "ac_out_hd_5", "ac_out_hd_6","ac_out_modern","ac_out_modern2",
             "big_ac_out_hd", "centre_air_condition_outside",
             "air_condition_hd_1", "air_condition_hd_2",
-            "airconditionhd_3", "airconditionhd_4","ac_modern",
+            "airconditionhd_3", "airconditionhd_4","ac_modern","ac_modern_2",
             "air_condition_old_hd", "central_ac_hd","ac_airvent_hd_l","ac_airvent_hd","ac_airvent_hd_r",
             "micro_wave_oven", "fridge_1", "fridge_2",  "freezer",
             "gas_water_heater", "electric_water_heater", "solarwaterheater","solarwaterheaterred",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
             "game_pc_black","game_monitor_black_off","game_monitor_black_std","game_pc_white","game_monitor_white_off","game_monitor_white_std",
-            "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv",
+            "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv","small_tv",
             "extractor","trimcover","washingmachine","washine_machine_b",
             "desklamp","desklamp2","floorlamp1","treadmill","sausage_cooker","toplamp1","toplamp2","chandelier1","chandelier2","chandelier3","chandelier4",
             "electronic_scale"
@@ -113,7 +113,7 @@ public class CreativeTabData {
 
     public static final List<String> POST_IDS = List.of(
             "post_1691", "post_1692", "post_1693", "post_1694",
-            "post_1695", "post_1696", "post_1697", "post_1698","post_1699",
+            "post_1695", "post_1696", "post_1697", "post_1698","post_1699","post_16910",
             "post_431", "post_432", "post_433","post_434"
     );
 
@@ -139,7 +139,7 @@ public class CreativeTabData {
 
     public static final List<String> OTHER_IDS = List.of(
             "ac_out_nvidia", "ac_out_amd", "ac_out_intel",
-            "ac_out_fake", "ac_out_40_hx","blackwell_6000","internet_famous_road_sign"
+            "ac_out_fake", "ac_out_40_hx","blackwell_6000","internet_famous_road_sign","anniversary"
     );
     public static final List<TabDef> TABS = List.of(
             new TabDef("traffic", Component.translatable("item_group.citymod.traffic"), "traffic_sign", TRAFFIC_IDS),
