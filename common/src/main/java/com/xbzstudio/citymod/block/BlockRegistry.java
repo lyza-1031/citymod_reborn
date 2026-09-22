@@ -340,7 +340,15 @@ public class BlockRegistry {
         reg("monitor_light_black_std", () -> new GenericLightBlock(ApplianceShapes.MONITORLIGHT));
         reg("monitor_light_white_std", () -> new GenericLightBlock(ApplianceShapes.MONITORLIGHT));
         reg("kitchen_chair", () -> new GenericSignBlock(BlockShapes.TALLCHAIR));
+        reg("kitchen_desk", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         reg("old_chair", () -> new GenericSignBlock(BlockShapes.TALLCHAIR));
+        reg("tvcabinet_a", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("tvcabinet_b", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("tvcabinet_c", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("tvcabinet_d", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("tvcabinet_e", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("coffee_table", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("tvcabinet_dark", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         // 已废弃
         reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON, "tooltip.citymod.old"));
         reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor, "tooltip.citymod.old"));
@@ -453,6 +461,7 @@ public class BlockRegistry {
         reg("ac_out_fake", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_05));
         reg("ac_out_40_hx", () -> new GenericMetalBlock(ApplianceShapes.AC_40HX));
         reg("blackwell_6000", () -> new GenericMetalBlock(ApplianceShapes.BIG_AC_OUT_HD));
+        reg("ac_out_690", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_04));
         reg("internet_famous_road_sign", () -> new GenericSignBlock(BlockShapes.IFRS));
         reg("anniversary", () -> new GenericLightBlock(BlockShapes.EXPR));
         //多方向

@@ -448,5 +448,14 @@
   "block.citymod.ac_out_modern2": "现代空调外机",
   "block.citymod.small_tv": "小型电视",
   "block.citymod.post_16910": "海报",
-  "block.citymod.anniversary": "2.5周年庆海报"
+  "block.citymod.anniversary": "2.5周年庆海报",
+  "block.citymod.kitchen_desk": "餐桌",
+  "block.citymod.ac_out_690": "NVIDIA Geforce GTX 690 512GB 战术核显卡",
+  "block.citymod.tvcabinet_a":"电视柜",
+  "block.citymod.tvcabinet_b": "电视柜",
+  "block.citymod.tvcabinet_c":"电视柜",
+  "block.citymod.tvcabinet_d": "电视柜",
+  "block.citymod.tvcabinet_e": "电视柜",
+  "block.citymod.tvcabinet_dark": "电视柜",
+  "block.citymod.coffee_table": "茶几"
 }

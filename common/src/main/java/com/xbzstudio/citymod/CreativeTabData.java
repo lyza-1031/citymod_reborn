@@ -80,8 +80,9 @@ public class CreativeTabData {
             "oldwardrobe", "oldwardrobesmall", "oldwardrobecorner",
             "modernwardrobe", "modernwardrobeup", "modernwardrobeb","monitor_bracket_black","monitor_bracket_white",
             "monitor_light_black","monitor_light_white","monitor_light_black_std","monitor_light_white_std",
-            "kitchen_chair","old_chair",
-            "plastic_chair_red","plastic_chair_blue"
+            "kitchen_chair","kitchen_desk","old_chair",
+            "plastic_chair_red","plastic_chair_blue",
+            "tvcabinet_a","tvcabinet_b","tvcabinet_c","tvcabinet_d","tvcabinet_e","tvcabinet_dark","coffee_table"
     );
     public static final List<String> POLE_IDS = List.of(
             "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",
@@ -139,7 +140,7 @@ public class CreativeTabData {
 
     public static final List<String> OTHER_IDS = List.of(
             "ac_out_nvidia", "ac_out_amd", "ac_out_intel",
-            "ac_out_fake", "ac_out_40_hx","blackwell_6000","internet_famous_road_sign","anniversary"
+            "ac_out_fake", "ac_out_40_hx","ac_out_690","blackwell_6000","internet_famous_road_sign","anniversary"
     );
     public static final List<TabDef> TABS = List.of(
             new TabDef("traffic", Component.translatable("item_group.citymod.traffic"), "traffic_sign", TRAFFIC_IDS),

@@ -452,5 +452,14 @@
   "block.citymod.ac_out_modern2": "Modern AirCondition Outside",
   "block.citymod.small_tv": "Small television",
   "block.citymod.post_16910": "Post",
-  "block.citymod.anniversary": "Anniversary post"
+  "block.citymod.anniversary": "Anniversary post",
+  "block.citymod.kitchen_desk": "Kitchen desk",
+  "block.citymod.ac_out_690": "NVIDIA Geforce GTX 690 512GB Nuclear Edition",
+  "block.citymod.tvcabinet_a":"TV cabinet",
+  "block.citymod.tvcabinet_b": "TV cabinet",
+  "block.citymod.tvcabinet_c":"TV cabinet",
+  "block.citymod.tvcabinet_d": "TV cabinet",
+  "block.citymod.tvcabinet_e": "TV cabinet",
+  "block.citymod.tvcabinet_dark": "TV cabinet",
+  "block.citymod.coffee_table": "Coffee table"
 }

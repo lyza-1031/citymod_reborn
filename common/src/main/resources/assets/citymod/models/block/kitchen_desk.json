@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/kitchen_desk",
+  "textures": {
+    "all": "citymod:block/lightwoodtexture",
+    "particle": "citymod:block/lightwoodtexture",
+    "0": "citymod:block/lightwoodtexture"
+  },
+  "render_type": "solid"
+}
