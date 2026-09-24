@@ -461,5 +461,13 @@
   "block.citymod.tvcabinet_d": "TV cabinet",
   "block.citymod.tvcabinet_e": "TV cabinet",
   "block.citymod.tvcabinet_dark": "TV cabinet",
-  "block.citymod.coffee_table": "Coffee table"
+  "block.citymod.coffee_table": "Coffee table",
+  "block.citymod.bathroom_wardrobe_big": "Bathroom wardrobe",
+  "block.citymod.bathroom_wardrobe": "Bathroom wardrobe",
+  "block.citymod.modern_mirror_big": "Modern mirror",
+  "block.citymod.modern_mirror": "Modern mirror",
+  "block.citymod.ironbed": "Iron bed Down",
+  "block.citymod.ironbed2": "Iron bed Up",
+  "block.citymod.ironbed3": "Iron bed Down",
+  "block.citymod.ironbed4": "Iron bed Up"
 }

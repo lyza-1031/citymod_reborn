@@ -32,7 +32,7 @@ public final class citymodFabricClient implements ClientModInitializer {
             if (block == Blocks.AIR) continue;
 
             String id = def.id();
-            if (id.contains("window") || id.contains("glass")) {
+            if (id.contains("window") || id.contains("glass")|| id.contains("office")) {
                 BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.translucent());
             } else if (id.contains("road")) {
                 BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.cutout());

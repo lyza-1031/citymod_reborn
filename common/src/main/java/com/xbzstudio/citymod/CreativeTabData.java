@@ -82,7 +82,9 @@ public class CreativeTabData {
             "monitor_light_black","monitor_light_white","monitor_light_black_std","monitor_light_white_std",
             "kitchen_chair","kitchen_desk","old_chair",
             "plastic_chair_red","plastic_chair_blue",
-            "tvcabinet_a","tvcabinet_b","tvcabinet_c","tvcabinet_d","tvcabinet_e","tvcabinet_dark","coffee_table"
+            "tvcabinet_a","tvcabinet_b","tvcabinet_c","tvcabinet_d","tvcabinet_e","tvcabinet_dark","coffee_table",
+            "bathroom_wardrobe_big","bathroom_wardrobe","modern_mirror_big","modern_mirror",
+            "ironbed","ironbed2","ironbed3","ironbed4"
     );
     public static final List<String> POLE_IDS = List.of(
             "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",

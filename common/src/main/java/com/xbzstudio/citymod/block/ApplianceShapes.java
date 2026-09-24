@@ -414,4 +414,10 @@ public class ApplianceShapes {
             box(6, 0, -8, 10, 6, 18),
             box(6, 0, -8, 10, 6, 18)
     );
+    public static final Map<Direction, VoxelShape> IRONBED = createShape(
+            box(-16, -16, 0, 32, 12, 16),
+            box(-16, -16, 0, 32, 12, 16),
+            box(0, -16, -16, 16, 12, 32),
+            box(0, -16, -16, 16, 12, 32)
+    );
 }

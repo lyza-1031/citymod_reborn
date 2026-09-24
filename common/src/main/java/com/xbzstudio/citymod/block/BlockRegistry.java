@@ -349,6 +349,15 @@ public class BlockRegistry {
         reg("tvcabinet_e", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         reg("coffee_table", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         reg("tvcabinet_dark", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("bathroom_wardrobe_big", () -> new GenericSignBlock(ApplianceShapes.PCDESK));
+        reg("bathroom_wardrobe", () -> new GenericSignBlock(ApplianceShapes.Freezer));
+        reg("modern_mirror_big", () -> new GenericLightBlock(PostShapes.Post169));
+        reg("modern_mirror", () -> new GenericLightBlock(BlockShapes.MediumSign));
+        reg("ironbed", () -> new GenericSignBlock(ApplianceShapes.PCDESK));
+        reg("ironbed2", () -> new GenericSignBlock(ApplianceShapes.IRONBED));
+        reg("ironbed3", () -> new GenericSignBlock(ApplianceShapes.PCDESK));
+        reg("ironbed4", () -> new GenericSignBlock(ApplianceShapes.IRONBED));
+
         // 已废弃
         reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON, "tooltip.citymod.old"));
         reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor, "tooltip.citymod.old"));

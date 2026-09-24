@@ -457,5 +457,13 @@
   "block.citymod.tvcabinet_d": "电视柜",
   "block.citymod.tvcabinet_e": "电视柜",
   "block.citymod.tvcabinet_dark": "电视柜",
-  "block.citymod.coffee_table": "茶几"
+  "block.citymod.coffee_table": "茶几",
+  "block.citymod.bathroom_wardrobe_big": "洗手台",
+  "block.citymod.bathroom_wardrobe": "洗手台",
+  "block.citymod.modern_mirror_big": "现代镜子",
+  "block.citymod.modern_mirror": "现代镜子",
+  "block.citymod.ironbed": "宿舍床下半",
+  "block.citymod.ironbed2": "宿舍床上半",
+  "block.citymod.ironbed3": "宿舍床下半",
+  "block.citymod.ironbed4": "宿舍床上半"
 }
