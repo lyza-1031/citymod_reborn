@@ -290,6 +290,8 @@ public class BlockRegistry {
         reg("game_pc_white", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
         reg("electronic_scale", () -> new GenericGlassBlock((BlockShapes.TRAFFICLINE)));
         reg("ac_modern_2", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
+        reg("water_dispenser", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("bucket", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         //灯具
         reg("toplamp1", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("toplamp2", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
@@ -353,11 +355,18 @@ public class BlockRegistry {
         reg("bathroom_wardrobe", () -> new GenericSignBlock(ApplianceShapes.Freezer));
         reg("modern_mirror_big", () -> new GenericLightBlock(PostShapes.Post169));
         reg("modern_mirror", () -> new GenericLightBlock(BlockShapes.MediumSign));
-        reg("ironbed", () -> new GenericSignBlock(ApplianceShapes.PCDESK));
-        reg("ironbed2", () -> new GenericSignBlock(ApplianceShapes.IRONBED));
-        reg("ironbed3", () -> new GenericSignBlock(ApplianceShapes.PCDESK));
-        reg("ironbed4", () -> new GenericSignBlock(ApplianceShapes.IRONBED));
-
+        reg("ironbed", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
+        reg("ironbed2", () -> new GenericMetalBlock(ApplianceShapes.IRONBED));
+        reg("ironbed3", () -> new GenericMetalBlock(ApplianceShapes.IRONBED2));
+        reg("ironbed4", () -> new GenericMetalBlock(ApplianceShapes.IRONBED));
+        reg("ironbed_b", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
+        reg("ironbed_b2", () -> new GenericMetalBlock(ApplianceShapes.IRONBED));
+        reg("ironbed_b3", () -> new GenericMetalBlock(ApplianceShapes.IRONBED2));
+        reg("ironbed_b4", () -> new GenericMetalBlock(ApplianceShapes.IRONBED));
+        reg("wood_wardrobe", () -> new GenericSignBlock(ApplianceShapes.Freezer));
+        reg("wood_wardrobe_big", () -> new GenericSignBlock(ApplianceShapes.BIGWARDROBE));
+        reg("wood_wardrobe_side", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
+        reg("wood_wardrobe_side_b", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
         // 已废弃
         reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON, "tooltip.citymod.old"));
         reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor, "tooltip.citymod.old"));

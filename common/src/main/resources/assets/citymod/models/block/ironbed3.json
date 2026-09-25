@@ -4,7 +4,8 @@
     "all": "citymod:block/ironbed",
     "particle": "citymod:block/ironbed",
     "0": "citymod:block/ironbed",
-    "1": "citymod:block/woodtexture"
+    "1": "citymod:block/woodtexture",
+    "2": "citymod:block/bed"
   },
   "render_type": "solid"
 }

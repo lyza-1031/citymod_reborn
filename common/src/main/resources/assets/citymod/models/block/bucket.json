@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/bucket",
+  "textures": {
+    "all": "citymod:block/bucket",
+    "particle": "citymod:block/bucket",
+    "0": "citymod:block/bucket"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/water_dispenser",
+  "textures": {
+    "all": "citymod:block/water_dispenser",
+    "particle": "citymod:block/water_dispenser",
+    "0": "citymod:block/water_dispenser"
+  },
+  "render_type": "solid"
+}

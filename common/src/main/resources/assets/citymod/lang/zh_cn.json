@@ -465,5 +465,15 @@
   "block.citymod.ironbed": "宿舍床下半",
   "block.citymod.ironbed2": "宿舍床上半",
   "block.citymod.ironbed3": "宿舍床下半",
-  "block.citymod.ironbed4": "宿舍床上半"
+  "block.citymod.ironbed4": "宿舍床上半",
+  "block.citymod.ironbed_b": "宿舍床下半（反向）",
+  "block.citymod.ironbed_b2": "宿舍床上半（反向）",
+  "block.citymod.ironbed_b3": "宿舍床下半（反向）",
+  "block.citymod.ironbed_b4": "宿舍床上半（反向）",
+  "block.citymod.wood_wardrobe": "宿舍柜",
+  "block.citymod.wood_wardrobe_big": "大宿舍柜",
+  "block.citymod.wood_wardrobe_side": "侧面宿舍柜",
+  "block.citymod.wood_wardrobe_side_b": "侧面宿舍柜（反向）",
+  "block.citymod.water_dispenser": "饮水机",
+  "block.citymod.bucket": "饮水机水桶"
 }

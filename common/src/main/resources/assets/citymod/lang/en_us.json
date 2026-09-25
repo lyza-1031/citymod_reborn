@@ -469,5 +469,15 @@
   "block.citymod.ironbed": "Iron bed Down",
   "block.citymod.ironbed2": "Iron bed Up",
   "block.citymod.ironbed3": "Iron bed Down",
-  "block.citymod.ironbed4": "Iron bed Up"
+  "block.citymod.ironbed4": "Iron bed Up",
+  "block.citymod.ironbed_b": "Iron bed Down(reverse)",
+  "block.citymod.ironbed_b2": "Iron bed Up(reverse)",
+  "block.citymod.ironbed_b3": "Iron bed Down(reverse)",
+  "block.citymod.ironbed_b4": "Iron bed Up(reverse)",
+  "block.citymod.wood_wardrobe": "Wood wardrobe",
+  "block.citymod.wood_wardrobe_big": "Big wood wardrobe",
+  "block.citymod.wood_wardrobe_side": "Side wood wardrobe",
+  "block.citymod.wood_wardrobe_side_b": "Side wood wardrobe(reverse)",
+  "block.citymod.water_dispenser": "Water dispenser",
+  "block.citymod.bucket": "Water dispenser bucket"
 }

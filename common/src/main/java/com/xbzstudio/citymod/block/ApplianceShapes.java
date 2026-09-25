@@ -415,9 +415,21 @@ public class ApplianceShapes {
             box(6, 0, -8, 10, 6, 18)
     );
     public static final Map<Direction, VoxelShape> IRONBED = createShape(
-            box(-16, -16, 0, 32, 12, 16),
-            box(-16, -16, 0, 32, 12, 16),
-            box(0, -16, -16, 16, 12, 32),
-            box(0, -16, -16, 16, 12, 32)
+            box(-16, 6, 0, 32, 7.5, 16),
+            box(-16, 6, 0, 32, 7.5, 16),
+            box(0, 6, -16, 16, 7.5, 32),
+            box(0, 6, -16, 16, 7.5, 32)
+    );
+    public static final Map<Direction, VoxelShape> IRONBED2 = createShape(
+            box(-16, 0, 0, 32, 11, 16),
+            box(-16, 0, 0, 32, 11, 16),
+            box(0, 0, -16, 16, 11, 32),
+            box(0, 0, -16, 16, 11, 32)
+    );
+    public static final Map<Direction, VoxelShape> BIGWARDROBE = createShape(
+            box(-16, -16, 0, 16, 32, 16),
+            box(0, -16, 0, 32, 32, 16),
+            box(0, -16, 0, 16, 32, 32),
+            box(0, -16, -16, 16, 32, 16)
     );
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "citymod:custom/ironbed2",
+  "parent": "citymod:custom/ironbed_b3",
   "textures": {
     "all": "citymod:block/ironbed",
     "particle": "citymod:block/ironbed",
