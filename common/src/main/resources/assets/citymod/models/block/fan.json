@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/fan",
+  "textures": {
+    "all": "citymod:block/fan",
+    "particle": "citymod:block/fan",
+    "missing": "citymod:block/fan"
+  },
+  "render_type": "solid"
+}

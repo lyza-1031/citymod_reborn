@@ -475,5 +475,9 @@
   "block.citymod.wood_wardrobe_side": "侧面宿舍柜",
   "block.citymod.wood_wardrobe_side_b": "侧面宿舍柜（反向）",
   "block.citymod.water_dispenser": "饮水机",
-  "block.citymod.bucket": "饮水机水桶"
+  "block.citymod.bucket": "饮水机水桶",
+  "block.citymod.wooden_desk": "木书桌",
+  "block.citymod.wooden_shelf": "木书架",
+  "block.citymod.oven": "烤箱",
+  "block.citymod.fan": "电风扇"
 }

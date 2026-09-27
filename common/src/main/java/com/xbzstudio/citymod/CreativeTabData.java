@@ -85,7 +85,8 @@ public class CreativeTabData {
             "tvcabinet_a","tvcabinet_b","tvcabinet_c","tvcabinet_d","tvcabinet_e","tvcabinet_dark","coffee_table",
             "bathroom_wardrobe_big","bathroom_wardrobe","modern_mirror_big","modern_mirror",
             "ironbed","ironbed2","ironbed3","ironbed4","ironbed_b","ironbed_b2","ironbed_b3","ironbed_b4",
-            "wood_wardrobe","wood_wardrobe_big","wood_wardrobe_side","wood_wardrobe_side_b"
+            "wood_wardrobe","wood_wardrobe_big","wood_wardrobe_side","wood_wardrobe_side_b",
+            "wooden_desk","wooden_shelf"
     );
     public static final List<String> POLE_IDS = List.of(
             "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",
@@ -113,7 +114,8 @@ public class CreativeTabData {
             "extractor","trimcover","washingmachine","washine_machine_b",
             "desklamp","desklamp2","floorlamp1","treadmill","sausage_cooker","toplamp1","toplamp2","chandelier1","chandelier2","chandelier3","chandelier4",
             "electronic_scale",
-            "water_dispenser","bucket"
+            "water_dispenser","bucket",
+            "oven","fan"
     );
 
     public static final List<String> POST_IDS = List.of(

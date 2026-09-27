@@ -292,6 +292,8 @@ public class BlockRegistry {
         reg("ac_modern_2", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
         reg("water_dispenser", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("bucket", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("oven", () -> new GenericSignBlock(ApplianceShapes.MicroWaveOven));
+        reg("fan", () -> new GenericSignBlock(CityShapes.Concretebarrierfenced));
         //灯具
         reg("toplamp1", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("toplamp2", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
@@ -367,6 +369,8 @@ public class BlockRegistry {
         reg("wood_wardrobe_big", () -> new GenericSignBlock(ApplianceShapes.BIGWARDROBE));
         reg("wood_wardrobe_side", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
         reg("wood_wardrobe_side_b", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
+        reg("wooden_desk", () -> new GenericSignBlock(ApplianceShapes.PCDESK));
+        reg("wooden_shelf", () -> new GenericSignBlock(ApplianceShapes.BIGWARDROBE));
         // 已废弃
         reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON, "tooltip.citymod.old"));
         reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor, "tooltip.citymod.old"));

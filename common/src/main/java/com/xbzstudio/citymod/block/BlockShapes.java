@@ -461,10 +461,10 @@ public class BlockShapes {
             box(0, 14, 0, 16, 16, 16)
     );
     public static final Map<Direction, VoxelShape> TALLCHAIR = createShape(
-            box(2, 0, 2, 14, 12.5, 14),
-            box(2, 0, 2, 14, 12.5, 14),
-            box(2, 0, 2, 14, 12.5, 14),
-            box(2, 0, 2, 14, 12.5, 14)
+            box(2, 0, 2, 14, 11, 14),
+            box(2, 0, 2, 14, 11, 14),
+            box(2, 0, 2, 14, 11, 14),
+            box(2, 0, 2, 14, 11, 14)
     );
     public static final Map<Direction, VoxelShape> BUSSTOP1 = createShape(
             box(6, -16, 6, 10, 32, 10),

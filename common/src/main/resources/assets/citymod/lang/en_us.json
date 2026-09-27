@@ -479,5 +479,9 @@
   "block.citymod.wood_wardrobe_side": "Side wood wardrobe",
   "block.citymod.wood_wardrobe_side_b": "Side wood wardrobe(reverse)",
   "block.citymod.water_dispenser": "Water dispenser",
-  "block.citymod.bucket": "Water dispenser bucket"
+  "block.citymod.bucket": "Water dispenser bucket",
+  "block.citymod.wooden_desk": "Wooden desk",
+  "block.citymod.wooden_shelf": "Wooden shelf",
+  "block.citymod.oven": "Oven",
+  "block.citymod.fan": "Fan"
 }

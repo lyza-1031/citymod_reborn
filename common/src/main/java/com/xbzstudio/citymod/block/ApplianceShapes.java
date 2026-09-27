@@ -427,9 +427,9 @@ public class ApplianceShapes {
             box(0, 0, -16, 16, 11, 32)
     );
     public static final Map<Direction, VoxelShape> BIGWARDROBE = createShape(
-            box(-16, -16, 0, 16, 32, 16),
-            box(0, -16, 0, 32, 32, 16),
-            box(0, -16, 0, 16, 32, 32),
-            box(0, -16, -16, 16, 32, 16)
+            box(-16, 0, 0, 16, 32, 16),
+            box(0, 0, 0, 32, 32, 16),
+            box(0, 0, 0, 16, 32, 32),
+            box(0, 0, -16, 16, 32, 16)
     );
 }
