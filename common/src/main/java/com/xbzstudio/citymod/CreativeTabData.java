@@ -115,7 +115,7 @@ public class CreativeTabData {
             "desklamp","desklamp2","floorlamp1","treadmill","sausage_cooker","toplamp1","toplamp2","chandelier1","chandelier2","chandelier3","chandelier4",
             "electronic_scale",
             "water_dispenser","bucket",
-            "oven","fan"
+            "oven","fan","fan2","cable_box"
     );
 
     public static final List<String> POST_IDS = List.of(

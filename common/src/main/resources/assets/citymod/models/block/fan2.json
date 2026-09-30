@@ -1,5 +1,5 @@
 {
-  "parent": "citymod:custom/fan",
+  "parent": "citymod:custom/fan2",
   "textures": {
     "all": "citymod:block/fan",
     "particle": "citymod:block/fan",

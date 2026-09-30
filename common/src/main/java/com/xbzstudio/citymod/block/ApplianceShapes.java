@@ -432,4 +432,16 @@ public class ApplianceShapes {
             box(0, 0, 0, 16, 32, 32),
             box(0, 0, -16, 16, 32, 16)
     );
+    public static final Map<Direction, VoxelShape> FAN2 = createShape(
+            box(0, 0, 7, 16, 28, 9),
+            box(0, 0, 7, 16, 28, 9),
+            box(7, 0, 0, 9, 28, 16),
+            box(7, 0, 0, 9, 28, 16)
+    );
+    public static final Map<Direction, VoxelShape> STB = createShape(
+            box(0, 0, 0, 16, 4, 16),
+            box(0, 0, 0, 16, 4, 16),
+            box(0, 0, 0, 16, 4, 16),
+            box(0, 0, 0, 16, 4, 16)
+    );
 }

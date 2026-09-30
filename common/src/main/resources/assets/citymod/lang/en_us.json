@@ -483,5 +483,7 @@
   "block.citymod.wooden_desk": "Wooden desk",
   "block.citymod.wooden_shelf": "Wooden shelf",
   "block.citymod.oven": "Oven",
-  "block.citymod.fan": "Fan"
+  "block.citymod.fan": "Fan",
+  "block.citymod.fan2": "Fan",
+  "block.citymod.cable_box": "Cable box"
 }

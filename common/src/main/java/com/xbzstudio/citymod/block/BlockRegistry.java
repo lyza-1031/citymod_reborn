@@ -294,6 +294,8 @@ public class BlockRegistry {
         reg("bucket", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         reg("oven", () -> new GenericSignBlock(ApplianceShapes.MicroWaveOven));
         reg("fan", () -> new GenericSignBlock(CityShapes.Concretebarrierfenced));
+        reg("fan2", () -> new GenericSignBlock(ApplianceShapes.FAN2));
+        reg("cable_box", () -> new GenericSignBlock(ApplianceShapes.STB));
         //灯具
         reg("toplamp1", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("toplamp2", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));

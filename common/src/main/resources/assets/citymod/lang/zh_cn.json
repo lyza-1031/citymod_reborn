@@ -479,5 +479,7 @@
   "block.citymod.wooden_desk": "木书桌",
   "block.citymod.wooden_shelf": "木书架",
   "block.citymod.oven": "烤箱",
-  "block.citymod.fan": "电风扇"
+  "block.citymod.fan": "电风扇",
+  "block.citymod.fan2": "电风扇",
+  "block.citymod.cable_box": "机顶盒"
 }
