@@ -38,7 +38,6 @@ public class GenericScreenBlock extends Block implements SimpleWaterloggedBlock 
                 .lightLevel(state -> state.getValue(POWERED) ? 12 : 0)  // 发光等级设置
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)
-                .isViewBlocking((bs, br, bp) -> false)
                 .setId(ResourceKey.create(Registries.BLOCK, id)));
         this.shapes = shapes;
         this.registerDefaultState(this.stateDefinition.any()

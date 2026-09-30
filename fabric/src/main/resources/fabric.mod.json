@@ -22,14 +22,14 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=0.19.3",
-    "minecraft": ">=26.1 <=26.2",
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
     "java": ">=21",
-    "architectury": ">=19.0.1",
+    "architectury": ">=22.0.1",
     "fabric-api": "*"
   },
   "recommends": {
-    "sodium": ">=0.5.0"
+    "sodium": "*"
   },
   "suggests": {
     "sodium": "大幅度提升性能并能避免一些潜在的问题"

@@ -46,7 +46,6 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
                 .randomTicks()
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)
-                .isViewBlocking((bs, br, bp) -> false)
                 .setId(ResourceKey.create(Registries.BLOCK, id)));
         this.shapesOff = shapesOff;
         this.shapesOn = shapesOn;

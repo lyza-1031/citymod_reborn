@@ -40,7 +40,6 @@ public class GenericSignBlock extends Block implements SimpleWaterloggedBlock {
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)
-                .isViewBlocking((bs, br, bp) -> false)
                 .setId(ResourceKey.create(Registries.BLOCK, id))
         );
         this.shapes = shapes;

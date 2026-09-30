@@ -17,8 +17,6 @@ public class KillItems {
                         Vec2.ZERO,
                         level,
                         PermissionSet.ALL_PERMISSIONS,
-                        "",
-                        Component.literal(""),
                         level.getServer(),
                         null
                 ),

@@ -40,7 +40,6 @@ public class GenericMultiFaceBlock extends Block implements SimpleWaterloggedBlo
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)
-                .isViewBlocking((bs, br, bp) -> false)
                 .setId(ResourceKey.create(Registries.BLOCK, id)));
         this.shapeGetter = shapeGetter;
         this.registerDefaultState(this.stateDefinition.any()
