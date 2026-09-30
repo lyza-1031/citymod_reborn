@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/game_pc_hd",
+  "textures": {
+    "0": "citymod:block/game_pc_white",
+    "1": "citymod:block/glowwhite_emissive",
+    "2": "citymod:block/textwhite_emissive",
+    "particle": "citymod:block/game_pc_white"
+  },
+  "render_type": "cutout"
+}

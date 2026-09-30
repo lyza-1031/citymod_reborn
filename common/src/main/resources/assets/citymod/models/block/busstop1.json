@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/busstop1",
+  "textures": {
+    "all": "citymod:block/busstop1",
+    "particle": "citymod:block/busstop1",
+    "0": "citymod:block/busstop1"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/bathroom_wardrobe_big",
+  "textures": {
+    "all": "citymod:block/bathroom_wardrobe",
+    "particle": "citymod:block/bathroom_wardrobe",
+    "0": "citymod:block/bathroom_wardrobe"
+  },
+  "render_type": "solid"
+}

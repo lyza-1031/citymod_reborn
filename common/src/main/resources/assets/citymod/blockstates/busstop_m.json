@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/busstop_m"
+    },
+    "facing=east": {
+      "model": "citymod:block/busstop_m",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/busstop_m",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/busstop_m",
+      "y": 270
+    }
+  }
+}

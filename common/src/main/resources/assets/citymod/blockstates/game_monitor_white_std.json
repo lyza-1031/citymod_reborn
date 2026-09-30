@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,powered=false": {
+      "model": "citymod:block/game_monitor_white_std"
+    },
+    "facing=east,powered=false": {
+      "model": "citymod:block/game_monitor_white_std",
+      "y": 90
+    },
+    "facing=south,powered=false": {
+      "model": "citymod:block/game_monitor_white_std",
+      "y": 180
+    },
+    "facing=west,powered=false": {
+      "model": "citymod:block/game_monitor_white_std",
+      "y": 270
+    },
+    "facing=north,powered=true": {
+      "model": "citymod:block/game_monitor_white_on_std"
+    },
+    "facing=east,powered=true": {
+      "model": "citymod:block/game_monitor_white_on_std",
+      "y": 90
+    },
+    "facing=south,powered=true": {
+      "model": "citymod:block/game_monitor_white_on_std",
+      "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "citymod:block/game_monitor_white_on_std",
+      "y": 270
+    }
+  }
+}

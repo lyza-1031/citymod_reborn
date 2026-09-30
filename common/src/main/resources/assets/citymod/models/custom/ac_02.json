@@ -2,6 +2,9 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
+	"textures": {
+		"particle": "citymod:block/ac_2"
+	},
 	"elements": [
 		{
 			"from": [-6, 3.22836, 10.24805],
@@ -171,6 +174,14 @@
 				"up": {"uv": [7.4375, 7.03125, 7.125, 7], "texture": "#0"},
 				"down": {"uv": [0.3125, 7.25, 0, 7.28125], "texture": "#0"}
 			}
+		},
+		{
+			"from": [-4.55, 11.00552, 8.98596],
+			"to": [-3.15, 12.00552, 9.08596],
+			"rotation": {"angle": 0, "axis": "x", "origin": [20.85, 6.23052, 9.38596]},
+			"faces": {
+				"north": {"uv": [0, 8.46875, 1.84375, 9.78125], "texture": "#0"}
+			}
 		}
 	],
 	"gui_light": "front",
@@ -210,8 +221,9 @@
 		{
 			"name": "group",
 			"origin": [8, 8, 8],
+			"scope": 0,
 			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 		}
 	]
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/anniversary",
+  "textures": {
+    "all": "citymod:block/2.5",
+    "particle": "citymod:block/2.5",
+    "0": "citymod:block/2.5"
+  },
+  "render_type": "solid"
+}
