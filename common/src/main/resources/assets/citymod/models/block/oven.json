@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/oven",
+  "textures": {
+    "all": "citymod:block/oven",
+    "particle": "citymod:block/oven",
+    "0": "citymod:block/oven"
+  },
+  "render_type": "cutout"
+}

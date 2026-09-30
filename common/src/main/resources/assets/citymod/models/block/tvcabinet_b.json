@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/tvcabinet_b",
+  "textures": {
+    "all": "citymod:block/tvcabinet",
+    "particle": "citymod:block/tvcabinet",
+    "0": "citymod:block/tvcabinet"
+  },
+  "render_type": "solid"
+}

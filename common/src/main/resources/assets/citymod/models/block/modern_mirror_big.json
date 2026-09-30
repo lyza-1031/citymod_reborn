@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/modern_mirror_big",
+  "textures": {
+    "all": "citymod:block/modern_mirror",
+    "particle": "citymod:block/modern_mirror",
+    "0": "citymod:block/modern_mirror"
+  },
+  "render_type": "solid"
+}

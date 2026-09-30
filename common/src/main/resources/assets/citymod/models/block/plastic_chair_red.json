@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/plastic_chair",
+  "textures": {
+    "all": "citymod:block/plastic_chair_red",
+    "particle": "citymod:block/plastic_chair_red",
+    "0": "citymod:block/plastic_chair_red"
+  },
+  "render_type": "solid"
+}

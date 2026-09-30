@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/office_chair",
+  "textures": {
+    "all": "citymod:block/office_chair_black",
+    "particle": "citymod:block/office_chair_black",
+    "0": "citymod:block/office_chair_black"
+  },
+  "render_type": "cutout"
+}

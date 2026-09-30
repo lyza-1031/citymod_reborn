@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/kitchen_chair",
+  "textures": {
+    "all": "citymod:block/woodtexture",
+    "particle": "citymod:block/woodtexture",
+    "0": "citymod:block/woodtexture"
+  },
+  "render_type": "solid"
+}

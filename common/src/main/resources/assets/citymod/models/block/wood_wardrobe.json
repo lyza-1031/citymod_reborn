@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/wood_wardrobe",
+  "textures": {
+    "all": "citymod:block/woodtexture",
+    "particle": "citymod:block/woodtexture",
+    "0": "citymod:block/woodtexture",
+    "1": "citymod:block/stb1"
+  },
+  "render_type": "solid"
+}

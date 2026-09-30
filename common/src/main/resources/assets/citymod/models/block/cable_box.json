@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/cable_box",
+  "textures": {
+    "all": "citymod:block/cable_box",
+    "particle": "citymod:block/cable_box",
+    "0": "citymod:block/cable_box"
+  },
+  "render_type": "solid"
+}

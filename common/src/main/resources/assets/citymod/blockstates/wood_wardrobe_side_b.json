@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/wood_wardrobe_side_b"
+    },
+    "facing=east": {
+      "model": "citymod:block/wood_wardrobe_side_b",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/wood_wardrobe_side_b",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/wood_wardrobe_side_b",
+      "y": 270
+    }
+  }
+}

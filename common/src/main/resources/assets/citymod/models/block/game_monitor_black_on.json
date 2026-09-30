@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/game_monitor",
+  "textures": {
+    "all": "citymod:block/game_monitor_black",
+    "particle": "citymod:block/game_monitor_black",
+    "0": "citymod:block/game_monitor_black",
+    "1": "citymod:block/gamemonitor_screen"
+  },
+  "render_type": "solid"
+}

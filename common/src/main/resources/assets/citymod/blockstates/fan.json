@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/fan"
+    },
+    "facing=east": {
+      "model": "citymod:block/fan",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/fan",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/fan",
+      "y": 270
+    }
+  }
+}

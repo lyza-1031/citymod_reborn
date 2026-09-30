@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/desklamp2",
+  "textures": {
+    "all": "citymod:block/floorlamp1",
+    "particle": "citymod:block/floorlamp1",
+    "0": "citymod:block/floorlamp1"
+  },
+  "render_type": "solid"
+}
