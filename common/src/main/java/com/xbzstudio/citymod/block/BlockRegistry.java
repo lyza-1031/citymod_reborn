@@ -3,6 +3,7 @@ package com.xbzstudio.citymod.block;
 import com.xbzstudio.citymod.BlockDef;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.Shapes;
 
@@ -241,6 +242,15 @@ public class BlockRegistry {
         reg("stone_table", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("stone_chair", () -> new GenericMetalBlock(CityShapes.StoneChair));
         reg("speed_bump", () -> new GenericMetalBlock(CityShapes.SpeedBump));
+        reg("network_box", () -> new GenericSignBlock(BlockShapes.FREESIGN));
+        reg("milk_box", () -> new GenericSignBlock(CityShapes.PWRBOX3));
+        // ==================== 景观 ====================
+        reg("blacktile", () -> new GenericNormalBlock(BlockShapes.DEFAULT));
+        reg("blacktile_stair", () -> new GenericStairBlock(Blocks.STONE.defaultBlockState()));
+        reg("blacktile_slab", GenericSlabBlock::new);
+        reg("bluetile", () -> new GenericNormalBlock(BlockShapes.DEFAULT));
+        reg("bluetile_stair", () -> new GenericStairBlock(Blocks.STONE.defaultBlockState()));
+        reg("bluetile_slab", GenericSlabBlock::new);
         // ==================== 电器 ====================
         reg("ac_out_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
         reg("ac_out_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
@@ -322,6 +332,7 @@ public class BlockRegistry {
         reg("modern_monitor_off", () -> new Power(ApplianceShapes.ModernMonitor,  "tooltip.citymod.powerable"));
         reg("all_in_one_pc", () -> new Power(ApplianceShapes.AIOPC,  "tooltip.citymod.powerable"));
         reg("laptop", () -> new Power(ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON,  "tooltip.citymod.powerable"));
+        reg("gaming_laptop_off", () -> new Power(ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON,  "tooltip.citymod.powerable"));
         reg("large_screen_black", () -> new Power(ApplianceShapes.LARGESCREEN,  "tooltip.citymod.powerable"));
         reg("large_screen_white", () -> new Power(ApplianceShapes.LARGESCREEN,  "tooltip.citymod.powerable"));
         reg("gaming_pc_white", () -> new GenericGlassBlock(ApplianceShapes.GAMINGPC));

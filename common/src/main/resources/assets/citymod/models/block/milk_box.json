@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/milk_box",
+  "textures": {
+    "all": "citymod:block/milk_box",
+    "particle": "citymod:block/milk_box",
+    "0": "citymod:block/milk_box"
+  },
+  "render_type": "cutout"
+}

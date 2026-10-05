@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "citymod:block/normalblocks/blacktile",
+    "top": "citymod:block/normalblocks/blacktile",
+    "side": "citymod:block/normalblocks/blacktile"
+  }
+}

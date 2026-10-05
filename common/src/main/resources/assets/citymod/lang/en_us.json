@@ -485,5 +485,14 @@
   "block.citymod.oven": "Oven",
   "block.citymod.fan": "Fan",
   "block.citymod.fan2": "Fan",
-  "block.citymod.cable_box": "Cable box"
+  "block.citymod.cable_box": "Cable box",
+  "block.citymod.blacktile": "Black Tile",
+  "block.citymod.bluetile": "Blue Tile",
+  "block.citymod.bluetile_stair": "Blue Tile Stairs",
+  "block.citymod.bluetile_slab": "Blue Tile Slab",
+  "block.citymod.blacktile_stair": "Black Tile Stairs",
+  "block.citymod.blacktile_slab": "Black Tile Slab",
+  "block.citymod.milk_box": "Milk Box",
+  "block.citymod.network_box": "Network Box",
+  "block.citymod.gaming_laptop_off": "Gaming Laptop"
 }

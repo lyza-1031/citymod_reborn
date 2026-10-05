@@ -1,10 +1,8 @@
 package com.xbzstudio.citymod;
 
-import com.xbzstudio.citymod.block.ApplianceShapes;
-import com.xbzstudio.citymod.block.BlockShapes;
-import com.xbzstudio.citymod.block.GenericLightBlock;
-import com.xbzstudio.citymod.block.GenericMetalBlock;
+import com.xbzstudio.citymod.block.*;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.List;
 
@@ -68,7 +66,9 @@ public class CreativeTabData {
             "ac_bracket","bracket",
             "construction_warning","sign_board","governmentsign",
             "stone_table","stone_chair","stone_ball","express_box_1", "express_box_2",
-            "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_ad1","busstop_pole","busstop_top","busstop_chair"
+            "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_ad1","busstop_pole","busstop_top","busstop_chair",
+            "network_box","milk_box",
+            "blacktile","blacktile_stair","blacktile_slab","bluetile","bluetile_stair","bluetile_slab"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
@@ -110,7 +110,7 @@ public class CreativeTabData {
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
             "game_pc_black","game_monitor_black_off","game_monitor_black_std","game_pc_white","game_monitor_white_off","game_monitor_white_std",
-            "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv","small_tv",
+            "all_in_one_pc", "laptop","gaming_laptop_off","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv","small_tv",
             "extractor","trimcover","washingmachine","washine_machine_b",
             "desklamp","desklamp2","floorlamp1","treadmill","sausage_cooker","toplamp1","toplamp2","chandelier1","chandelier2","chandelier3","chandelier4",
             "electronic_scale",

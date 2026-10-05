@@ -481,5 +481,15 @@
   "block.citymod.oven": "烤箱",
   "block.citymod.fan": "电风扇",
   "block.citymod.fan2": "电风扇",
-  "block.citymod.cable_box": "机顶盒"
+  "block.citymod.cable_box": "机顶盒",
+  "block.citymod.blacktile": "黑色瓷砖",
+  "block.citymod.bluetile": "蓝色瓷砖",
+  "block.citymod.bluetile_stair": "蓝色瓷砖楼梯",
+  "block.citymod.bluetile_slab": "蓝色瓷砖台阶",
+  "block.citymod.blacktile_stair": "黑色瓷砖楼梯",
+  "block.citymod.blacktile_slab": "黑色瓷砖台阶",
+  "block.citymod.milk_box": "牛奶箱",
+  "block.citymod.network_box": "多媒体信息箱",
+  "block.citymod.gaming_laptop_off": "游戏本"
+
 }
