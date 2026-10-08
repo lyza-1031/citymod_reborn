@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/toplamp3",
+  "textures": {
+    "all": "citymod:block/toplamp3",
+    "particle": "citymod:block/toplamp3",
+    "0": "citymod:block/toplamp3"
+  },
+  "render_type": "solid"
+}

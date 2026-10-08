@@ -494,5 +494,10 @@
   "block.citymod.blacktile_slab": "Black Tile Slab",
   "block.citymod.milk_box": "Milk Box",
   "block.citymod.network_box": "Network Box",
-  "block.citymod.gaming_laptop_off": "Gaming Laptop"
+  "block.citymod.gaming_laptop_off": "Gaming Laptop",
+  "block.citymod.high_bar": "High bar",
+  "block.citymod.high_bar2": "High bar",
+  "block.citymod.double_bar": "Double high bar",
+  "block.citymod.chandelier5": "Chandelier",
+  "block.citymod.toplamp3": "Top lamp"
 }

@@ -251,6 +251,9 @@ public class BlockRegistry {
         reg("bluetile", () -> new GenericNormalBlock(BlockShapes.DEFAULT));
         reg("bluetile_stair", () -> new GenericStairBlock(Blocks.STONE.defaultBlockState()));
         reg("bluetile_slab", GenericSlabBlock::new);
+        reg("high_bar", () -> new GenericMetalBlock(BlockShapes.DEFAULT,"tooltip.citymod.tall"));
+        reg("high_bar2", () -> new GenericMetalBlock(BlockShapes.DEFAULT,"tooltip.citymod.tall"));
+        reg("double_bar", () -> new GenericMetalBlock(BlockShapes.DEFAULT,"tooltip.citymod.tall"));
         // ==================== 电器 ====================
         reg("ac_out_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
         reg("ac_out_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
@@ -309,6 +312,7 @@ public class BlockRegistry {
         //灯具
         reg("toplamp1", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("toplamp2", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
+        reg("toplamp3", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("desklamp", () -> new GenericLightBlock(ApplianceShapes.DESKLAMP));
         reg("desklamp2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("floorlamp1", () -> new GenericLightBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
@@ -316,6 +320,7 @@ public class BlockRegistry {
         reg("chandelier2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("chandelier3", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("chandelier4", () -> new GenericLightBlock(BlockShapes.DEFAULT));
+        reg("chandelier5", () -> new GenericLightBlock(ApplianceShapes.CLAMP5));
         //公交站台
         reg("busstop1", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.tall"));
         reg("busstop2", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.lcgy"));

@@ -444,4 +444,10 @@ public class ApplianceShapes {
             box(0, 0, 0, 16, 4, 16),
             box(0, 0, 0, 16, 4, 16)
     );
+    public static final Map<Direction, VoxelShape> CLAMP5 = createShape(
+            box(-16, 12, 5, 32, 16, 11),
+            box(-16, 12, 5, 32, 16, 11),
+            box(5, 12, -16, 11, 16, 32),
+            box(5, 12, -16, 11, 16, 32)
+    );
 }
