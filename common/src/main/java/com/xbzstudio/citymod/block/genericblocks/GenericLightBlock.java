@@ -1,4 +1,4 @@
-package com.xbzstudio.citymod.block;
+package com.xbzstudio.citymod.block.genericblocks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -10,10 +10,11 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.*;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
@@ -22,44 +23,33 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.List;
-import java.util.function.Function;
+import java.util.Map;
 
-public class GenericMultiFaceBlock extends Block implements SimpleWaterloggedBlock {
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-    public static final EnumProperty<AttachFace> FACE = BlockStateProperties.ATTACH_FACE;
+public class GenericLightBlock extends Block implements SimpleWaterloggedBlock {
+    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    private final Function<BlockState, VoxelShape> shapeGetter;
+    private final Map<Direction, VoxelShape> shapes;
     private final String tooltipKey;
 
-    public GenericMultiFaceBlock(Function<BlockState, VoxelShape> shapeGetter) {
-        this(MapColor.STONE, SoundType.STONE, 1f, 1f, shapeGetter, null);
+    public GenericLightBlock(Map<Direction, VoxelShape> shapes) {
+        this(shapes, null);
     }
-
-    public GenericMultiFaceBlock(Function<BlockState, VoxelShape> shapeGetter, String tooltipKey) {
-        this(MapColor.STONE, SoundType.STONE, 1f, 1f, shapeGetter, tooltipKey);
-    }
-
-    public GenericMultiFaceBlock(MapColor color, SoundType sound, float hardness, float resistance,
-                                 Function<BlockState, VoxelShape> shapeGetter) {
-        this(color, sound, hardness, resistance, shapeGetter, null);
-    }
-
-    public GenericMultiFaceBlock(MapColor color, SoundType sound, float hardness, float resistance,
-                                 Function<BlockState, VoxelShape> shapeGetter, String tooltipKey) {
-        super(BlockBehaviour.Properties.of()
-                .mapColor(color)
-                .sound(sound)
-                .strength(hardness, resistance)
+    public GenericLightBlock(Map<Direction, VoxelShape> shapes, String tooltipKey) {
+        super(Properties.of()
+                .mapColor(MapColor.STONE)
+                .sound(SoundType.METAL)
+                .strength(1f, 1f)
+                .lightLevel(state -> 15)
+                .emissiveRendering((state, world, pos) -> true)  // ← 自发光
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)
                 .isViewBlocking((bs, br, bp) -> false));
-        this.shapeGetter = shapeGetter;
+        this.shapes = shapes;
         this.tooltipKey = tooltipKey;
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
-                .setValue(FACE, AttachFace.WALL)
                 .setValue(WATERLOGGED, false));
     }
 
@@ -72,7 +62,7 @@ public class GenericMultiFaceBlock extends Block implements SimpleWaterloggedBlo
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        return shapeGetter.apply(state);
+        return shapes.getOrDefault(state.getValue(FACING), Shapes.empty());
     }
 
     @Override
@@ -99,16 +89,8 @@ public class GenericMultiFaceBlock extends Block implements SimpleWaterloggedBlo
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
         return this.defaultBlockState()
-                .setValue(FACE, faceForDirection(context.getNearestLookingDirection()))
                 .setValue(FACING, context.getHorizontalDirection().getOpposite())
                 .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
-    }
-
-    private AttachFace faceForDirection(Direction direction) {
-        if (direction.getAxis() == Direction.Axis.Y)
-            return direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR;
-        else
-            return AttachFace.WALL;
     }
 
     @Override
@@ -122,7 +104,7 @@ public class GenericMultiFaceBlock extends Block implements SimpleWaterloggedBlo
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING, FACE, WATERLOGGED);
+        builder.add(FACING, WATERLOGGED);
     }
 
     @Override

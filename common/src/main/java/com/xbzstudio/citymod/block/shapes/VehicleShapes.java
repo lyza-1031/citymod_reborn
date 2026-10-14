@@ -1,8 +1,7 @@
-package com.xbzstudio.citymod.block;
+package com.xbzstudio.citymod.block.shapes;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.EnumMap;

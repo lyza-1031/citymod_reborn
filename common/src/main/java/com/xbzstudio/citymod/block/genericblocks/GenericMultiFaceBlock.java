@@ -1,73 +1,66 @@
-package com.xbzstudio.citymod.block;
+package com.xbzstudio.citymod.block.genericblocks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.List;
-import java.util.Map;
+import java.util.function.Function;
 
-public class Power extends Block implements SimpleWaterloggedBlock {
-    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+public class GenericMultiFaceBlock extends Block implements SimpleWaterloggedBlock {
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<AttachFace> FACE = BlockStateProperties.ATTACH_FACE;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-    public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
-    private final Map<Direction, VoxelShape> shapesOff;
-    private final Map<Direction, VoxelShape> shapesOn;
+    private final Function<BlockState, VoxelShape> shapeGetter;
     private final String tooltipKey;
 
-    public Power(Map<Direction, VoxelShape> shapes) {
-        this(shapes, shapes, null);
+    public GenericMultiFaceBlock(Function<BlockState, VoxelShape> shapeGetter) {
+        this(MapColor.STONE, SoundType.STONE, 1f, 1f, shapeGetter, null);
     }
 
-    public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn) {
-        this(shapesOff, shapesOn, null);
+    public GenericMultiFaceBlock(Function<BlockState, VoxelShape> shapeGetter, String tooltipKey) {
+        this(MapColor.STONE, SoundType.STONE, 1f, 1f, shapeGetter, tooltipKey);
     }
-    public Power(Map<Direction, VoxelShape> shapes, String tooltipKey) {
-        this(shapes, shapes, tooltipKey);
+
+    public GenericMultiFaceBlock(MapColor color, SoundType sound, float hardness, float resistance,
+                                 Function<BlockState, VoxelShape> shapeGetter) {
+        this(color, sound, hardness, resistance, shapeGetter, null);
     }
-    public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn, String tooltipKey) {
+
+    public GenericMultiFaceBlock(MapColor color, SoundType sound, float hardness, float resistance,
+                                 Function<BlockState, VoxelShape> shapeGetter, String tooltipKey) {
         super(BlockBehaviour.Properties.of()
-                .mapColor(MapColor.METAL)
-                .sound(SoundType.METAL)
-                .strength(1f, 10f)
-                .lightLevel(state -> state.getValue(POWERED) ? 15 : 0)
-                .emissiveRendering((state, world, pos) -> state.getValue(POWERED))
+                .mapColor(color)
+                .sound(sound)
+                .strength(hardness, resistance)
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)
                 .isViewBlocking((bs, br, bp) -> false));
-        this.shapesOff = shapesOff;
-        this.shapesOn = shapesOn;
+        this.shapeGetter = shapeGetter;
         this.tooltipKey = tooltipKey;
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
-                .setValue(WATERLOGGED, false)
-                .setValue(POWERED, false));
+                .setValue(FACE, AttachFace.WALL)
+                .setValue(WATERLOGGED, false));
     }
 
     @Override
@@ -79,8 +72,7 @@ public class Power extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        Map<Direction, VoxelShape> activeShapes = state.getValue(POWERED) ? shapesOn : shapesOff;
-        return activeShapes.getOrDefault(state.getValue(FACING), Shapes.empty());
+        return shapeGetter.apply(state);
     }
 
     @Override
@@ -104,20 +96,19 @@ public class Power extends Block implements SimpleWaterloggedBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player,
-                                 InteractionHand hand, BlockHitResult hit) {
-        if (!level.isClientSide()) {
-            level.setBlock(pos, state.cycle(POWERED), Block.UPDATE_ALL);
-        }
-        return InteractionResult.SUCCESS;
-    }
-
-    @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
         return this.defaultBlockState()
+                .setValue(FACE, faceForDirection(context.getNearestLookingDirection()))
                 .setValue(FACING, context.getHorizontalDirection().getOpposite())
                 .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
+    }
+
+    private AttachFace faceForDirection(Direction direction) {
+        if (direction.getAxis() == Direction.Axis.Y)
+            return direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR;
+        else
+            return AttachFace.WALL;
     }
 
     @Override
@@ -131,7 +122,7 @@ public class Power extends Block implements SimpleWaterloggedBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING, WATERLOGGED, POWERED);
+        builder.add(FACING, FACE, WATERLOGGED);
     }
 
     @Override

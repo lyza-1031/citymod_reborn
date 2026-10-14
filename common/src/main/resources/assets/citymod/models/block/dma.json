@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/dma",
+  "textures": {
+    "all": "citymod:block/dma",
+    "particle": "citymod:block/dma",
+    "0": "citymod:block/dma"
+  },
+  "render_type": "cutout"
+}

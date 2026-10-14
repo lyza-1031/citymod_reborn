@@ -499,5 +499,13 @@
   "block.citymod.high_bar2": "High bar",
   "block.citymod.double_bar": "Double high bar",
   "block.citymod.chandelier5": "Chandelier",
-  "block.citymod.toplamp3": "Top lamp"
+  "block.citymod.toplamp3": "Top lamp",
+  "block.citymod.hdd": "Hard disk",
+  "block.citymod.dma": "Direct Memory Access",
+  "tooltip.citymod.hdd": "It looks something goods in it.",
+  "tooltip.citymod.dma": "You shouldn't cheat anywhere.",
+  "block.citymod.router_black": "Router",
+  "block.citymod.router_white": "Router",
+  "block.citymod.gas_stove": "gas stove",
+  "block.citymod.tennis_table": "tennis_table"
 }

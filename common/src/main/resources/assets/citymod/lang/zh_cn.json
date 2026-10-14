@@ -495,5 +495,13 @@
   "block.citymod.high_bar2": "单杠",
   "block.citymod.double_bar": "双杠",
   "block.citymod.chandelier5": "吊灯",
-  "block.citymod.toplamp3": "顶灯"
+  "block.citymod.toplamp3": "顶灯",
+  "block.citymod.hdd": "机械硬盘",
+  "block.citymod.dma": "直接内存访问（DMA）",
+  "tooltip.citymod.hdd": "§e这个学习资料正经吗？",
+  "tooltip.citymod.dma": "§4浮木发射器",
+  "block.citymod.router_black": "路由器",
+  "block.citymod.router_white": "路由器",
+  "block.citymod.gas_stove": "煤气灶",
+  "block.citymod.tennis_table": "乒乓球桌"
 }

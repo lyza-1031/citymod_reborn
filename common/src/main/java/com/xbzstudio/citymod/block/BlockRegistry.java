@@ -1,6 +1,8 @@
 package com.xbzstudio.citymod.block;
 
 import com.xbzstudio.citymod.BlockDef;
+import com.xbzstudio.citymod.block.genericblocks.*;
+import com.xbzstudio.citymod.block.shapes.*;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -254,6 +256,7 @@ public class BlockRegistry {
         reg("high_bar", () -> new GenericMetalBlock(BlockShapes.DEFAULT,"tooltip.citymod.tall"));
         reg("high_bar2", () -> new GenericMetalBlock(BlockShapes.DEFAULT,"tooltip.citymod.tall"));
         reg("double_bar", () -> new GenericMetalBlock(BlockShapes.DEFAULT,"tooltip.citymod.tall"));
+        reg("tennis_table", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         // ==================== 电器 ====================
         reg("ac_out_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
         reg("ac_out_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02));
@@ -309,6 +312,9 @@ public class BlockRegistry {
         reg("fan", () -> new GenericSignBlock(CityShapes.Concretebarrierfenced));
         reg("fan2", () -> new GenericSignBlock(ApplianceShapes.FAN2));
         reg("cable_box", () -> new GenericSignBlock(ApplianceShapes.STB));
+        reg("router_black", () -> new GenericSignBlock(ApplianceShapes.STB));
+        reg("router_white", () -> new GenericSignBlock(ApplianceShapes.STB));
+        reg("gas_stove", () -> new GenericSignBlock(ApplianceShapes.GAS_STOVE));
         //灯具
         reg("toplamp1", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("toplamp2", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
@@ -504,6 +510,8 @@ public class BlockRegistry {
         reg("ac_out_690", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_04));
         reg("internet_famous_road_sign", () -> new GenericSignBlock(BlockShapes.IFRS));
         reg("anniversary", () -> new GenericLightBlock(BlockShapes.EXPR));
+        reg("hdd", () -> new GenericMetalBlock(BlockShapes.TRAFFICLINE, "tooltip.citymod.hdd"));
+        reg("dma", () -> new GenericMetalBlock(BlockShapes.FREESIGN, "tooltip.citymod.dma"));
         //多方向
         reg("central_air_conditioning", () -> new GenericMultiFaceBlock(state -> {
             Direction facing = state.getValue(GenericMultiFaceBlock.FACING);

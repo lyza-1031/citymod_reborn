@@ -1,4 +1,4 @@
-package com.xbzstudio.citymod.block;
+package com.xbzstudio.citymod.block.genericblocks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -8,15 +8,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -25,30 +22,24 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.List;
 import java.util.Map;
 
-public class GenericGlassBlock extends Block implements SimpleWaterloggedBlock {
-    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-    public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+public class GenericDirectionBlock extends Block {
+    public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
     private final Map<Direction, VoxelShape> shapes;
     private final String tooltipKey;
 
-    public GenericGlassBlock(Map<Direction, VoxelShape> shapes) {
+    public GenericDirectionBlock(Map<Direction, VoxelShape> shapes) {
         this(shapes, null);
     }
-    public GenericGlassBlock(Map<Direction, VoxelShape> shapes, String tooltipKey) {
-        super(Properties.of()
+    public GenericDirectionBlock(Map<Direction, VoxelShape> shapes, String tooltipKey) {
+        super(BlockBehaviour.Properties.of()
                 .mapColor(MapColor.STONE)
-                .sound(SoundType.GLASS)
+                .sound(SoundType.METAL)
                 .strength(1f, 1f)
-                .noOcclusion()
-                .isRedstoneConductor((bs, br, bp) -> false)
-                .isSuffocating((bs, br, bp) -> false)
-                .isViewBlocking((bs, br, bp) -> false));
+                .noOcclusion());
         this.shapes = shapes;
         this.tooltipKey = tooltipKey;
-        this.registerDefaultState(this.stateDefinition.any()
-                .setValue(FACING, Direction.NORTH)
-                .setValue(WATERLOGGED, false));
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
     @Override
     public void appendHoverText(ItemStack stack, BlockGetter world, List<Component> tooltip, TooltipFlag flag) {
@@ -68,40 +59,13 @@ public class GenericGlassBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     @Override
-    public float getShadeBrightness(BlockState state, BlockGetter world, BlockPos pos) {
-        return 1.0F;
-    }
-
-    @Override
-    public boolean propagatesSkylightDown(BlockState state, BlockGetter world, BlockPos pos) {
-        return state.getFluidState().isEmpty();
-    }
-
-    @Override
-    public FluidState getFluidState(BlockState state) {
-        return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
-    }
-
-    @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
-        return this.defaultBlockState()
-                .setValue(FACING, context.getHorizontalDirection().getOpposite())
-                .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
-    }
-
-    @Override
-    public BlockState updateShape(BlockState state, Direction facing, BlockState facingState,
-                                  LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
-        if (state.getValue(WATERLOGGED)) {
-            world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
-        }
-        return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+        return this.defaultBlockState().setValue(FACING, context.getClickedFace());
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING, WATERLOGGED);
+        builder.add(FACING);
     }
 
     @Override

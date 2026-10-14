@@ -1,4 +1,4 @@
-package com.xbzstudio.citymod.block;
+package com.xbzstudio.citymod.block.genericblocks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -25,23 +25,22 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.List;
 import java.util.Map;
 
-public class GenericLightBlock extends Block implements SimpleWaterloggedBlock {
+public class GenericMetalBlock extends Block implements SimpleWaterloggedBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     private final Map<Direction, VoxelShape> shapes;
     private final String tooltipKey;
 
-    public GenericLightBlock(Map<Direction, VoxelShape> shapes) {
+    public GenericMetalBlock(Map<Direction, VoxelShape> shapes) {
         this(shapes, null);
     }
-    public GenericLightBlock(Map<Direction, VoxelShape> shapes, String tooltipKey) {
+
+    public GenericMetalBlock(Map<Direction, VoxelShape> shapes, String tooltipKey) {
         super(Properties.of()
                 .mapColor(MapColor.STONE)
                 .sound(SoundType.METAL)
                 .strength(1f, 1f)
-                .lightLevel(state -> 15)
-                .emissiveRendering((state, world, pos) -> true)  // ← 自发光
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
                 .isSuffocating((bs, br, bp) -> false)

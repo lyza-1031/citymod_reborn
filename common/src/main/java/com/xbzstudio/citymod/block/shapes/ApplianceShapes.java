@@ -1,4 +1,4 @@
-package com.xbzstudio.citymod.block;
+package com.xbzstudio.citymod.block.shapes;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
@@ -449,5 +449,11 @@ public class ApplianceShapes {
             box(-16, 12, 5, 32, 16, 11),
             box(5, 12, -16, 11, 16, 32),
             box(5, 12, -16, 11, 16, 32)
+    );
+    public static final Map<Direction, VoxelShape> GAS_STOVE = createShape(
+            box(0, 0, 0, 32, 1, 16),
+            box(-16, 0, 0, 16, 1, 16),
+            box(0, 0, -16,16 ,1, 16),
+            box(0, 0, 0, 16, 1, 32)
     );
 }

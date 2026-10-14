@@ -1,4 +1,4 @@
-package com.xbzstudio.citymod.block;
+package com.xbzstudio.citymod.block.genericblocks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

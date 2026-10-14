@@ -1,4 +1,4 @@
-package com.xbzstudio.citymod.block;
+package com.xbzstudio.citymod.block.genericblocks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -25,21 +25,20 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.List;
 import java.util.Map;
 
-public class GenericMetalBlock extends Block implements SimpleWaterloggedBlock {
+public class GenericGlassBlock extends Block implements SimpleWaterloggedBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     private final Map<Direction, VoxelShape> shapes;
     private final String tooltipKey;
 
-    public GenericMetalBlock(Map<Direction, VoxelShape> shapes) {
+    public GenericGlassBlock(Map<Direction, VoxelShape> shapes) {
         this(shapes, null);
     }
-
-    public GenericMetalBlock(Map<Direction, VoxelShape> shapes, String tooltipKey) {
+    public GenericGlassBlock(Map<Direction, VoxelShape> shapes, String tooltipKey) {
         super(Properties.of()
                 .mapColor(MapColor.STONE)
-                .sound(SoundType.METAL)
+                .sound(SoundType.GLASS)
                 .strength(1f, 1f)
                 .noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false)
@@ -51,7 +50,6 @@ public class GenericMetalBlock extends Block implements SimpleWaterloggedBlock {
                 .setValue(FACING, Direction.NORTH)
                 .setValue(WATERLOGGED, false));
     }
-
     @Override
     public void appendHoverText(ItemStack stack, BlockGetter world, List<Component> tooltip, TooltipFlag flag) {
         if (tooltipKey != null && !tooltipKey.isEmpty()) {

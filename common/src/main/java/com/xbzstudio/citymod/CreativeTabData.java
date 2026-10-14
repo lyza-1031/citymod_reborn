@@ -68,7 +68,8 @@ public class CreativeTabData {
             "stone_table","stone_chair","stone_ball","express_box_1", "express_box_2",
             "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_ad1","busstop_pole","busstop_top","busstop_chair",
             "network_box","milk_box",
-            "blacktile","blacktile_stair","blacktile_slab","bluetile","bluetile_stair","bluetile_slab","high_bar","high_bar2","double_bar"
+            "blacktile","blacktile_stair","blacktile_slab","bluetile","bluetile_stair","bluetile_slab","high_bar","high_bar2","double_bar",
+            "tennis_table"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
@@ -115,7 +116,8 @@ public class CreativeTabData {
             "treadmill","sausage_cooker",
             "electronic_scale",
             "water_dispenser","bucket",
-            "oven","fan","fan2","cable_box"
+            "oven","fan","fan2","cable_box",
+            "router_black","router_white","gas_stove"
     );
     public static final List<String> LAMP_IDS = List.of(
             "desklamp","desklamp2",
@@ -148,7 +150,8 @@ public class CreativeTabData {
 
     public static final List<String> OTHER_IDS = List.of(
             "ac_out_nvidia", "ac_out_amd", "ac_out_intel",
-            "ac_out_fake", "ac_out_40_hx","ac_out_690","blackwell_6000","internet_famous_road_sign","anniversary"
+            "ac_out_fake", "ac_out_40_hx","ac_out_690","blackwell_6000","internet_famous_road_sign","anniversary",
+            "hdd","dma"
     );
     public static final List<TabDef> TABS = List.of(
             new TabDef("traffic", Component.translatable("item_group.citymod.traffic"), "traffic_sign", TRAFFIC_IDS),
