@@ -69,7 +69,7 @@ public class CreativeTabData {
             "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_ad1","busstop_pole","busstop_top","busstop_chair",
             "network_box","milk_box",
             "blacktile","blacktile_stair","blacktile_slab","bluetile","bluetile_stair","bluetile_slab","high_bar","high_bar2","double_bar",
-            "tennis_table"
+            "tennis_table","awning_top","awning_edge","awning_edge2"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
@@ -87,7 +87,8 @@ public class CreativeTabData {
             "bathroom_wardrobe_big","bathroom_wardrobe","modern_mirror_big","modern_mirror",
             "ironbed","ironbed2","ironbed3","ironbed4","ironbed_b","ironbed_b2","ironbed_b3","ironbed_b4",
             "wood_wardrobe","wood_wardrobe_big","wood_wardrobe_side","wood_wardrobe_side_b",
-            "wooden_desk","wooden_shelf"
+            "wooden_desk","wooden_shelf",
+            "gas_tank"
     );
     public static final List<String> POLE_IDS = List.of(
             "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",
@@ -97,7 +98,8 @@ public class CreativeTabData {
             "pole_w","pole_warn_w", "pole_joint_w", "pole_joint_double_w", "pole_joint_l_w",
             "pole_horizontal_w", "pole_expr_w", "pole_expr_right_w", "pole_exprmid_w",
             "pole_fine_d_w", "polefine_joint_d_w",
-            "warn_pole_w","light_pole_with_flag_w"
+            "warn_pole_w","light_pole_with_flag_w",
+            "railway_pole","railway_pole_joint","railway_pole_joint_d"
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
@@ -122,7 +124,7 @@ public class CreativeTabData {
     public static final List<String> LAMP_IDS = List.of(
             "desklamp","desklamp2",
             "floorlamp1",
-            "toplamp1","toplamp2","toplamp3",
+            "toplamp1","toplamp2","toplamp3","toplamp4",
             "chandelier1","chandelier2","chandelier3","chandelier4","chandelier5"
     );
     public static final List<String> POST_IDS = List.of(

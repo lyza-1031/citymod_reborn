@@ -2,12 +2,12 @@ package com.xbzstudio.citymod.block.genericblocks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -15,34 +15,28 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.List;
-import java.util.Map;
 
-public class GenericNormalBlock extends Block implements SimpleWaterloggedBlock {
+public class GenericNormalBlock extends Block {
     private final String tooltipKey;
-    private final Map<Direction, VoxelShape> shapes;
-    public GenericNormalBlock(Map<Direction, VoxelShape> shapes) {
-        this(shapes, null);
+
+    public GenericNormalBlock() {
+        this(null);
     }
 
-    public GenericNormalBlock(Map<Direction, VoxelShape> shapes, String tooltipKey) {
+    public GenericNormalBlock(String tooltipKey) {
         super(Properties.of()
                 .mapColor(MapColor.STONE)
                 .sound(SoundType.STONE)
-                .strength(1f, 1f)
-                .noOcclusion()
-                .isRedstoneConductor((bs, br, bp) -> false)
-                .isSuffocating((bs, br, bp) -> false)
-                .isViewBlocking((bs, br, bp) -> false));
-        this.shapes = shapes;
+                .strength(1f, 1f));
         this.tooltipKey = tooltipKey;
     }
+
     @Override
     public void appendHoverText(ItemStack stack, BlockGetter world, List<Component> tooltip, TooltipFlag flag) {
         if (tooltipKey != null && !tooltipKey.isEmpty()) {
             tooltip.add(Component.translatable(tooltipKey).withStyle(ChatFormatting.GRAY));
         }
     }
-
 
     @Override
     public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {

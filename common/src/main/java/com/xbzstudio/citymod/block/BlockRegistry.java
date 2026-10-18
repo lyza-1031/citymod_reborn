@@ -135,6 +135,8 @@ public class BlockRegistry {
         reg("pole_exprmid_w", () -> new GenericSignBlock(BlockShapes.POLE_EXPR_M));
         reg("pole_fine_d_w", () -> new GenericSignBlock(BlockShapes.POLEFINE_D));
         reg("polefine_joint_d_w", () -> new GenericSignBlock(BlockShapes.POLEFINE_JOINT_D));
+        reg("railway_pole_joint", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("railway_pole_joint_d", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         //reg("light_pole_with_flag_w", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
 
         // 方向牌
@@ -246,11 +248,14 @@ public class BlockRegistry {
         reg("speed_bump", () -> new GenericMetalBlock(CityShapes.SpeedBump));
         reg("network_box", () -> new GenericSignBlock(BlockShapes.FREESIGN));
         reg("milk_box", () -> new GenericSignBlock(CityShapes.PWRBOX3));
+        reg("awning_top", () -> new GenericSignBlock(CityShapes.StoneChair));
+        reg("awning_edge", () -> new GenericSignBlock(CityShapes.StoneChair));
+        reg("awning_edge2", () -> new GenericSignBlock(CityShapes.StoneChair));
         // ==================== 景观 ====================
-        reg("blacktile", () -> new GenericNormalBlock(BlockShapes.DEFAULT));
+        reg("blacktile", GenericNormalBlock::new);
         reg("blacktile_stair", () -> new GenericStairBlock(Blocks.STONE.defaultBlockState()));
         reg("blacktile_slab", GenericSlabBlock::new);
-        reg("bluetile", () -> new GenericNormalBlock(BlockShapes.DEFAULT));
+        reg("bluetile", GenericNormalBlock::new);
         reg("bluetile_stair", () -> new GenericStairBlock(Blocks.STONE.defaultBlockState()));
         reg("bluetile_slab", GenericSlabBlock::new);
         reg("high_bar", () -> new GenericMetalBlock(BlockShapes.DEFAULT,"tooltip.citymod.tall"));
@@ -319,6 +324,7 @@ public class BlockRegistry {
         reg("toplamp1", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("toplamp2", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("toplamp3", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
+        reg("toplamp4", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("desklamp", () -> new GenericLightBlock(ApplianceShapes.DESKLAMP));
         reg("desklamp2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("floorlamp1", () -> new GenericLightBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
@@ -395,6 +401,7 @@ public class BlockRegistry {
         reg("wood_wardrobe_side_b", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
         reg("wooden_desk", () -> new GenericSignBlock(ApplianceShapes.PCDESK));
         reg("wooden_shelf", () -> new GenericSignBlock(ApplianceShapes.BIGWARDROBE));
+        reg("gas_tank", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         // 已废弃
         reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON, "tooltip.citymod.old"));
         reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor, "tooltip.citymod.old"));
@@ -634,6 +641,11 @@ public class BlockRegistry {
                 Direction.Axis.X, Block.box(0, 7, 7, 16, 9, 9),
                 Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9),
                 Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16)
+        )));
+        reg("railway_pole", () -> new GenericAxisBlock(Map.of(
+                Direction.Axis.X, Block.box(0, 5, 5, 16, 11, 11),
+                Direction.Axis.Y, Block.box(5, 0, 5, 11, 16, 11),
+                Direction.Axis.Z, Block.box(5, 5, 0, 11, 11, 16)
         )));
         reg("water_pipe_joint", () -> new GenericDirectionBlock(Map.of(
                 Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),

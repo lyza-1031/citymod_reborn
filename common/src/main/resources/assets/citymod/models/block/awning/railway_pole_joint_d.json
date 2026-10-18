@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/awning/railway_pole_joint_d",
+  "textures": {
+    "all": "citymod:block/railway_pole",
+    "particle": "citymod:block/railway_pole",
+    "0": "citymod:block/railway_pole"
+  },
+  "render_type": "solid"
+}

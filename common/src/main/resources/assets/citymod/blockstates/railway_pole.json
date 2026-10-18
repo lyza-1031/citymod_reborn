@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "citymod:block/awning/railway_pole_x"
+    },
+    "axis=y": {
+      "model": "citymod:block/awning/railway_pole"
+    },
+    "axis=z": {
+      "model": "citymod:block/awning/railway_pole_z"
+    }
+  }
+}
