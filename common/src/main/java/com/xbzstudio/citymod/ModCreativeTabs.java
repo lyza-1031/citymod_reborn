@@ -15,7 +15,16 @@ public class ModCreativeTabs {
             DeferredRegister.create("citymod", Registries.CREATIVE_MODE_TAB);
 
     private static Block blk(String id) {
-        return BuiltInRegistries.BLOCK.get(new ResourceLocation("citymod", id));
+        if (id.contains(":")) {
+            String[] parts = id.split(":", 2);
+            Block b = BuiltInRegistries.BLOCK.get(new ResourceLocation(parts[0], parts[1]));
+            return b == null ? Blocks.AIR : b;
+        }
+
+        Block b = BuiltInRegistries.BLOCK.get(new ResourceLocation("citymod", id));
+        if (b != Blocks.AIR) return b;
+
+        return BuiltInRegistries.BLOCK.get(new ResourceLocation("schoolnext", id));
     }
 
     static {
@@ -23,7 +32,10 @@ public class ModCreativeTabs {
             TABS.register(tab.id(),
                     () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, CreativeTabData.TABS.indexOf(tab))
                             .title(tab.title())
-                            .icon(() -> new ItemStack(blk(tab.iconId()).asItem()))
+                            .icon(() -> {
+                                Block b = blk(tab.iconId());
+                                return new ItemStack(b != Blocks.AIR ? b.asItem() : Items.STONE);
+                            })
                             .displayItems((params, output) -> {
                                 for (String id : tab.blockIds()) {
                                     Block b = blk(id);

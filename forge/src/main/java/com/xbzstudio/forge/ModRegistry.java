@@ -3,8 +3,8 @@ package com.xbzstudio.forge;
 import com.xbzstudio.citymod.CityMod;
 import com.xbzstudio.citymod.CreativeTabData;
 import com.xbzstudio.citymod.block.BlockRegistry;
+import com.xbzstudio.citymod.block.SchoolnextRegistry;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -16,14 +16,22 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.*;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.function.Supplier;
 
 public class ModRegistry {
-    public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, CityMod.MODID);
-    public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, CityMod.MODID);
+
+    public static final DeferredRegister<Block> CITY_BLOCKS =
+            DeferredRegister.create(ForgeRegistries.BLOCKS, "citymod");
+    public static final DeferredRegister<Item> CITY_ITEMS =
+            DeferredRegister.create(ForgeRegistries.ITEMS, "citymod");
+
+    public static final DeferredRegister<Block> SCHOOLNEXT_BLOCKS =
+            DeferredRegister.create(ForgeRegistries.BLOCKS, "schoolnext");
+    public static final DeferredRegister<Item> SCHOOLNEXT_ITEMS =
+            DeferredRegister.create(ForgeRegistries.ITEMS, "schoolnext");
+
     public static final DeferredRegister<CreativeModeTab> TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CityMod.MODID);
 
@@ -33,15 +41,30 @@ public class ModRegistry {
     public static void register(IEventBus bus) {
         for (var def : BlockRegistry.BLOCKS) {
             Supplier<Block> factory = (Supplier<Block>) def.factory();
-            RegistryObject<Block> block = BLOCKS.register(def.id(), factory);
+            RegistryObject<Block> block = CITY_BLOCKS.register(def.id(), factory);
             BLOCK_MAP.put(def.id(), block);
         }
-        for (var entry : BLOCK_MAP.entrySet()) {
-            ITEMS.register(entry.getKey(),
-                    () -> new BlockItem(entry.getValue().get(), new Item.Properties()));
+
+        for (var def : SchoolnextRegistry.BLOCKS) {
+            Supplier<Block> factory = (Supplier<Block>) def.factory();
+            RegistryObject<Block> block = SCHOOLNEXT_BLOCKS.register(def.id(), factory);
+
+            BLOCK_MAP.put("schoolnext:" + def.id(), block);
+            BLOCK_MAP.putIfAbsent(def.id(), block);
         }
-        BLOCKS.register(bus);
-        ITEMS.register(bus);
+
+        for (var def : BlockRegistry.BLOCKS) {
+            CITY_ITEMS.register(def.id(), () -> new BlockItem(BLOCK_MAP.get(def.id()).get(), new Item.Properties()));
+        }
+
+        for (var def : SchoolnextRegistry.BLOCKS) {
+            SCHOOLNEXT_ITEMS.register(def.id(), () -> new BlockItem(BLOCK_MAP.get("schoolnext:" + def.id()).get(), new Item.Properties()));
+        }
+
+        CITY_BLOCKS.register(bus);
+        CITY_ITEMS.register(bus);
+        SCHOOLNEXT_BLOCKS.register(bus);
+        SCHOOLNEXT_ITEMS.register(bus);
 
         for (var tab : CreativeTabData.TABS) {
             TABS.register(tab.id(),

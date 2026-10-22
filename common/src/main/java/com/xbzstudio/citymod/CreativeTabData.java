@@ -153,7 +153,7 @@ public class CreativeTabData {
     public static final List<String> OTHER_IDS = List.of(
             "ac_out_nvidia", "ac_out_amd", "ac_out_intel",
             "ac_out_fake", "ac_out_40_hx","ac_out_690","blackwell_6000","internet_famous_road_sign","anniversary",
-            "hdd","dma"
+            "hdd","dma","schoolnext:schooltestblock"
     );
     public static final List<TabDef> TABS = List.of(
             new TabDef("traffic", Component.translatable("item_group.citymod.traffic"), "traffic_sign", TRAFFIC_IDS),

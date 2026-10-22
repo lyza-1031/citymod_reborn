@@ -45,7 +45,7 @@ public class BlockRegistry {
         reg("road_6", () -> new GenericSignBlock(BlockShapes.ROAD_6));
         reg("road_11", () -> new GenericSignBlock(BlockShapes.ROAD_11));
         reg("road_12", () -> new GenericSignBlock(BlockShapes.ROAD_12));
-        reg("expr_sign_large", () -> new GenericSignBlock(BlockShapes.EXPR_SIGN_LARGE,"tooltip.citymod.tall"));
+        reg("expr_sign_large", () -> new GenericSignBlock(BlockShapes.EXPR_SIGN_LARGE, "tooltip.citymod.tall"));
         reg("expressway_exit_sign", () -> new GenericSignBlock(BlockShapes.EXPRESSWAY_EXIT_SIGN));
         reg("expr_t_ips", () -> new GenericSignBlock(BlockShapes.EXPR_T_IPS));
         reg("traffic_sign", () -> new GenericSignBlock(BlockShapes.TRAFFIC_SIGN));
@@ -239,7 +239,7 @@ public class BlockRegistry {
         reg("bracket", () -> new GenericMetalBlock(CityShapes.ACBRACKET));
         reg("school_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
         reg("no_honking_sign", () -> new GenericMetalBlock(CityShapes.SpeedLimitSign));
-        reg("governmentsign", () -> new GenericMetalBlock(CityShapes.GSign,"tooltip.citymod.tall"));
+        reg("governmentsign", () -> new GenericMetalBlock(CityShapes.GSign, "tooltip.citymod.tall"));
         reg("sign_board", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("construction_warning", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("step_fence", () -> new GenericMetalBlock(CityShapes.StepFence));
@@ -258,9 +258,9 @@ public class BlockRegistry {
         reg("bluetile", GenericNormalBlock::new);
         reg("bluetile_stair", () -> new GenericStairBlock(Blocks.STONE.defaultBlockState()));
         reg("bluetile_slab", GenericSlabBlock::new);
-        reg("high_bar", () -> new GenericMetalBlock(BlockShapes.DEFAULT,"tooltip.citymod.tall"));
-        reg("high_bar2", () -> new GenericMetalBlock(BlockShapes.DEFAULT,"tooltip.citymod.tall"));
-        reg("double_bar", () -> new GenericMetalBlock(BlockShapes.DEFAULT,"tooltip.citymod.tall"));
+        reg("high_bar", () -> new GenericMetalBlock(BlockShapes.DEFAULT, "tooltip.citymod.tall"));
+        reg("high_bar2", () -> new GenericMetalBlock(BlockShapes.DEFAULT, "tooltip.citymod.tall"));
+        reg("double_bar", () -> new GenericMetalBlock(BlockShapes.DEFAULT, "tooltip.citymod.tall"));
         reg("tennis_table", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         // ==================== 电器 ====================
         reg("ac_out_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_01));
@@ -269,17 +269,17 @@ public class BlockRegistry {
         reg("ac_out_hd_4", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_04));
         reg("ac_out_hd_5", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_05));
         reg("ac_out_hd_6", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_06));
-        reg("air_condition_old_hd", () -> new GenericMetalBlock(ApplianceShapes.OLD_AC_HD,"tooltip.citymod.tall"));
-        reg("big_ac_out_hd", () -> new GenericMetalBlock(ApplianceShapes.BIG_AC_OUT_HD,"tooltip.citymod.tall"));
-        reg("centre_air_condition_outside", () -> new GenericMetalBlock(ApplianceShapes.CentreAirConditionOutside,"tooltip.citymod.tall"));
-        reg("air_condition_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_01,"tooltip.citymod.tall"));
+        reg("air_condition_old_hd", () -> new GenericMetalBlock(ApplianceShapes.OLD_AC_HD, "tooltip.citymod.tall"));
+        reg("big_ac_out_hd", () -> new GenericMetalBlock(ApplianceShapes.BIG_AC_OUT_HD, "tooltip.citymod.tall"));
+        reg("centre_air_condition_outside", () -> new GenericMetalBlock(ApplianceShapes.CentreAirConditionOutside, "tooltip.citymod.tall"));
+        reg("air_condition_hd_1", () -> new GenericMetalBlock(ApplianceShapes.AC_01, "tooltip.citymod.tall"));
         reg("air_condition_hd_2", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
         reg("airconditionhd_3", () -> new GenericMetalBlock(ApplianceShapes.AC_03));
-        reg("airconditionhd_4", () -> new GenericMetalBlock(ApplianceShapes.AC_04,"tooltip.citymod.tall"));
+        reg("airconditionhd_4", () -> new GenericMetalBlock(ApplianceShapes.AC_04, "tooltip.citymod.tall"));
         reg("central_ac_hd", () -> new GenericMetalBlock(ApplianceShapes.CAC_HD));
         reg("micro_wave_oven", () -> new GenericMetalBlock(ApplianceShapes.MicroWaveOven));
-        reg("fridge_1", () -> new GenericMetalBlock(ApplianceShapes.Fridge1,"tooltip.citymod.tall"));
-        reg("fridge_2", () -> new GenericMetalBlock(ApplianceShapes.Fridge2,"tooltip.citymod.tall"));
+        reg("fridge_1", () -> new GenericMetalBlock(ApplianceShapes.Fridge1, "tooltip.citymod.tall"));
+        reg("fridge_2", () -> new GenericMetalBlock(ApplianceShapes.Fridge2, "tooltip.citymod.tall"));
         reg("old_fridge", () -> new GenericMetalBlock(ApplianceShapes.Old_Fridge));
         reg("old_tv_table", () -> new GenericMetalBlock(ApplianceShapes.OldTVTable));
         reg("freezer", () -> new GenericMetalBlock(ApplianceShapes.Freezer));
@@ -289,19 +289,19 @@ public class BlockRegistry {
         reg("old_mainunit", () -> new GenericMetalBlock(ApplianceShapes.OLD_MAINUNIT));
         reg("mainunit_2010", () -> new GenericMetalBlock(ApplianceShapes.MAINUNIT2010));
         reg("main_unit_modern", () -> new GenericMetalBlock(ApplianceShapes.MODERMMAINUNIT));
-        reg("express_box_1", () -> new GenericMetalBlock(ApplianceShapes.ExpressBox,"tooltip.citymod.tall"));
-        reg("express_box_2", () -> new GenericMetalBlock(ApplianceShapes.ExpressBox,"tooltip.citymod.tall"));
+        reg("express_box_1", () -> new GenericMetalBlock(ApplianceShapes.ExpressBox, "tooltip.citymod.tall"));
+        reg("express_box_2", () -> new GenericMetalBlock(ApplianceShapes.ExpressBox, "tooltip.citymod.tall"));
         reg("old_mirror", () -> new GenericMetalBlock(BlockShapes.FREESIGN));
         reg("old_calendar", () -> new GenericMetalBlock(ApplianceShapes.OldCalendar));
-        reg("television", () -> new Power(ApplianceShapes.TELEVISION,  "tooltip.citymod.powerable"));
+        reg("television", () -> new Power(ApplianceShapes.TELEVISION, "tooltip.citymod.powerable"));
         reg("printer", () -> new GenericMetalBlock(CityShapes.StoneChair));
         reg("extractor", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("trimcover", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("washingmachine", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEA));
         reg("washine_machine_b", () -> new GenericMetalBlock(ApplianceShapes.WASHINGMACHINEB));
-        reg("crt_tv", () -> new Power(ApplianceShapes.CRTTV,  "tooltip.citymod.powerable"));
+        reg("crt_tv", () -> new Power(ApplianceShapes.CRTTV, "tooltip.citymod.powerable"));
         reg("treadmill", () -> new GenericMetalBlock(ApplianceShapes.TREADMILL));
-        reg("tv_hd", () -> new Power(ApplianceShapes.TVHD,  "tooltip.citymod.powerable"));
+        reg("tv_hd", () -> new Power(ApplianceShapes.TVHD, "tooltip.citymod.powerable"));
         reg("sausage_cooker", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("ac_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_02));
         reg("ac_out_modern", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_06));
@@ -310,7 +310,7 @@ public class BlockRegistry {
         reg("game_pc_black", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
         reg("game_pc_white", () -> new GenericGlassBlock((ApplianceShapes.MODERMMAINUNIT)));
         reg("electronic_scale", () -> new GenericGlassBlock((BlockShapes.TRAFFICLINE)));
-        reg("ac_modern_2", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
+        reg("ac_modern_2", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM, "tooltip.citymod.tall"));
         reg("water_dispenser", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("bucket", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         reg("oven", () -> new GenericSignBlock(ApplianceShapes.MicroWaveOven));
@@ -327,46 +327,46 @@ public class BlockRegistry {
         reg("toplamp4", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("desklamp", () -> new GenericLightBlock(ApplianceShapes.DESKLAMP));
         reg("desklamp2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
-        reg("floorlamp1", () -> new GenericLightBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
+        reg("floorlamp1", () -> new GenericLightBlock(ApplianceShapes.WardrobeM, "tooltip.citymod.tall"));
         reg("chandelier1", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("chandelier2", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("chandelier3", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("chandelier4", () -> new GenericLightBlock(BlockShapes.DEFAULT));
         reg("chandelier5", () -> new GenericLightBlock(ApplianceShapes.CLAMP5));
         //公交站台
-        reg("busstop1", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.tall"));
-        reg("busstop2", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1,"tooltip.citymod.lcgy"));
-        reg("busstop3", () -> new GenericMetalBlock(BlockShapes.BUSSTOPM,"tooltip.citymod.lcgy"));
-        reg("busstop_m", () -> new GenericMetalBlock(BlockShapes.BUSSTOPM,"tooltip.citymod.tall"));
-        reg("busstop_ad", () -> new GenericMetalBlock(BlockShapes.BUSSTOPAD,"tooltip.citymod.tall"));
-        reg("busstop_ad1", () -> new GenericMetalBlock(BlockShapes.BUSSTOPAD,"tooltip.citymod.tall"));
-        reg("busstop_pole", () -> new GenericMetalBlock(BlockShapes.BUSSTOPPOLE,"tooltip.citymod.tall"));
+        reg("busstop1", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1, "tooltip.citymod.tall"));
+        reg("busstop2", () -> new GenericMetalBlock(BlockShapes.BUSSTOP1, "tooltip.citymod.lcgy"));
+        reg("busstop3", () -> new GenericMetalBlock(BlockShapes.BUSSTOPM, "tooltip.citymod.lcgy"));
+        reg("busstop_m", () -> new GenericMetalBlock(BlockShapes.BUSSTOPM, "tooltip.citymod.tall"));
+        reg("busstop_ad", () -> new GenericMetalBlock(BlockShapes.BUSSTOPAD, "tooltip.citymod.tall"));
+        reg("busstop_ad1", () -> new GenericMetalBlock(BlockShapes.BUSSTOPAD, "tooltip.citymod.tall"));
+        reg("busstop_pole", () -> new GenericMetalBlock(BlockShapes.BUSSTOPPOLE, "tooltip.citymod.tall"));
         reg("busstop_top", () -> new GenericMetalBlock(BlockShapes.BUSSTOP_top));
         reg("busstop_chair", () -> new GenericMetalBlock(BlockShapes.BUSCHAIR));
         // 显示器（带开关）
-        reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor,  "tooltip.citymod.powerable"));
-        reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010,  "tooltip.citymod.powerable"));
-        reg("modern_monitor_off", () -> new Power(ApplianceShapes.ModernMonitor,  "tooltip.citymod.powerable"));
-        reg("all_in_one_pc", () -> new Power(ApplianceShapes.AIOPC,  "tooltip.citymod.powerable"));
-        reg("laptop", () -> new Power(ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON,  "tooltip.citymod.powerable"));
-        reg("gaming_laptop_off", () -> new Power(ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON,  "tooltip.citymod.powerable"));
-        reg("large_screen_black", () -> new Power(ApplianceShapes.LARGESCREEN,  "tooltip.citymod.powerable"));
-        reg("large_screen_white", () -> new Power(ApplianceShapes.LARGESCREEN,  "tooltip.citymod.powerable"));
+        reg("old_monitor_off", () -> new Power(ApplianceShapes.Old_Monitor, "tooltip.citymod.powerable"));
+        reg("monitor_2010off", () -> new Power(ApplianceShapes.Monitor2010, "tooltip.citymod.powerable"));
+        reg("modern_monitor_off", () -> new Power(ApplianceShapes.ModernMonitor, "tooltip.citymod.powerable"));
+        reg("all_in_one_pc", () -> new Power(ApplianceShapes.AIOPC, "tooltip.citymod.powerable"));
+        reg("laptop", () -> new Power(ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON, "tooltip.citymod.powerable"));
+        reg("gaming_laptop_off", () -> new Power(ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON, "tooltip.citymod.powerable"));
+        reg("large_screen_black", () -> new Power(ApplianceShapes.LARGESCREEN, "tooltip.citymod.powerable"));
+        reg("large_screen_white", () -> new Power(ApplianceShapes.LARGESCREEN, "tooltip.citymod.powerable"));
         reg("gaming_pc_white", () -> new GenericGlassBlock(ApplianceShapes.GAMINGPC));
         reg("gaming_pcblack", () -> new GenericGlassBlock(ApplianceShapes.GAMINGPC));
-        reg("game_monitor_black_off", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
-        reg("game_monitor_white_off", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
-        reg("game_monitor_black_std", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
-        reg("game_monitor_white_std", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
-        reg("small_tv", () -> new Power(ApplianceShapes.GAMEMONITOR,  "tooltip.citymod.powerable"));
+        reg("game_monitor_black_off", () -> new Power(ApplianceShapes.GAMEMONITOR, "tooltip.citymod.powerable"));
+        reg("game_monitor_white_off", () -> new Power(ApplianceShapes.GAMEMONITOR, "tooltip.citymod.powerable"));
+        reg("game_monitor_black_std", () -> new Power(ApplianceShapes.GAMEMONITOR, "tooltip.citymod.powerable"));
+        reg("game_monitor_white_std", () -> new Power(ApplianceShapes.GAMEMONITOR, "tooltip.citymod.powerable"));
+        reg("small_tv", () -> new Power(ApplianceShapes.GAMEMONITOR, "tooltip.citymod.powerable"));
         //家具
         reg("computer_desk_black", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
         reg("computer_desk_white", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
         reg("office_desk", () -> new GenericGlassBlock(ApplianceShapes.PCDESK));
         reg("office_chair_black", () -> new GenericGlassBlock(CityShapes.StoneChair));
         reg("office_chair_white", () -> new GenericGlassBlock(CityShapes.StoneChair));
-        reg("plastic_chair_red", () -> new GenericSignBlock(BlockShapes.TALLCHAIR,"tooltip.citymod.nohead"));
-        reg("plastic_chair_blue", () -> new GenericSignBlock(BlockShapes.TALLCHAIR,"tooltip.citymod.nohead"));
+        reg("plastic_chair_red", () -> new GenericSignBlock(BlockShapes.TALLCHAIR, "tooltip.citymod.nohead"));
+        reg("plastic_chair_blue", () -> new GenericSignBlock(BlockShapes.TALLCHAIR, "tooltip.citymod.nohead"));
         reg("monitor_bracket_black", () -> new GenericSignBlock(ApplianceShapes.MONITORBRACKET));
         reg("monitor_bracket_white", () -> new GenericSignBlock(ApplianceShapes.MONITORBRACKET));
         reg("monitor_light_black", () -> new GenericLightBlock(ApplianceShapes.MONITORLIGHT));
@@ -424,12 +424,12 @@ public class BlockRegistry {
         reg("crt_tv_on", () -> new GenericLightBlock(ApplianceShapes.CRTTV, "tooltip.citymod.old"));
         reg("old_ac_out", () -> new GenericMetalBlock(ApplianceShapes.AC_OUT_02, "tooltip.citymod.old"));
         // 家具
-        reg("oldwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
+        reg("oldwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM, "tooltip.citymod.tall"));
         reg("oldwardrobesmall", () -> new GenericMetalBlock(ApplianceShapes.WardrobeS));
-        reg("oldwardrobecorner", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
-        reg("modernwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM,"tooltip.citymod.tall"));
+        reg("oldwardrobecorner", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM, "tooltip.citymod.tall"));
+        reg("modernwardrobe", () -> new GenericMetalBlock(ApplianceShapes.WardrobeM, "tooltip.citymod.tall"));
         reg("modernwardrobeup", () -> new GenericMetalBlock(ApplianceShapes.WardrobeS));
-        reg("modernwardrobeb", () -> new GenericMetalBlock(ApplianceShapes.WardrobeL,"tooltip.citymod.tall"));
+        reg("modernwardrobeb", () -> new GenericMetalBlock(ApplianceShapes.WardrobeL, "tooltip.citymod.tall"));
         //红绿灯
         reg("pedestrian_traffic_light_r", () -> new TimedPower(BlockShapes.PTrafficLight, "tooltip.citymod.tall_trafficlight"));
         reg("traffic_light_round_green", () -> new TimedPower(BlockShapes.TrafficLight, "tooltip.citymod.trafficlight"));
@@ -682,6 +682,7 @@ public class BlockRegistry {
     }
 
     private static void reg(String id, Supplier<Block> factory) {
-        BLOCKS.add(new BlockDef(id, factory));
+        BLOCKS.add(new BlockDef("citymod", id, factory, null));
     }
+
 }

@@ -9,6 +9,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(CityMod.MODID)
 public class citymodForge {
+    @SuppressWarnings("unchecked")
     public citymodForge() {
         ModRegistry.register(FMLJavaModLoadingContext.get().getModEventBus());
     }

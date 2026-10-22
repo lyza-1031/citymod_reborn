@@ -104,29 +104,47 @@ public class TimedPower extends Block implements SimpleWaterloggedBlock {
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         long gameTime = level.getGameTime();
-        long phase = (gameTime / 600) % 2;
-        boolean shouldBePowered = (state.getValue(FACING) == Direction.EAST ||
-                state.getValue(FACING) == Direction.WEST) ^ (phase == 1);
 
-        if (state.getValue(FLASHING)) {
-            level.setBlock(pos, state.setValue(FLASHING, false).setValue(POWERED, shouldBePowered),
-                    Block.UPDATE_ALL);
-            level.sendBlockUpdated(pos, state, state, Block.UPDATE_ALL);
-        } else if (state.getValue(POWERED) && !shouldBePowered) {
-            level.setBlock(pos, state.setValue(FLASHING, true).setValue(POWERED, false),
-                    Block.UPDATE_ALL);
-            level.sendBlockUpdated(pos, state, state, Block.UPDATE_ALL);
-            level.scheduleTick(pos, this, 60);
-            return;
-        } else if (!state.getValue(POWERED) && shouldBePowered) {
-            level.sendBlockUpdated(pos, state, state, Block.UPDATE_ALL);
-            level.setBlock(pos, state.setValue(POWERED, true), Block.UPDATE_ALL);
+        // 时间参数 (单位：tick，20 tick = 1秒)
+        long GREEN_TIME = 27 * 20;
+        long YELLOW_TIME = 3 * 20;
+        long HALF_CYCLE = GREEN_TIME + YELLOW_TIME;
+        long CYCLE = HALF_CYCLE * 2;
+
+        long cyclePos = gameTime % CYCLE;
+
+        boolean shouldBePowered = false;
+        boolean shouldBeFlashing = false;
+
+        boolean isEW = (state.getValue(FACING) == Direction.EAST || state.getValue(FACING) == Direction.WEST);
+        if (cyclePos < GREEN_TIME) {
+            shouldBePowered = isEW;
+        }
+        else if (cyclePos < HALF_CYCLE) {
+            if (isEW) {
+                shouldBePowered = false;
+                shouldBeFlashing = true;
+            } else {
+                shouldBePowered = false;
+            }
+        }
+        else if (cyclePos < HALF_CYCLE + GREEN_TIME) {
+            shouldBePowered = !isEW;
+        }
+        else {
+            if (!isEW) {
+                shouldBePowered = false;
+                shouldBeFlashing = true;
+            } else {
+                shouldBePowered = false;
+            }
         }
 
-        long remainder = gameTime % 600;
-        int next = (int) (600 - remainder);
-        if (next <= 0) next = 600;
-        level.scheduleTick(pos, this, next);
+        if (state.getValue(POWERED) != shouldBePowered || state.getValue(FLASHING) != shouldBeFlashing) {
+            level.setBlock(pos, state.setValue(POWERED, shouldBePowered).setValue(FLASHING, shouldBeFlashing), Block.UPDATE_ALL);
+        }
+
+        level.scheduleTick(pos, this, 20);
     }
     @Override
     public float getShadeBrightness(BlockState state, BlockGetter world, BlockPos pos) {

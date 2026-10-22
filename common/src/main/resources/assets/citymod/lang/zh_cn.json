@@ -511,5 +511,6 @@
   "block.citymod.awning_edge2": "火车站雨棚边缘反向",
   "block.citymod.railway_pole": "火车站混凝土柱",
   "block.citymod.railway_pole_joint": "火车站混凝土柱接头",
-  "block.citymod.railway_pole_joint_d": "火车站混凝土柱接头"
+  "block.citymod.railway_pole_joint_d": "火车站混凝土柱接头",
+  "tooltip.citymod.schoolcompat": "《中国式学校》模组合并测试方块"
 }

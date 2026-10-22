@@ -515,5 +515,6 @@
   "block.citymod.awning_edge2": "awning edge",
   "block.citymod.railway_pole": "railway pole",
   "block.citymod.railway_pole_joint": "railway pole",
-  "block.citymod.railway_pole_joint_d": "railway pole"
+  "block.citymod.railway_pole_joint_d": "railway pole",
+  "tooltip.citymod.schoolcompat": "Chinese School Mod merge test block"
 }
