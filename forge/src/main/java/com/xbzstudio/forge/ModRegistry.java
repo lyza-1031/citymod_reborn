@@ -4,7 +4,9 @@ import com.xbzstudio.citymod.CityMod;
 import com.xbzstudio.citymod.CreativeTabData;
 import com.xbzstudio.citymod.block.BlockRegistry;
 import com.xbzstudio.citymod.block.SchoolnextRegistry;
+import com.xbzstudio.citymod.entity.ModEntities;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -31,6 +33,9 @@ public class ModRegistry {
             DeferredRegister.create(ForgeRegistries.BLOCKS, "schoolnext");
     public static final DeferredRegister<Item> SCHOOLNEXT_ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, "schoolnext");
+
+    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
+            DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, CityMod.MODID);
 
     public static final DeferredRegister<CreativeModeTab> TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CityMod.MODID);
@@ -61,10 +66,13 @@ public class ModRegistry {
             SCHOOLNEXT_ITEMS.register(def.id(), () -> new BlockItem(BLOCK_MAP.get("schoolnext:" + def.id()).get(), new Item.Properties()));
         }
 
+        ENTITY_TYPES.register("seat", () -> ModEntities.SEAT);
+
         CITY_BLOCKS.register(bus);
         CITY_ITEMS.register(bus);
         SCHOOLNEXT_BLOCKS.register(bus);
         SCHOOLNEXT_ITEMS.register(bus);
+        ENTITY_TYPES.register(bus);
 
         for (var tab : CreativeTabData.TABS) {
             TABS.register(tab.id(),

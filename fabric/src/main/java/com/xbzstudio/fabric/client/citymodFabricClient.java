@@ -3,6 +3,7 @@ package com.xbzstudio.fabric.client;
 import com.mojang.blaze3d.platform.InputConstants;
 import com.xbzstudio.citymod.CityMod;
 import com.xbzstudio.citymod.block.BlockRegistry;
+import com.xbzstudio.citymod.client.CityModClient;
 import com.xbzstudio.citymod.network.KillItemsPacket;
 import dev.architectury.networking.NetworkManager;
 import net.fabricmc.api.ClientModInitializer;
@@ -24,6 +25,7 @@ public final class citymodFabricClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        CityModClient.init();
         System.setProperty("fabric.texture.size.limit", "4096");
 
         // 渲染层
