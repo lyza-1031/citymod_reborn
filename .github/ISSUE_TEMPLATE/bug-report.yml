@@ -40,7 +40,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: 我的城市的版本
+      label: 我的城市模组的版本
       description: 你可以在模组菜单中找到我的城市的版本，或者在mods文件夹中查找citymod的Jar文件中的版本号
     validations:
       required: true
@@ -48,7 +48,7 @@ body:
   - type: textarea
     id: related
     attributes:
-      label: Related Mods
+      label: 相关模组
       description: >-
         和bug相关的模组
         <br>请在反馈问题前尝试尽可能移除不相干的模组的情况下复现bug
@@ -60,7 +60,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Description
+      label: 描述
       description: >-
         请尽可能详细的描述遇到的问题. 
         <br>请在反馈问题前尝试尽可能移除不相干的模组的情况下复现bug
