@@ -1,7 +1,10 @@
 package com.xbzstudio.citymod.block.shapes;
 
+import com.xbzstudio.citymod.block.genericblocks.GenericMultiFaceBlock;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -456,4 +459,43 @@ public class ApplianceShapes {
             box(0, 0, -16,16 ,1, 16),
             box(0, 0, 0, 16, 1, 32)
     );
+
+    private static final Map<Direction, Map<AttachFace, VoxelShape>> AIRVENT_SHAPES = new EnumMap<>(Direction.class);
+    static {
+        for (Direction facing : new Direction[]{Direction.SOUTH, Direction.NORTH, Direction.EAST, Direction.WEST}) {
+            Map<AttachFace, VoxelShape> faceMap = new EnumMap<>(AttachFace.class);
+            for (AttachFace face : AttachFace.values()) {
+                VoxelShape shape = switch (facing) {
+                    case SOUTH -> switch (face) {
+                        case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
+                        case WALL -> Block.box(0, 4, 0, 16, 12, 1);
+                        case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
+                    };
+                    case NORTH -> switch (face) {
+                        case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
+                        case WALL -> Block.box(0, 4, 15, 16, 12, 16);
+                        case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
+                    };
+                    case EAST -> switch (face) {
+                        case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
+                        case WALL -> Block.box(0, 4, 0, 1, 12, 16);
+                        case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
+                    };
+                    case WEST -> switch (face) {
+                        case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
+                        case WALL -> Block.box(15, 4, 0, 16, 12, 16);
+                        case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
+                    };
+                    default -> Block.box(0, 0, 0, 16, 16, 16);
+                };
+                faceMap.put(face, shape);
+            }
+            AIRVENT_SHAPES.put(facing, faceMap);
+        }
+    }
+
+    public static VoxelShape getAirventShape(BlockState state) {
+        return AIRVENT_SHAPES.getOrDefault(state.getValue(GenericMultiFaceBlock.FACING), Map.of())
+                .getOrDefault(state.getValue(GenericMultiFaceBlock.FACE), Shapes.block());
+    }
 }

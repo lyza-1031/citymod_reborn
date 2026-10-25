@@ -1,7 +1,10 @@
 package com.xbzstudio.citymod.block.shapes;
 
+import com.xbzstudio.citymod.block.genericblocks.GenericMultiFaceBlock;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -272,4 +275,19 @@ public class CityShapes {
             box(7, 7, 0, 9, 9, 8),
             box(7, 7, 0, 9, 9, 8)
     );
+    public static final Map<Direction, VoxelShape> PIPE_JOINT_SHAPES = new EnumMap<>(Direction.class);
+    static {
+        PIPE_JOINT_SHAPES.put(Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)));
+        PIPE_JOINT_SHAPES.put(Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)));
+        PIPE_JOINT_SHAPES.put(Direction.EAST,  Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)));
+        PIPE_JOINT_SHAPES.put(Direction.WEST,  Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)));
+        PIPE_JOINT_SHAPES.put(Direction.UP,    Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)));
+        PIPE_JOINT_SHAPES.put(Direction.DOWN,  Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9)));
+    }
+        public static final Map<Direction.Axis, VoxelShape> PIPE_SHAPES = new EnumMap<>(Direction.Axis.class);
+        static {
+            PIPE_SHAPES.put(Direction.Axis.X, Block.box(0, 7, 7, 16, 9, 9));
+            PIPE_SHAPES.put(Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9));
+            PIPE_SHAPES.put(Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16));
+        }
 }

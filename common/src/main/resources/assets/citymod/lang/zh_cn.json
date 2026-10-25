@@ -2,6 +2,9 @@
   "block.citymod.ac_airvent_hd": "空调出风口",
   "block.citymod.ac_airvent_hd_l": "空调出风口(左)",
   "block.citymod.ac_airvent_hd_r": "空调出风口(右)",
+  "block.citymod.ac_airvent_hd1": "空调出风口",
+  "block.citymod.ac_airvent_hd_l1": "空调出风口(左)",
+  "block.citymod.ac_airvent_hd_r1": "空调出风口(右)",
   "block.citymod.ac_bracket": "空调架",
   "block.citymod.ac_cover": "空调外机罩",
   "block.citymod.ac_cover_light": "空调外机罩",
@@ -373,7 +376,6 @@
   "block.citymod.yellow_sign_2": "黄色标志牌",
   "block.citymod.yellowline_block": "黄线方块",
   "block.citymod.zebracrossing_oblique": "斑马线（斜向）",
-  "item.citymod.rifle_legacy": "步枪",
   "itemGroup.tabhousehold_appliances": "家用电器",
   "itemGroup.tabmodern_windows": "现代玻璃窗",
   "itemGroup.tabother": "其他",
@@ -512,5 +514,12 @@
   "block.citymod.railway_pole": "火车站混凝土柱",
   "block.citymod.railway_pole_joint": "火车站混凝土柱接头",
   "block.citymod.railway_pole_joint_d": "火车站混凝土柱接头",
-  "tooltip.citymod.schoolcompat": "《中国式学校》模组合并测试方块"
+  "tooltip.citymod.schoolcompat": "《中国式学校》模组合并测试方块",
+  "block.citymod.railway_station_sign": "火车站站牌",
+  "block.citymod.railway_station_sign_pole": "火车站站牌柱",
+  "block.citymod.railway_station_sign_pole_head": "火车站站牌柱顶部",
+  "block.citymod.railway_station_sign_big": "火车站站牌",
+  "block.citymod.railway_station_sign_big2": "火车站站牌",
+  "block.citymod.ironframe": "铁框架",
+  "block.citymod.ironframe_pole": "铁框架带柱子"
 }

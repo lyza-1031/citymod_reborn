@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/awning/ironframe",
+  "textures": {
+    "all": "minecraft:block/white_concrete",
+    "particle": "minecraft:block/white_concrete",
+    "missing": "minecraft:block/white_concrete"
+  },
+  "render_type": "solid"
+}

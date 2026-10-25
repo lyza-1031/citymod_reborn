@@ -251,6 +251,13 @@ public class BlockRegistry {
         reg("awning_top", () -> new GenericSignBlock(CityShapes.StoneChair));
         reg("awning_edge", () -> new GenericSignBlock(CityShapes.StoneChair));
         reg("awning_edge2", () -> new GenericSignBlock(CityShapes.StoneChair));
+        reg("railway_station_sign", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("railway_station_sign_big", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("railway_station_sign_big2", () -> new GenericSignBlock(BlockShapes.DEFAULT));
+        reg("railway_station_sign_pole", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("railway_station_sign_pole_head", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("ironframe", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("ironframe_pole", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         // ==================== 景观 ====================
         reg("blacktile", GenericNormalBlock::new);
         reg("blacktile_stair", () -> new GenericStairBlock(Blocks.STONE.defaultBlockState()));
@@ -548,137 +555,19 @@ public class BlockRegistry {
                 default -> Block.box(0, 0, 0, 16, 16, 16);
             };
         }));
-        reg("ac_airvent_hd", () -> new GenericMultiFaceBlock(state -> {
-            Direction facing = state.getValue(GenericMultiFaceBlock.FACING);
-            AttachFace face = state.getValue(GenericMultiFaceBlock.FACE);
-
-            return switch (facing) {
-                case SOUTH -> switch (face) {
-                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
-                    case WALL -> Block.box(0, 4, 0, 16, 12, 1);
-                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
-                };
-                case NORTH -> switch (face) {
-                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
-                    case WALL -> Block.box(0, 4, 15, 16, 12, 16);
-                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
-                };
-                case EAST -> switch (face) {
-                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
-                    case WALL -> Block.box(0, 4, 0, 1, 12, 16);
-                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
-                };
-                case WEST -> switch (face) {
-                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
-                    case WALL -> Block.box(15, 4, 0, 16, 12, 16);
-                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
-                };
-                default -> Block.box(0, 0, 0, 16, 16, 16);
-            };
-        }));
-        reg("ac_airvent_hd_l", () -> new GenericMultiFaceBlock(state -> {
-            Direction facing = state.getValue(GenericMultiFaceBlock.FACING);
-            AttachFace face = state.getValue(GenericMultiFaceBlock.FACE);
-
-            return switch (facing) {
-                case SOUTH -> switch (face) {
-                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
-                    case WALL -> Block.box(0, 4, 0, 16, 12, 1);
-                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
-                };
-                case NORTH -> switch (face) {
-                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
-                    case WALL -> Block.box(0, 4, 15, 16, 12, 16);
-                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
-                };
-                case EAST -> switch (face) {
-                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
-                    case WALL -> Block.box(0, 4, 0, 1, 12, 16);
-                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
-                };
-                case WEST -> switch (face) {
-                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
-                    case WALL -> Block.box(15, 4, 0, 16, 12, 16);
-                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
-                };
-                default -> Block.box(0, 0, 0, 16, 16, 16);
-            };
-        }));
-        reg("ac_airvent_hd_r", () -> new GenericMultiFaceBlock(state -> {
-            Direction facing = state.getValue(GenericMultiFaceBlock.FACING);
-            AttachFace face = state.getValue(GenericMultiFaceBlock.FACE);
-
-            return switch (facing) {
-                case SOUTH -> switch (face) {
-                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
-                    case WALL -> Block.box(0, 4, 0, 16, 12, 1);
-                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
-                };
-                case NORTH -> switch (face) {
-                    case FLOOR -> Block.box(0, 0, 4, 16, 1, 12);
-                    case WALL -> Block.box(0, 4, 15, 16, 12, 16);
-                    case CEILING -> Block.box(0, 15, 4, 16, 16, 12);
-                };
-                case EAST -> switch (face) {
-                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
-                    case WALL -> Block.box(0, 4, 0, 1, 12, 16);
-                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
-                };
-                case WEST -> switch (face) {
-                    case FLOOR -> Block.box(4, 0, 0, 12, 1, 16);
-                    case WALL -> Block.box(15, 4, 0, 16, 12, 16);
-                    case CEILING -> Block.box(4, 15, 0, 12, 16, 16);
-                };
-                default -> Block.box(0, 0, 0, 16, 16, 16);
-            };
-        }));
-        reg("water_pipe", () -> new GenericAxisBlock(Map.of(
-                Direction.Axis.X, Block.box(0, 7, 7, 16, 9, 9),
-                Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9),
-                Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16)
-        )));
-        reg("water_pipe_red", () -> new GenericAxisBlock(Map.of(
-                Direction.Axis.X, Block.box(0, 7, 7, 16, 9, 9),
-                Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9),
-                Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16)
-        )));
-        reg("railway_pole", () -> new GenericAxisBlock(Map.of(
-                Direction.Axis.X, Block.box(0, 5, 5, 16, 11, 11),
-                Direction.Axis.Y, Block.box(5, 0, 5, 11, 16, 11),
-                Direction.Axis.Z, Block.box(5, 5, 0, 11, 11, 16)
-        )));
-        reg("water_pipe_joint", () -> new GenericDirectionBlock(Map.of(
-                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
-                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
-                Direction.EAST, Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
-                Direction.WEST, Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
-                Direction.UP, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
-                Direction.DOWN, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
-        )));
-        reg("water_pipe_joint_red", () -> new GenericDirectionBlock(Map.of(
-                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
-                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
-                Direction.EAST, Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
-                Direction.WEST, Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
-                Direction.UP, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
-                Direction.DOWN, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
-        )));
-        reg("water_pipe_joint_r", () -> new GenericDirectionBlock(Map.of(
-                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
-                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
-                Direction.EAST, Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
-                Direction.WEST, Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
-                Direction.UP, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
-                Direction.DOWN, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
-        )));
-        reg("water_pipe_joint_red_r", () -> new GenericDirectionBlock(Map.of(
-                Direction.SOUTH, Shapes.or(Block.box(0, 7, 7, 9, 9, 9), Block.box(7, 7, 9, 9, 9, 16)),
-                Direction.NORTH, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 7, 0, 9, 9, 7)),
-                Direction.EAST, Shapes.or(Block.box(7, 7, 7, 9, 9, 16), Block.box(9, 7, 7, 16, 9, 9)),
-                Direction.WEST, Shapes.or(Block.box(7, 7, 0, 9, 9, 9), Block.box(0, 7, 7, 7, 9, 9)),
-                Direction.UP, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 9, 7, 9, 16, 9)),
-                Direction.DOWN, Shapes.or(Block.box(7, 7, 7, 16, 9, 9), Block.box(7, 0, 7, 9, 7, 9))
-        )));
+        reg("ac_airvent_hd", () -> new GenericMultiFaceBlock(ApplianceShapes::getAirventShape));
+        reg("ac_airvent_hd_l", () -> new GenericMultiFaceBlock(ApplianceShapes::getAirventShape));
+        reg("ac_airvent_hd_r", () -> new GenericMultiFaceBlock(ApplianceShapes::getAirventShape));
+        reg("ac_airvent_hd1", () -> new GenericMultiFaceBlock(ApplianceShapes::getAirventShape));
+        reg("ac_airvent_hd_l1", () -> new GenericMultiFaceBlock(ApplianceShapes::getAirventShape));
+        reg("ac_airvent_hd_r1", () -> new GenericMultiFaceBlock(ApplianceShapes::getAirventShape));
+        reg("water_pipe", () -> new GenericAxisBlock(CityShapes.PIPE_SHAPES));
+        reg("water_pipe_red", () -> new GenericAxisBlock(CityShapes.PIPE_SHAPES));
+        reg("railway_pole", () -> new GenericAxisBlock(CityShapes.PIPE_SHAPES));
+        reg("water_pipe_joint", () -> new GenericDirectionBlock(CityShapes.PIPE_JOINT_SHAPES));
+        reg("water_pipe_joint_red", () -> new GenericDirectionBlock(CityShapes.PIPE_JOINT_SHAPES));
+        reg("water_pipe_joint_r", () -> new GenericDirectionBlock(CityShapes.PIPE_JOINT_SHAPES));
+        reg("water_pipe_joint_red_r", () -> new GenericDirectionBlock(CityShapes.PIPE_JOINT_SHAPES));
     }
 
     private static void reg(String id, Supplier<Block> factory) {

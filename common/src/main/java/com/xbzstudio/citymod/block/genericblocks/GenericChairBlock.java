@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class GenericChairBlock extends GenericMetalBlock {
+public class GenericChairBlock extends GenericSignBlock {
     private final double seatY;
 
     public GenericChairBlock(Map<Direction, VoxelShape> shapes, double seatY) {

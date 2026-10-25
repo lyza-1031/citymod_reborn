@@ -69,7 +69,8 @@ public class CreativeTabData {
             "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_ad1","busstop_pole","busstop_top","busstop_chair",
             "network_box","milk_box",
             "blacktile","blacktile_stair","blacktile_slab","bluetile","bluetile_stair","bluetile_slab","high_bar","high_bar2","double_bar",
-            "tennis_table","awning_top","awning_edge","awning_edge2"
+            "tennis_table","awning_top","awning_edge","awning_edge2","railway_station_sign","railway_station_sign_big","railway_station_sign_big2",
+            "ironframe","ironframe_pole"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
@@ -99,7 +100,8 @@ public class CreativeTabData {
             "pole_horizontal_w", "pole_expr_w", "pole_expr_right_w", "pole_exprmid_w",
             "pole_fine_d_w", "polefine_joint_d_w",
             "warn_pole_w","light_pole_with_flag_w",
-            "railway_pole","railway_pole_joint","railway_pole_joint_d"
+            "railway_pole","railway_pole_joint","railway_pole_joint_d",
+            "railway_station_sign_pole","railway_station_sign_pole_head"
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
@@ -107,7 +109,8 @@ public class CreativeTabData {
             "big_ac_out_hd", "centre_air_condition_outside",
             "air_condition_hd_1", "air_condition_hd_2",
             "airconditionhd_3", "airconditionhd_4","ac_modern","ac_modern_2",
-            "air_condition_old_hd", "central_ac_hd","ac_airvent_hd_l","ac_airvent_hd","ac_airvent_hd_r",
+            "air_condition_old_hd", "central_ac_hd",
+            "ac_airvent_hd_l","ac_airvent_hd","ac_airvent_hd_r","ac_airvent_hd_l1","ac_airvent_hd1","ac_airvent_hd_r1",
             "micro_wave_oven", "fridge_1", "fridge_2",  "freezer",
             "gas_water_heater", "electric_water_heater", "solarwaterheater","solarwaterheaterred",
             "old_monitor_off", "monitor_2010off", "old_mainunit",
