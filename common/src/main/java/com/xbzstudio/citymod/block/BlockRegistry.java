@@ -256,6 +256,7 @@ public class BlockRegistry {
         reg("railway_station_sign_big2", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         reg("railway_station_sign_pole", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("railway_station_sign_pole_head", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
+        reg("railway_station_sign_pole_head2", () -> new GenericSignBlock(BlockShapes.LAMPPOST));
         reg("ironframe", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         reg("ironframe_pole", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
         // ==================== 景观 ====================
@@ -395,13 +396,13 @@ public class BlockRegistry {
         reg("modern_mirror_big", () -> new GenericLightBlock(PostShapes.Post169));
         reg("modern_mirror", () -> new GenericLightBlock(BlockShapes.MediumSign));
         reg("ironbed", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
-        reg("ironbed2", () -> new GenericChairBlock(ApplianceShapes.IRONBED,0.4));
-        reg("ironbed3", () -> new GenericChairBlock(ApplianceShapes.IRONBED2,0.4));
-        reg("ironbed4", () -> new GenericChairBlock(ApplianceShapes.IRONBED,0.4));
+        reg("ironbed2", () -> new GenericChairBlock(ApplianceShapes.IRONBED,0.2));
+        reg("ironbed3", () -> new GenericChairBlock(ApplianceShapes.IRONBED2,0.5));
+        reg("ironbed4", () -> new GenericChairBlock(ApplianceShapes.IRONBED,0.2));
         reg("ironbed_b", () -> new GenericMetalBlock(ApplianceShapes.PCDESK));
-        reg("ironbed_b2", () -> new GenericChairBlock(ApplianceShapes.IRONBED,0.4));
-        reg("ironbed_b3", () -> new GenericChairBlock(ApplianceShapes.IRONBED2,0.4));
-        reg("ironbed_b4", () -> new GenericChairBlock(ApplianceShapes.IRONBED,0.4));
+        reg("ironbed_b2", () -> new GenericChairBlock(ApplianceShapes.IRONBED,0.2));
+        reg("ironbed_b3", () -> new GenericChairBlock(ApplianceShapes.IRONBED2,0.5));
+        reg("ironbed_b4", () -> new GenericChairBlock(ApplianceShapes.IRONBED,0.2));
         reg("wood_wardrobe", () -> new GenericSignBlock(ApplianceShapes.Freezer));
         reg("wood_wardrobe_big", () -> new GenericSignBlock(ApplianceShapes.BIGWARDROBE));
         reg("wood_wardrobe_side", () -> new GenericMetalBlock(CityShapes.Concretebarrierfenced));
@@ -563,7 +564,11 @@ public class BlockRegistry {
         reg("ac_airvent_hd_r1", () -> new GenericMultiFaceBlock(ApplianceShapes::getAirventShape));
         reg("water_pipe", () -> new GenericAxisBlock(CityShapes.PIPE_SHAPES));
         reg("water_pipe_red", () -> new GenericAxisBlock(CityShapes.PIPE_SHAPES));
-        reg("railway_pole", () -> new GenericAxisBlock(CityShapes.PIPE_SHAPES));
+        reg("railway_pole", () -> new GenericAxisBlock(Map.of(
+                Direction.Axis.X, Block.box(0, 5, 5, 16, 11, 11),
+                Direction.Axis.Y, Block.box(5, 0, 5, 11, 16, 11),
+                Direction.Axis.Z, Block.box(5, 5, 0, 11, 11, 16)
+        )));
         reg("water_pipe_joint", () -> new GenericDirectionBlock(CityShapes.PIPE_JOINT_SHAPES));
         reg("water_pipe_joint_red", () -> new GenericDirectionBlock(CityShapes.PIPE_JOINT_SHAPES));
         reg("water_pipe_joint_r", () -> new GenericDirectionBlock(CityShapes.PIPE_JOINT_SHAPES));

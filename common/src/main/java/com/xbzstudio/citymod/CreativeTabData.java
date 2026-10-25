@@ -101,7 +101,7 @@ public class CreativeTabData {
             "pole_fine_d_w", "polefine_joint_d_w",
             "warn_pole_w","light_pole_with_flag_w",
             "railway_pole","railway_pole_joint","railway_pole_joint_d",
-            "railway_station_sign_pole","railway_station_sign_pole_head"
+            "railway_station_sign_pole","railway_station_sign_pole_head","railway_station_sign_pole_head2"
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",

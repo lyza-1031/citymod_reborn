@@ -1,0 +1,91 @@
+name: 错误/崩溃报告
+description: 喵喵喵
+title: "[错误/崩溃]: "
+labels: [ "bug" ]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请确保您使用的是最新版的我的城市，您所反馈的bug可能已经在新版本中修复
+
+        在反馈bug前，请先尝试搜索是否已有相似的问题，请不要重复打开相同的issue
+
+        如果是GL_MAX_TEXTURE_SIZE类错误请不要提交issue，大部分情况是你的设备问题！建议安装 自动贴图缩放 来解决！
+
+        如果是模组方块渲染发黑，则是游戏本身而不是模组的问题！你应该安装Embeddium、Sodium和ModernUI类可选前置来解决！
+
+        不接受任何游玩0.1.4.4版本用户提出的issue，它们将被直接关闭。始终建议游玩最新版本
+  - type: checkboxes
+    id: preliminary
+    attributes:
+      label: 我已确认 ...
+      options:
+        - label: 我正在使用最新版的我的城市
+        - label: 无法在不安装我的城市及其前置时复现
+          required: true
+
+  - type: input
+    id: minecraft-modloader-version
+    attributes:
+      label: Minecraft和模组加载器版本
+      description: |
+        你所使用的Minecraft和模组加载器(forge/neoforge/fabric)的版本.  
+
+        你可以在游戏主界面左下角或者游戏启动时的日志开头等地方找到.
+        
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 我的城市的版本
+      description: 你可以在模组菜单中找到我的城市的版本，或者在mods文件夹中查找citymod的Jar文件中的版本号
+    validations:
+      required: true
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Mods
+      description: >-
+        和bug相关的模组
+        <br>请在反馈问题前尝试尽可能移除不相干的模组的情况下复现bug
+      placeholder: 'Mods list here'
+      render: 'raw'
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >-
+        请尽可能详细的描述遇到的问题. 
+        <br>请在反馈问题前尝试尽可能移除不相干的模组的情况下复现bug
+        <br>越清晰和详尽的描述会使该bug的处理优先级更高
+        <br>如果遇到崩溃问题，请务必提交错误报告，否则我们只能给你算一卦
+    validations:
+      required: true
+
+  - type: textarea
+    id: step
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. Install something...
+
+        2. Join the game...
+
+        3. ....
+
+- type: textarea
+    id: logs
+    attributes:
+      label: 日志和崩溃报告
+      description: >-
+        在/logs/lastest.log 和 /crash-report 中查找错误报告...
+        <br>你可以日志上传到...
+        <br>**不要在此此处直接粘贴大段的日志文本!!**
+      placeholder: '把日志文件往这丢或者使用外部链接'

@@ -1,0 +1,71 @@
+name: ✨功能请求
+description: 喵喵喵
+title: "[功能请求]: "
+labels: [ "enhancement" ]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请确保您完整阅读了MCMOD页面上的注意事项，且知晓作者不喜欢什么东西
+
+        如果未得到满意的恢复，请不要重复打开相同的issue
+
+        新版本我的城市中可能包含了你想要的功能，在提交issue前应该先试玩最新的我的城市版本
+
+        对于原版化/不提交配方的情况下请求配方/1.20以下的版本支持/复杂互动请求等将被直接关闭
+  - type: checkboxes
+    id: preliminary
+    attributes:
+      label: 我已确认 ...
+      options:
+        - label: 我完整阅读了MCMOD页面上的注意事项
+          required: true
+
+  - type: input
+    id: minecraft-modloader-version
+    attributes:
+      label: Minecraft和模组加载器版本
+      description: |
+        你所使用的Minecraft和模组加载器(forge/neoforge/fabric)的版本.  
+
+        你可以在游戏主界面左下角或者游戏启动时的日志开头等地方找到.
+        
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 你正在游玩的我的城市的版本
+      description: 你可以在模组菜单中找到我的城市的版本，或者在mods文件夹中查找citymod的Jar文件中的版本号
+    validations:
+      required: true
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Mods
+      description: >-
+        和bug相关的模组
+        <br>请在反馈问题前尝试尽可能移除不相干的模组的情况下复现bug
+      placeholder: 'Mods list here'
+      render: 'raw'
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >-
+       畅所欲言
+    validations:
+      required: true
+
+  - type: textarea
+    id: step
+    attributes:
+      label: 实现方法（可选）
+      placeholder: |
+ 
