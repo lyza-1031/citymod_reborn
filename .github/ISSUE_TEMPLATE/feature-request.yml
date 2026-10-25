@@ -62,10 +62,4 @@ body:
        畅所欲言
     validations:
       required: true
-
-  - type: textarea
-    id: step
-    attributes:
-      label: 实现方法（可选）
-      placeholder: |
  

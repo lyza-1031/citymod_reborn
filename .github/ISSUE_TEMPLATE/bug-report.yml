@@ -80,7 +80,7 @@ body:
 
         3. ....
 
-- type: textarea
+  - type: textarea
     id: logs
     attributes:
       label: 日志和崩溃报告
