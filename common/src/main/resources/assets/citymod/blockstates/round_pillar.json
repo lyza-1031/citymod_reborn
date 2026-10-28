@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/awning/round_pillar"
+    },
+    "facing=east": {
+      "model": "citymod:block/awning/round_pillar"
+    },
+    "facing=south": {
+      "model": "citymod:block/awning/round_pillar"
+    },
+    "facing=west": {
+      "model": "citymod:block/awning/round_pillar"
+    }
+  }
+}

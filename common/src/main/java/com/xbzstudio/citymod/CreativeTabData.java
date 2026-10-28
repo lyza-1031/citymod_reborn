@@ -68,7 +68,7 @@ public class CreativeTabData {
             "stone_table","stone_chair","stone_ball","express_box_1", "express_box_2",
             "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_ad1","busstop_pole","busstop_top","busstop_chair",
             "network_box","milk_box",
-            "blacktile","blacktile_stair","blacktile_slab","bluetile","bluetile_stair","bluetile_slab","high_bar","high_bar2","double_bar",
+            "blacktile","blacktile_stair","blacktile_slab","bluetile","bluetile_stair","bluetile_slab","high_bar","high_bar2","high_bar3","double_bar",
             "tennis_table","awning_top","awning_edge","awning_edge2","railway_station_sign","railway_station_sign_big","railway_station_sign_big2",
             "ironframe","ironframe_pole"
     );
@@ -101,7 +101,8 @@ public class CreativeTabData {
             "pole_fine_d_w", "polefine_joint_d_w",
             "warn_pole_w","light_pole_with_flag_w",
             "railway_pole","railway_pole_joint","railway_pole_joint_d",
-            "railway_station_sign_pole","railway_station_sign_pole_head","railway_station_sign_pole_head2"
+            "railway_station_sign_pole","railway_station_sign_pole_head","railway_station_sign_pole_head2",
+            "round_pillar"
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
@@ -128,7 +129,8 @@ public class CreativeTabData {
             "desklamp","desklamp2",
             "floorlamp1",
             "toplamp1","toplamp2","toplamp3","toplamp4",
-            "chandelier1","chandelier2","chandelier3","chandelier4","chandelier5"
+            "chandelier1","chandelier2","chandelier3","chandelier4","chandelier5",
+            "railway_station_framelight"
     );
     public static final List<String> POST_IDS = List.of(
             "post_1691", "post_1692", "post_1693", "post_1694",

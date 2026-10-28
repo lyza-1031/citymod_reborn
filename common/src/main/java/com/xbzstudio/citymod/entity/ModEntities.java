@@ -8,6 +8,7 @@ public final class ModEntities {
             .of(SeatEntity::new, MobCategory.MISC)
             .sized(0.0F, 0.0F)
             .clientTrackingRange(10)
+            .noSummon()
             .updateInterval(20)
             .build("seat");
 

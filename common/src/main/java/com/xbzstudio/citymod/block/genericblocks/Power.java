@@ -41,26 +41,35 @@ public class Power extends Block implements SimpleWaterloggedBlock {
     private final String tooltipKey;
 
     public Power(Map<Direction, VoxelShape> shapes) {
-        this(shapes, shapes, null);
+        this(shapes, shapes, null, true);
+    }
+
+    public Power(Map<Direction, VoxelShape> shapes, boolean LightControl) {
+        this(shapes, shapes, null, LightControl);
     }
 
     public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn) {
-        this(shapesOff, shapesOn, null);
+        this(shapesOff, shapesOn, null, true);
     }
+
+    public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn, boolean LightControl) {
+        this(shapesOff, shapesOn, null, LightControl);
+    }
+
     public Power(Map<Direction, VoxelShape> shapes, String tooltipKey) {
-        this(shapes, shapes, tooltipKey);
+        this(shapes, shapes, tooltipKey, true);
     }
+
+    public Power(Map<Direction, VoxelShape> shapes, String tooltipKey, boolean LightControl) {
+        this(shapes, shapes, tooltipKey, LightControl);
+    }
+
     public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn, String tooltipKey) {
-        super(BlockBehaviour.Properties.of()
-                .mapColor(MapColor.METAL)
-                .sound(SoundType.METAL)
-                .strength(1f, 10f)
-                .lightLevel(state -> state.getValue(POWERED) ? 15 : 0)
-                .emissiveRendering((state, world, pos) -> state.getValue(POWERED))
-                .noOcclusion()
-                .isRedstoneConductor((bs, br, bp) -> false)
-                .isSuffocating((bs, br, bp) -> false)
-                .isViewBlocking((bs, br, bp) -> false));
+        this(shapesOff, shapesOn, tooltipKey, true);
+    }
+
+    public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn, String tooltipKey, boolean LightControl) {
+        super(createProperties(LightControl));
         this.shapesOff = shapesOff;
         this.shapesOn = shapesOn;
         this.tooltipKey = tooltipKey;
@@ -68,6 +77,22 @@ public class Power extends Block implements SimpleWaterloggedBlock {
                 .setValue(FACING, Direction.NORTH)
                 .setValue(WATERLOGGED, false)
                 .setValue(POWERED, false));
+    }
+
+    private static BlockBehaviour.Properties createProperties(boolean LightControl) {
+        BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+                .mapColor(MapColor.METAL)
+                .sound(SoundType.METAL)
+                .strength(1f, 10f)
+                .noOcclusion()
+                .isRedstoneConductor((bs, br, bp) -> false)
+                .isSuffocating((bs, br, bp) -> false)
+                .isViewBlocking((bs, br, bp) -> false);
+        if (LightControl) {
+            properties.lightLevel(state -> state.getValue(POWERED) ? 15 : 0)
+                    .emissiveRendering((state, world, pos) -> state.getValue(POWERED));
+        }
+        return properties;
     }
 
     @Override

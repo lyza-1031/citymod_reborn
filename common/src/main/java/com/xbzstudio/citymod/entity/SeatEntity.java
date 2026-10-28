@@ -49,7 +49,10 @@ public class SeatEntity extends Entity {
     @Override
     protected void defineSynchedData() {
     }
-
+    @Override
+    public boolean isInvisible() {
+        return true;
+    }
     @Override
     protected void readAdditionalSaveData(CompoundTag tag) {
         if (tag.contains(CHAIR_POS_TAG)) {

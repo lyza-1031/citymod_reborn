@@ -85,7 +85,7 @@ body:
     attributes:
       label: 日志和崩溃报告
       description: >-
-        在/logs/lastest.log 和 /crash-report 中查找错误报告...
-        <br>你可以日志上传到...
+        你可以在/logs/lastest.log 和 /crash-report 中查找错误报告。
+        <br>你可以日志上传到mclo.gs 或 pastebin。
         <br>**不要在此此处直接粘贴大段的日志文本!!**
       placeholder: '把日志文件往这丢或者使用外部链接'

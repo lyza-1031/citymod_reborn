@@ -12,6 +12,9 @@ loom {
         mixinConfig "citymod.mixins.json"
     }
 }
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:-removal"
+}
 configurations {
     common {
         canBeResolved = true

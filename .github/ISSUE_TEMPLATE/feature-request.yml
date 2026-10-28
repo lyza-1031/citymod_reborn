@@ -45,7 +45,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: 描述
+      label: 描述（添加家具家电类建议配图，否则天知道它长什么样）
       description: >-
        畅所欲言
     validations:

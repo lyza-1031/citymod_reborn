@@ -12,7 +12,9 @@ allprojects {
     group = rootProject.maven_group
     version = rootProject.mod_version
 }
-
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:-removal"
+}
 subprojects {
     apply plugin: 'dev.architectury.loom'
     apply plugin: 'architectury-plugin'

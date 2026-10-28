@@ -497,6 +497,7 @@
   "block.citymod.gaming_laptop_off": "Gaming Laptop",
   "block.citymod.high_bar": "High bar",
   "block.citymod.high_bar2": "High bar",
+  "block.citymod.high_bar3": "High bar",
   "block.citymod.double_bar": "Double high bar",
   "block.citymod.chandelier5": "Chandelier",
   "block.citymod.toplamp3": "Top lamp",
@@ -527,5 +528,7 @@
   "block.citymod.ironframe_pole": "Iron frame with pole",
   "block.citymod.ac_airvent_hd_l1": "Aircondition air-vent left",
   "block.citymod.ac_airvent_hd_r1": "Aircondition air-vent right",
-  "block.citymod.ac_airvent_hd1": "Aircondition air-vent"
+  "block.citymod.ac_airvent_hd1": "Aircondition air-vent",
+  "block.citymod.railway_station_framelight": "Railway station frame light",
+  "block.citymod.round_pillar": "Round concrete pillar"
 }
