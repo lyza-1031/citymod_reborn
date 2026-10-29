@@ -530,5 +530,7 @@
   "block.citymod.ac_airvent_hd_r1": "Aircondition air-vent right",
   "block.citymod.ac_airvent_hd1": "Aircondition air-vent",
   "block.citymod.railway_station_framelight": "Railway station frame light",
-  "block.citymod.round_pillar": "Round concrete pillar"
+  "block.citymod.round_pillar": "Round concrete pillar",
+  "block.citymod.ebox1": "Distribution box(Business)",
+  "block.citymod.ebox2": "Distribution box(Home)"
 }

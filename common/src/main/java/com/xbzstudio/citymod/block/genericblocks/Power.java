@@ -40,32 +40,16 @@ public class Power extends Block implements SimpleWaterloggedBlock {
     private final Map<Direction, VoxelShape> shapesOn;
     private final String tooltipKey;
 
-    public Power(Map<Direction, VoxelShape> shapes) {
-        this(shapes, shapes, null, true);
-    }
-
     public Power(Map<Direction, VoxelShape> shapes, boolean LightControl) {
         this(shapes, shapes, null, LightControl);
-    }
-
-    public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn) {
-        this(shapesOff, shapesOn, null, true);
-    }
-
-    public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn, boolean LightControl) {
-        this(shapesOff, shapesOn, null, LightControl);
-    }
-
-    public Power(Map<Direction, VoxelShape> shapes, String tooltipKey) {
-        this(shapes, shapes, tooltipKey, true);
     }
 
     public Power(Map<Direction, VoxelShape> shapes, String tooltipKey, boolean LightControl) {
         this(shapes, shapes, tooltipKey, LightControl);
     }
 
-    public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn, String tooltipKey) {
-        this(shapesOff, shapesOn, tooltipKey, true);
+    public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn, boolean LightControl) {
+        this(shapesOff, shapesOn, null, LightControl);
     }
 
     public Power(Map<Direction, VoxelShape> shapesOff, Map<Direction, VoxelShape> shapesOn, String tooltipKey, boolean LightControl) {

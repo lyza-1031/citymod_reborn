@@ -525,5 +525,7 @@
   "block.citymod.ironframe": "铁框架",
   "block.citymod.ironframe_pole": "铁框架带柱子",
   "block.citymod.railway_station_framelight": "火车站框架灯",
-  "block.citymod.round_pillar": "圆混凝土柱"
+  "block.citymod.round_pillar": "圆混凝土柱",
+  "block.citymod.ebox1": "配电箱（商用）",
+  "block.citymod.ebox2": "配电箱（家用）"
 }

@@ -123,7 +123,8 @@ public class CreativeTabData {
             "electronic_scale",
             "water_dispenser","bucket",
             "oven","fan","fan2","cable_box",
-            "router_black","router_white","gas_stove"
+            "router_black","router_white","gas_stove",
+            "ebox1","ebox2"
     );
     public static final List<String> LAMP_IDS = List.of(
             "desklamp","desklamp2",

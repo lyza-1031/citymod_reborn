@@ -330,6 +330,8 @@ public class BlockRegistry {
         reg("router_black", () -> new GenericSignBlock(ApplianceShapes.STB));
         reg("router_white", () -> new GenericSignBlock(ApplianceShapes.STB));
         reg("gas_stove", () -> new GenericSignBlock(ApplianceShapes.GAS_STOVE));
+        reg("ebox1", () -> new Power(BlockShapes.FREESIGN,"tooltip.citymod.powerable",false));
+        reg("ebox2", () -> new Power(BlockShapes.FREESIGN,"tooltip.citymod.powerable",false));
         //灯具
         reg("toplamp1", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("toplamp2", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
