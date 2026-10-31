@@ -3,7 +3,10 @@ package com.xbzstudio.neoforge;
 import com.xbzstudio.citymod.CityMod;
 import com.xbzstudio.citymod.CreativeTabData;
 import com.xbzstudio.citymod.block.BlockRegistry;
+import com.xbzstudio.citymod.block.SchoolnextRegistry;
+import com.xbzstudio.citymod.entity.ModEntities;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -19,6 +22,12 @@ import java.util.function.Supplier;
 public class ModRegistry {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(CityMod.MODID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CityMod.MODID);
+    public static final DeferredRegister<Block> SCHOOLNEXT_BLOCKS =
+            DeferredRegister.create(Registries.BLOCK, "schoolnext");
+    public static final DeferredRegister<Item> SCHOOLNEXT_ITEMS =
+            DeferredRegister.create(Registries.ITEM, "schoolnext");
+    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
+            DeferredRegister.create(Registries.ENTITY_TYPE, CityMod.MODID);
     public static final DeferredRegister<CreativeModeTab> TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CityMod.MODID);
 
@@ -31,12 +40,26 @@ public class ModRegistry {
             var block = BLOCKS.register(def.id(), factory);
             BLOCK_MAP.put(def.id(), block);
         }
-        for (var entry : BLOCK_MAP.entrySet()) {
-            ITEMS.register(entry.getKey(),
-                    () -> new BlockItem(entry.getValue().get(), new Item.Properties()));
+        for (var def : SchoolnextRegistry.BLOCKS) {
+            Supplier<Block> factory = (Supplier<Block>) def.factory();
+            var block = SCHOOLNEXT_BLOCKS.register(def.id(), factory);
+            BLOCK_MAP.put("schoolnext:" + def.id(), block);
+            BLOCK_MAP.putIfAbsent(def.id(), block);
         }
+        for (var def : BlockRegistry.BLOCKS) {
+            ITEMS.register(def.id(),
+                    () -> new BlockItem(BLOCK_MAP.get(def.id()).get(), new Item.Properties()));
+        }
+        for (var def : SchoolnextRegistry.BLOCKS) {
+            SCHOOLNEXT_ITEMS.register(def.id(),
+                    () -> new BlockItem(BLOCK_MAP.get("schoolnext:" + def.id()).get(), new Item.Properties()));
+        }
+        ENTITY_TYPES.register("seat", () -> ModEntities.SEAT);
         BLOCKS.register(bus);
         ITEMS.register(bus);
+        SCHOOLNEXT_BLOCKS.register(bus);
+        SCHOOLNEXT_ITEMS.register(bus);
+        ENTITY_TYPES.register(bus);
 
         for (var tab : CreativeTabData.TABS) {
             TABS.register(tab.id(),

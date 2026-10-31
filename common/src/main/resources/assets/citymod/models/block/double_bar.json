@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/gym/double_bar",
+  "textures": {
+    "all": "citymod:block/gym/high_bar",
+    "particle": "citymod:block/gym/high_bar",
+    "0": "citymod:block/gym/high_bar"
+  },
+  "render_type": "solid"
+}

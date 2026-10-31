@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/awning/railway_station_framelight",
+  "textures": {
+    "all": "citymod:block/floorlamp1",
+    "particle": "citymod:block/floorlamp1",
+    "missing": "minecraft:block/white_concrete",
+    "0": "citymod:block/floorlamp1"
+  },
+  "render_type": "solid"
+}

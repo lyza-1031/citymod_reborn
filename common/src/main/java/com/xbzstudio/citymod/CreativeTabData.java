@@ -1,10 +1,8 @@
 package com.xbzstudio.citymod;
 
-import com.xbzstudio.citymod.block.ApplianceShapes;
-import com.xbzstudio.citymod.block.BlockShapes;
-import com.xbzstudio.citymod.block.GenericLightBlock;
-import com.xbzstudio.citymod.block.GenericMetalBlock;
+import com.xbzstudio.citymod.block.*;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.List;
 
@@ -68,7 +66,10 @@ public class CreativeTabData {
             "ac_bracket","bracket",
             "construction_warning","sign_board","governmentsign",
             "stone_table","stone_chair","stone_ball","express_box_1", "express_box_2",
-            "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_ad1","busstop_pole","busstop_top","busstop_chair"
+            "busstop1","busstop2","busstop3","busstop_m","busstop_ad","busstop_ad1","busstop_pole","busstop_top","busstop_chair",
+            "network_box","milk_box",
+            "blacktile","blacktile_stair","blacktile_slab","bluetile","bluetile_stair","bluetile_slab","high_bar","high_bar2","double_bar",
+            "tennis_table","awning_top","awning_edge","awning_edge2"
     );
     public static final List<String> FireFighting_IDS = List.of(
             "fireextinguisherbox","water_tank","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
@@ -86,7 +87,8 @@ public class CreativeTabData {
             "bathroom_wardrobe_big","bathroom_wardrobe","modern_mirror_big","modern_mirror",
             "ironbed","ironbed2","ironbed3","ironbed4","ironbed_b","ironbed_b2","ironbed_b3","ironbed_b4",
             "wood_wardrobe","wood_wardrobe_big","wood_wardrobe_side","wood_wardrobe_side_b",
-            "wooden_desk","wooden_shelf"
+            "wooden_desk","wooden_shelf",
+            "gas_tank"
     );
     public static final List<String> POLE_IDS = List.of(
             "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",
@@ -96,7 +98,8 @@ public class CreativeTabData {
             "pole_w","pole_warn_w", "pole_joint_w", "pole_joint_double_w", "pole_joint_l_w",
             "pole_horizontal_w", "pole_expr_w", "pole_expr_right_w", "pole_exprmid_w",
             "pole_fine_d_w", "polefine_joint_d_w",
-            "warn_pole_w","light_pole_with_flag_w"
+            "warn_pole_w","light_pole_with_flag_w",
+            "railway_pole","railway_pole_joint","railway_pole_joint_d"
     );
     public static final List<String> HA_IDS = List.of(
             "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
@@ -110,14 +113,20 @@ public class CreativeTabData {
             "old_monitor_off", "monitor_2010off", "old_mainunit",
             "mainunit_2010", "modern_monitor_off", "main_unit_modern",
             "game_pc_black","game_monitor_black_off","game_monitor_black_std","game_pc_white","game_monitor_white_off","game_monitor_white_std",
-            "all_in_one_pc", "laptop","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv","small_tv",
+            "all_in_one_pc", "laptop","gaming_laptop_off","large_screen_black","gaming_pcblack","large_screen_white","gaming_pc_white","printer","television","tv_hd","crt_tv","small_tv",
             "extractor","trimcover","washingmachine","washine_machine_b",
-            "desklamp","desklamp2","floorlamp1","treadmill","sausage_cooker","toplamp1","toplamp2","chandelier1","chandelier2","chandelier3","chandelier4",
+            "treadmill","sausage_cooker",
             "electronic_scale",
             "water_dispenser","bucket",
-            "oven","fan","fan2","cable_box"
+            "oven","fan","fan2","cable_box",
+            "router_black","router_white","gas_stove"
     );
-
+    public static final List<String> LAMP_IDS = List.of(
+            "desklamp","desklamp2",
+            "floorlamp1",
+            "toplamp1","toplamp2","toplamp3","toplamp4",
+            "chandelier1","chandelier2","chandelier3","chandelier4","chandelier5"
+    );
     public static final List<String> POST_IDS = List.of(
             "post_1691", "post_1692", "post_1693", "post_1694",
             "post_1695", "post_1696", "post_1697", "post_1698","post_1699","post_16910",
@@ -140,13 +149,11 @@ public class CreativeTabData {
             "style_iron_window_corner", "style_iron_window",
             "wooden_window", "old_window"
     );
-    /*public static final List<String> LAMP_IDS = List.of(
-
-    );*/
 
     public static final List<String> OTHER_IDS = List.of(
             "ac_out_nvidia", "ac_out_amd", "ac_out_intel",
-            "ac_out_fake", "ac_out_40_hx","ac_out_690","blackwell_6000","internet_famous_road_sign","anniversary"
+            "ac_out_fake", "ac_out_40_hx","ac_out_690","blackwell_6000","internet_famous_road_sign","anniversary",
+            "hdd","dma","schoolnext:schooltestblock"
     );
     public static final List<TabDef> TABS = List.of(
             new TabDef("traffic", Component.translatable("item_group.citymod.traffic"), "traffic_sign", TRAFFIC_IDS),
@@ -156,7 +163,7 @@ public class CreativeTabData {
             new TabDef("household_appliances", Component.translatable("item_group.citymod.household_appliances"), "ac_out_hd_3", HA_IDS),
             new TabDef("posts", Component.translatable("item_group.citymod.posts"), "post_1691", POST_IDS),
             new TabDef("modern_windows", Component.translatable("item_group.citymod.modern_windows"), "window_largeb_white", WINDOW_IDS),
-            //new TabDef("lamp", Component.translatable("item_group.citymod.lamp"), "chandelier2", LAMP_IDS),
+            new TabDef("lamp", Component.translatable("item_group.citymod.lamp"), "chandelier2", LAMP_IDS),
             new TabDef("firefighting", Component.translatable("item_group.citymod.firefighting"), "fireextinguisherbox", FireFighting_IDS),
             new TabDef("other", Component.translatable("item_group.citymod.other"), "ac_out_intel", OTHER_IDS)
     );

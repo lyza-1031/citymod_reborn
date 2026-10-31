@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/network_box",
+  "textures": {
+    "all": "citymod:block/network_box",
+    "particle": "citymod:block/network_box",
+    "0": "citymod:block/network_box"
+  },
+  "render_type": "cutout"
+}

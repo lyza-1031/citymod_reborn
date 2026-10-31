@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/awning/railway_station_framelight"
+    },
+    "facing=east": {
+      "model": "citymod:block/awning/railway_station_framelight",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/awning/railway_station_framelight",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/awning/railway_station_framelight",
+      "y": 270
+    }
+  }
+}

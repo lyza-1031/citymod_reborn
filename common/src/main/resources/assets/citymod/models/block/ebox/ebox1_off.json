@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/ebox/ebox1_off",
+  "textures": {
+    "all": "citymod:block/ebox/ebox",
+    "particle": "citymod:block/ebox/ebox",
+    "0": "citymod:block/ebox/ebox"
+  },
+  "render_type": "solid"
+}

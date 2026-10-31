@@ -1,6 +1,8 @@
 package com.xbzstudio.neoforge;
 
 import com.mojang.blaze3d.platform.InputConstants;
+import com.xbzstudio.citymod.client.SeatRenderer;
+import com.xbzstudio.citymod.entity.ModEntities;
 import com.xbzstudio.citymod.network.KillItemsPacket;
 import dev.architectury.networking.NetworkManager;
 import net.minecraft.client.KeyMapping;
@@ -13,6 +15,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.InputEvent;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -41,6 +44,11 @@ public class ClientSetup {
             }
         });
     }*/
+
+    @SubscribeEvent
+    public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(ModEntities.SEAT, SeatRenderer::new);
+    }
 
     @SubscribeEvent
     public static void registerKeys(RegisterKeyMappingsEvent event) {
