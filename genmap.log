@@ -1,0 +1,565 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/17035/.gradle/wrapper/dists/gradle-9.6.1-bin/2zfhay8g6u5n9h38bamu9zrd2/gradle-9.6.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+
+> Configure project :
+Architect Plugin: 3.5.170
+Architectury Loom: 1.17.493
+
+> Task :neoforge:generateItemMappings FAILED
+> Task :fabric:generateItemMappings FAILED
+
+> Task :common:generateItemMappings
+Generated item mapping for ac_airvent_hd
+Generated item mapping for ac_airvent_hd1
+Generated item mapping for ac_airvent_hd_l
+Generated item mapping for ac_airvent_hd_l1
+Generated item mapping for ac_airvent_hd_r
+Generated item mapping for ac_airvent_hd_r1
+Generated item mapping for ac_bracket
+Generated item mapping for ac_cover
+Generated item mapping for ac_cover_light
+Generated item mapping for ac_modern
+Generated item mapping for ac_modern_2
+Generated item mapping for ac_out_40_hx
+Generated item mapping for ac_out_690
+Generated item mapping for ac_out_amd
+Generated item mapping for ac_out_fake
+Generated item mapping for ac_out_hd_1
+Generated item mapping for ac_out_hd_2
+Generated item mapping for ac_out_hd_3
+Generated item mapping for ac_out_hd_4
+Generated item mapping for ac_out_hd_5
+Generated item mapping for ac_out_hd_6
+Generated item mapping for ac_out_intel
+Generated item mapping for ac_out_modern
+Generated item mapping for ac_out_modern2
+Generated item mapping for ac_out_nvidia
+Generated item mapping for airconditionhd_3
+Generated item mapping for airconditionhd_4
+Generated item mapping for air_conditioning
+Generated item mapping for air_conditioning_external_unit
+Generated item mapping for air_condition_b
+Generated item mapping for air_condition_hd_1
+Generated item mapping for air_condition_hd_2
+Generated item mapping for air_condition_old_hd
+Generated item mapping for all_direction_sign
+Generated item mapping for all_in_one_pc
+Generated item mapping for all_in_one_pc_on
+Generated item mapping for anniversary
+Generated item mapping for awning_edge
+Generated item mapping for awning_edge2
+Generated item mapping for awning_top
+Generated item mapping for barrier_gate_down
+Generated item mapping for barrier_gate_main_down
+Generated item mapping for barrier_gate_main_up
+Generated item mapping for barrier_gate_up
+Generated item mapping for bathroom_wardrobe
+Generated item mapping for bathroom_wardrobe_big
+Generated item mapping for big_ac_out_hd
+Generated item mapping for bike
+Generated item mapping for bikeblack
+Generated item mapping for bike_lane
+Generated item mapping for blacktile
+Generated item mapping for blacktile_slab
+Generated item mapping for blacktile_stair
+Generated item mapping for blackwell_6000
+Generated item mapping for bluesign
+Generated item mapping for bluetile
+Generated item mapping for bluetile_slab
+Generated item mapping for bluetile_stair
+Generated item mapping for blue_shop_sign
+Generated item mapping for blue_shop_sign_joint
+Generated item mapping for bracket
+Generated item mapping for bucket
+Generated item mapping for busstop1
+Generated item mapping for busstop2
+Generated item mapping for busstop3
+Generated item mapping for busstop_ad
+Generated item mapping for busstop_ad1
+Generated item mapping for busstop_chair
+Generated item mapping for busstop_m
+Generated item mapping for busstop_pole
+Generated item mapping for busstop_top
+Generated item mapping for bus_lane
+Generated item mapping for cable_box
+Generated item mapping for central_ac_hd
+Generated item mapping for central_air_conditioning
+Generated item mapping for centre_air_condition_outside
+Generated item mapping for centr_alir_conditioning
+Generated item mapping for chandelier1
+Generated item mapping for chandelier2
+Generated item mapping for chandelier3
+Generated item mapping for chandelier4
+Generated item mapping for chandelier5
+Generated item mapping for coffee_table
+Generated item mapping for computer_desk_black
+Generated item mapping for computer_desk_white
+Generated item mapping for concretebarrierfenced
+Generated item mapping for concrete_wall_std
+Generated item mapping for concrete_wall_warn
+Generated item mapping for construction_warning
+Generated item mapping for crt_tv
+Generated item mapping for crt_tv_on
+Generated item mapping for desklamp
+Generated item mapping for desklamp2
+Generated item mapping for direction_sign
+Generated item mapping for direction_signturnoff
+Generated item mapping for direction_sign_left
+Generated item mapping for direction_sign_left_right
+Generated item mapping for direction_sign_left_straight
+Generated item mapping for direction_sign_left_turnoff
+Generated item mapping for direction_sign_right
+Generated item mapping for direction_sign_right_straight
+Generated item mapping for direction_straight_turnoff
+Generated item mapping for diversion_b
+Generated item mapping for diversion_sign
+Generated item mapping for dma
+Generated item mapping for double_bar
+Generated item mapping for double_yellowline_block
+Generated item mapping for ebox1
+Generated item mapping for ebox2
+Generated item mapping for electric_motorcycle
+Generated item mapping for electric_motorcycle_black
+Generated item mapping for electric_water_heater
+Generated item mapping for electronic_scale
+Generated item mapping for expresswayfence2
+Generated item mapping for expresswayfence2_r
+Generated item mapping for expressway_exit_sign
+Generated item mapping for expressway_fence
+Generated item mapping for expressway_fence_green
+Generated item mapping for expressway_fence_green_joint
+Generated item mapping for expressway_fence_joint
+Generated item mapping for express_box_1
+Generated item mapping for express_box_2
+Generated item mapping for expr_1
+Generated item mapping for expr_2
+Generated item mapping for expr_3
+Generated item mapping for expr_4
+Generated item mapping for expr_5
+Generated item mapping for expr_5a
+Generated item mapping for expr_5b
+Generated item mapping for expr_5c
+Generated item mapping for expr_5g
+Generated item mapping for expr_5_d
+Generated item mapping for expr_5_e
+Generated item mapping for expr_5_f
+Generated item mapping for expr_sign_large
+Generated item mapping for expr_t_ips
+Generated item mapping for extractor
+Generated item mapping for fan
+Generated item mapping for fan2
+Generated item mapping for fireextinguisherbox
+Generated item mapping for floorlamp1
+Generated item mapping for freezer
+Generated item mapping for free_expressway_sign
+Generated item mapping for free_road_sign
+Generated item mapping for fridge_1
+Generated item mapping for fridge_2
+Generated item mapping for game_monitor_black_off
+Generated item mapping for game_monitor_black_std
+Generated item mapping for game_monitor_white_off
+Generated item mapping for game_monitor_white_std
+Generated item mapping for game_pc_black
+Generated item mapping for game_pc_white
+Generated item mapping for gaming_laptop_off
+Generated item mapping for gaming_pcblack
+Generated item mapping for gaming_pc_white
+Generated item mapping for gas_stove
+Generated item mapping for gas_tank
+Generated item mapping for gas_water_heater
+Generated item mapping for glass_fence
+Generated item mapping for governmentsign
+Generated item mapping for greensign2
+Generated item mapping for green_sign
+Generated item mapping for hanging_air_conditioning
+Generated item mapping for hdd
+Generated item mapping for high_bar
+Generated item mapping for high_bar2
+Generated item mapping for high_bar3
+Generated item mapping for internet_famous_road_sign
+Generated item mapping for ironbed
+Generated item mapping for ironbed2
+Generated item mapping for ironbed3
+Generated item mapping for ironbed4
+Generated item mapping for ironbed_b
+Generated item mapping for ironbed_b2
+Generated item mapping for ironbed_b3
+Generated item mapping for ironbed_b4
+Generated item mapping for ironframe
+Generated item mapping for ironframe_pole
+Generated item mapping for kitchen_chair
+Generated item mapping for kitchen_desk
+Generated item mapping for lamppost
+Generated item mapping for laptop
+Generated item mapping for laptop_poweron
+Generated item mapping for large_air_conditioning_external_unit
+Generated item mapping for large_screen_black
+Generated item mapping for large_screen_white
+Generated item mapping for left_sign
+Generated item mapping for light_pole_with_flag
+Generated item mapping for light_pole_with_flag_w
+Generated item mapping for mainunit_2010
+Generated item mapping for main_unit_modern
+Generated item mapping for manhole_cover_a
+Generated item mapping for manhole_cover_b
+Generated item mapping for median_strip_1
+Generated item mapping for mediumsign_blue
+Generated item mapping for mediumsign_green
+Generated item mapping for mediumsign_orange
+Generated item mapping for mediumsign_white
+Generated item mapping for mediumsign_yellow
+Generated item mapping for micro_wave_oven
+Generated item mapping for milk_box
+Generated item mapping for moderniron_fence_blue
+Generated item mapping for moderniron_fence_green
+Generated item mapping for moderniron_fence_yellow
+Generated item mapping for modernwardrobe
+Generated item mapping for modernwardrobeb
+Generated item mapping for modernwardrobeup
+Generated item mapping for modern_fence
+Generated item mapping for modern_fence_2
+Generated item mapping for modern_fence_3
+Generated item mapping for modern_ironfence
+Generated item mapping for modern_mirror
+Generated item mapping for modern_mirror_big
+Generated item mapping for modern_monitor_off
+Generated item mapping for modern_monitor_on
+Generated item mapping for monitor_2010off
+Generated item mapping for monitor_2010_on
+Generated item mapping for monitor_bracket_black
+Generated item mapping for monitor_bracket_white
+Generated item mapping for monitor_light_black
+Generated item mapping for monitor_light_black_std
+Generated item mapping for monitor_light_white
+Generated item mapping for monitor_light_white_std
+Generated item mapping for network_box
+Generated item mapping for noparking_sign
+Generated item mapping for nozzle_1
+Generated item mapping for nozzle_2
+Generated item mapping for no_honking_sign
+Generated item mapping for office_chair_black
+Generated item mapping for office_chair_white
+Generated item mapping for office_desk
+Generated item mapping for oldwardrobe
+Generated item mapping for oldwardrobecorner
+Generated item mapping for oldwardrobesmall
+Generated item mapping for old_ac_in
+Generated item mapping for old_ac_in_b
+Generated item mapping for old_ac_in_c
+Generated item mapping for old_ac_out
+Generated item mapping for old_calendar
+Generated item mapping for old_chair
+Generated item mapping for old_fridge
+Generated item mapping for old_mainunit
+Generated item mapping for old_mirror
+Generated item mapping for old_monitor_off
+Generated item mapping for old_monitor_on
+Generated item mapping for old_tv_table
+Generated item mapping for old_window
+Generated item mapping for orangesign
+Generated item mapping for orangesign_2
+Generated item mapping for oven
+Generated item mapping for overpass_sign
+Generated item mapping for overpass_sign_2
+Generated item mapping for overpass_sign_3
+Generated item mapping for over_pass_5
+Generated item mapping for over_pass_sign_4
+Generated item mapping for parking
+Generated item mapping for pedestrians
+Generated item mapping for pedestrian_traffic_light_g
+Generated item mapping for pedestrian_traffic_light_r
+Generated item mapping for plastic_chair_blue
+Generated item mapping for plastic_chair_red
+Generated item mapping for pole
+Generated item mapping for polefine_joint_d
+Generated item mapping for polefine_joint_d_w
+Generated item mapping for pole_expr
+Generated item mapping for pole_exprmid
+Generated item mapping for pole_exprmid_w
+Generated item mapping for pole_expr_right
+Generated item mapping for pole_expr_right_w
+Generated item mapping for pole_expr_w
+Generated item mapping for pole_fine
+Generated item mapping for pole_fine_d
+Generated item mapping for pole_fine_d_w
+Generated item mapping for pole_horizontal
+Generated item mapping for pole_horizontal_w
+Generated item mapping for pole_joint
+Generated item mapping for pole_joint_double
+Generated item mapping for pole_joint_double_w
+Generated item mapping for pole_joint_l
+Generated item mapping for pole_joint_l_w
+Generated item mapping for pole_joint_w
+Generated item mapping for pole_w
+Generated item mapping for pole_warn
+Generated item mapping for post_1691
+Generated item mapping for post_16910
+Generated item mapping for post_1692
+Generated item mapping for post_1693
+Generated item mapping for post_1694
+Generated item mapping for post_1695
+Generated item mapping for post_1696
+Generated item mapping for post_1697
+Generated item mapping for post_1698
+Generated item mapping for post_1699
+Generated item mapping for post_431
+Generated item mapping for post_432
+Generated item mapping for post_433
+Generated item mapping for post_434
+Generated item mapping for powerbox
+Generated item mapping for power_box_2
+Generated item mapping for power_box_3
+Generated item mapping for power_box_4
+Generated item mapping for power_box_5
+Generated item mapping for printer
+Generated item mapping for railway_pole
+Generated item mapping for railway_pole_joint
+Generated item mapping for railway_pole_joint_d
+Generated item mapping for railway_station_framelight
+Generated item mapping for railway_station_sign
+Generated item mapping for railway_station_sign_big
+Generated item mapping for railway_station_sign_big2
+Generated item mapping for railway_station_sign_pole
+Generated item mapping for railway_station_sign_pole_head
+Generated item mapping for railway_station_sign_pole_head2
+Generated item mapping for red_shop_sign
+Generated item mapping for red_shop_sign_joint
+Generated item mapping for restroom_sign
+Generated item mapping for restroom_sign_public
+Generated item mapping for restroom_sign_third
+Generated item mapping for rest_room_sign_female
+Generated item mapping for right_sign
+Generated item mapping for roadblock_double_oblique
+Generated item mapping for roadblock_oblique
+Generated item mapping for roadblock_yellow_oblique
+Generated item mapping for roadsign_a
+Generated item mapping for roadsign_b
+Generated item mapping for road_1
+Generated item mapping for road_11
+Generated item mapping for road_12
+Generated item mapping for road_2
+Generated item mapping for road_3
+Generated item mapping for road_4
+Generated item mapping for road_5
+Generated item mapping for road_6
+Generated item mapping for road_8
+Generated item mapping for road_block
+Generated item mapping for road_block_side
+Generated item mapping for road_diamond
+Generated item mapping for road_light
+Generated item mapping for road_light_down
+Generated item mapping for road_screen
+Generated item mapping for road_sign
+Generated item mapping for road_straight
+Generated item mapping for road_white_connect
+Generated item mapping for road_yellow
+Generated item mapping for road_yellow_connect
+Generated item mapping for road_yellow_double
+Generated item mapping for road_yellow_side
+Generated item mapping for road_zebra_crossing
+Generated item mapping for round_pillar
+Generated item mapping for router_black
+Generated item mapping for router_white
+Generated item mapping for safety_wall_alert
+Generated item mapping for safety_wall_blue
+Generated item mapping for safety_wall_corner_alert
+Generated item mapping for safety_wall_corner_blue
+Generated item mapping for safety_wall_corner_green
+Generated item mapping for safety_wall_green
+Generated item mapping for sausage_cooker
+Generated item mapping for scenic_spot_sign
+Generated item mapping for school_sign
+Generated item mapping for scooter_black
+Generated item mapping for scooter_white
+Generated item mapping for screen_black_on
+Generated item mapping for screen_white_on
+Generated item mapping for security_window_large
+Generated item mapping for security_window_medium
+Generated item mapping for security_window_small
+Generated item mapping for security_window_small_2
+Generated item mapping for separationpost
+Generated item mapping for separationpostb
+Generated item mapping for separationpostc
+Generated item mapping for service_area_sign
+Generated item mapping for shit_pc_spawn_egg
+Generated item mapping for sign
+Generated item mapping for sign_board
+Generated item mapping for sign_mini_blue
+Generated item mapping for sign_mini_green
+Generated item mapping for sign_mini_orange
+Generated item mapping for sign_mini_red
+Generated item mapping for sign_mini_white
+Generated item mapping for sign_mini_yellow
+Generated item mapping for small_tv
+Generated item mapping for solarwaterheater
+Generated item mapping for solarwaterheaterred
+Generated item mapping for speed_bump
+Generated item mapping for speed_limit_sign
+Generated item mapping for speed_limit_sign0
+Generated item mapping for speed_limit_sign_1
+Generated item mapping for speed_limit_sign_2
+Generated item mapping for speed_limit_sign_3
+Generated item mapping for speed_limit_sign_4
+Generated item mapping for speed_limit_sign_5
+Generated item mapping for speed_limit_sign_6
+Generated item mapping for speed_limit_sign_7
+Generated item mapping for speed_limit_sign_8
+Generated item mapping for speed_limit_sign_9
+Generated item mapping for step_fence
+Generated item mapping for stone_ball
+Generated item mapping for stone_chair
+Generated item mapping for stone_table
+Generated item mapping for street_light
+Generated item mapping for street_light_b
+Generated item mapping for street_light_c
+Generated item mapping for street_light_d
+Generated item mapping for style_iron_window
+Generated item mapping for style_iron_window_corner
+Generated item mapping for telegraph_pole
+Generated item mapping for television
+Generated item mapping for television_power_on
+Generated item mapping for tennis_table
+Generated item mapping for tollgate_sign
+Generated item mapping for toplamp1
+Generated item mapping for toplamp2
+Generated item mapping for toplamp3
+Generated item mapping for toplamp4
+Generated item mapping for traffictimescreengreen
+Generated item mapping for traffic_light_l_green
+Generated item mapping for traffic_light_round_green
+Generated item mapping for traffic_light_r_green
+Generated item mapping for traffic_light_s_green
+Generated item mapping for traffic_sign
+Generated item mapping for traffic_sign_1
+Generated item mapping for traffic_sign_2
+Generated item mapping for traffic_sign_l
+Generated item mapping for traffic_sign_r
+Generated item mapping for traffic_sign_t
+Generated item mapping for trash_bin
+Generated item mapping for treadmill
+Generated item mapping for trimcover
+Generated item mapping for tunnel_sign_1
+Generated item mapping for tunnel_sign_2
+Generated item mapping for tvcabinet_a
+Generated item mapping for tvcabinet_b
+Generated item mapping for tvcabinet_c
+Generated item mapping for tvcabinet_d
+Generated item mapping for tvcabinet_dark
+Generated item mapping for tvcabinet_e
+Generated item mapping for tv_hd
+Generated item mapping for variable_lanes
+Generated item mapping for vehicle_distance_confirmation_sign_b
+Generated item mapping for vehicle_distance_confirmation_sign_c
+Generated item mapping for vehicle_dstance_confirmation_sign
+Generated item mapping for warn_pole
+Generated item mapping for washine_machine_b
+Generated item mapping for washingmachine
+Generated item mapping for water_dispenser
+Generated item mapping for water_pipe
+Generated item mapping for water_pipe_joint
+Generated item mapping for water_pipe_joint_r
+Generated item mapping for water_pipe_joint_red
+Generated item mapping for water_pipe_joint_red_r
+Generated item mapping for water_pipe_red
+Generated item mapping for water_tank
+Generated item mapping for whitelineside_block
+Generated item mapping for whiteline_block
+Generated item mapping for whitesign3
+Generated item mapping for white_sign
+Generated item mapping for white_sign2
+Generated item mapping for window_corner_black_large
+Generated item mapping for window_corner_black_small
+Generated item mapping for window_corner_blue
+Generated item mapping for window_corner_green
+Generated item mapping for window_corner_small_blue
+Generated item mapping for window_corner_small_green
+Generated item mapping for window_corner_white_large
+Generated item mapping for window_corner_white_small
+Generated item mapping for window_largeb_black
+Generated item mapping for window_largeb_blue
+Generated item mapping for window_largeb_green
+Generated item mapping for window_largeb_white
+Generated item mapping for window_large_black
+Generated item mapping for window_large_blue
+Generated item mapping for window_large_green
+Generated item mapping for window_large_white
+Generated item mapping for window_mediub_b_green
+Generated item mapping for window_medium_a_black
+Generated item mapping for window_medium_a_blue
+Generated item mapping for window_medium_a_green
+Generated item mapping for window_medium_a_white
+Generated item mapping for window_medium_b_black
+Generated item mapping for window_medium_b_blue
+Generated item mapping for window_medium_b_white
+Generated item mapping for window_oblique
+Generated item mapping for window_oblique_blue
+Generated item mapping for window_oblique_green
+Generated item mapping for window_oblique_large
+Generated item mapping for window_oblique_large_blue
+Generated item mapping for window_oblique_large_green
+Generated item mapping for window_oblique_large_white
+Generated item mapping for window_small_black
+Generated item mapping for window_small_blue
+Generated item mapping for window_small_green
+Generated item mapping for window_small_white
+Generated item mapping for wooden_desk
+Generated item mapping for wooden_shelf
+Generated item mapping for wooden_window
+Generated item mapping for wood_wardrobe
+Generated item mapping for wood_wardrobe_big
+Generated item mapping for wood_wardrobe_side
+Generated item mapping for wood_wardrobe_side_b
+Generated item mapping for w_indow_oblique_white
+Generated item mapping for yellowlineside_block
+Generated item mapping for yellowline_block
+Generated item mapping for yellow_sign
+Generated item mapping for yellow_sign_2
+Generated item mapping for zebracrossing_oblique
+
+[Incubating] Problems report is available at: file:///E:/workspace/citymod_26.1.2/build/reports/problems/problems-report.html
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* Where:
+Build file 'E:\workspace\citymod_26.1.2\build.gradle' line: 55
+
+* What went wrong:
+Execution failed for task ':neoforge:generateItemMappings' (registered in build file 'build.gradle').
+> java.io.FileNotFoundException: E:\workspace\citymod_26.1.2\neoforge\src\main\resources\assets\citymod\models\item
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* Where:
+Build file 'E:\workspace\citymod_26.1.2\build.gradle' line: 55
+
+* What went wrong:
+Execution failed for task ':fabric:generateItemMappings' (registered in build file 'build.gradle').
+> java.io.FileNotFoundException: E:\workspace\citymod_26.1.2\fabric\src\main\resources\assets\citymod\models\item
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 2s
+3 actionable tasks: 3 executed

@@ -18,7 +18,19 @@ public class ModCreativeTabs {
             DeferredRegister.create("citymod", Registries.CREATIVE_MODE_TAB);
 
     private static Block blk(String id) {
-        return BuiltInRegistries.BLOCK.get(Identifier.fromNamespaceAndPath("citymod", id))
+        if (id.contains(":")) {
+            String[] parts = id.split(":", 2);
+            return BuiltInRegistries.BLOCK.get(Identifier.fromNamespaceAndPath(parts[0], parts[1]))
+                    .map(Holder.Reference::value)
+                    .orElse(Blocks.AIR);
+        }
+
+        Block b = BuiltInRegistries.BLOCK.get(Identifier.fromNamespaceAndPath("citymod", id))
+                .map(Holder.Reference::value)
+                .orElse(Blocks.AIR);
+        if (b != Blocks.AIR) return b;
+
+        return BuiltInRegistries.BLOCK.get(Identifier.fromNamespaceAndPath("schoolnext", id))
                 .map(Holder.Reference::value)
                 .orElse(Blocks.AIR);
     }

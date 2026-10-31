@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/router",
+  "textures": {
+    "all": "citymod:block/router_black",
+    "particle": "citymod:block/router_black",
+    "0": "citymod:block/router_black"
+  },
+  "render_type": "cutout"
+}

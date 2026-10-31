@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/awning/railway_station_sign_pole_head2",
+  "textures": {
+    "all": "citymod:block/railway_station_sign",
+    "particle": "citymod:block/railway_station_sign",
+    "0": "citymod:block/railway_station_sign",
+    "missing": "minecraft:block/white_concrete"
+  },
+  "render_type": "solid"
+}

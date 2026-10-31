@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/high_bar"
+    },
+    "facing=east": {
+      "model": "citymod:block/high_bar",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/high_bar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/high_bar",
+      "y": 270
+    }
+  }
+}

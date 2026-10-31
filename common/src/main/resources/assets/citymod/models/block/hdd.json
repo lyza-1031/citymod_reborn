@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/hdd",
+  "textures": {
+    "all": "citymod:block/hdd",
+    "particle": "citymod:block/hdd",
+    "0": "citymod:block/hdd"
+  },
+  "render_type": "cutout"
+}

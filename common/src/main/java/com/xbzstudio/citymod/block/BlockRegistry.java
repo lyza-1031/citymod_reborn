@@ -1,9 +1,12 @@
 package com.xbzstudio.citymod.block;
 
 import com.xbzstudio.citymod.BlockDef;
+import com.xbzstudio.citymod.block.genericblocks.*;
+import com.xbzstudio.citymod.block.shapes.*;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.Shapes;
 
@@ -44,7 +47,7 @@ public class BlockRegistry {
         reg("road_6", (id) -> new GenericSignBlock(id,BlockShapes.ROAD_6));
         reg("road_11", (id) -> new GenericSignBlock(id,BlockShapes.ROAD_11));
         reg("road_12", (id) -> new GenericSignBlock(id,BlockShapes.ROAD_12));
-        reg("expr_sign_large", (id) -> new GenericSignBlock(id,BlockShapes.EXPR_SIGN_LARGE ));
+        reg("expr_sign_large", (id) -> new GenericSignBlock(id,BlockShapes.EXPR_SIGN_LARGE, "tooltip.citymod.tall"));
         reg("expressway_exit_sign", (id) -> new GenericSignBlock(id,BlockShapes.EXPRESSWAY_EXIT_SIGN));
         reg("expr_t_ips", (id) -> new GenericSignBlock(id,BlockShapes.EXPR_T_IPS));
         reg("traffic_sign", (id) -> new GenericSignBlock(id,BlockShapes.TRAFFIC_SIGN));
@@ -134,6 +137,8 @@ public class BlockRegistry {
         reg("pole_exprmid_w", (id) -> new GenericSignBlock(id,BlockShapes.POLE_EXPR_M));
         reg("pole_fine_d_w", (id) -> new GenericSignBlock(id,BlockShapes.POLEFINE_D));
         reg("polefine_joint_d_w", (id) -> new GenericSignBlock(id,BlockShapes.POLEFINE_JOINT_D));
+        reg("railway_pole_joint", (id) -> new GenericSignBlock(id,BlockShapes.LAMPPOST));
+        reg("railway_pole_joint_d", (id) -> new GenericSignBlock(id,BlockShapes.LAMPPOST));
         //reg("light_pole_with_flag_w", (id) -> new GenericSignBlock(id,BlockShapes.LAMPPOST));
 
         // 方向牌
@@ -236,13 +241,29 @@ public class BlockRegistry {
         reg("bracket", (id) -> new GenericMetalBlock(id,CityShapes.ACBRACKET));
         reg("school_sign", (id) -> new GenericMetalBlock(id,CityShapes.SpeedLimitSign));
         reg("no_honking_sign", (id) -> new GenericMetalBlock(id,CityShapes.SpeedLimitSign));
-        reg("governmentsign", (id) -> new GenericMetalBlock(id,CityShapes.GSign ));
+        reg("governmentsign", (id) -> new GenericMetalBlock(id,CityShapes.GSign, "tooltip.citymod.tall"));
         reg("sign_board", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
         reg("construction_warning", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
         reg("step_fence", (id) -> new GenericMetalBlock(id,CityShapes.StepFence));
         reg("stone_table", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
-        reg("stone_chair", (id) -> new GenericMetalBlock(id,CityShapes.StoneChair));
+        reg("stone_chair", (id) -> new GenericChairBlock(id,CityShapes.StoneChair,0.4));
         reg("speed_bump", (id) -> new GenericMetalBlock(id,CityShapes.SpeedBump));
+        reg("network_box", (id) -> new GenericSignBlock(id,BlockShapes.FREESIGN));
+        reg("milk_box", (id) -> new GenericSignBlock(id,CityShapes.PWRBOX3));
+        reg("awning_top", (id) -> new GenericSignBlock(id,CityShapes.StoneChair));
+        reg("awning_edge", (id) -> new GenericSignBlock(id,CityShapes.StoneChair));
+        reg("awning_edge2", (id) -> new GenericSignBlock(id,CityShapes.StoneChair));
+        // ==================== 景观 ====================
+        reg("blacktile", GenericNormalBlock::new);
+        reg("blacktile_stair", (id) -> new GenericStairBlock(id, Blocks.STONE.defaultBlockState()));
+        reg("blacktile_slab", GenericSlabBlock::new);
+        reg("bluetile", GenericNormalBlock::new);
+        reg("bluetile_stair", (id) -> new GenericStairBlock(id, Blocks.STONE.defaultBlockState()));
+        reg("bluetile_slab", GenericSlabBlock::new);
+        reg("high_bar", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT, "tooltip.citymod.tall"));
+        reg("high_bar2", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT, "tooltip.citymod.tall"));
+        reg("double_bar", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT, "tooltip.citymod.tall"));
+        reg("tennis_table", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
         // ==================== 电器 ====================
         reg("ac_out_hd_1", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_01));
         reg("ac_out_hd_2", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_02));
@@ -250,17 +271,17 @@ public class BlockRegistry {
         reg("ac_out_hd_4", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_04));
         reg("ac_out_hd_5", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_05));
         reg("ac_out_hd_6", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_06));
-        reg("air_condition_old_hd", (id) -> new GenericMetalBlock(id,ApplianceShapes.OLD_AC_HD ));
-        reg("big_ac_out_hd", (id) -> new GenericMetalBlock(id,ApplianceShapes.BIG_AC_OUT_HD ));
-        reg("centre_air_condition_outside", (id) -> new GenericMetalBlock(id,ApplianceShapes.CentreAirConditionOutside ));
-        reg("air_condition_hd_1", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_01 ));
+        reg("air_condition_old_hd", (id) -> new GenericMetalBlock(id,ApplianceShapes.OLD_AC_HD, "tooltip.citymod.tall"));
+        reg("big_ac_out_hd", (id) -> new GenericMetalBlock(id,ApplianceShapes.BIG_AC_OUT_HD, "tooltip.citymod.tall"));
+        reg("centre_air_condition_outside", (id) -> new GenericMetalBlock(id,ApplianceShapes.CentreAirConditionOutside, "tooltip.citymod.tall"));
+        reg("air_condition_hd_1", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_01, "tooltip.citymod.tall"));
         reg("air_condition_hd_2", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_02));
         reg("airconditionhd_3", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_03));
-        reg("airconditionhd_4", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_04 ));
+        reg("airconditionhd_4", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_04, "tooltip.citymod.tall"));
         reg("central_ac_hd", (id) -> new GenericMetalBlock(id,ApplianceShapes.CAC_HD));
         reg("micro_wave_oven", (id) -> new GenericMetalBlock(id,ApplianceShapes.MicroWaveOven));
-        reg("fridge_1", (id) -> new GenericMetalBlock(id,ApplianceShapes.Fridge1 ));
-        reg("fridge_2", (id) -> new GenericMetalBlock(id,ApplianceShapes.Fridge2 ));
+        reg("fridge_1", (id) -> new GenericMetalBlock(id,ApplianceShapes.Fridge1, "tooltip.citymod.tall"));
+        reg("fridge_2", (id) -> new GenericMetalBlock(id,ApplianceShapes.Fridge2, "tooltip.citymod.tall"));
         reg("old_fridge", (id) -> new GenericMetalBlock(id,ApplianceShapes.Old_Fridge));
         reg("old_tv_table", (id) -> new GenericMetalBlock(id,ApplianceShapes.OldTVTable));
         reg("freezer", (id) -> new GenericMetalBlock(id,ApplianceShapes.Freezer));
@@ -270,19 +291,19 @@ public class BlockRegistry {
         reg("old_mainunit", (id) -> new GenericMetalBlock(id,ApplianceShapes.OLD_MAINUNIT));
         reg("mainunit_2010", (id) -> new GenericMetalBlock(id,ApplianceShapes.MAINUNIT2010));
         reg("main_unit_modern", (id) -> new GenericMetalBlock(id,ApplianceShapes.MODERMMAINUNIT));
-        reg("express_box_1", (id) -> new GenericMetalBlock(id,ApplianceShapes.ExpressBox ));
-        reg("express_box_2", (id) -> new GenericMetalBlock(id,ApplianceShapes.ExpressBox ));
+        reg("express_box_1", (id) -> new GenericMetalBlock(id,ApplianceShapes.ExpressBox, "tooltip.citymod.tall"));
+        reg("express_box_2", (id) -> new GenericMetalBlock(id,ApplianceShapes.ExpressBox, "tooltip.citymod.tall"));
         reg("old_mirror", (id) -> new GenericMetalBlock(id,BlockShapes.FREESIGN));
         reg("old_calendar", (id) -> new GenericMetalBlock(id,ApplianceShapes.OldCalendar));
-        reg("television", (id) -> new Power(id,ApplianceShapes.TELEVISION ));
+        reg("television", (id) -> new Power(id,ApplianceShapes.TELEVISION, "tooltip.citymod.powerable", true));
         reg("printer", (id) -> new GenericMetalBlock(id,CityShapes.StoneChair));
         reg("extractor", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
         reg("trimcover", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
         reg("washingmachine", (id) -> new GenericMetalBlock(id,ApplianceShapes.WASHINGMACHINEA));
         reg("washine_machine_b", (id) -> new GenericMetalBlock(id,ApplianceShapes.WASHINGMACHINEB));
-        reg("crt_tv", (id) -> new Power(id,ApplianceShapes.CRTTV ));
+        reg("crt_tv", (id) -> new Power(id,ApplianceShapes.CRTTV, "tooltip.citymod.powerable", true));
         reg("treadmill", (id) -> new GenericMetalBlock(id,ApplianceShapes.TREADMILL));
-        reg("tv_hd", (id) -> new Power(id,ApplianceShapes.TVHD ));
+        reg("tv_hd", (id) -> new Power(id,ApplianceShapes.TVHD, "tooltip.citymod.powerable", true));
         reg("sausage_cooker", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
         reg("ac_modern", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_02));
         reg("ac_out_modern", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_06));
@@ -291,65 +312,72 @@ public class BlockRegistry {
         reg("game_pc_black", (id) -> new GenericGlassBlock(id,ApplianceShapes.MODERMMAINUNIT));
         reg("game_pc_white", (id) -> new GenericGlassBlock(id,ApplianceShapes.MODERMMAINUNIT));
         reg("electronic_scale", (id) -> new GenericGlassBlock(id,BlockShapes.TRAFFICLINE));
-        reg("ac_modern_2", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeM ));
+        reg("ac_modern_2", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeM, "tooltip.citymod.tall"));
         reg("water_dispenser", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
         reg("bucket", (id) -> new GenericSignBlock(id,BlockShapes.DEFAULT));
         reg("oven", (id) -> new GenericSignBlock(id,ApplianceShapes.MicroWaveOven));
         reg("fan", (id) -> new GenericSignBlock(id,CityShapes.Concretebarrierfenced));
         reg("fan2", (id) -> new GenericSignBlock(id,ApplianceShapes.FAN2));
         reg("cable_box", (id) -> new GenericSignBlock(id,ApplianceShapes.STB));
+        reg("router_black", (id) -> new GenericSignBlock(id,ApplianceShapes.STB));
+        reg("router_white", (id) -> new GenericSignBlock(id,ApplianceShapes.STB));
+        reg("gas_stove", (id) -> new GenericSignBlock(id,ApplianceShapes.GAS_STOVE));
         //灯具
         reg("toplamp1", (id) -> new GenericLightBlock(id,BlockShapes.TOPLAMPS));
         reg("toplamp2", (id) -> new GenericLightBlock(id,BlockShapes.TOPLAMPS));
+        reg("toplamp3", (id) -> new GenericLightBlock(id,BlockShapes.TOPLAMPS));
+        reg("toplamp4", (id) -> new GenericLightBlock(id,BlockShapes.TOPLAMPS));
         reg("desklamp", (id) -> new GenericLightBlock(id,ApplianceShapes.DESKLAMP));
         reg("desklamp2", (id) -> new GenericLightBlock(id,BlockShapes.DEFAULT));
-        reg("floorlamp1", (id) -> new GenericLightBlock(id,ApplianceShapes.WardrobeM ));
+        reg("floorlamp1", (id) -> new GenericLightBlock(id,ApplianceShapes.WardrobeM, "tooltip.citymod.tall"));
         reg("chandelier1", (id) -> new GenericLightBlock(id,BlockShapes.DEFAULT));
         reg("chandelier2", (id) -> new GenericLightBlock(id,BlockShapes.DEFAULT));
         reg("chandelier3", (id) -> new GenericLightBlock(id,BlockShapes.DEFAULT));
         reg("chandelier4", (id) -> new GenericLightBlock(id,BlockShapes.DEFAULT));
+        reg("chandelier5", (id) -> new GenericLightBlock(id,ApplianceShapes.CLAMP5));
         //公交站台
-        reg("busstop1", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOP1 ));
-        reg("busstop2", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOP1 ));
-        reg("busstop3", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOPM ));
-        reg("busstop_m", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOPM ));
-        reg("busstop_ad", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOPAD ));
-        reg("busstop_ad1", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOPAD ));
-        reg("busstop_pole", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOPPOLE ));
+        reg("busstop1", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOP1, "tooltip.citymod.tall"));
+        reg("busstop2", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOP1, "tooltip.citymod.lcgy"));
+        reg("busstop3", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOPM, "tooltip.citymod.lcgy"));
+        reg("busstop_m", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOPM, "tooltip.citymod.tall"));
+        reg("busstop_ad", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOPAD, "tooltip.citymod.tall"));
+        reg("busstop_ad1", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOPAD, "tooltip.citymod.tall"));
+        reg("busstop_pole", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOPPOLE, "tooltip.citymod.tall"));
         reg("busstop_top", (id) -> new GenericMetalBlock(id,BlockShapes.BUSSTOP_top));
-        reg("busstop_chair", (id) -> new GenericMetalBlock(id,BlockShapes.BUSCHAIR));
+        reg("busstop_chair", (id) -> new GenericChairBlock(id,BlockShapes.BUSCHAIR,0.4));
         // 显示器（带开关）
-        reg("old_monitor_off", (id) -> new Power(id,ApplianceShapes.Old_Monitor ));
-        reg("monitor_2010off", (id) -> new Power(id,ApplianceShapes.Monitor2010 ));
-        reg("modern_monitor_off", (id) -> new Power(id,ApplianceShapes.ModernMonitor ));
-        reg("all_in_one_pc", (id) -> new Power(id,ApplianceShapes.AIOPC ));
-        reg("laptop", (id) -> new Power(id,ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON ));
-        reg("large_screen_black", (id) -> new Power(id,ApplianceShapes.LARGESCREEN ));
-        reg("large_screen_white", (id) -> new Power(id,ApplianceShapes.LARGESCREEN ));
+        reg("old_monitor_off", (id) -> new Power(id,ApplianceShapes.Old_Monitor, "tooltip.citymod.powerable", true));
+        reg("monitor_2010off", (id) -> new Power(id,ApplianceShapes.Monitor2010, "tooltip.citymod.powerable", true));
+        reg("modern_monitor_off", (id) -> new Power(id,ApplianceShapes.ModernMonitor, "tooltip.citymod.powerable", true));
+        reg("all_in_one_pc", (id) -> new Power(id,ApplianceShapes.AIOPC, "tooltip.citymod.powerable", true));
+        reg("laptop", (id) -> new Power(id,ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON, "tooltip.citymod.powerable", true));
+        reg("gaming_laptop_off", (id) -> new Power(id,ApplianceShapes.LAPTOP, ApplianceShapes.LAPTOP_ON, "tooltip.citymod.powerable", true));
+        reg("large_screen_black", (id) -> new Power(id,ApplianceShapes.LARGESCREEN, "tooltip.citymod.powerable", true));
+        reg("large_screen_white", (id) -> new Power(id,ApplianceShapes.LARGESCREEN, "tooltip.citymod.powerable", true));
         reg("gaming_pc_white", (id) -> new GenericGlassBlock(id,ApplianceShapes.GAMINGPC));
         reg("gaming_pcblack", (id) -> new GenericGlassBlock(id,ApplianceShapes.GAMINGPC));
-        reg("game_monitor_black_off", (id) -> new Power(id,ApplianceShapes.GAMEMONITOR ));
-        reg("game_monitor_white_off", (id) -> new Power(id,ApplianceShapes.GAMEMONITOR ));
-        reg("game_monitor_black_std", (id) -> new Power(id,ApplianceShapes.GAMEMONITOR ));
-        reg("game_monitor_white_std", (id) -> new Power(id,ApplianceShapes.GAMEMONITOR ));
-        reg("small_tv", (id) -> new Power(id,ApplianceShapes.GAMEMONITOR ));
+        reg("game_monitor_black_off", (id) -> new Power(id,ApplianceShapes.GAMEMONITOR, "tooltip.citymod.powerable", true));
+        reg("game_monitor_white_off", (id) -> new Power(id,ApplianceShapes.GAMEMONITOR, "tooltip.citymod.powerable", true));
+        reg("game_monitor_black_std", (id) -> new Power(id,ApplianceShapes.GAMEMONITOR, "tooltip.citymod.powerable", true));
+        reg("game_monitor_white_std", (id) -> new Power(id,ApplianceShapes.GAMEMONITOR, "tooltip.citymod.powerable", true));
+        reg("small_tv", (id) -> new Power(id,ApplianceShapes.GAMEMONITOR, "tooltip.citymod.powerable", true));
         //家具
         reg("computer_desk_black", (id) -> new GenericMetalBlock(id,ApplianceShapes.PCDESK));
         reg("computer_desk_white", (id) -> new GenericMetalBlock(id,ApplianceShapes.PCDESK));
         reg("office_desk", (id) -> new GenericGlassBlock(id,ApplianceShapes.PCDESK));
-        reg("office_chair_black", (id) -> new GenericGlassBlock(id,CityShapes.StoneChair));
-        reg("office_chair_white", (id) -> new GenericGlassBlock(id,CityShapes.StoneChair));
-        reg("plastic_chair_red", (id) -> new GenericSignBlock(id,BlockShapes.TALLCHAIR ));
-        reg("plastic_chair_blue", (id) -> new GenericSignBlock(id,BlockShapes.TALLCHAIR ));
+        reg("office_chair_black", (id) -> new GenericChairBlock(id,CityShapes.StoneChair,0.4));
+        reg("office_chair_white", (id) -> new GenericChairBlock(id,CityShapes.StoneChair,0.4));
+        reg("plastic_chair_red", (id) -> new GenericChairBlock(id,BlockShapes.TALLCHAIR, "tooltip.citymod.nohead",0.4));
+        reg("plastic_chair_blue", (id) -> new GenericChairBlock(id,BlockShapes.TALLCHAIR, "tooltip.citymod.nohead",0.4));
         reg("monitor_bracket_black", (id) -> new GenericSignBlock(id,ApplianceShapes.MONITORBRACKET));
         reg("monitor_bracket_white", (id) -> new GenericSignBlock(id,ApplianceShapes.MONITORBRACKET));
         reg("monitor_light_black", (id) -> new GenericLightBlock(id,ApplianceShapes.MONITORLIGHT));
         reg("monitor_light_white", (id) -> new GenericLightBlock(id,ApplianceShapes.MONITORLIGHT));
         reg("monitor_light_black_std", (id) -> new GenericLightBlock(id,ApplianceShapes.MONITORLIGHT));
         reg("monitor_light_white_std", (id) -> new GenericLightBlock(id,ApplianceShapes.MONITORLIGHT));
-        reg("kitchen_chair", (id) -> new GenericSignBlock(id,BlockShapes.TALLCHAIR));
+        reg("kitchen_chair", (id) -> new GenericChairBlock(id,BlockShapes.TALLCHAIR,0.4));
         reg("kitchen_desk", (id) -> new GenericSignBlock(id,BlockShapes.DEFAULT));
-        reg("old_chair", (id) -> new GenericSignBlock(id,BlockShapes.TALLCHAIR));
+        reg("old_chair", (id) -> new GenericChairBlock(id,BlockShapes.TALLCHAIR,0.4));
         reg("tvcabinet_a", (id) -> new GenericSignBlock(id,BlockShapes.DEFAULT));
         reg("tvcabinet_b", (id) -> new GenericSignBlock(id,BlockShapes.DEFAULT));
         reg("tvcabinet_c", (id) -> new GenericSignBlock(id,BlockShapes.DEFAULT));
@@ -362,53 +390,54 @@ public class BlockRegistry {
         reg("modern_mirror_big", (id) -> new GenericLightBlock(id,PostShapes.Post169));
         reg("modern_mirror", (id) -> new GenericLightBlock(id,BlockShapes.MediumSign));
         reg("ironbed", (id) -> new GenericMetalBlock(id,ApplianceShapes.PCDESK));
-        reg("ironbed2", (id) -> new GenericMetalBlock(id,ApplianceShapes.IRONBED));
-        reg("ironbed3", (id) -> new GenericMetalBlock(id,ApplianceShapes.IRONBED2));
-        reg("ironbed4", (id) -> new GenericMetalBlock(id,ApplianceShapes.IRONBED));
+        reg("ironbed2", (id) -> new GenericChairBlock(id,ApplianceShapes.IRONBED,0.4));
+        reg("ironbed3", (id) -> new GenericChairBlock(id,ApplianceShapes.IRONBED2,0.4));
+        reg("ironbed4", (id) -> new GenericChairBlock(id,ApplianceShapes.IRONBED,0.4));
         reg("ironbed_b", (id) -> new GenericMetalBlock(id,ApplianceShapes.PCDESK));
-        reg("ironbed_b2", (id) -> new GenericMetalBlock(id,ApplianceShapes.IRONBED));
-        reg("ironbed_b3", (id) -> new GenericMetalBlock(id,ApplianceShapes.IRONBED2));
-        reg("ironbed_b4", (id) -> new GenericMetalBlock(id,ApplianceShapes.IRONBED));
+        reg("ironbed_b2", (id) -> new GenericChairBlock(id,ApplianceShapes.IRONBED,0.4));
+        reg("ironbed_b3", (id) -> new GenericChairBlock(id,ApplianceShapes.IRONBED2,0.4));
+        reg("ironbed_b4", (id) -> new GenericChairBlock(id,ApplianceShapes.IRONBED,0.4));
         reg("wood_wardrobe", (id) -> new GenericSignBlock(id,ApplianceShapes.Freezer));
         reg("wood_wardrobe_big", (id) -> new GenericSignBlock(id,ApplianceShapes.BIGWARDROBE));
         reg("wood_wardrobe_side", (id) -> new GenericMetalBlock(id,CityShapes.Concretebarrierfenced));
         reg("wood_wardrobe_side_b", (id) -> new GenericMetalBlock(id,CityShapes.Concretebarrierfenced));
         reg("wooden_desk", (id) -> new GenericSignBlock(id,ApplianceShapes.PCDESK));
         reg("wooden_shelf", (id) -> new GenericSignBlock(id,ApplianceShapes.BIGWARDROBE));
+        reg("gas_tank", (id) -> new GenericMetalBlock(id,BlockShapes.DEFAULT));
         // 已废弃
-        reg("laptop_poweron", (id) -> new GenericLightBlock(id,ApplianceShapes.LAPTOP_ON ));
-        reg("old_monitor_on", (id) -> new GenericLightBlock(id,ApplianceShapes.Old_Monitor ));
-        reg("monitor_2010_on", (id) -> new GenericLightBlock(id,ApplianceShapes.Monitor2010 ));
-        reg("modern_monitor_on", (id) -> new GenericLightBlock(id,ApplianceShapes.ModernMonitor ));
-        reg("all_in_one_pc_on", (id) -> new GenericLightBlock(id,ApplianceShapes.AIOPC ));
-        reg("air_conditioning", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN ));
-        reg("hanging_air_conditioning", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_02 ));
-        reg("air_conditioning_external_unit", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_01 ));
-        reg("large_air_conditioning_external_unit", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_02 ));
-        reg("centr_alir_conditioning", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLCAC ));
-        reg("road_sign", (id) -> new GenericSignBlock(id,CityShapes.RoadSign ));
-        reg("television_power_on", (id) -> new GenericLightBlock(id,ApplianceShapes.TELEVISION ));
-        reg("old_ac_in", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN ));
-        reg("old_ac_in_b", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_02 ));
-        reg("old_ac_in_c", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN ));
-        reg("air_condition_b", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN ));
-        reg("screen_black_on", (id) -> new GenericLightBlock(id,ApplianceShapes.LARGESCREEN ));
-        reg("screen_white_on", (id) -> new GenericLightBlock(id,ApplianceShapes.LARGESCREEN ));
-        reg("crt_tv_on", (id) -> new GenericLightBlock(id,ApplianceShapes.CRTTV ));
-        reg("old_ac_out", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_02 ));
+        reg("laptop_poweron", (id) -> new GenericLightBlock(id,ApplianceShapes.LAPTOP_ON, "tooltip.citymod.old"));
+        reg("old_monitor_on", (id) -> new GenericLightBlock(id,ApplianceShapes.Old_Monitor, "tooltip.citymod.old"));
+        reg("monitor_2010_on", (id) -> new GenericLightBlock(id,ApplianceShapes.Monitor2010, "tooltip.citymod.old"));
+        reg("modern_monitor_on", (id) -> new GenericLightBlock(id,ApplianceShapes.ModernMonitor, "tooltip.citymod.old"));
+        reg("all_in_one_pc_on", (id) -> new GenericLightBlock(id,ApplianceShapes.AIOPC, "tooltip.citymod.old"));
+        reg("air_conditioning", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN, "tooltip.citymod.old"));
+        reg("hanging_air_conditioning", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_02, "tooltip.citymod.old"));
+        reg("air_conditioning_external_unit", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_01, "tooltip.citymod.old"));
+        reg("large_air_conditioning_external_unit", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_02, "tooltip.citymod.old"));
+        reg("centr_alir_conditioning", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLCAC, "tooltip.citymod.old"));
+        reg("road_sign", (id) -> new GenericSignBlock(id,CityShapes.RoadSign, "tooltip.citymod.old"));
+        reg("television_power_on", (id) -> new GenericLightBlock(id,ApplianceShapes.TELEVISION, "tooltip.citymod.old"));
+        reg("old_ac_in", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN, "tooltip.citymod.old"));
+        reg("old_ac_in_b", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_02, "tooltip.citymod.old"));
+        reg("old_ac_in_c", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN, "tooltip.citymod.old"));
+        reg("air_condition_b", (id) -> new GenericMetalBlock(id,ApplianceShapes.EOLACIN, "tooltip.citymod.old"));
+        reg("screen_black_on", (id) -> new GenericLightBlock(id,ApplianceShapes.LARGESCREEN, "tooltip.citymod.old"));
+        reg("screen_white_on", (id) -> new GenericLightBlock(id,ApplianceShapes.LARGESCREEN, "tooltip.citymod.old"));
+        reg("crt_tv_on", (id) -> new GenericLightBlock(id,ApplianceShapes.CRTTV, "tooltip.citymod.old"));
+        reg("old_ac_out", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_02, "tooltip.citymod.old"));
         // 家具
-        reg("oldwardrobe", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeM ));
+        reg("oldwardrobe", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeM, "tooltip.citymod.tall"));
         reg("oldwardrobesmall", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeS));
-        reg("oldwardrobecorner", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeM ));
-        reg("modernwardrobe", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeM ));
+        reg("oldwardrobecorner", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeM, "tooltip.citymod.tall"));
+        reg("modernwardrobe", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeM, "tooltip.citymod.tall"));
         reg("modernwardrobeup", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeS));
-        reg("modernwardrobeb", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeL ));
+        reg("modernwardrobeb", (id) -> new GenericMetalBlock(id,ApplianceShapes.WardrobeL, "tooltip.citymod.tall"));
         //红绿灯
-        reg("pedestrian_traffic_light_r", (id) -> new TimedPower(id,BlockShapes.PTrafficLight ));
-        reg("traffic_light_round_green", (id) -> new TimedPower(id,BlockShapes.TrafficLight ));
-        reg("traffic_light_s_green", (id) -> new TimedPower(id,BlockShapes.TrafficLight ));
-        reg("traffic_light_l_green", (id) -> new TimedPower(id,BlockShapes.TrafficLight ));
-        reg("traffic_light_r_green", (id) -> new TimedPower(id,BlockShapes.TrafficLight ));
+        reg("pedestrian_traffic_light_r", (id) -> new TimedPower(id,BlockShapes.PTrafficLight, "tooltip.citymod.tall_trafficlight"));
+        reg("traffic_light_round_green", (id) -> new TimedPower(id,BlockShapes.TrafficLight, "tooltip.citymod.trafficlight"));
+        reg("traffic_light_s_green", (id) -> new TimedPower(id,BlockShapes.TrafficLight, "tooltip.citymod.trafficlight"));
+        reg("traffic_light_l_green", (id) -> new TimedPower(id,BlockShapes.TrafficLight, "tooltip.citymod.trafficlight"));
+        reg("traffic_light_r_green", (id) -> new TimedPower(id,BlockShapes.TrafficLight, "tooltip.citymod.trafficlight"));
         //reg("traffictimescreengreen",()->new TimedPower((id,BlockShapes.FREESIGN)));
         // 载具
         reg("bikeblack", (id) -> new GenericMetalBlock(id,VehicleShapes.BikeBlack));
@@ -490,6 +519,8 @@ public class BlockRegistry {
         reg("ac_out_690", (id) -> new GenericMetalBlock(id,ApplianceShapes.AC_OUT_04));
         reg("internet_famous_road_sign", (id) -> new GenericSignBlock(id,BlockShapes.IFRS));
         reg("anniversary", (id) -> new GenericLightBlock(id,BlockShapes.EXPR));
+        reg("hdd", (id) -> new GenericMetalBlock(id,BlockShapes.TRAFFICLINE, "tooltip.citymod.hdd"));
+        reg("dma", (id) -> new GenericMetalBlock(id,BlockShapes.FREESIGN, "tooltip.citymod.dma"));
         //多方向
         reg("central_air_conditioning", (id) -> new GenericMultiFaceBlock(id,state -> {
             Direction facing = state.getValue(GenericMultiFaceBlock.FACING);
@@ -612,6 +643,11 @@ public class BlockRegistry {
                 Direction.Axis.X, Block.box(0, 7, 7, 16, 9, 9),
                 Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9),
                 Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16)
+        )));
+        reg("railway_pole", (id) -> new GenericAxisBlock(id,Map.of(
+                Direction.Axis.X, Block.box(0, 5, 5, 16, 11, 11),
+                Direction.Axis.Y, Block.box(5, 0, 5, 11, 16, 11),
+                Direction.Axis.Z, Block.box(5, 5, 0, 11, 11, 16)
         )));
         reg("water_pipe_joint", (id) -> new GenericDirectionBlock(id));
         reg("water_pipe_joint_red", GenericDirectionBlock::new);

@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/gas_tank",
+  "textures": {
+    "all": "citymod:block/gas_tank",
+    "particle": "citymod:block/gas_tank",
+    "0": "citymod:block/gas_tank"
+  },
+  "render_type": "cutout"
+}

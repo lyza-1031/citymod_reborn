@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "id": "citymod",
-  "version": "${version}",
-  "name": "citymod_reborn",
-  "description": "Use this mod to build Better Chinese Style City",
+  "version": "2.3.5",
+  "name": "citymod:reborn",
+  "description": "Use this mod to build better Chinese style city",
   "authors": [
     "Lyza_1031"
   ],
   "contact": {
     "homepage": "https://github.com/lyza-1031/citymod_reborn"
   },
-  "license": "CC-BY-NC 4.0",
-  "icon": "logo.png",
+  "license": "Code:LGPL v3;Resources&Jars:CC-BY-NC 4.0",
+  "icon": "assets/citymod/textures/modlogo.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -29,7 +29,8 @@
     "fabric-api": "*"
   },
   "recommends": {
-    "sodium": ">=0.5.0"
+    "sodium": "*",
+    "modernui": "*"
   },
   "suggests": {
     "sodium": "大幅度提升性能并能避免一些潜在的问题"
