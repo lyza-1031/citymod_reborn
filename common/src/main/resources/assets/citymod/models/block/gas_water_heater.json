@@ -5,5 +5,5 @@
     "particle": "citymod:block/gaswaterheater",
     "0": "citymod:block/gaswaterheater"
   },
-  "render_type": "cutout_mipped"
+  "render_type": "cutout"
 }

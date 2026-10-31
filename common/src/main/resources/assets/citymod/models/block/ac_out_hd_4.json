@@ -5,5 +5,5 @@
     "particle": "citymod:block/ac_out_03",
     "1": "citymod:block/ac_out_03"
   },
-  "render_type": "cutout_mipped"
+  "render_type": "cutout"
 }
