@@ -2,6 +2,7 @@ package com.xbzstudio.citymod.fabric.client;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.xbzstudio.citymod.block.BlockRegistry;
+import com.xbzstudio.citymod.client.CityModClient;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
@@ -22,6 +23,7 @@ public final class citymodFabricClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        CityModClient.init();
         System.setProperty("fabric.texture.size.limit", "4096");
 
 /*        for (var def : BlockRegistry.BLOCKS) {

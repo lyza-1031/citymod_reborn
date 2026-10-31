@@ -1,5 +1,5 @@
 {
-  "parent": "citymod:custom/modern_screen",
+  "parent": "citymod:custom/modern_screen_off",
   "textures": {
     "all": "citymod:block/modern_screen",
     "particle": "citymod:block/modern_screen",

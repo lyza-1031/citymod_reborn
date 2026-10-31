@@ -1,6 +1,8 @@
 package com.xbzstudio.citymod;
 
 import com.xbzstudio.citymod.block.BlockRegistry;
+import com.xbzstudio.citymod.block.SchoolnextRegistry;
+import com.xbzstudio.citymod.entity.ModEntities;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -29,6 +31,22 @@ public class CityMod {
             props.setId(ResourceKey.create(Registries.ITEM, id));
             Registry.register(BuiltInRegistries.ITEM, id, new ModBlockItem(block, props, def.id()));
         }
+        for (var def : SchoolnextRegistry.BLOCKS) {
+            Identifier id = Identifier.fromNamespaceAndPath("schoolnext", def.id());
+            Registry.register(BuiltInRegistries.BLOCK, id, def.factory().apply(id));
+        }
+        for (var def : SchoolnextRegistry.BLOCKS) {
+            Identifier id = Identifier.fromNamespaceAndPath("schoolnext", def.id());
+            Block block = BuiltInRegistries.BLOCK.get(id)
+                    .map(Holder.Reference::value)
+                    .orElseThrow(() -> new IllegalStateException("Block not found: " + id));
+
+            Item.Properties props = new Item.Properties();
+            props.setId(ResourceKey.create(Registries.ITEM, id));
+            Registry.register(BuiltInRegistries.ITEM, id, new ModBlockItem(block, props, def.id()));
+        }
+        Identifier seatId = Identifier.fromNamespaceAndPath(MODID, "seat");
+        Registry.register(BuiltInRegistries.ENTITY_TYPE, seatId, ModEntities.SEAT);
         ModCreativeTabs.TABS.register();
         ModCreativeTabs.appendItems();
     }

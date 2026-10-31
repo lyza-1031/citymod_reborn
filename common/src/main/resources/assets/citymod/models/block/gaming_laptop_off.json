@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/gaming_laptop_off",
+  "textures": {
+    "all": "citymod:block/gaming_laptop_on",
+    "particle": "citymod:block/gaming_laptop_on",
+    "0": "citymod:block/gaming_laptop_on",
+    "1": "citymod:block/laptop_screen"
+  },
+  "render_type": "cutout"
+}

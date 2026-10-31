@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/hdd"
+    },
+    "facing=east": {
+      "model": "citymod:block/hdd",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/hdd",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/hdd",
+      "y": 270
+    }
+  }
+}

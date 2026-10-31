@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/tennis_table",
+  "textures": {
+    "all": "citymod:block/tennis_table",
+    "particle": "citymod:block/tennis_table",
+    "0": "citymod:block/tennis_table"
+  },
+  "render_type": "solid"
+}

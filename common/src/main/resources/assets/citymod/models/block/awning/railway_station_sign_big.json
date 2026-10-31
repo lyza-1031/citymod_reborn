@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/awning/railway_station_sign_big",
+  "textures": {
+    "all": "citymod:block/railway_station_sign_big",
+    "particle": "citymod:block/railway_station_sign_big",
+    "0": "citymod:block/railway_station_sign_big"
+  },
+  "render_type": "solid"
+}

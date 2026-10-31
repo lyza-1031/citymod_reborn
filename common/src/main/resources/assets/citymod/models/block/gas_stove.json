@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/gas_stove",
+  "textures": {
+    "all": "citymod:block/gas_stove",
+    "particle": "citymod:block/gas_stove",
+    "0": "citymod:block/gas_stove"
+  },
+  "render_type": "cutout"
+}

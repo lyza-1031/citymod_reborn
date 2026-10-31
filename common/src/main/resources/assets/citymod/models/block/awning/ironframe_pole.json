@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/awning/ironframe_pole",
+  "textures": {
+    "all": "citymod:block/railway_pole",
+    "particle": "citymod:block/railway_pole",
+    "0": "citymod:block/railway_pole",
+    "missing": "minecraft:block/white_concrete"
+  },
+  "render_type": "solid"
+}

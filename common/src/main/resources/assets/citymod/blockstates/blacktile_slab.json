@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "citymod:block/blacktile_slab" },
+    "type=top":    { "model": "citymod:block/blacktile_slab_top" },
+    "type=double": { "model": "citymod:block/blacktile" }
+  }
+}

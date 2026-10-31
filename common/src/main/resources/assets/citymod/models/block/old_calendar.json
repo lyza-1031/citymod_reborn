@@ -3,8 +3,7 @@
   "textures": {
     "all": "citymod:block/oldcalendar",
     "particle": "citymod:block/oldcalendar",
-    "0": "citymod:block/oldcalendar",
-    "1": "citymod:block/painttexture"
+    "0": "citymod:block/oldcalendar"
   },
   "render_type": "cutout"
 }

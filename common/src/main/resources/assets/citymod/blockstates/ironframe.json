@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/awning/ironframe"
+    },
+    "facing=east": {
+      "model": "citymod:block/awning/ironframe",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/awning/ironframe",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/awning/ironframe",
+      "y": 270
+    }
+  }
+}

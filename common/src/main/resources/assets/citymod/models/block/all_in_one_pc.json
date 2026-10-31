@@ -1,5 +1,5 @@
 {
-  "parent": "citymod:custom/all_in_one_pc",
+  "parent": "citymod:custom/all_in_one_pc_off",
   "textures": {
     "all": "citymod:block/all_in_one_pc",
     "particle": "citymod:block/all_in_one_pc",

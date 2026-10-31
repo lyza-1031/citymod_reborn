@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/awning/awning_edge"
+    },
+    "facing=east": {
+      "model": "citymod:block/awning/awning_edge",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/awning/awning_edge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/awning/awning_edge",
+      "y": 270
+    }
+  }
+}
