@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/books",
+  "textures": {
+    "all": "schoolnext:block/books",
+    "particle": "schoolnext:block/books",
+    "1": "schoolnext:block/books"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/acinsideb",
+  "textures": {
+    "all": "schoolnext:block/acinside",
+    "particle": "schoolnext:block/acinside",
+    "1": "schoolnext:block/acinside"
+  },
+  "render_type": "solid"
+}

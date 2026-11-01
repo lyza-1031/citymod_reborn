@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/whiteboard",
+  "textures": {
+    "all": "schoolnext:block/whiteboard",
+    "particle": "schoolnext:block/whiteboard",
+    "0": "schoolnext:block/whiteboard"
+  },
+  "render_type": "solid"
+}

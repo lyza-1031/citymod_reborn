@@ -19,7 +19,34 @@ public class SchoolnextRegistry {
     public static final List<BlockDef> BLOCKS = new ArrayList<>();
 
     static {
-        Schoolreg("schooltestblock", () -> new GenericSignBlock(BlockShapes.DEFAULT,"tooltip.citymod.schoolcompat"));
+        Schoolreg("computer",() -> new Power(ApplianceShapes.Old_Monitor,true));
+        Schoolreg("computer_power_on",() -> new GenericLightBlock(ApplianceShapes.Old_Monitor));
+        Schoolreg("main_unit",() -> new GenericMetalBlock(ApplianceShapes.OLD_MAINUNIT));
+        Schoolreg("electronic_whiteboard",() -> new Power(BlockShapes.ROADSCREEN,true));
+        Schoolreg("electronic_whiteboard_power_on",() -> new GenericLightBlock(BlockShapes.ROADSCREEN));
+        Schoolreg("loud_speaker",() -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
+        //瓷砖
+        Schoolreg("tile",GenericNormalBlock::new);
+        Schoolreg("tile_2",GenericNormalBlock::new);
+        Schoolreg("tile_3",GenericNormalBlock::new);
+        Schoolreg("tile_4",GenericNormalBlock::new);
+        Schoolreg("tile_5",GenericNormalBlock::new);
+        Schoolreg("black_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("blueconcretewall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("green_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("yellow_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("orange_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("cyan_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("dark_blue_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("brown_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("gray_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("light_gray_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("light_blue_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("lime_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("magenta_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("red_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("pink_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("purple_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
     }
     private static void Schoolreg(String id, Supplier<Block> factory) {
         BLOCKS.add(new BlockDef("schoolnext", id, factory, null));

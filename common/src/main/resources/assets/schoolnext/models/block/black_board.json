@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/blackboard",
+  "textures": {
+    "all": "schoolnext:block/blackboard",
+    "particle": "schoolnext:block/blackboard",
+    "1": "schoolnext:block/blackboard"
+  },
+  "render_type": "solid"
+}

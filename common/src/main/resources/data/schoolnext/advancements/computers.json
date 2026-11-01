@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolnext:computer_power_on"
+    },
+    "title": {
+      "translate": "advancements.computers.title"
+    },
+    "description": {
+      "translate": "advancements.computers.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "computers_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "schoolnext:computer"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "schoolnext:school_next_a"
+}

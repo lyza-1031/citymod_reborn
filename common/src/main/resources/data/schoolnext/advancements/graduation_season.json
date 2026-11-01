@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolnext:classroom_door"
+    },
+    "title": {
+      "translate": "advancements.graduation_season.title"
+    },
+    "description": {
+      "translate": "advancements.graduation_season.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "graduation_season_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "schoolnext:school_next_a"
+}

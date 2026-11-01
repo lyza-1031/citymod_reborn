@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,powered=false": {
+      "model": "schoolnext:block/computer"
+    },
+    "facing=east,powered=false": {
+      "model": "schoolnext:block/computer",
+      "y": 90
+    },
+    "facing=south,powered=false": {
+      "model": "schoolnext:block/computer",
+      "y": 180
+    },
+    "facing=west,powered=false": {
+      "model": "schoolnext:block/computer",
+      "y": 270
+    },
+    "facing=north,powered=true": {
+      "model": "schoolnext:block/computer_power_on"
+    },
+    "facing=east,powered=true": {
+      "model": "schoolnext:block/computer_power_on",
+      "y": 90
+    },
+    "facing=south,powered=true": {
+      "model": "schoolnext:block/computer_power_on",
+      "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "schoolnext:block/computer_power_on",
+      "y": 270
+    }
+  }
+}

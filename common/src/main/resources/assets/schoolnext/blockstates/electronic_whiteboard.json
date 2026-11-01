@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,powered=false": {
+      "model": "schoolnext:block/electronic_whiteboard"
+    },
+    "facing=east,powered=false": {
+      "model": "schoolnext:block/electronic_whiteboard",
+      "y": 90
+    },
+    "facing=south,powered=false": {
+      "model": "schoolnext:block/electronic_whiteboard",
+      "y": 180
+    },
+    "facing=west,powered=false": {
+      "model": "schoolnext:block/electronic_whiteboard",
+      "y": 270
+    },
+    "facing=north,powered=true": {
+      "model": "schoolnext:block/electronic_whiteboard_power_on"
+    },
+    "facing=east,powered=true": {
+      "model": "schoolnext:block/electronic_whiteboard_power_on",
+      "y": 90
+    },
+    "facing=south,powered=true": {
+      "model": "schoolnext:block/electronic_whiteboard_power_on",
+      "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "schoolnext:block/electronic_whiteboard_power_on",
+      "y": 270
+    }
+  }
+}

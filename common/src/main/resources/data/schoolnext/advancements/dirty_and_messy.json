@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolnext:blackflag"
+    },
+    "title": {
+      "translate": "advancements.dirty_and_messy.title"
+    },
+    "description": {
+      "translate": "advancements.dirty_and_messy.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "dirty_and_messy_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "schoolnext:blackflag"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "schoolnext:school_next_a"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/paint2",
+  "textures": {
+    "all": "schoolnext:block/paint2",
+    "particle": "schoolnext:block/paint2",
+    "0": "schoolnext:block/paint2"
+  },
+  "render_type": "solid"
+}

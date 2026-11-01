@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/smartbrand",
+  "textures": {
+    "all": "schoolnext:block/smartbrand",
+    "particle": "schoolnext:block/smartbrand",
+    "2": "schoolnext:block/smartbrand"
+  },
+  "render_type": "solid"
+}

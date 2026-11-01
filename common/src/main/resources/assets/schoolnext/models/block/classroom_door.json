@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/updatedoor",
+  "textures": {
+    "all": "schoolnext:block/classroom_door_icon",
+    "particle": "schoolnext:block/classroom_door_icon",
+    "2": "schoolnext:block/classroom_door_icon"
+  },
+  "render_type": "translucent"
+}

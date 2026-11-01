@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolnext:white_board"
+    },
+    "title": {
+      "translate": "advancements.no_electronic_whiteboard.title"
+    },
+    "description": {
+      "translate": "advancements.no_electronic_whiteboard.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "no_electronic_whiteboard_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "schoolnext:white_board"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "schoolnext:no_ac"
+}

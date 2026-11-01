@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/desk",
+  "textures": {
+    "all": "schoolnext:block/deskhd",
+    "particle": "schoolnext:block/deskhd",
+    "0": "schoolnext:block/deskhd"
+  },
+  "render_type": "solid"
+}

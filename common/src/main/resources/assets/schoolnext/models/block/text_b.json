@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/text",
+  "textures": {
+    "all": "schoolnext:block/text_b",
+    "particle": "schoolnext:block/text_b",
+    "3": "schoolnext:block/text_b"
+  },
+  "render_type": "cutout"
+}

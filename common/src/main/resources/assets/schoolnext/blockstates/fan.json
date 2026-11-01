@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "schoolnext:custom/fan_particle"
+    },
+    "facing=east": {
+      "model": "schoolnext:custom/fan_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "schoolnext:custom/fan_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "schoolnext:custom/fan_particle",
+      "y": 270
+    }
+  }
+}

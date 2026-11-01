@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/tallironfence",
+  "textures": {
+    "all": "schoolnext:block/tallironfence",
+    "particle": "schoolnext:block/tallironfence",
+    "0": "schoolnext:block/tallironfence"
+  },
+  "render_type": "solid"
+}

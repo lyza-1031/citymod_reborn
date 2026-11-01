@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/projector",
+  "textures": {
+    "all": "schoolnext:block/projectornewa",
+    "particle": "schoolnext:block/projectornewa",
+    "0": "schoolnext:block/projectornewa"
+  },
+  "render_type": "solid"
+}

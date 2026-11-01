@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "schoolnext:block/red_music_chair"
+    },
+    "facing=east": {
+      "model": "schoolnext:block/red_music_chair",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "schoolnext:block/red_music_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "schoolnext:block/red_music_chair",
+      "y": 270
+    }
+  }
+}

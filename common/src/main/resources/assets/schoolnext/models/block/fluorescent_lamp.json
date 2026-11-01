@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/fluorescent_lamps",
+  "textures": {
+    "all": "schoolnext:block/fluorescent_lamp",
+    "particle": "schoolnext:block/fluorescent_lamp",
+    "0": "schoolnext:block/fluorescent_lamp"
+  },
+  "render_type": "solid"
+}

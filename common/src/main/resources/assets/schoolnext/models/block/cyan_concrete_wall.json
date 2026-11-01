@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/cyan_concrete",
+    "up": "minecraft:block/cyan_concrete",
+    "north": "minecraft:block/white_concrete",
+    "east": "minecraft:block/cyan_concrete",
+    "south": "minecraft:block/cyan_concrete",
+    "west": "minecraft:block/cyan_concrete",
+    "particle": "minecraft:block/cyan_concrete"
+  },
+  "render_type": "solid"
+}

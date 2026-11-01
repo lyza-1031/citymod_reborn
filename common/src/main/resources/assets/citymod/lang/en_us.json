@@ -271,13 +271,11 @@
   "block.citymod.bike_lane": "Bike Lane Sign",
   "block.citymod.road_block": "Road White",
   "block.citymod.security_window_large": "Security Window",
-  "item_group.citymod.firefighting": "Firefighting",
   "block.citymod.construction_warning": "Construction Warning",
   "block.citymod.all_direction_sign": "Traffic Sign",
   "block.citymod.scenic_spot_sign": "Scenic Spot Sign",
   "block.citymod.old_ac_in": "Old Air Conditioning",
   "block.citymod.safety_wall_corner_green": "Safety Wall Corner Green",
-  "painting.citymod.polbot.author": "Polbot",
   "block.citymod.old_ac_in_c": "Old Air Conditioning",
   "block.citymod.sign_board": "Sign Board",
   "block.citymod.old_ac_in_b": "Old Air Conditioning",
@@ -532,5 +530,6 @@
   "block.citymod.railway_station_framelight": "Railway station frame light",
   "block.citymod.round_pillar": "Round concrete pillar",
   "block.citymod.ebox1": "Distribution box(Business)",
-  "block.citymod.ebox2": "Distribution box(Home)"
+  "block.citymod.ebox2": "Distribution box(Home)",
+  "item_group.citymod.building_materials": "Building materials"
 }

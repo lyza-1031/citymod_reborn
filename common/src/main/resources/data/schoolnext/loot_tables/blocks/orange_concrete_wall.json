@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "schoolnext:blocks/orange_concrete_wall",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "schoolnext:orange_concrete_wall"
+        }
+      ]
+    }
+  ]
+}

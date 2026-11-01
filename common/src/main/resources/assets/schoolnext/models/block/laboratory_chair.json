@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/laboratory_chair",
+  "textures": {
+    "all": "schoolnext:block/laboratory_chair",
+    "particle": "schoolnext:block/laboratory_chair",
+    "1": "schoolnext:block/laboratory_chair"
+  },
+  "render_type": "solid"
+}

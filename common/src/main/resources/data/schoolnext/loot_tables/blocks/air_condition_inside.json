@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "schoolnext:blocks/air_condition_inside",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "schoolnext:air_condition_inside"
+        }
+      ]
+    }
+  ]
+}

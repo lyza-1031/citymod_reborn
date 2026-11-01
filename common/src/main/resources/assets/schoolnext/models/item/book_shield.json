@@ -1,0 +1,15 @@
+{
+  "parent": "schoolnext:custom/textbook",
+  "textures": {
+    "missing": "schoolnext:block/workbooka",
+    "particle": "schoolnext:item/workbooka"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "schoolnext:item/book_shield_0"
+    }
+  ]
+}

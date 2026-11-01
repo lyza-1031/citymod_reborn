@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolnext:error"
+    },
+    "title": {
+      "translate": "advancements.source_engine.title"
+    },
+    "description": {
+      "translate": "advancements.source_engine.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "source_engine_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "schoolnext:error"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "schoolnext:dirty_and_messy"
+}

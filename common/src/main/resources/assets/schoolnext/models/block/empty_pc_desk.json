@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/emptypcdesk",
+  "textures": {
+    "all": "schoolnext:block/pcdesk",
+    "particle": "schoolnext:block/pcdesk",
+    "1": "schoolnext:block/pcdesk"
+  },
+  "render_type": "solid"
+}

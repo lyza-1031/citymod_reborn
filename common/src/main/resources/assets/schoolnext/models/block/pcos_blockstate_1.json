@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/pc",
+  "textures": {
+    "all": "schoolnext:block/winxp",
+    "particle": "schoolnext:block/pcon",
+    "2": "schoolnext:block/winxp"
+  },
+  "render_type": "solid"
+}

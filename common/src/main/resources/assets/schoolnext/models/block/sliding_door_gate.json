@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/sliding_door_gate",
+  "textures": {
+    "all": "schoolnext:block/slidingdoorgate",
+    "particle": "schoolnext:block/slidingdoorgate",
+    "0": "schoolnext:block/slidingdoorgate"
+  },
+  "render_type": "solid"
+}

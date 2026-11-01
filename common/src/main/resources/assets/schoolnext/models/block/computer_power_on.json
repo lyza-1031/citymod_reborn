@@ -1,0 +1,10 @@
+{
+  "parent": "schoolnext:custom/pc",
+  "textures": {
+    "all": "schoolnext:block/pc",
+    "particle": "schoolnext:block/pc",
+    "0": "schoolnext:block/pc",
+    "1": "schoolnext:block/screen_pcon"
+  },
+  "render_type": "solid"
+}

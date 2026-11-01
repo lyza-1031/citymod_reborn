@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolnext:electronic_whiteboard_power_on"
+    },
+    "title": {
+      "translate": "advancements.modern_teaching.title"
+    },
+    "description": {
+      "translate": "advancements.modern_teaching.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "modern_teaching_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "schoolnext:electronic_whiteboard"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "schoolnext:computers"
+}

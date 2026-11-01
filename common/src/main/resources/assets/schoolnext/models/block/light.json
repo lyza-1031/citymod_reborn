@@ -1,0 +1,10 @@
+{
+  "parent": "schoolnext:custom/light",
+  "textures": {
+    "all": "schoolnext:block/light",
+    "particle": "schoolnext:block/light",
+    "2": "schoolnext:block/light",
+    "3": "schoolnext:block/2"
+  },
+  "render_type": "solid"
+}

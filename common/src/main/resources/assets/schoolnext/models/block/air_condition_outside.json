@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/airconditionoutside",
+  "textures": {
+    "all": "schoolnext:block/ac",
+    "particle": "schoolnext:block/ac",
+    "1": "schoolnext:block/ac"
+  },
+  "render_type": "solid"
+}

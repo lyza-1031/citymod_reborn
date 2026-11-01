@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/whitewall",
+  "textures": {
+    "all": "minecraft:block/green_concrete",
+    "particle": "minecraft:block/green_concrete",
+    "1": "minecraft:block/green_concrete"
+  },
+  "render_type": "solid"
+}

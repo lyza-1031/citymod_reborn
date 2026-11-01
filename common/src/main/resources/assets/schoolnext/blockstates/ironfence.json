@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "schoolnext:block/ironfence"
+    },
+    "facing=east": {
+      "model": "schoolnext:block/ironfence",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "schoolnext:block/ironfence",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "schoolnext:block/ironfence",
+      "y": 270
+    }
+  }
+}

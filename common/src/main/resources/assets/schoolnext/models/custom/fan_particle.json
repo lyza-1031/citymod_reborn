@@ -1,0 +1,6 @@
+{
+  "parent": "schoolnext:displaysettings/fan.item",
+  "textures": {
+    "particle": "schoolnext:block/fan"
+  }
+}

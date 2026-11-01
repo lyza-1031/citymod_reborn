@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "schoolnext:block/visual_acuity_chart"
+    },
+    "facing=east": {
+      "model": "schoolnext:block/visual_acuity_chart",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "schoolnext:block/visual_acuity_chart",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "schoolnext:block/visual_acuity_chart",
+      "y": 270
+    }
+  }
+}

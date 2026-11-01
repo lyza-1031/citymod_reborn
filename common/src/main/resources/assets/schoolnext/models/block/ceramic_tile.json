@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "schoolnext:block/ceramic_tile",
+    "particle": "schoolnext:block/ceramic_tile"
+  },
+  "render_type": "solid"
+}

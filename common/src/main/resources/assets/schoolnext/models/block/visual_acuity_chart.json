@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/paint",
+  "textures": {
+    "all": "schoolnext:block/visual_acuity_chart",
+    "particle": "schoolnext:block/visual_acuity_chart",
+    "0": "schoolnext:block/visual_acuity_chart"
+  },
+  "render_type": "solid"
+}

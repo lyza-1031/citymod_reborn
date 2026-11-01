@@ -1,0 +1,7 @@
+{
+  "parent": "schoolnext:custom/textbook2",
+  "textures": {
+    "missing": "schoolnext:block/workbooka",
+    "particle": "schoolnext:item/workbooka"
+  }
+}

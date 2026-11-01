@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolnext:music_player_item"
+    },
+    "title": {
+      "translate": "advancements.shoelace_has_come_off.title"
+    },
+    "description": {
+      "translate": "advancements.shoelace_has_come_off.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shoelace_has_come_off_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "schoolnext:dirty_and_messy"
+}

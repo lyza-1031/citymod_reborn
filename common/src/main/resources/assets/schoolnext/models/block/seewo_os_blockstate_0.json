@@ -1,0 +1,10 @@
+{
+  "parent": "schoolnext:custom/seewo",
+  "textures": {
+    "all": "schoolnext:block/win7",
+    "particle": "schoolnext:block/seewohd",
+    "1": "schoolnext:block/seewohd",
+    "3": "schoolnext:block/win7"
+  },
+  "render_type": "solid"
+}

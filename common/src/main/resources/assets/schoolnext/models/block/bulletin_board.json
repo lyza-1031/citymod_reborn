@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/bulletin_board",
+  "textures": {
+    "all": "schoolnext:block/bulletin_board",
+    "particle": "schoolnext:block/bulletin_board",
+    "0": "schoolnext:block/bulletin_board"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/pushpullblackboardc",
+  "textures": {
+    "all": "schoolnext:block/pushpullblackboard",
+    "particle": "schoolnext:block/pushpullblackboard",
+    "0": "schoolnext:block/pushpullblackboard"
+  },
+  "render_type": "solid"
+}

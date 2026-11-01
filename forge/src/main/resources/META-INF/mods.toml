@@ -4,8 +4,8 @@ license="CC-BY-NC 4.0"
 
 [[mods]]
 modId="citymod"
-version="2.4.2"
-displayName="CityMod"
+version="2.4.5"
+displayName="CityMod with Chinese school Mod"
 mixinConfigs="citymod.mixins.json"
 displayURL="https://github.com/lyza-1031/citymod_reborn"
 logoFile="logo.png"
@@ -40,6 +40,11 @@ mandatory=false
 versionRange="[0.1.0,)"
 ordering="NONE"
 side="CLIENT"
-
+[[dependencies.citymod]]
+modId="schoolnext"
+mandatory=false
+versionRange="[INCOMPATIBLE}"
+ordering="AFTER"
+side="BOTH"
 # Start of user code block dependencies configuration
 # End of user code block dependencies configuration

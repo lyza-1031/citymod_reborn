@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/whitewall-c",
+  "textures": {
+    "all": "minecraft:block/lime_concrete",
+    "particle": "minecraft:block/lime_concrete",
+    "2": "minecraft:block/lime_concrete"
+  },
+  "render_type": "solid"
+}

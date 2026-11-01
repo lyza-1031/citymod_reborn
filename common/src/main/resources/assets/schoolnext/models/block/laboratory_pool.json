@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/laboratory_pool",
+  "textures": {
+    "all": "schoolnext:block/laboratory_pool",
+    "particle": "schoolnext:block/laboratory_pool",
+    "0": "schoolnext:block/laboratory_pool"
+  },
+  "render_type": "solid"
+}

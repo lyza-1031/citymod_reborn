@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/error",
+  "textures": {
+    "all": "schoolnext:block/error",
+    "particle": "schoolnext:block/error",
+    "0": "schoolnext:block/error"
+  },
+  "render_type": "solid"
+}

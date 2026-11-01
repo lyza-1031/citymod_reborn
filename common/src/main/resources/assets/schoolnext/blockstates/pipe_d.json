@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "schoolnext:block/pipe_d"
+    },
+    "facing=east": {
+      "model": "schoolnext:block/pipe_d",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "schoolnext:block/pipe_d",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "schoolnext:block/pipe_d",
+      "y": 270
+    }
+  }
+}

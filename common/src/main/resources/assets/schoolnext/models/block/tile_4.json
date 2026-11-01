@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "minecraft:block/white_concrete",
+    "top": "schoolnext:block/tile1",
+    "side": "schoolnext:block/tile1",
+    "overlay": "schoolnext:block/tile1",
+    "particle": "minecraft:block/white_concrete"
+  },
+  "render_type": "solid"
+}

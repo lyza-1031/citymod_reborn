@@ -3,6 +3,7 @@ package com.xbzstudio.fabric.client;
 import com.mojang.blaze3d.platform.InputConstants;
 import com.xbzstudio.citymod.CityMod;
 import com.xbzstudio.citymod.block.BlockRegistry;
+import com.xbzstudio.citymod.block.SchoolnextRegistry;
 import com.xbzstudio.citymod.client.CityModClient;
 import com.xbzstudio.citymod.network.KillItemsPacket;
 import dev.architectury.networking.NetworkManager;
@@ -40,7 +41,15 @@ public final class citymodFabricClient implements ClientModInitializer {
                 BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.cutout());
             }
         }
+        for (var def : SchoolnextRegistry.BLOCKS) {
+            Block block = BuiltInRegistries.BLOCK.get(new ResourceLocation("schoolnext", def.id()));
+            if (block == Blocks.AIR) continue;
 
+            String id = def.id();
+            if (!id.contains("tile")) {
+                BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.cutout());
+            }
+        }
         // 按键绑定
         killItemsKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
                 "key.citymod.kill_items_key",

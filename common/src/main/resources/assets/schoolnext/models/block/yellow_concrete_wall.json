@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/yellow_concrete",
+    "up": "minecraft:block/yellow_concrete",
+    "north": "minecraft:block/white_concrete",
+    "east": "minecraft:block/yellow_concrete",
+    "south": "minecraft:block/yellow_concrete",
+    "west": "minecraft:block/yellow_concrete",
+    "particle": "minecraft:block/yellow_concrete"
+  },
+  "render_type": "solid"
+}

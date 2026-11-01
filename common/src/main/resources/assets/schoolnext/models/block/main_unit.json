@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/main_unit",
+  "textures": {
+    "all": "schoolnext:block/mainunit",
+    "particle": "schoolnext:block/mainunit",
+    "0": "schoolnext:block/mainunit"
+  },
+  "render_type": "cutout"
+}

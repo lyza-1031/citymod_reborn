@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/orange_concrete",
+    "up": "minecraft:block/orange_concrete",
+    "north": "minecraft:block/white_concrete",
+    "east": "minecraft:block/orange_concrete",
+    "south": "minecraft:block/orange_concrete",
+    "west": "minecraft:block/orange_concrete",
+    "particle": "minecraft:block/orange_concrete"
+  },
+  "render_type": "solid"
+}

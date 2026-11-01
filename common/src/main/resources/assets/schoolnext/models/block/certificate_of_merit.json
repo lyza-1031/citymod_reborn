@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/certificate_of_merit",
+  "textures": {
+    "all": "schoolnext:block/certificate_of_merit",
+    "particle": "schoolnext:block/certificate_of_merit",
+    "2": "schoolnext:block/certificate_of_merit"
+  },
+  "render_type": "solid"
+}

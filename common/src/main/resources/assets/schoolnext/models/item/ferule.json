@@ -1,0 +1,7 @@
+{
+  "parent": "schoolnext:custom/ferule",
+  "textures": {
+    "0": "schoolnext:block/ferule",
+    "particle": "schoolnext:item/ferule"
+  }
+}

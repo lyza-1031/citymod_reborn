@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/pipe_c",
+  "textures": {
+    "all": "schoolnext:block/pipe_a",
+    "particle": "schoolnext:block/pipe_a",
+    "0": "schoolnext:block/pipe_a"
+  },
+  "render_type": "solid"
+}

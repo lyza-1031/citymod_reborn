@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "schoolnext:block/smartbrandpoweron"
+    },
+    "facing=east": {
+      "model": "schoolnext:block/smartbrandpoweron",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "schoolnext:block/smartbrandpoweron",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "schoolnext:block/smartbrandpoweron",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "schoolnext:custom/podium",
+  "textures": {
+    "all": "schoolnext:block/podium",
+    "particle": "schoolnext:block/podium",
+    "0": "schoolnext:block/podium",
+    "1": "schoolnext:block/woodtexture"
+  },
+  "render_type": "solid"
+}

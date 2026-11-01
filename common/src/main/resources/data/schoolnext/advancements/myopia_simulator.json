@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolnext:projector"
+    },
+    "title": {
+      "translate": "advancements.myopia_simulator.title"
+    },
+    "description": {
+      "translate": "advancements.myopia_simulator.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "myopia_simulator_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "schoolnext:projector"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "schoolnext:computers"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/loudspeaker",
+  "textures": {
+    "all": "schoolnext:block/loudspeaker",
+    "particle": "schoolnext:block/loudspeaker",
+    "1": "schoolnext:block/loudspeaker"
+  },
+  "render_type": "solid"
+}

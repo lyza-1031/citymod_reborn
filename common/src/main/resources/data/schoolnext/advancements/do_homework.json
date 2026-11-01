@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolnext:book"
+    },
+    "title": {
+      "translate": "advancements.do_homework.title"
+    },
+    "description": {
+      "translate": "advancements.do_homework.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "do_homework_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "schoolnext:school_next_a"
+}

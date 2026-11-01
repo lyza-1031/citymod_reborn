@@ -1,0 +1,10 @@
+{
+  "parent": "schoolnext:custom/musicchair",
+  "textures": {
+    "all": "schoolnext:block/musicchair",
+    "particle": "schoolnext:block/musicchair",
+    "0": "schoolnext:block/musicchair",
+    "missing": "minecraft:block/lime_concrete"
+  },
+  "render_type": "solid"
+}

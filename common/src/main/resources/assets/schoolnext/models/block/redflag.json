@@ -1,0 +1,9 @@
+{
+  "parent": "schoolnext:custom/flag",
+  "textures": {
+    "all": "schoolnext:block/redflag",
+    "particle": "schoolnext:block/redflag",
+    "0": "schoolnext:block/redflag"
+  },
+  "render_type": "cutout"
+}
