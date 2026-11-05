@@ -94,7 +94,7 @@ public class CreativeTabData {
             "bathroom_wardrobe_big","bathroom_wardrobe","modern_mirror_big","modern_mirror",
             "ironbed","ironbed2","ironbed3","ironbed4","ironbed_b","ironbed_b2","ironbed_b3","ironbed_b4",
             "wood_wardrobe","wood_wardrobe_big","wood_wardrobe_side","wood_wardrobe_side_b",
-            "wooden_desk","wooden_shelf",
+            "wooden_desk","wooden_shelf","chair","desk","white_board",
             "gas_tank"
     );
     public static final List<String> POLE_IDS = List.of(
@@ -142,7 +142,8 @@ public class CreativeTabData {
     public static final List<String> POST_IDS = List.of(
             "post_1691", "post_1692", "post_1693", "post_1694",
             "post_1695", "post_1696", "post_1697", "post_1698","post_1699","post_16910",
-            "post_431", "post_432", "post_433","post_434"
+            "post_431", "post_432", "post_433","post_434",
+            "redflag","blackflag","certificate_of_merit","bulletin_board","code_for_students","visual_acuity_chart"
     );
 
     public static final List<String> WINDOW_IDS = List.of(
@@ -165,7 +166,7 @@ public class CreativeTabData {
     public static final List<String> OTHER_IDS = List.of(
             "ac_out_nvidia", "ac_out_amd", "ac_out_intel",
             "ac_out_fake", "ac_out_40_hx","ac_out_690","blackwell_6000","internet_famous_road_sign","anniversary",
-            "hdd","dma"
+            "hdd","dma","error"
     );
     public static final List<TabDef> TABS = List.of(
             new TabDef("traffic", Component.translatable("item_group.citymod.traffic"), "traffic_sign", TRAFFIC_IDS),

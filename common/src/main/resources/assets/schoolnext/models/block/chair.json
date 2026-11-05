@@ -3,7 +3,8 @@
   "textures": {
     "all": "schoolnext:block/chairhd",
     "particle": "schoolnext:block/chairhd",
-    "0": "schoolnext:block/chairhd"
+    "0": "schoolnext:block/chairhd",
+    "1": "citymod:block/woodtexture"
   },
   "render_type": "solid"
 }

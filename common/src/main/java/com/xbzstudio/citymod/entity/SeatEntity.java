@@ -29,7 +29,8 @@ public class SeatEntity extends Entity {
         super.tick();
         if (!this.level().isClientSide) {
             if (this.chairPos == null
-                    || !(this.level().getBlockState(this.chairPos).getBlock() instanceof GenericChairBlock)) {
+                    || !(this.level().getBlockState(this.chairPos).getBlock() instanceof GenericChairBlock)
+                    || this.getPassengers().isEmpty()) {
                 this.ejectPassengers();
                 this.discard();
             }

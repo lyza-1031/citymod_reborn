@@ -4,7 +4,7 @@ license="CC-BY-NC 4.0"
 
 [[mods]]
 modId="citymod"
-version="2.4.5"
+version="2.4.6"
 displayName="CityMod with Chinese school Mod"
 mixinConfigs="citymod.mixins.json"
 displayURL="https://github.com/lyza-1031/citymod_reborn"

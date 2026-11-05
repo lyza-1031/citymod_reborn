@@ -22,9 +22,18 @@ public class SchoolnextRegistry {
         Schoolreg("computer",() -> new Power(ApplianceShapes.Old_Monitor,true));
         Schoolreg("computer_power_on",() -> new GenericLightBlock(ApplianceShapes.Old_Monitor));
         Schoolreg("main_unit",() -> new GenericMetalBlock(ApplianceShapes.OLD_MAINUNIT));
+        Schoolreg("white_board",() -> new GenericSignBlock(BlockShapes.ROADSCREEN));
         Schoolreg("electronic_whiteboard",() -> new Power(BlockShapes.ROADSCREEN,true));
         Schoolreg("electronic_whiteboard_power_on",() -> new GenericLightBlock(BlockShapes.ROADSCREEN));
         Schoolreg("loud_speaker",() -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
+        Schoolreg("desk",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.4));
+        Schoolreg("redflag",() -> new GenericSignBlock(BlockShapes.FREESIGN));
+        Schoolreg("blackflag",() -> new GenericSignBlock(BlockShapes.FREESIGN));
+        Schoolreg("certificate_of_merit",() -> new GenericSignBlock(BlockShapes.FREESIGN));
+        Schoolreg("bulletin_board",() -> new GenericSignBlock(PostShapes.Post43));
+        Schoolreg("code_for_students",() -> new GenericSignBlock(CityShapes.Direction_Sign));
+        Schoolreg("visual_acuity_chart",() -> new GenericSignBlock(CityShapes.Direction_Sign));
         //瓷砖
         Schoolreg("tile",GenericNormalBlock::new);
         Schoolreg("tile_2",GenericNormalBlock::new);
@@ -47,6 +56,8 @@ public class SchoolnextRegistry {
         Schoolreg("red_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
         Schoolreg("pink_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
         Schoolreg("purple_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        //其他
+        Schoolreg("error",() -> new GenericLightBlock(BlockShapes.DEFAULT,"tooltip.citymod.source"));
     }
     private static void Schoolreg(String id, Supplier<Block> factory) {
         BLOCKS.add(new BlockDef("schoolnext", id, factory, null));
