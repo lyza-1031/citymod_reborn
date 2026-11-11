@@ -459,7 +459,12 @@ public class ApplianceShapes {
             box(0, 0, -16,16 ,1, 16),
             box(0, 0, 0, 16, 1, 32)
     );
-
+    public static final Map<Direction, VoxelShape> PODIUM = createShape(
+            box(-8, 0, -1, 24, 20, 16),
+            box(-8, 0, 0, 24, 20, 17),
+            box(-1, 0, -8, 16, 20, 24),
+            box(0, 0, -8, 17, 20, 24)
+    );
     private static final Map<Direction, Map<AttachFace, VoxelShape>> AIRVENT_SHAPES = new EnumMap<>(Direction.class);
     static {
         for (Direction facing : new Direction[]{Direction.SOUTH, Direction.NORTH, Direction.EAST, Direction.WEST}) {

@@ -34,6 +34,12 @@ public class SchoolnextRegistry {
         Schoolreg("bulletin_board",() -> new GenericSignBlock(PostShapes.Post43));
         Schoolreg("code_for_students",() -> new GenericSignBlock(CityShapes.Direction_Sign));
         Schoolreg("visual_acuity_chart",() -> new GenericSignBlock(CityShapes.Direction_Sign));
+        Schoolreg("podium",() -> new GenericMetalBlock(ApplianceShapes.PODIUM));
+        Schoolreg("red_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
+        Schoolreg("orange_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
+        Schoolreg("yellow_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
+        Schoolreg("green_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
+        Schoolreg("blue_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
         //瓷砖
         Schoolreg("tile",GenericNormalBlock::new);
         Schoolreg("tile_2",GenericNormalBlock::new);

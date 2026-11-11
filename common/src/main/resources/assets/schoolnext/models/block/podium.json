@@ -3,8 +3,8 @@
   "textures": {
     "all": "schoolnext:block/podium",
     "particle": "schoolnext:block/podium",
-    "0": "schoolnext:block/podium",
-    "1": "schoolnext:block/woodtexture"
+    "1": "schoolnext:block/podium",
+    "0": "schoolnext:block/woodtexture"
   },
   "render_type": "solid"
 }
