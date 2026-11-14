@@ -36,7 +36,8 @@ public class CreativeTabData {
             "traffic_light_round_green","traffic_light_s_green","traffic_light_l_green","traffic_light_r_green","pedestrian_traffic_light_r",
             "bike", "bikeblack",
             "electric_motorcycle", "electric_motorcycle_black",
-            "scooter_white", "scooter_black"
+            "scooter_white", "scooter_black",
+            "small_car"
     );
 
     public static final List<String> CITY_IDS = List.of(
@@ -67,7 +68,8 @@ public class CreativeTabData {
             "network_box","milk_box",
             "high_bar","high_bar2","high_bar3","double_bar",
             "tennis_table","awning_top","awning_edge","awning_edge2","railway_station_sign","railway_station_sign_big","railway_station_sign_big2","fireextinguisherbox","water_pipe","water_pipe_red","nozzle_1","nozzle_2",
-            "water_pipe_joint","water_pipe_joint_r","water_pipe_joint_red","water_pipe_joint_red_r"
+            "water_pipe_joint","water_pipe_joint_r","water_pipe_joint_red","water_pipe_joint_red_r",
+            "schoolnext:pipe","schoolnext:pipe_b","schoolnext:pipe_c","schoolnext:pipe_d","schoolnext:pipe_e"
 
     );
     public static final List<String> BuildingMaterials_IDS = List.of(
@@ -131,7 +133,7 @@ public class CreativeTabData {
             "water_dispenser","bucket",
             "oven","fan","fan2","cable_box",
             "router_black","router_white","gas_stove",
-            "ebox1","ebox2","schoolnext:electronic_whiteboard","schoolnext:loud_speaker"
+            "ebox1","ebox2","schoolnext:electronic_whiteboard","schoolnext:loud_speaker","schoolnext:projector"
     );
     public static final List<String> LAMP_IDS = List.of(
             "desklamp","desklamp2",

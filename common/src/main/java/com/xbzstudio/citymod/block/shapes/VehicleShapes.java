@@ -23,8 +23,6 @@ public class VehicleShapes {
         return Block.box(x1, y1, z1, x2, y2, z2);
     }
 
-    // ==================== 路牌形状 ====================
-
     public static final Map<Direction, VoxelShape> BikeWhite = createShape(
             box(0, 0, -4, 16, 16, 20),
 			box(0, 0, -4, 16, 16, 20),
@@ -60,5 +58,11 @@ public class VehicleShapes {
             box(4, 0, -4, 12, 3.5, 20),
             box(-4, 0, 4, 20, 3.5, 12),
             box(-4, 0, 4, 20, 3.5, 12)
+    );
+    public static final Map<Direction, VoxelShape> SmallCar = createShape(
+            box(-16, 0, -6, 32, 26, 24),
+            box(-16, 0, -6, 32, 26, 24),
+            box(-6, 0, -16, 24, 26, 32),
+            box(-6, 0, -16, 24, 26, 32)
     );
 }

@@ -7,7 +7,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.phys.shapes.Shapes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -457,7 +456,7 @@ public class BlockRegistry {
         reg("electric_motorcycle_black", () -> new GenericMetalBlock(VehicleShapes.ElectricMotorBlack));
         reg("scooter_white", () -> new GenericMetalBlock(VehicleShapes.ScooterWhite));
         reg("scooter_black", () -> new GenericMetalBlock(VehicleShapes.ScooterBlack));
-
+        reg("small_car", () -> new GenericMetalBlock(VehicleShapes.SmallCar));
         // 窗户
         reg("window_small_white", () -> new GenericGlassBlock(WindowsShapes.WINMA));
         reg("window_medium_a_white", () -> new GenericGlassBlock(WindowsShapes.WINMA));

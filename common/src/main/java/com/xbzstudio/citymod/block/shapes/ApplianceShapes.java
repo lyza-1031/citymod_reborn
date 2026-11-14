@@ -503,4 +503,57 @@ public class ApplianceShapes {
         return AIRVENT_SHAPES.getOrDefault(state.getValue(GenericMultiFaceBlock.FACING), Map.of())
                 .getOrDefault(state.getValue(GenericMultiFaceBlock.FACE), Shapes.block());
     }
+    public static final Map<Direction, VoxelShape> PIPE = createShape(
+            box(4, 7, 0, 12, 12, 16),
+            box(4, 7, 0, 12, 12, 16),
+            box(0, 7, 4, 16, 12, 12),
+            box(0, 7, 4, 16, 12, 12));
+    public static final Map<Direction, VoxelShape> PIPE_B = createShape(
+            Shapes.or(
+                    box(0, 7, 4, 4, 12, 12),
+                    box(4, 7, 0, 12, 12, 12)),
+            Shapes.or(
+                    box(12, 7, 4, 16, 12, 12),
+                    box(4, 7, 4, 12, 12, 16)),
+            Shapes.or(
+                    box(0, 7, 4, 12, 12, 12),
+                    box(4, 7, 12, 12, 12, 16)),
+            Shapes.or(
+                    box(4, 7, 0, 12, 12, 4),
+                    box(4, 7, 4, 16, 12, 12)));
+    public static final Map<Direction, VoxelShape> PIPE_C = createShape(
+            Shapes.or(
+                    box(0, 7, 4, 4, 12, 12),
+                    box(12, 7, 4, 16, 12, 12),
+                    box(4, 7, 0, 12, 12, 12)),
+            Shapes.or(
+                    box(0, 7, 4, 4, 12, 12),
+                    box(12, 7, 4, 16, 12, 12),
+                    box(4, 7, 4, 12, 12, 16)),
+            Shapes.or(
+                    box(0, 7, 4, 12, 12, 12),
+                    box(4, 7, 0, 12, 12, 4),
+                    box(4, 7, 12, 12, 12, 16)),
+            Shapes.or(
+                    box(4, 7, 0, 12, 12, 4),
+                    box(4, 7, 12, 12, 12, 16),
+                    box(4, 7, 4, 16, 12, 12)));
+    public static final Map<Direction, VoxelShape> PIPE_D = createShape(
+            Shapes.or(
+                    box(0, 7, 4, 4, 12, 12),
+                    box(12, 7, 4, 16, 12, 12),
+                    box(4, 7, 0, 12, 12, 16)),
+            Shapes.or(
+                    box(0, 7, 4, 4, 12, 12),
+                    box(12, 7, 4, 16, 12, 12),
+                    box(4, 7, 0, 12, 12, 16)),
+            Shapes.or(
+                    box(0, 7, 4, 16, 12, 12),
+                    box(4, 7, 0, 12, 12, 4),
+                    box(4, 7, 12, 12, 12, 16)),
+            Shapes.or(
+                    box(0, 7, 4, 16, 12, 12),
+                    box(4, 7, 0, 12, 12, 4),
+                    box(4, 7, 12, 12, 12, 16)));
+
 }

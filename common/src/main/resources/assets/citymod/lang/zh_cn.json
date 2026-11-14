@@ -529,5 +529,6 @@
   "block.citymod.round_pillar": "圆混凝土柱",
   "block.citymod.ebox1": "配电箱（商用）",
   "block.citymod.ebox2": "配电箱（家用）",
-  "item_group.citymod.building_materials": "建材"
+  "item_group.citymod.building_materials": "建材",
+  "block.citymod.small_car": "老头乐"
 }

@@ -1,0 +1,10 @@
+{
+  "parent": "citymod:custom/small_car",
+  "textures": {
+    "all": "citymod:block/smallcar",
+    "particle": "citymod:block/smallcar",
+    "0": "citymod:block/smallcar",
+    "1": "citymod:block/license_plate"
+  },
+  "render_type": "cutout"
+}

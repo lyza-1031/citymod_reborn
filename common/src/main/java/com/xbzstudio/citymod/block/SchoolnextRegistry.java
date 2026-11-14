@@ -27,6 +27,7 @@ public class SchoolnextRegistry {
         Schoolreg("electronic_whiteboard_power_on",() -> new GenericLightBlock(BlockShapes.ROADSCREEN));
         Schoolreg("loud_speaker",() -> new GenericMetalBlock(CityShapes.Fireextinguisherbox));
         Schoolreg("desk",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        Schoolreg("projector",() -> new GenericSignBlock(BlockShapes.DEFAULT));
         Schoolreg("chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.4));
         Schoolreg("redflag",() -> new GenericSignBlock(BlockShapes.FREESIGN));
         Schoolreg("blackflag",() -> new GenericSignBlock(BlockShapes.FREESIGN));
@@ -40,6 +41,12 @@ public class SchoolnextRegistry {
         Schoolreg("yellow_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
         Schoolreg("green_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
         Schoolreg("blue_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
+        //线路管道
+        Schoolreg("pipe",() -> new GenericSignBlock(ApplianceShapes.PIPE));
+        Schoolreg("pipe_b",() -> new GenericSignBlock(ApplianceShapes.PIPE_B));
+        Schoolreg("pipe_c",() -> new GenericSignBlock(ApplianceShapes.PIPE_C));
+        Schoolreg("pipe_d",() -> new GenericSignBlock(ApplianceShapes.PIPE_D));
+        Schoolreg("pipe_e",() -> new GenericSignBlock(ApplianceShapes.PIPE));
         //瓷砖
         Schoolreg("tile",GenericNormalBlock::new);
         Schoolreg("tile_2",GenericNormalBlock::new);

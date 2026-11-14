@@ -532,5 +532,6 @@
   "block.citymod.ebox1": "Distribution box(Business)",
   "block.citymod.ebox2": "Distribution box(Home)",
   "item_group.citymod.building_materials": "Building materials",
-  "tooltip.citymod.source": "§o§6Source engine special ERROR"
+  "tooltip.citymod.source": "§o§6Source engine special ERROR",
+  "block.citymod.small_car": "Electric four-wheeled vehicle"
 }
