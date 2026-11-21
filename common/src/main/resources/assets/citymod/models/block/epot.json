@@ -1,0 +1,9 @@
+{
+  "parent": "citymod:custom/epot",
+  "textures": {
+    "all": "citymod:block/epot",
+    "particle": "citymod:block/epot",
+    "0": "citymod:block/epot"
+  },
+  "render_type": "cutout"
+}

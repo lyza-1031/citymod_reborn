@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citymod:block/epot"
+    },
+    "facing=east": {
+      "model": "citymod:block/epot",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citymod:block/epot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citymod:block/epot",
+      "y": 270
+    }
+  }
+}

@@ -290,4 +290,24 @@ public class CityShapes {
             PIPE_SHAPES.put(Direction.Axis.Y, Block.box(7, 0, 7, 9, 16, 9));
             PIPE_SHAPES.put(Direction.Axis.Z, Block.box(7, 7, 0, 9, 9, 16));
         }
+    public static final Map<Direction, VoxelShape> IRONFENCE = createShape(
+            box(0, 3, 7.4, 16, 18, 8.6),
+            box(0, 3, 7.4, 16, 18, 8.6),
+            box(7.4, 3, 0, 8.6, 18, 16),
+            box(7.4, 3, 0, 8.6, 18, 16));
+    public static final Map<Direction, VoxelShape> SLABFENCE = createShape(
+          box(0, -8, 7.4, 16, 8, 8.6),
+            box(0, -8, 7.4, 16, 8, 8.6),
+            box(7.4, -8, 0, 8.6, 8, 16),
+            box(7.4, -8, 0, 8.6, 8, 16));
+    public static final Map<Direction, VoxelShape> TALL_IRON_FENCE = createShape(
+            box(0, 3, 7.6, 16, 30, 8.4),
+            box(0, 3, 7.6, 16, 30, 8.4),
+            box(7.6, 3, 0, 8.4, 30, 16),
+            box(7.6, 3, 0, 8.4, 30, 16));
+    public static final Map<Direction, VoxelShape> TALL_WALL = createShape(
+            box(0, 0, 0, 16, 20, 8),
+            box(0, 0, 8, 16, 20, 16),
+            box(0, 0, 0, 8, 20, 16),
+            box(8, 0, 0, 16, 20, 16));
 }

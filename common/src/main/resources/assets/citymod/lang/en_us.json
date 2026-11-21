@@ -533,5 +533,8 @@
   "block.citymod.ebox2": "Distribution box(Home)",
   "item_group.citymod.building_materials": "Building materials",
   "tooltip.citymod.source": "§o§6Source engine special ERROR",
-  "block.citymod.small_car": "Electric four-wheeled vehicle"
+  "block.citymod.small_car": "Electric four-wheeled vehicle",
+  "block.citymod.epot": "Electric rice pot",
+  "resourcepack.citymod.hd_resources": "Citymod&Chinese School Mod HD resourcepack",
+  "resourcepack.citymod.hd_resources.desc": "Fixes missing texture issues for some blocks. Recommended for high-end PCs with NVIDIA graphics cards."
 }

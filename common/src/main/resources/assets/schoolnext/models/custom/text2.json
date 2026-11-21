@@ -1,0 +1,29 @@
+{
+	"format_version": "26.3",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "schoolnext:block/text",
+		"particle": "schoolnext:block/text"
+	},
+	"elements": [
+		{
+			"from": [-16, 0, 15.925],
+			"to": [32, 16, 15.925],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 4.15625, 12, 8.15625], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 4], "texture": "#1"},
+				"south": {"uv": [0, 8, 12, 12], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 4], "texture": "#1"},
+				"up": {"uv": [0, 12, 0, 0], "rotation": 270, "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 12], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [0, -180, -26],
+			"scale": [0.4, 0.4, 0.4]
+		}
+	}
+}

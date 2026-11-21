@@ -3,7 +3,9 @@
   "textures": {
     "all": "schoolnext:block/acinside",
     "particle": "schoolnext:block/acinside",
-    "0": "schoolnext:block/acinside"
+    "0": "schoolnext:block/acinside",
+    "1": "citymod:block/ac_modern_2",
+    "2": "schoolnext:block/acflash"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

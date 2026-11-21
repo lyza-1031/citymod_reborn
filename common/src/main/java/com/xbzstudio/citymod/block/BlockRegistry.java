@@ -331,6 +331,7 @@ public class BlockRegistry {
         reg("gas_stove", () -> new GenericSignBlock(ApplianceShapes.GAS_STOVE));
         reg("ebox1", () -> new Power(BlockShapes.FREESIGN,"tooltip.citymod.powerable",false));
         reg("ebox2", () -> new Power(BlockShapes.FREESIGN,"tooltip.citymod.powerable",false));
+        reg("epot", () -> new GenericMetalBlock(CityShapes.StoneChair));
         //灯具
         reg("toplamp1", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));
         reg("toplamp2", () -> new GenericLightBlock(BlockShapes.TOPLAMPS));

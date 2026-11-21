@@ -4,6 +4,8 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -117,6 +119,7 @@ public class Power extends Block implements SimpleWaterloggedBlock {
                                  InteractionHand hand, BlockHitResult hit) {
         if (!level.isClientSide()) {
             level.setBlock(pos, state.cycle(POWERED), Block.UPDATE_ALL);
+            level.playSound(null, pos, SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_ON, SoundSource.BLOCKS, 1F, 1F);
         }
         return InteractionResult.SUCCESS;
     }

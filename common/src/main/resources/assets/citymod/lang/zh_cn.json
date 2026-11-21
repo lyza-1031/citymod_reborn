@@ -530,5 +530,8 @@
   "block.citymod.ebox1": "配电箱（商用）",
   "block.citymod.ebox2": "配电箱（家用）",
   "item_group.citymod.building_materials": "建材",
-  "block.citymod.small_car": "老头乐"
+  "block.citymod.small_car": "老头乐",
+  "block.citymod.epot": "电饭锅",
+  "resourcepack.citymod.hd_resources": "我的城市&中国式学校 高清资源包",
+    "resourcepack.citymod.hd_resources.desc": "可以解决部分方块显示的缺少资源包纹理，NVIDIA显卡的高配电脑建议安装"
 }

@@ -11,6 +11,9 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
@@ -26,9 +29,19 @@ public final class citymodFabricClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        CityModClient.init();
-        System.setProperty("fabric.texture.size.limit", "4096");
-
+        //资源包
+        try {
+            var modContainer = FabricLoader.getInstance().getModContainer("citymod").orElseThrow();
+            ResourceManagerHelper.registerBuiltinResourcePack(
+                    new ResourceLocation("citymod", "hd_resources"),
+                    modContainer,
+                    Component.translatable("resourcepack.citymod.hd_resources"),
+                    ResourcePackActivationType.NORMAL
+            );
+            System.out.println("[CityMod] SUCCESSFUL");
+        } catch (Exception e) {
+            System.out.println("[CityMod] FAIL STOPCODE:" + e.getMessage());
+        }
         // 渲染层
         for (var def : BlockRegistry.BLOCKS) {
             Block block = BuiltInRegistries.BLOCK.get(new ResourceLocation("citymod", def.id()));
@@ -48,6 +61,9 @@ public final class citymodFabricClient implements ClientModInitializer {
             String id = def.id();
             if (!id.contains("tile")) {
                 BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.cutout());
+            }
+            if (!id.contains("air")) {
+                BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.translucent());
             }
         }
         // 按键绑定

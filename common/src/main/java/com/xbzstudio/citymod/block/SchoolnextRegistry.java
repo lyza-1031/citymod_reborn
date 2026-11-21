@@ -30,6 +30,8 @@ public class SchoolnextRegistry {
         Schoolreg("projector",() -> new GenericSignBlock(BlockShapes.DEFAULT));
         Schoolreg("chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.4));
         Schoolreg("redflag",() -> new GenericSignBlock(BlockShapes.FREESIGN));
+        Schoolreg("text_a",() -> new GenericSignBlock(BlockShapes.FREESIGN));
+        Schoolreg("text_b",() -> new GenericSignBlock(BlockShapes.FREESIGN));
         Schoolreg("blackflag",() -> new GenericSignBlock(BlockShapes.FREESIGN));
         Schoolreg("certificate_of_merit",() -> new GenericSignBlock(BlockShapes.FREESIGN));
         Schoolreg("bulletin_board",() -> new GenericSignBlock(PostShapes.Post43));
@@ -41,12 +43,17 @@ public class SchoolnextRegistry {
         Schoolreg("yellow_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
         Schoolreg("green_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
         Schoolreg("blue_music_chair",() -> new GenericChairBlock(BlockShapes.DEFAULT,0.5));
+        Schoolreg("air_condition_inside",() -> new Power(ApplianceShapes.AC_04,false));
         //线路管道
         Schoolreg("pipe",() -> new GenericSignBlock(ApplianceShapes.PIPE));
         Schoolreg("pipe_b",() -> new GenericSignBlock(ApplianceShapes.PIPE_B));
         Schoolreg("pipe_c",() -> new GenericSignBlock(ApplianceShapes.PIPE_C));
         Schoolreg("pipe_d",() -> new GenericSignBlock(ApplianceShapes.PIPE_D));
         Schoolreg("pipe_e",() -> new GenericSignBlock(ApplianceShapes.PIPE));
+        //栅栏
+        Schoolreg("ironfence",() -> new GenericMetalBlock(CityShapes.IRONFENCE));
+        Schoolreg("tall_iron_fence",() -> new GenericMetalBlock(CityShapes.TALL_IRON_FENCE));
+        Schoolreg("slabfence",() -> new GenericMetalBlock(CityShapes.SLABFENCE));
         //瓷砖
         Schoolreg("tile",GenericNormalBlock::new);
         Schoolreg("tile_2",GenericNormalBlock::new);
@@ -69,6 +76,24 @@ public class SchoolnextRegistry {
         Schoolreg("red_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
         Schoolreg("pink_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
         Schoolreg("purple_concrete_wall",() -> new GenericSignBlock(BlockShapes.DEFAULT));
+        //高墙
+        Schoolreg("tall_wall",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tall_wall_light_blue",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_black",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_blue",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_brown",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_cyan",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_dark_blue",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_gray",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_green",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_light_gray",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_lime",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_magenta",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_orange",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_pink",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_purple",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_red",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("tallwall_yellow",() -> new GenericSignBlock(CityShapes.TALL_WALL));
         //其他
         Schoolreg("error",() -> new GenericLightBlock(BlockShapes.DEFAULT,"tooltip.citymod.source"));
     }

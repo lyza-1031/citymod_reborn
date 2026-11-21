@@ -1,5 +1,8 @@
 package com.xbzstudio.citymod;
 
+import com.xbzstudio.citymod.block.genericblocks.GenericMetalBlock;
+import com.xbzstudio.citymod.block.genericblocks.GenericSignBlock;
+import com.xbzstudio.citymod.block.shapes.CityShapes;
 import net.minecraft.network.chat.Component;
 
 
@@ -46,6 +49,7 @@ public class CreativeTabData {
             "speed_limit_sign_6", "speed_limit_sign_7", "speed_limit_sign_8","speed_limit_sign_9","speed_limit_sign0",
             "pole_fine",
             "glass_fence","modern_fence", "modern_fence_2", "modern_fence_3","step_fence",
+            "schoolnext:ironfence","schoolnext:tall_iron_fence","schoolnext:slabfence",
             "modern_ironfence", "moderniron_fence_yellow",
             "moderniron_fence_green", "moderniron_fence_blue",
             "concretebarrierfenced","concrete_wall_std","concrete_wall_warn",
@@ -82,7 +86,10 @@ public class CreativeTabData {
             "schoolnext:blueconcretewall","schoolnext:green_concrete_wall","schoolnext:yellow_concrete_wall",
             "schoolnext:orange_concrete_wall","schoolnext:cyan_concrete_wall","schoolnext:dark_blue_concrete_wall",
             "schoolnext:brown_concrete_wall","schoolnext:gray_concrete_wall","schoolnext:light_gray_concrete_wall","schoolnext:light_blue_concrete_wall","schoolnext:lime_concrete_wall",
-            "schoolnext:magenta_concrete_wall","schoolnext:red_concrete_wall","schoolnext:pink_concrete_wall"
+            "schoolnext:magenta_concrete_wall","schoolnext:red_concrete_wall","schoolnext:pink_concrete_wall",
+            "schoolnext:tall_wall","schoolnext:tall_wall_light_blue","schoolnext:tallwall_black","schoolnext:tallwall_blue","schoolnext:tallwall_brown",
+            "schoolnext:tallwall_cyan","schoolnext:tallwall_dark_blue","schoolnext:tallwall_gray","schoolnext:tallwall_green","schoolnext:tallwall_light_gray",
+            "schoolnext:tallwall_lime","schoolnext:tallwall_magenta","schoolnext:tallwall_orange","schoolnext:tallwall_pink","schoolnext:tallwall_purple","schoolnext:tallwall_red","schoolnext:tallwall_yellow"
     );
     public static final List<String> FURNITURE_IDS = List.of(
             "computer_desk_black","computer_desk_white","office_desk","office_chair_black","office_chair_white",
@@ -114,7 +121,7 @@ public class CreativeTabData {
             "round_pillar"
     );
     public static final List<String> HA_IDS = List.of(
-            "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4",
+            "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4","schoolnext:air_condition_inside",
             "ac_out_hd_5", "ac_out_hd_6","ac_out_modern","ac_out_modern2",
             "big_ac_out_hd", "centre_air_condition_outside",
             "air_condition_hd_1", "air_condition_hd_2",
@@ -133,7 +140,7 @@ public class CreativeTabData {
             "water_dispenser","bucket",
             "oven","fan","fan2","cable_box",
             "router_black","router_white","gas_stove",
-            "ebox1","ebox2","schoolnext:electronic_whiteboard","schoolnext:loud_speaker","schoolnext:projector"
+            "ebox1","ebox2","schoolnext:electronic_whiteboard","schoolnext:loud_speaker","schoolnext:projector","epot"
     );
     public static final List<String> LAMP_IDS = List.of(
             "desklamp","desklamp2",
@@ -146,7 +153,8 @@ public class CreativeTabData {
             "post_1691", "post_1692", "post_1693", "post_1694",
             "post_1695", "post_1696", "post_1697", "post_1698","post_1699","post_16910",
             "post_431", "post_432", "post_433","post_434",
-            "schoolnext:redflag","schoolnext:blackflag","schoolnext:certificate_of_merit","schoolnext:bulletin_board","schoolnext:code_for_students","schoolnext:visual_acuity_chart"
+            "schoolnext:redflag","schoolnext:blackflag","schoolnext:certificate_of_merit","schoolnext:bulletin_board","schoolnext:code_for_students","schoolnext:visual_acuity_chart",
+            "schoolnext:text_a","schoolnext:text_b"
     );
 
     public static final List<String> WINDOW_IDS = List.of(
