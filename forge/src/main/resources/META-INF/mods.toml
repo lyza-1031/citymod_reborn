@@ -4,7 +4,7 @@ license="CC-BY-NC 4.0"
 
 [[mods]]
 modId="citymod"
-version="2.4.9"
+version="2.4.11"
 displayName="CityMod:Modern life"
 mixinConfigs="citymod.mixins.json"
 displayURL="https://github.com/lyza-1031/citymod_reborn"

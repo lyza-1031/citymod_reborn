@@ -3,7 +3,7 @@
   "textures": {
     "all": "schoolnext:block/blackboard",
     "particle": "schoolnext:block/blackboard",
-    "1": "schoolnext:block/blackboard"
+    "0": "schoolnext:block/blackboard"
   },
   "render_type": "solid"
 }

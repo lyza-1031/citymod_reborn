@@ -103,7 +103,7 @@ public class CreativeTabData {
             "bathroom_wardrobe_big","bathroom_wardrobe","modern_mirror_big","modern_mirror",
             "ironbed","ironbed2","ironbed3","ironbed4","ironbed_b","ironbed_b2","ironbed_b3","ironbed_b4",
             "wood_wardrobe","wood_wardrobe_big","wood_wardrobe_side","wood_wardrobe_side_b",
-            "wooden_desk","wooden_shelf","schoolnext:chair","schoolnext:desk","schoolnext:white_board",
+            "wooden_desk","wooden_shelf","schoolnext:chair","schoolnext:desk","schoolnext:white_board","schoolnext:black_board",
             "gas_tank","schoolnext:podium",
             "schoolnext:red_music_chair","schoolnext:orange_music_chair","schoolnext:yellow_music_chair","schoolnext:green_music_chair","schoolnext:blue_music_chair"
     );
@@ -121,10 +121,10 @@ public class CreativeTabData {
             "round_pillar"
     );
     public static final List<String> HA_IDS = List.of(
-            "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4","schoolnext:air_condition_inside",
+            "ac_out_hd_1", "ac_out_hd_2", "ac_out_hd_3", "ac_out_hd_4","schoolnext:air_condition_outside",
             "ac_out_hd_5", "ac_out_hd_6","ac_out_modern","ac_out_modern2",
             "big_ac_out_hd", "centre_air_condition_outside",
-            "air_condition_hd_1", "air_condition_hd_2",
+            "air_condition_hd_1", "air_condition_hd_2","schoolnext:air_condition_inside","schoolnext:slant_air_condition",
             "airconditionhd_3", "airconditionhd_4","ac_modern","ac_modern_2",
             "air_condition_old_hd", "central_ac_hd",
             "ac_airvent_hd_l","ac_airvent_hd","ac_airvent_hd_r","ac_airvent_hd_l1","ac_airvent_hd1","ac_airvent_hd_r1",
@@ -147,7 +147,7 @@ public class CreativeTabData {
             "floorlamp1",
             "toplamp1","toplamp2","toplamp3","toplamp4",
             "chandelier1","chandelier2","chandelier3","chandelier4","chandelier5",
-            "railway_station_framelight"
+            "railway_station_framelight","schoolnext:light"
     );
     public static final List<String> POST_IDS = List.of(
             "post_1691", "post_1692", "post_1693", "post_1694",
