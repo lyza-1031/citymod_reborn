@@ -89,7 +89,11 @@ public class CreativeTabData {
             "schoolnext:magenta_concrete_wall","schoolnext:red_concrete_wall","schoolnext:pink_concrete_wall",
             "schoolnext:tall_wall","schoolnext:tall_wall_light_blue","schoolnext:tallwall_black","schoolnext:tallwall_blue","schoolnext:tallwall_brown",
             "schoolnext:tallwall_cyan","schoolnext:tallwall_dark_blue","schoolnext:tallwall_gray","schoolnext:tallwall_green","schoolnext:tallwall_light_gray",
-            "schoolnext:tallwall_lime","schoolnext:tallwall_magenta","schoolnext:tallwall_orange","schoolnext:tallwall_pink","schoolnext:tallwall_purple","schoolnext:tallwall_red","schoolnext:tallwall_yellow"
+            "schoolnext:tallwall_lime","schoolnext:tallwall_magenta","schoolnext:tallwall_orange","schoolnext:tallwall_pink","schoolnext:tallwall_purple","schoolnext:tallwall_red","schoolnext:tallwall_yellow",
+            "schoolnext:wall_corner", "schoolnext:wall_corner_light_blue","schoolnext:wall_corner_black","schoolnext:wall_corner_blue",
+            "schoolnext:wall_corner_brown","schoolnext:wall_corner_cyan","schoolnext:wall_corner_dark_blue","schoolnext:wall_corner_gray","schoolnext:wall_corner_green",
+            "schoolnext:wall_corner_light_gray","schoolnext:wall_corner_lime","schoolnext:wall_corner_magenta","schoolnext:wall_corner_orange","schoolnext:wall_corner_pink",
+            "schoolnext:wall_corner_purple","schoolnext:wall_corner_red","schoolnext:wall_corner_yellow"
     );
     public static final List<String> FURNITURE_IDS = List.of(
             "computer_desk_black","computer_desk_white","office_desk","office_chair_black","office_chair_white",
@@ -105,7 +109,8 @@ public class CreativeTabData {
             "wood_wardrobe","wood_wardrobe_big","wood_wardrobe_side","wood_wardrobe_side_b",
             "wooden_desk","wooden_shelf","schoolnext:chair","schoolnext:desk","schoolnext:white_board","schoolnext:black_board",
             "gas_tank","schoolnext:podium",
-            "schoolnext:red_music_chair","schoolnext:orange_music_chair","schoolnext:yellow_music_chair","schoolnext:green_music_chair","schoolnext:blue_music_chair"
+            "schoolnext:red_music_chair","schoolnext:orange_music_chair","schoolnext:yellow_music_chair","schoolnext:green_music_chair","schoolnext:blue_music_chair",
+            "children_blackboard"
     );
     public static final List<String> POLE_IDS = List.of(
             "pole","pole_warn", "pole_joint", "pole_joint_double", "pole_joint_l",

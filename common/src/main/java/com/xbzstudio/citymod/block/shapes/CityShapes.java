@@ -310,4 +310,17 @@ public class CityShapes {
             box(0, 0, 8, 16, 20, 16),
             box(0, 0, 0, 8, 20, 16),
             box(8, 0, 0, 16, 20, 16));
+    public static final Map<Direction, VoxelShape> wall_corner = createShape(
+            Shapes.or(
+                    box(0, 0, 0, 16, 20, 8),
+                    box(0, 0, 8, 8, 20, 16)),
+            Shapes.or(
+                    box(0, 0, 8, 16, 20, 16),
+                    box(8, 0, 0, 16, 20, 8)),
+            Shapes.or(
+                    box(0, 0, 0, 8, 20, 16),
+                    box(8, 0, 8, 16, 20, 16)),
+            Shapes.or(
+                    box(0, 0, 0, 8, 20, 8),
+                    box(8, 0, 0, 16, 20, 16)));
 }

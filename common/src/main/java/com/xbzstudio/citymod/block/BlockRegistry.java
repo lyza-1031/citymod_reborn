@@ -415,6 +415,7 @@ public class BlockRegistry {
         reg("wooden_desk", () -> new GenericSignBlock(ApplianceShapes.PCDESK));
         reg("wooden_shelf", () -> new GenericSignBlock(ApplianceShapes.BIGWARDROBE));
         reg("gas_tank", () -> new GenericMetalBlock(BlockShapes.DEFAULT));
+        reg("children_blackboard", () -> new GenericSignBlock(BlockShapes.DEFAULT));
         // 已废弃
         reg("laptop_poweron", () -> new GenericLightBlock(ApplianceShapes.LAPTOP_ON, "tooltip.citymod.old"));
         reg("old_monitor_on", () -> new GenericLightBlock(ApplianceShapes.Old_Monitor, "tooltip.citymod.old"));

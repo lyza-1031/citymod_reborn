@@ -1,0 +1,11 @@
+{
+  "parent": "citymod:custom/children_blackboard",
+  "textures": {
+    "all": "citymod:block/woodtexture",
+    "particle": "citymod:block/woodtexture",
+    "0": "citymod:block/woodtexture",
+    "1": "citymod:block/blackboard",
+    "2": "citymod:block/lightwoodtexture"
+  },
+  "render_type": "solid"
+}

@@ -98,6 +98,23 @@ public class SchoolnextRegistry {
         Schoolreg("tallwall_purple",() -> new GenericSignBlock(CityShapes.TALL_WALL));
         Schoolreg("tallwall_red",() -> new GenericSignBlock(CityShapes.TALL_WALL));
         Schoolreg("tallwall_yellow",() -> new GenericSignBlock(CityShapes.TALL_WALL));
+        Schoolreg("wall_corner",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_light_blue",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_black",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_blue",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_brown",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_cyan",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_dark_blue",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_gray",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_green",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_light_gray",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_lime",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_magenta",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_orange",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_pink",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_purple",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_red",() -> new GenericSignBlock(CityShapes.wall_corner));
+        Schoolreg("wall_corner_yellow",() -> new GenericSignBlock(CityShapes.wall_corner));
         //其他
         Schoolreg("error",() -> new GenericLightBlock(BlockShapes.DEFAULT,"tooltip.citymod.source"));
     }
