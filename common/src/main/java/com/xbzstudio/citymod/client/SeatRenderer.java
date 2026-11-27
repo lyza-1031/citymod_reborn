@@ -8,9 +8,6 @@ import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 
-/**
- * 座位实体不渲染任何内容，仅用于避免缺少渲染器导致的客户端崩溃。
- */
 public class SeatRenderer extends EntityRenderer<SeatEntity> {
     public SeatRenderer(EntityRendererProvider.Context context) {
         super(context);

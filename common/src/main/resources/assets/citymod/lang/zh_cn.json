@@ -517,7 +517,7 @@
   "key.citymod.kill_items_key": "清除掉落物",
   "message.citymod.kill_items": "已清除掉落物！",
   "resourcepack.citymod.hd_resources": "我的城市&中国式学校 高清资源包",
-  "resourcepack.citymod.hd_resources.desc": "可以解决部分方块显示的缺少资源包纹理，NVIDIA显卡的高配电脑建议安装",
+  "resourcepack.citymod.hd_resources.desc": "解决部分方块显示的缺少资源包纹理,NVIDIA显卡的高配电脑建议安装",
   "tooltip.citymod.dma": "§4浮木发射器",
   "tooltip.citymod.hdd": "§e这个学习资料正经吗？",
   "tooltip.citymod.lcgy": "§o§6由服务器《灵创工艺》定制的方块",

@@ -31,7 +31,13 @@ configurations {
         canBeConsumed = false
     }
 }
-
+sourceSets {
+    main {
+        resources {
+            srcDir project(":common").file("src/main/resources")
+        }
+    }
+}
 dependencies {
     forge "net.minecraftforge:forge:$rootProject.forge_version"
 

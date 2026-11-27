@@ -38,9 +38,9 @@ public final class citymodFabricClient implements ClientModInitializer {
                     Component.translatable("resourcepack.citymod.hd_resources"),
                     ResourcePackActivationType.NORMAL
             );
-            System.out.println("[CityMod] SUCCESSFUL");
+            System.out.println("[CityMod] RESOURCEPACK LOAD SUCCESSFUL");
         } catch (Exception e) {
-            System.out.println("[CityMod] FAIL STOPCODE:" + e.getMessage());
+            System.out.println("[CityMod] RESOURCEPACK LOAD FAIL! STOPCODE:" + e.getMessage());
         }
         // 渲染层
         for (var def : BlockRegistry.BLOCKS) {
